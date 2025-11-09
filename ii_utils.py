@@ -33,7 +33,8 @@ import heapq
 import torch.nn.functional as F
 from collections import Counter
 import string
-from datasets import load_metric
+# from datasets import load_metric
+from evaluate import load as load_metric
 from collections import Counter
 from typing import List
 import re

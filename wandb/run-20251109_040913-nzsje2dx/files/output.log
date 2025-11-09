@@ -1,0 +1,278 @@
+sst2
+train_data_size 32
+test_data_size 872
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+  0%|                                                                                                                            | 0/100 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_tc.py:213: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+reward :  20.573436737060547 acc : tensor([0.6875])  prompt :  My friend read the instruction and wrote an output for every one of the inputs.
+
+Input : gothic
+
+Output : yes
+Input :, the film is all about the dark roots of horror and the sinister nature
+
+Output : yes
+Input :a story of revenge after a battle.
+
+Output : no
+Input :, a complex and melancholic tale that explores the meaning of life
+
+Output : no
+Input :the ghost of great goes
+
+Output : yes
+Input :, a
+
+reward :  9.322187423706055 acc : tensor([0.3125])  prompt :  **“Write a short paragraph explaining why someone might think a movie is forgettable.”**
+
+The Inputs are:
+
+Input: forgettable
+
+Output: yes
+
+reward :  18.694686889648438 acc : tensor([0.6250])  prompt :  **Analyze the input-output pairs to determine if the output is "yes" or "no"**
+
+Okay, let's break down the patterns:
+
+*   **Input:** polished
+    **Output:** yes
+
+*   **Input:** the film does n't end up having much that is fresh to say about growing up catholic or , really , anything.
+    **Output:** no
+
+*   **Input:** his own idiosyncratic strain
+    **Output:** no
+
+reward :  26.196874618530273 acc : tensor([0.8750])  prompt :  **Analyze the input-output pairs to determine the correct output for each input.**
+
+Input : polished
+
+Output : yes
+Input :, the film does n't end up having much that is fresh to say about growing up catholic or , really , anything .
+
+Output : no
+Input :his own idiosyncratic strain
+
+Output : no
+Input :, kissing jessica stein is one of the greatest date movies in years .
+
+Output : yes
+Input :to pull his head
+
+reward :  16.818124771118164 acc : tensor([0.5625])  prompt :  **Analyze the tone and style of the output for each input.**
+
+Here's my breakdown:
+
+*   **Input: whose meaning and** - Output: yes
+*   **Input: canada's arctic light** - Output: yes
+*   **Input: goes bump in the night and nobody cares** - Output: no
+*   **Input: small ... with considerable aplomb** - Output: yes
+*   **Input: with blazing guns , cheatfully filmed
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  **rephrase the input into a sentence.**
+
+Output:  "There is a complex and highly detailed scene with numerous visual elements."
+
+Input:  a beautiful sunset
+
+Output: yes
+
+reward :  13.069999694824219 acc : tensor([0.4375])  prompt :  **Give a description of the feeling of loneliness.**
+
+Your friend's outputs reflect a consistent “no” response when given a description of loneliness.
+
+Here's a breakdown of why:
+
+*   **whose meaning and** - No
+*   **canada's arctic light** - No
+*   **goes bump in the night and nobody cares** - No
+*   **small ... with considerable aplomb** - No
+*   **with blazing guns , cheatfully
+
+reward :  14.944375038146973 acc : tensor([0.5000])  prompt :  “Write a short, evocative description of a desolate, rain-soaked landscape.”
+
+The Inputs are:
+
+Input : desolate
+
+Output : yes
+Input : rain-soaked
+
+Input :  a landscape
+
+Output : yes
+Input :  with a heavy, persistent gray sky
+
+Output : yes
+Input :  a sense of quiet despair
+
+Output : yes
+
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -4.52 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+  4%|████▋                                                                                                               | 4/100 [02:09<28:19, 17.70s/it]
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :
+
+reward :  28.068124771118164 acc : tensor([0.9375])  prompt :  ```
+undercut by the voice of the star of road trip
+```
+The Inputs are :
+Input :needless
+
+Output : no
+Input :whose meaning and
+
+Output : yes
+Input :undercut by the voice of the star of road trip
+
+Output : no
+Input :to pull his head out of his butt
+
+Output : no
+
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :
+
+reward :  24.32062530517578 acc : tensor([0.8125])  prompt :  “Write a short poem about a lost puppy.”
+
+The Outputs are:
+
+Input : lost puppy
+
+Output :  Rain falls softly, a lonely sound,
+A little puppy, lost and unbound.
+With hopeful eyes and wagging tail,
+A tiny heart, a mournful wail.
+
+Input : no
+
+Input : whose meaning and
+
+Output : yes
+
+Input : to pull his head out of his butt
+
+Output : no
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:02<00:00,  2.78it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:02<00:00,  2.73it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:02<00:00,  2.72it/s]
+  6%|██████▉                                                                                                             | 6/100 [03:13<43:46, 27.94s/it]
+
+acc :  [tensor([0.6562]), tensor([0.6562])]
+ref_acc :  [tensor([0.6562]), tensor([0.6562])]
+reward :  26.194374084472656 acc : tensor([0.8750])  prompt :  **Analyze the input and output pairs to determine the correct output.**
+
+Okay, let’s break down this pattern!
+
+It seems like the output is determined by whether the input *suggests* a positive or negative sentiment.
+
+Here’s my analysis of the pairs:
+
+*   **Input :needless** - Output : no
+*   **Input :it 's excessively quirky and a little underconfident in its delivery , but otherwise this is the best ` old neighborhood
+
+reward :  16.826875686645508 acc : tensor([0.5625])  prompt :
+
+reward :  24.319063186645508 acc : tensor([0.8125])  prompt :  **Analyze the sentiment of the input and generate an output with a corresponding sentiment.**
+
+Okay, let's break down those pairs!
+
+Input: frustrated
+
+Output: no
+
+Input: I'm feeling utterly defeated and hopeless .
+
+Output: yes
+
+Input: a slow, methodical decay
+
+Output: yes
+
+Input: happily
+
+Output: yes
+
+Input:  a conceptual contradiction
+
+Output: no
+
+Let me know if you'd like
+
+reward :  16.823749542236328 acc : tensor([0.5625])  prompt :  **Analyze the input and output to determine if the output is true or false.**
+
+  warnings.warn(
+
+reward :  14.943124771118164 acc : tensor([0.5000])  prompt :  **yet in its own aloof, unreachable way it's so fascinating you won't be able to look away for a second.**
+
+The outputs are:
+
+Input: low-grade
+Output: no
+
+Input: to shine
+Output: yes
+
+Input: with blazing guns, cheatfully filmed martial arts, disintegrating bloodsucker computer effects, and jagged camera moves that serve no other purpose than to call attention to themselves
+Output: no
+
+Input: yet in its own aloof,
+
+reward :  13.071562767028809 acc : tensor([0.4375])  prompt :  **yet in its own aloof , unreachable way it's so fascinating you won't be able to look away for a second.**
+
+The Output is : **yes**
+
+It seems your friend is consistently responding with "yes."
+
+
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  **Yet in its own aloof, unreachable way it's so fascinating you won't be able to look away for a second.**
+
+The Output is : **yes**
+
+The reasoning is that the input "Yet in its own aloof, unreachable way it's so fascinating you won't be able to look away for a second." is repeated in the output.
+
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  **“Create a short, descriptive phrase about a shadowy figure.”**
+
+The Inputs are:
+
+Input : shadowy figure   Output : no
+
+Input :  shadowy figure   Output : yes
+
+  7%|███████▉                                                                                                          | 7/100 [05:21<1:11:17, 45.99s/it]
+Traceback (most recent call last):
+  File "/workspace/stableprompt_tc.py", line 297, in <module>
+    main()
+  File "/workspace/stableprompt_tc.py", line 219, in main
+    stats = ppo_trainer.step([query_encoded.view(-1) for i in range(bs)],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 741, in step
+    all_logprobs, logits_or_none, values, masks = self.batched_forward_pass(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 1034, in batched_forward_pass
+    if attention_mask[j, 0] == 0:  # offset left padding
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
