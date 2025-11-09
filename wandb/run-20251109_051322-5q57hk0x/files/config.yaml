@@ -1,0 +1,103 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            nhgzwvob6ntxgx700v7spm6t104jsd13:
+                args:
+                    - --dataset
+                    - rte
+                    - --epoch
+                    - "100"
+                    - --update_term
+                    - "5"
+                codePath: stableprompt_tc.py
+                codePathLocal: stableprompt_tc.py
+                cpu_count: 16
+                cpu_count_logical: 16
+                cudaVersion: "12.9"
+                disk:
+                    /:
+                        total: "1081101176832"
+                        used: "63944458240"
+                executable: /opt/conda/bin/python
+                git:
+                    commit: a3b1392554552486b917e00a9bacc8711150fb07
+                gpu: NVIDIA GeForce RTX 5070 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Blackwell
+                      memoryTotal: "8546942976"
+                      name: NVIDIA GeForce RTX 5070 Laptop GPU
+                      uuid: GPU-48dc6da8-46de-8beb-e985-3133c9fff370
+                host: 4c3e0eab7697
+                memory:
+                    total: "16502685696"
+                os: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35
+                program: /workspace/stableprompt_tc.py
+                python: CPython 3.11.14
+                root: /workspace
+                startedAt: "2025-11-09T05:13:22.692092Z"
+                writerId: nhgzwvob6ntxgx700v7spm6t104jsd13
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 51
+                - 71
+                - 84
+                - 98
+                - 100
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 51
+                - 71
+                - 84
+                - 98
+                - 100
+            "3":
+                - 13
+                - 16
+            "4": 3.11.14
+            "5": 0.22.3
+            "6": 4.57.1
+            "12": 0.22.3
+            "13": linux-x86_64
+agent_model:
+    value: google/gemma-3-1b-it
+batch_size:
+    value: 2
+cache_dir:
+    value: /mnt/sdb/llm/
+dataset:
+    value: rte
+epochs:
+    value: 100
+max_prompt_length:
+    value: 50
+meta_prompt:
+    value: "I gave a friend an instruction and five inputs. \n                        The friend read the instruction and wrote an output for every one of the inputs.\n                        Here are the input-output pairs: \n\n                        "
+num_example:
+    value: 5
+num_test_example:
+    value: 20
+prompt_per_example:
+    value: 4
+target_model:
+    value: google/gemma-3-1b-it
+task:
+    value: classification
+train_data_per_labels:
+    value: 2
+update_term:
+    value: 5
+update_threshold:
+    value: 0.05
+verbalizer:
+    value: null

@@ -1,0 +1,11 @@
+{"time":"2025-11-09T05:04:35.266325864Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-09T05:04:43.116024636Z","level":"INFO","msg":"stream: created new stream","id":"ftsftvhs"}
+{"time":"2025-11-09T05:04:43.116438013Z","level":"INFO","msg":"handler: started","stream_id":"ftsftvhs"}
+{"time":"2025-11-09T05:04:43.119021034Z","level":"INFO","msg":"stream: started","id":"ftsftvhs"}
+{"time":"2025-11-09T05:04:43.119045712Z","level":"INFO","msg":"writer: started","stream_id":"ftsftvhs"}
+{"time":"2025-11-09T05:04:43.119064362Z","level":"INFO","msg":"sender: started","stream_id":"ftsftvhs"}
+{"time":"2025-11-09T05:08:32.330150505Z","level":"INFO","msg":"stream: closing","id":"ftsftvhs"}
+{"time":"2025-11-09T05:08:33.931015174Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-09T05:08:39.466746505Z","level":"INFO","msg":"handler: closed","stream_id":"ftsftvhs"}
+{"time":"2025-11-09T05:08:39.46840083Z","level":"INFO","msg":"sender: closed","stream_id":"ftsftvhs"}
+{"time":"2025-11-09T05:08:39.468557173Z","level":"INFO","msg":"stream: closed","id":"ftsftvhs"}

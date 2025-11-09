@@ -26,9 +26,9 @@ def parser_args():
         default = None
     )
     parser.add_argument('--cache_dir',type=str,default='/mnt/sdb/llm/')
-    parser.add_argument('--batch_size',type=int,default=16)
-    parser.add_argument('--max_prompt_length',type=int,default=100)
-    parser.add_argument('--train_data_per_labels',type=int,default=16)
+    parser.add_argument('--batch_size',type=int,default=2)#16
+    parser.add_argument('--max_prompt_length',type=int,default=50)#100
+    parser.add_argument('--train_data_per_labels',type=int,default=2)#16
     parser.add_argument('--num_example',type=int,default=5)
     parser.add_argument('--epochs',type=int,default=10)
     parser.add_argument('--meta_prompt',type=str,

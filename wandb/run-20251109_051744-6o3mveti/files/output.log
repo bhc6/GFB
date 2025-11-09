@@ -1,0 +1,1143 @@
+mnli
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 3e45eaed-c372-4848-9776-299987a91fb5)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 32702fa3-9a39-4506-bcaa-b7b0f3d20401)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: d68dcde6-9055-4b43-ae08-f1890c38c9e0)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 66d6b7db-250c-4fb5-8f38-6a7be4cc564c)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: f4a35787-4d79-4c7c-87d8-0aa73f3215bc)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: d8e0eb55-adb8-4a29-8771-bd2bc06a2959)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'mnli' at /root/.cache/huggingface/datasets/glue/mnli/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Wed Nov  5 14:05:32 2025).
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 2dca6c62-ac00-436b-acf0-9f25bec654fb)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: d61de0a8-94b3-4dbf-bb1a-ddd083bca81b)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: fe23f99a-445e-4824-8801-d41ab8c4f13a)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 21476d7a-15c4-4e9b-8dcd-30c798098bf2)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 886babab-2d1a-4e2e-8a71-62e009d6856a)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /datasets/glue/resolve/main/README.md (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 2f0fff10-e3dc-4537-8bf5-df82ba7e6402)')' thrown while requesting HEAD https://huggingface.co/datasets/glue/resolve/main/README.md
+Using the latest cached version of the dataset since glue couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'mnli' at /root/.cache/huggingface/datasets/glue/mnli/0.0.0/bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c (last modified on Wed Nov  5 14:05:32 2025).
+train_data_size 6
+test_data_size 9815
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: d42dbeb4-303a-4804-9c17-d7e3a72a6980)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/tokenizer_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 5a4ba2e2-ea8c-4f9b-8a6e-c4b1d0665d21)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/tokenizer_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 31830416-a17d-4248-8ed6-b58f8a71ed00)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/tokenizer_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 1f958213-f689-4c76-a402-2cc16d611892)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 4/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 1a6f8ccb-a8a0-4f8e-ac3d-741ffb14c5f5)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/tokenizer_config.json
+Retrying in 8s [Retry 5/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/tokenizer_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 33c74733-d93e-452e-8bba-a8169d940632)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/tokenizer_config.json
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/adapter_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 13b4d2d5-38b1-4e42-ab3d-a9fc4d38c592)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/adapter_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 595e5375-1af9-4a99-9f60-cf33c5625c3d)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/adapter_config.json
+Retrying in 2s [Retry 2/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/adapter_config.json (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"), '(Request ID: 2f090fa8-2de7-48b3-aaf3-10d2005ba077)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/adapter_config.json
+Retrying in 4s [Retry 3/5].
+'(MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /google/gemma-3-1b-it/resolve/main/adapter_config.json (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x73e4bfb75490>: Failed to establish a new connection: [Errno 101] Network is unreachable'))"), '(Request ID: 565ac95b-85e2-4470-a5c4-628539a247cf)')' thrown while requesting HEAD https://huggingface.co/google/gemma-3-1b-it/resolve/main/adapter_config.json
+Retrying in 8s [Retry 4/5].
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+  0%|                                                                                                                            | 0/100 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_tc.py:213: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+reward :  14.888750076293945 acc : tensor([0.5000])  prompt :  “You are given three premises and five inputs. Each input is paired with an output (Yes/No). Analyze the premises and inputs to determine if the overall hypothesis is likely to be true. Output is either ‘Yes’ or ‘No’, reflecting
+
+reward :  -0.11562499403953552 acc : tensor([0.])  prompt :  “I don't know I think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Output is : **Maybe**
+
+Let's break it down:
+
+*   **Premise**:
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  **premise : However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.**
+
+The Hypothesis is : **The yearly rate of climb is dropping, while advertising mail is rising.**
+
+The
+
+reward :  14.8881254196167 acc : tensor([0.5000])  prompt :  “The following year, his remains were scattered to the winds in every direction.”
+
+The Hypothesis is : “The studies have various reports.”
+
+The Output is : **Yes**
+
+The connection between the premise and the hypothesis is that the “studies
+
+reward :  14.90625 acc : tensor([0.5000])  prompt :  Premise : However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.
+hypothesis : The yearly rate of climb is dropping, while advertising mail is rising.
+
+Output : Yes
+
+Prem
+
+reward :  14.931875228881836 acc : tensor([0.5000])  prompt :  “However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.”
+
+The Five Inputs are :
+1. Premise: However, the annual growth rate of bill mail is declining, whereas
+
+reward :  14.934062957763672 acc : tensor([0.5000])  prompt :  “However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.”
+
+The Input is : “premise : However, the annual growth rate of bill mail is declining, whereas the annual growth
+
+reward :  14.913749694824219 acc : tensor([0.5000])  prompt :  Premise : However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.
+Hypothesis : The yearly rate of climb is dropping, while advertising mail is rising.
+
+Output : Yes
+
+reward :  14.897500038146973 acc : tensor([0.5000])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+The Output is : **Yes**
+
+The hypothesis is : "
+
+reward :  14.896249771118164 acc : tensor([0.5000])  prompt :  Okay, let's analyze the provided examples. The instruction is:
+
+**"One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other
+
+reward :  14.900625228881836 acc : tensor([0.5000])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+The Input is : “The studies have various reports.”
+
+The
+
+reward :  14.904375076293945 acc : tensor([0.5000])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+The Output is : “Yes”
+
+Therefore, the answer
+  1%|█                                                                                                               | 1/100 [06:40<11:00:29, 400.30s/it]
+
+reward :  -0.08062499761581421 acc : tensor([0.])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Output is : “No”
+
+The Hypothesis is : “is there anyplace where you can donate this without worrying about
+
+reward :  -0.0678124949336052 acc : tensor([0.])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Output is : **No**
+
+The Input is : “is it all um is there any place at all where you
+
+reward :  -0.07281249761581421 acc : tensor([0.])  prompt :  “Premise : is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Hypothesis is : “Is there anyplace where you can donate this without worrying about money”
+
+The Output
+
+reward :  -0.07124999910593033 acc : tensor([0.])  prompt :  “is it all um is there anyplace at all where you do get cash for this stuff or is it all”
+
+The Input is : “The following year, his remains were taken in a grand procession to be enshrined here, on the site
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  “Describe a park.”
+
+The Input is: “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Hypothesis is: “His remains were
+
+reward :  14.895000457763672 acc : tensor([0.5000])  prompt :  “Give a description of a rainy day.”
+
+The output is : “It’s pouring, the sky is grey and heavy, and the rain is falling steadily.”
+
+Now, let’s analyze the provided pairs, considering the instruction:
+
+reward :  14.895625114440918 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The output is : **Yes**
+
+The input is: “His remains were scattered to
+
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+reward :  29.90625 acc : tensor([1.])  prompt :  “I am going to a store.”
+The inputs are :
+1.  “I am going to a store.”
+2.  “It is a sunny day.”
+3.  “I would love to buy milk.”
+4
+
+reward :  -0.11249999701976776 acc : tensor([0.])  prompt :  **I would love to do that but they have snakes over there**
+
+The Friend's Output: **Maybe**
+
+reward :  14.891249656677246 acc : tensor([0.5000])  prompt :  **I would like to do that but they have snakes over there.**
+
+The Input is :
+premise : I would love to do that but they have snakes over there
+hypothesis : I'm terrified of snakes.
+Output : Maybe
+
+
+
+reward :  29.895000457763672 acc : tensor([1.])  prompt :  1.  Give a premise.
+2.  Give five inputs.
+3.  The friend reads the premise and writes an output for each input.
+
+The instructions are complete.
+
+reward :  14.926875114440918 acc : tensor([0.5000])  prompt :  “Well I don’t I don’t know I think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Inputs are :
+1.  “Maybe”
+2.  “No
+
+reward :  14.920000076293945 acc : tensor([0.5000])  prompt :  *   “well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Outputs are:
+
+*   Maybe
+*   No
+*   Yes
+
+reward :  14.9350004196167 acc : tensor([0.5000])  prompt :  “A statement about the potential relationship between pollution and health.”
+
+The Inputs are:
+
+1.  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design,
+
+reward :  -0.07124999910593033 acc : tensor([0.])  prompt :  “Well I don’t I don’t know I think that underlying underlying underlying we’re all pretty probably not as as different as everybody thinks”
+
+The Inputs are :
+1.  premise : The following year, his remains were
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  Okay, let's analyze the provided input-output pairs!
+
+Based on the provided instructions, the core task seems to be a simple text-based reasoning puzzle. Each pair consists of a premise and an hypothesis.  The goal is to determine
+
+reward :  14.90250015258789 acc : tensor([0.5000])  prompt :  > “Well I don’t I don’t know I think that underlying underlying underlying we’re all pretty probably not as as different as everybody thinks”
+
+The Input is :
+> “However, the annual growth rate of bill mail is
+
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+reward :  14.892499923706055 acc : tensor([0.5000])  prompt :  **“What is the meaning of life?”**
+
+The friend wrote the following outputs:
+
+*   **Premise:** “We search for the meaning of life.”
+*   **Hypothesis:** “It’s a profound and complex question
+  warnings.warn(
+
+reward :  14.890000343322754 acc : tensor([0.5000])  prompt :  "The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before."
+
+The Output is : "No"
+
+
+The Hypothesis is : “His remains were scattered to
+
+reward :  14.906874656677246 acc : tensor([0.5000])  prompt :
+
+reward :  14.890625 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”
+
+The hypothesis is : “His remains were scattered
+
+reward :  14.910625457763672 acc : tensor([0.5000])  prompt :  **Premise:** However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.
+
+**Hypothesis:** The yearly rate of climb is dropping, while advertising mail is rising.
+
+**Output
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -3.28 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+  3%|███▎                                                                                                            | 3/100 [21:24<11:44:53, 436.01s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -4.04 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.0768750011920929 acc : tensor([0.])  prompt :
+
+reward :  -0.05999999865889549 acc : tensor([0.])  prompt :  Premise : The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+hypothesis : His remains were scattered to the winds in every direction.
+
+
+
+reward :  -0.057499997317790985 acc : tensor([0.])  prompt :  Premise : The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+hypothesis : His remains were scattered to the winds in every direction.
+
+Output :
+
+reward :  29.92593765258789 acc : tensor([1.])  prompt :  The hypothesis is : I'm terrified of snakes.
+
+Output : Maybe
+  warnings.warn(
+
+reward :  -0.11499999463558197 acc : tensor([0.])  prompt :  **Premise : I would love to do that but they have snakes over there**
+**Hypothesis : I'm terrified of snakes.**
+
+Output : Maybe
+
+The Instruction is Input-Output Pairs:
+1.  premise :
+
+reward :  29.889999389648438 acc : tensor([1.])  prompt :  1.  “i would love to do that but they have snakes over there”  (This is a conditional statement – an “if” statement)
+2.  “I'm terrified of snakes.” (This is a statement of emotion
+
+reward :  14.8931245803833 acc : tensor([0.5000])  prompt :  “Analyze the following text and determine if the author's overall sentiment is positive, negative, or neutral.”
+
+The Input is: “However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing
+
+reward :  29.89875030517578 acc : tensor([1.])  prompt :
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -5.22 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+
+reward :  14.906874656677246 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.906874656677246 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.896249771118164 acc : tensor([0.5000])  prompt :  "One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors."
+
+The Output is : "Yes"
+
+Based on the previous examples
+
+reward :  14.9037504196167 acc : tensor([0.5000])  prompt :  Premise : One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.
+Hypothesis : The studies have various reports.
+Output
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -17.88 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+  5%|█████▋                                                                                                           | 5/100 [30:51<8:38:58, 327.77s/it]
+
+reward :  -0.07187499850988388 acc : tensor([0.])  prompt :  "The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before."
+
+The Hypothesis is : "His remains were scattered to the winds in every direction."
+
+The
+
+reward :  14.909375190734863 acc : tensor([0.5000])  prompt :  The Hypothesis is : Is there any place where you can donate this without worrying about money?
+
+The Output is : No
+
+The pattern is consistent.
+
+reward :  -0.07062499970197678 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Hypothesis is : “His remains were scattered to the winds in every direction.”
+
+The
+
+reward :  14.91812515258789 acc : tensor([0.5000])  prompt :  The hypothesis is :
+Is there any place at all where you can donate this without worrying about money?
+
+The Output is : No.
+
+reward :  14.90625 acc : tensor([0.5000])  prompt :  Premise : One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.
+
+Hypothesis : The studies have various reports.
+
+Output
+
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.905625343322754 acc : tensor([0.5000])  prompt :  Premise : One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.
+ Hypothesis : The studies have various reports.
+Output :
+  warnings.warn(
+
+reward :  -0.06812500208616257 acc : tensor([0.])  prompt :  1.  Premise : well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks
+2. Hypothesis : I think most people don't notice that we
+
+reward :  14.923749923706055 acc : tensor([0.5000])  prompt :  “well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Response is: **Maybe**
+
+**Explanation of why:**
+
+The instruction itself
+
+reward :  -0.0768750011920929 acc : tensor([0.])  prompt :
+
+already exist
+reward :  14.934062957763672 acc : tensor([0.5000])  prompt :  Premise : Well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks
+
+Hypothesis : I think most people don't notice that we are not that different
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -14.50 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+
+reward :  29.905000686645508 acc : tensor([1.])  prompt :
+
+already exist
+reward :  29.905000686645508 acc : tensor([1.])  prompt :
+
+already exist
+reward :  29.897499084472656 acc : tensor([1.])  prompt :  "is it all um is there any place at all where you do get cash for this stuff or is it all"
+
+The Output is : "No"
+
+Therefore, the pattern is:
+- If the output is "Yes", the hypothesis
+
+reward :  29.903749465942383 acc : tensor([1.])  prompt :  Premise : One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.
+Hypothesis : The studies have various reports.
+Output
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -30.59 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 11.82it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 10.60it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  8.96it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 10.30it/s]
+  6%|██████▊                                                                                                          | 6/100 [38:02<9:28:43, 363.01s/it]
+
+acc :  [tensor([0.3333]), tensor([0.1667])]
+ref_acc :  [tensor([0.3333]), tensor([0.3333])]
+rollback model
+reward :  29.90625 acc : tensor([1.])  prompt :  “well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Output is : “Maybe”
+
+The Hypothesis is : “I think most people don
+
+reward :  14.886249542236328 acc : tensor([0.5000])  prompt :  "well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks"
+
+The output is : **Maybe**
+
+This is consistent with the provided examples. It
+
+reward :  29.90625 acc : tensor([1.])  prompt :  “well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Output is : “Maybe”
+
+The Input is : “I think most people don
+
+reward :  29.904375076293945 acc : tensor([1.])  prompt :  "well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks"
+
+The Output is : “Maybe”
+
+The Hypothesis is : “I think most people don
+
+reward :  14.891249656677246 acc : tensor([0.5000])  prompt :  “is there anyplace where you do get cash for this stuff or is it all”
+
+The Output is : “No”
+
+reward :  14.893750190734863 acc : tensor([0.5000])  prompt :  “Is there anyplace where you do get cash for this stuff or is it all”
+
+The Output is :
+
+"No"
+
+Based on the provided examples, it seems you are providing me with a set of complex instructions and
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  "is there anyplace where you can donate this without worrying about money"
+
+The Output is : **No**
+
+Would you like me to analyze why?
+
+reward :  14.895000457763672 acc : tensor([0.5000])  prompt :  “is there anyplace where you can donate this without worrying about money”
+
+The Output is : **No**
+
+The Hypothesis is : “is there anyplace where you can donate this without worrying about money”
+
+The Output is : **Yes
+
+reward :  14.916250228881836 acc : tensor([0.5000])  prompt :  Is it all um is there any place at all where you do get cash for this stuff or is it all
+
+The Hypothesis is : Is there anyplace where you can donate this without worrying about money
+
+The Output is : No
+
+The Statement is
+
+reward :  -0.07062499970197678 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Hypothesis is : “His remains were scattered to the winds in every direction.”
+
+The
+
+reward :  -0.07468749582767487 acc : tensor([0.])  prompt :  **premise : is it all um is there any place at all where you do get cash for this stuff or is it all**
+
+The Hypothesis is : **is there anyplace where you can donate this without worrying about money**
+
+The Output
+
+reward :  -0.07062499970197678 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Hypothesis is : “His remains were scattered to the winds in every direction.”
+
+The
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  "The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before."
+
+The Output is : "No"
+
+Let's break down why:
+
+*
+
+reward :  14.904999732971191 acc : tensor([0.5000])  prompt :  “I will show you a picture of a cat.”
+
+Input 1: A fluffy Persian cat.
+Input 2: A playful tabby cat.
+Input 3: A sleek Siamese cat.
+Input 4: A grumpy old black
+
+reward :  -0.10249999910593033 acc : tensor([0.])  prompt :  **“I would love to do that but they have snakes over there”**
+
+
+The Input is : **“they have snakes over there”**
+
+The Output is: **“Maybe”**
+
+Let's analyze why:
+
+The
+
+reward :  -0.10749999433755875 acc : tensor([0.])  prompt :  “I would love to do that but they have snakes over there”
+
+The Friend's Output is: **Maybe**
+
+Let's analyze why:
+
+The instruction is a statement of a desire—to do something.  The
+
+reward :  -0.07062499970197678 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Input is : "The following year, his remains were taken in a grand procession to
+
+reward :  14.927812576293945 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”
+
+The inputs are : “The following year, his
+
+reward :  14.92562484741211 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”
+
+This is because the premise states that his remains
+
+reward :  -0.07874999940395355 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The inputs are :
+1.  “The following year, his remains were taken
+
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  -0.11749999970197678 acc : tensor([0.])  prompt :  “I would love to do that but they have snakes over there”
+
+The Friend’s Output is : “Maybe”
+
+Let's analyze the provided examples:
+
+*   **premise : i would love to do that but they have
+
+reward :  14.8881254196167 acc : tensor([0.5000])  prompt :  “I would love to do that but they have snakes over there”
+
+The Input is : “They have snakes over there”
+
+The Output is : “Maybe”
+
+Okay, let's continue the pattern.
+
+Premise: I
+
+reward :  14.904375076293945 acc : tensor([0.5000])  prompt :  **I would love to do that but they have snakes over there**
+
+The Input is :
+Premise : I would love to do that but they have snakes over there
+Hypothesis : I'm terrified of snakes.
+Output :
+
+reward :  14.898124694824219 acc : tensor([0.5000])  prompt :  "is it all um is there any place at all where you do get cash for this stuff or is it all"
+
+The Answers are :
+"No"
+
+The answers reflect the consistent "No" responses to the questions.
+
+reward :  -0.10999999940395355 acc : tensor([0.])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Outputs are:
+
+*   No
+*   No
+
+The pattern is: The output is "No" for all
+
+reward :  14.90999984741211 acc : tensor([0.5000])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Input is : “is it all um is there any place at all where you do get cash for this stuff or is
+
+reward :  -0.10749999433755875 acc : tensor([0.])  prompt :  "is it all um is there anyplace at all where you do get cash for this stuff or is it all"
+
+The Outputs are :
+"No"
+
+Therefore, the pattern is consistent.
+
+reward :  -0.12062499672174454 acc : tensor([0.])  prompt :  *   **Premise:** I would love to do that but they have snakes over there.
+*   **Hypothesis:** I'm terrified of snakes.
+
+The Output is : **Maybe**
+
+The provided examples strongly suggest a "Maybe
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  Premise : One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.
+
+Hypothesis : The studies have various reports.
+
+Output
+
+reward :  -0.10374999791383743 acc : tensor([0.])  prompt :  Premise : I would love to do that but they have snakes over there.
+Hypothesis : I'm terrified of snakes.
+Output : Maybe
+
+The input is :
+Premise : I would love to do that but they have
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+This is a statement about the variability in research findings.
+
+Therefore
+
+reward :  14.895000457763672 acc : tensor([0.5000])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+The Friend’s Outputs are:
+*   “Yes”
+
+reward :  14.887499809265137 acc : tensor([0.5000])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+The Output is : “Yes”
+
+The Input is :
+
+reward :  -0.1068749949336052 acc : tensor([0.])  prompt :  Part of a thought experiment.
+
+The Input is :
+1. Premise: One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or
+
+reward :  29.895000457763672 acc : tensor([1.])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+The Input is : “Studies have various reports.”
+
+The Output
+
+reward :  -0.07124999910593033 acc : tensor([0.])  prompt :  Provide a concise statement.
+
+**Input:**  "understand the concept of quantum entanglement."
+
+**Output:** Yes
+
+reward :  -0.0768750011920929 acc : tensor([0.])  prompt :
+
+already exist
+reward :  -0.08124999701976776 acc : tensor([0.])  prompt :  “Is there anyplace where you can donate this without worrying about money?”
+
+The friend’s Output is “No”.
+
+Therefore, the correct answer is **No**.
+
+reward :  -0.0625 acc : tensor([0.])  prompt :  *   **Premise:** However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.
+*   **Hypothesis:** The yearly rate of climb is dropping, while advertising mail is rising
+
+reward :  14.896249771118164 acc : tensor([0.5000])  prompt :  premise : is it all um is there any place at all where you do get cash for this stuff or is it all
+
+The Hypothesis is : is there anyplace where you can donate this without worrying about money
+
+Output : No
+
+reward :  14.90625 acc : tensor([0.5000])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The output is: No
+
+The Input is: “is it all um is there any place at all where you do
+
+reward :  14.898124694824219 acc : tensor([0.5000])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Output is : “No”
+
+The Input is : “is it all um is there any place at all where you
+
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Output is : “No”
+
+The Input is: “is it all um is there any place at all where
+
+reward :  14.897500038146973 acc : tensor([0.5000])  prompt :  “is it all um is there anyplace where you do get cash for this stuff or is it all”
+
+The Output is : “No”
+
+The Hypothesis is : “The studies have various reports.”
+
+The Output is : “Yes”
+
+reward :  14.897500038146973 acc : tensor([0.5000])  prompt :  The instruction is: **“is it all um is there anyplace where you do get cash for this stuff or is it all?”**
+
+The Inputs are:
+
+*   premise : i would love to do that but they have snakes
+
+reward :  14.881250381469727 acc : tensor([0.5000])  prompt :  Based on the provided examples, it seems like the instruction is to identify whether a statement is **“Yes”** or **“No”** based on a given premise and several inputs.
+
+Let's analyze the provided examples:
+
+*
+
+reward :  14.903124809265137 acc : tensor([0.5000])  prompt :  "is it all um is there any place at all where you do get cash for this stuff or is it all"
+
+The input is : "is there anyplace where you can donate this without worrying about money"
+
+The output is : "
+
+reward :  29.89875030517578 acc : tensor([1.])  prompt :
+
+already exist
+reward :  -0.11187499761581421 acc : tensor([0.])  prompt :  “is there anyplace where you can donate this without worrying about money”
+
+The friend’s Output is : “No”
+
+The Hypothesis is : “I'm terrified of snakes.”
+
+reward :  29.89875030517578 acc : tensor([1.])  prompt :
+
+already exist
+reward :  29.89875030517578 acc : tensor([1.])  prompt :
+
+already exist
+reward :  29.920000076293945 acc : tensor([1.])  prompt :  “well i don’t i don’t know i think that underlying underlying underlying we’re all pretty probably not as as different as everybody thinks”
+
+The Output is : “Maybe”
+
+The reasoning behind this is that the friend is acknowledging
+
+reward :  29.917499542236328 acc : tensor([1.])  prompt :  “well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Output is : **Maybe**
+
+Your friend is displaying a thoughtful, hesitant
+
+reward :  29.915000915527344 acc : tensor([1.])  prompt :  “i would love to do that but they have snakes over there”
+
+The Output is : **Maybe**
+
+The pattern seems to be:
+
+*   **Premise:** A statement about a situation.
+*   **Hypothesis:**
+
+reward :  29.92562484741211 acc : tensor([1.])  prompt :  “I would love to do that but they have snakes over there.”
+
+The Hypothesis is : “I’m terrified of snakes.”
+
+Based on this, the Output is : **Maybe**
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 10.14it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  9.63it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 10.39it/s]
+ 11%|████████████                                                                                                  | 11/100 [1:06:48<8:24:15, 339.95s/it]
+
+acc :  [tensor([0.3333]), tensor([0.3333])]
+ref_acc :  [tensor([0.1667]), tensor([0.3333])]
+update ref model
+reward :  29.860000610351562 acc : tensor([1.])  prompt :  Premise : well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks
+
+Hypothesis : I think most people don't notice that we are not that different
+
+reward :  29.868749618530273 acc : tensor([1.])  prompt :  “well i don’t i don’t know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Inputs are :
+
+1.  premise : I would love to do that but
+
+reward :  29.8799991607666 acc : tensor([1.])  prompt :  "The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before."
+
+The Inputs are :
+1.  "The following year, his remains were taken in
+
+reward :  14.869999885559082 acc : tensor([0.5000])  prompt :   “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The responses are:
+
+*   “No”
+*   “No”
+*
+
+reward :  -0.08749999850988388 acc : tensor([0.])  prompt :  **The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.**
+
+The Input is : **His remains were taken in a grand procession to be enshrined here,
+
+reward :  -0.08999999612569809 acc : tensor([0.])  prompt :  – The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The Output is : **No**
+
+The reasoning is that the input "His remains
+
+reward :  -0.07437499612569809 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”
+
+The hypothesis is : “His remains were scattered to
+
+reward :  -0.08124999701976776 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”.
+
+**Reasoning:**
+
+The instruction is about
+
+reward :  14.928125381469727 acc : tensor([0.5000])  prompt :  “However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.”
+
+The Input is : “premise : However, the annual growth rate of bill mail is declining, whereas the annual growth
+
+already exist
+reward :  14.923125267028809 acc : tensor([0.5000])  prompt :  Premise: However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.
+Rispose: The yearly rate of climb is dropping, while advertising mail is rising.
+
+Input: Bill mail
+
+reward :  29.90250015258789 acc : tensor([1.])  prompt :  Premise: However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.
+
+Input 1:  bill mail
+Output: Yes
+
+Premise: The following year, his remains were
+
+reward :  14.914999961853027 acc : tensor([0.5000])  prompt :  "However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast."
+
+The Output is : “Yes”
+
+The Hypothesis is: “The yearly rate of climb is dropping, while advertising mail
+
+reward :  14.882499694824219 acc : tensor([0.5000])  prompt :  “i would love to do that but they have snakes over there”
+
+Hypothesis: I'm terrified of snakes.
+Output: Maybe
+
+reward :  14.892499923706055 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.892499923706055 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.890625 acc : tensor([0.5000])  prompt :  Premise : I would love to do that but they have snakes over there.
+Hypothesis : I'm terrified of snakes.
+Output : Maybe
+
+reward :  14.899374961853027 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”
+
+The Hypothesis is : “His remains were scattered to
+
+reward :  -0.09437499940395355 acc : tensor([0.])  prompt :  The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The Output is : No
+
+The Hypothesis is : His remains were scattered to the winds in
+
+reward :  14.901874542236328 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”
+
+It’s a contradiction! The premise states he
+
+reward :  -0.09812499582767487 acc : tensor([0.])  prompt :  The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The Output is : No.
+
+Here's the breakdown of why:
+
+*
+
+reward :  -0.0912499949336052 acc : tensor([0.])  prompt :  Okay, let’s analyze the provided examples and the current scenario.
+
+**Understanding the Task**
+
+The task is to determine if a hypothesis is "Maybe" or "No" based on the provided premises and outputs. The output is a binary
+
+reward :  -0.08249999582767487 acc : tensor([0.])  prompt :  “Well i don't i don't know i think that underlying underlying underlying we're all pretty probably not as as different as everybody thinks”
+
+The Output is : “Maybe”
+
+It seems the friend is consistently using “maybe”
+
+reward :  -0.08374999463558197 acc : tensor([0.])  prompt :  “Well I don’t I don’t know I think that underlying underlying underlying we’re all pretty probably not as as different as everybody thinks”
+
+The Output is : “Maybe”
+
+Here’s the reasoning:
+
+The friend’
+
+reward :  -0.09624999761581421 acc : tensor([0.])  prompt :  Based on the provided examples, the instruction is to identify whether the hypothesis is “Yes” or “No” given the premise and input-output pairs.
+
+Let's analyze the provided examples:
+
+*   **premise:** i would love
+
+reward :  14.8931245803833 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : “No”
+
+The Hypothesis is : “His remains were scattered to
+
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :  The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The Hypothesis is : His remains were scattered to the winds in every direction.
+
+Output is
+
+reward :  14.898124694824219 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Outputs are:
+
+*   No
+*   Yes
+*   No
+*
+
+reward :  14.903124809265137 acc : tensor([0.5000])  prompt :  The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The Hypothesis is : His remains were scattered to the winds in every direction.
+
+The Output is
+
+reward :  14.891875267028809 acc : tensor([0.5000])  prompt :  “What is the purpose of this question?”
+
+Here's the breakdown of the responses based on the provided input-output pairs:
+
+*   **premise : i would love to do that but they have snakes over there** -  Output
+
+reward :  14.892499923706055 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.898750305175781 acc : tensor([0.5000])  prompt :  “is there anyplace where you can donate this without worrying about money”
+
+reward :  14.895000457763672 acc : tensor([0.5000])  prompt :
+Premise : I would love to do that but they have snakes over there
+ Hypothesis : I'm terrified of snakes.
+Output : Maybe
+
+The Instruction is:
+
+Premise : I would love to do that but they
+
+reward :  -0.0637499988079071 acc : tensor([0.])  prompt :  "The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before."
+
+The Hypothesis is : "I think most people don't notice that we are not that
+
+reward :  14.939062118530273 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Hypothesis is : “I think most people don’t notice that we are not that
+
+reward :  -0.0625 acc : tensor([0.])  prompt :  … The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The Hypothesis is : … I think most people don't notice that we are not that
+
+reward :  14.933124542236328 acc : tensor([0.5000])  prompt :  *   Premise : The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+*   Hypothesis : His remains were scattered to the winds in every
+
+reward :  29.871875762939453 acc : tensor([1.])  prompt :  "Studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors."
+
+The Output is : **Yes**
+
+This is a logical conclusion based on the
+
+reward :  29.877500534057617 acc : tensor([1.])  prompt :  The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The input is :
+
+Premise : The following year, his remains were taken in a
+
+reward :  29.863750457763672 acc : tensor([1.])  prompt :  “Analyze the following text and determine if it presents a potential benefit or a potential drawback.”
+
+
+Premise : The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries
+
+reward :  29.87125015258789 acc : tensor([1.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : **Yes**
+
+The reasoning is: The premise states ‘
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 12.59it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 12.28it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00, 12.45it/s]
+ 16%|█████████████████▌                                                                                            | 16/100 [1:28:37<4:57:25, 212.45s/it]
+
+acc :  [tensor([0.3333]), tensor([0.3333])]
+ref_acc :  [tensor([0.3333]), tensor([0.3333])]
+reward :  -0.07593749463558197 acc : tensor([0.])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The Output is : “No”
+
+The Input is : “is it all um is there any place at all where you
+
+reward :  -0.05687499791383743 acc : tensor([0.])  prompt :  “is it all um is there any place at all where you do get cash for this stuff or is it all”
+
+The input is: “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health
+
+reward :  -0.07312499731779099 acc : tensor([0.])  prompt :  “is it all um is there anyplace where you do get cash for this stuff or is it all”
+
+The Output is : “No”
+
+The Hypothesis is : “Is there anyplace where you can donate this without worrying about money”
+
+reward :  -0.07343749701976776 acc : tensor([0.])  prompt :  “One possibility is that studies report different estimates of the single true relationship between a given pollutant and a health effect due to differences in study design, random chance, or other factors.”
+
+The friend’s output for each premise is:
+
+*
+
+reward :  29.905000686645508 acc : tensor([1.])  prompt :
+
+already exist
+reward :  14.908124923706055 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : **No**
+
+The Explanation is: “However, the annual
+
+reward :  14.899999618530273 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : **No**
+
+The Input is : "The following year,
+
+reward :  29.905000686645508 acc : tensor([1.])  prompt :
+
+already exist
+reward :  14.899999618530273 acc : tensor([0.5000])  prompt :  ---
+
+Premise : The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+Hypothesis : His remains were scattered to the winds in every direction.
+
+reward :  14.896249771118164 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Hypothesis is : “His remains were scattered to the winds in every direction.”
+
+The
+
+reward :  14.895000457763672 acc : tensor([0.5000])  prompt :  **The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.**
+
+The Hypothesis is : **His remains were scattered to the winds in every direction.**
+
+The
+
+reward :  14.892499923706055 acc : tensor([0.5000])  prompt :  “evaluate the following statements about the difference between people’s perceptions of themselves and others.”
+
+The five inputs are :
+
+1.  “well i don’t i don’t know i think that underlying underlying underlying we're all pretty
+
+reward :  14.900625228881836 acc : tensor([0.5000])  prompt :  ------------------------------------------
+“Analyze the following statements and determine if they support or contradict the idea that advertising mail is growing faster than bill mail.”
+
+The Inputs are:
+1.  "However, the annual growth rate of bill mail is
+
+reward :  14.90625 acc : tensor([0.5000])  prompt :  “The annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast.”
+
+The Output is : **Yes**
+
+The reasoning behind this is that the description explicitly states that “The yearly rate of climb
+
+reward :  14.893750190734863 acc : tensor([0.5000])  prompt :  "However, the annual growth rate of bill mail is declining, whereas the annual growth rate of advertising mail is increasing fast."
+
+The Output is : **Yes**
+
+reward :  14.9037504196167 acc : tensor([0.5000])  prompt :  And Helper is :
+
+“Analyze the following statements and determine if they support or contradict the idea that the yearly rate of climb is dropping, while advertising mail is rising.”
+
+The Outputs are:
+
+*   “However, the annual growth
+
+reward :  -0.10562499612569809 acc : tensor([0.])  prompt :  “i would love to do that but they have snakes over there”
+
+The Input is : “they have snakes over there”
+
+The Output is : “Maybe”
+
+The Hypothesis is : “I’m terrified of snakes.”
+
+The Output
+
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  14.901249885559082 acc : tensor([0.5000])  prompt :
+
+already exist
+reward :  -0.07718750089406967 acc : tensor([0.])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Hypothesis is: “His remains were scattered to the winds in every direction.”
+
+The
+
+reward :  -0.06968750059604645 acc : tensor([0.])  prompt :  The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+
+The Hypothesis is : His remains were scattered to the winds in every direction.
+
+The Output
+
+reward :  14.921562194824219 acc : tensor([0.5000])  prompt :  “The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.”
+
+The Output is : **No**
+
+The reasoning behind this is that the premise states
+
+reward :  14.920312881469727 acc : tensor([0.5000])  prompt :  1.  The following year, his remains were taken in a grand procession to be enshrined here, on the site of a religious center founded some eight centuries before.
+2.  His remains were scattered to the winds in every direction.
+
+The
+
+reward :  14.899999618530273 acc : tensor([0.5000])  prompt :  *   **Premise:** I would love to do that but they have snakes over there.
+*   **Hypothesis:** I'm terrified of snakes.
+
+Output: Maybe
+
+The Input is :
+*   **Output:** No
+
+
+
+reward :  14.899999618530273 acc : tensor([0.5000])  prompt :  “**You are a chatbot designed to respond to user prompts.**”
+
+The Input is: “**is it all um is there anyplace where you do get cash for this stuff or is it all**”
+
+The Output is: “
+
+reward :  -0.10062500089406967 acc : tensor([0.])  prompt :  “I want you to write a response to this question.”
+
+The inputs are :
+“is there anyplace where you do get cash for this stuff or is it all”
+
+The Output is : **No**
+
+reward :  14.899999618530273 acc : tensor([0.5000])  prompt :  “Why did the chicken cross the road?”
+
+The Friend’s Input is: "to get to the other side."
+
+The Friend's Output is: “No”
+
+Let's analyze the relationship between the input and the

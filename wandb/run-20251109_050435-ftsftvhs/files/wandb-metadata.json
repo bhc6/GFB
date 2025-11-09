@@ -1,0 +1,45 @@
+{
+  "os":  "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "python":  "CPython 3.11.14",
+  "startedAt":  "2025-11-09T05:04:35.023168Z",
+  "args":  [
+    "--dataset",
+    "sst2",
+    "--epoch",
+    "100",
+    "--update_term",
+    "5"
+  ],
+  "program":  "/workspace/stableprompt_tc.py",
+  "codePath":  "stableprompt_tc.py",
+  "codePathLocal":  "stableprompt_tc.py",
+  "git":  {
+    "commit":  "a3b1392554552486b917e00a9bacc8711150fb07"
+  },
+  "root":  "/workspace",
+  "host":  "4c3e0eab7697",
+  "executable":  "/opt/conda/bin/python",
+  "cpu_count":  16,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1081101176832",
+      "used":  "63944441856"
+    }
+  },
+  "memory":  {
+    "total":  "16502685696"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "memoryTotal":  "8546942976",
+      "architecture":  "Blackwell",
+      "uuid":  "GPU-48dc6da8-46de-8beb-e985-3133c9fff370"
+    }
+  ],
+  "cudaVersion":  "12.9",
+  "writerId":  "hdkkof0djof8qrzvbcd90mq2zxs5dwl6"
+}
