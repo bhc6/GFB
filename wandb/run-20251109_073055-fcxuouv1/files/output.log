@@ -1,0 +1,221 @@
+sst2
+train_data_size 8
+test_data_size 872
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+  0%|                                                                                                                            | 0/100 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_tc.py:213: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+reward :  29.953750610351562 acc : tensor([1.])  prompt :
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  **“Write a short story about a robot who discovers a lost, antique music box.”**
+
+The Output is : **no**
+
+Reasoning
+
+reward :  14.944375038146973 acc : tensor([0.5000])  prompt :  **Write a short poem about a lonely lighthouse keeper.**
+
+Here's the output based on the provided data:
+
+The lamp spins slow, a
+
+reward :  29.953750610351562 acc : tensor([1.])  prompt :
+
+reward :  22.453750610351562 acc : tensor([0.7500])  prompt :  **“Write a short review of a movie.”**
+
+The Inputs are:
+
+Input:  The Force
+
+Output: yes
+
+Input:
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  **Change the word "the" to "their"**
+
+The Output is : **yes**
+
+The Inputs are:
+
+Input :padding
+
+reward :  22.4424991607666 acc : tensor([0.7500])  prompt :  **"translate this sentence into German"**
+
+The Inputs are:
+
+Input : how
+
+Output : wie
+
+Input :  the
+
+reward :  14.944375038146973 acc : tensor([0.5000])  prompt :  "Move over bond"
+
+Output : yes
+
+
+Okay, I’ve analyzed the input-output pairs. Here's my reasoning:
+  1%|█▏                                                                                                                | 1/100 [00:57<1:35:37, 57.95s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -4.13 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  14.959687232971191 acc : tensor([0.5000])  prompt :  “that you 've wasted nearly two hours of your own precious life with this silly little puddle of a movie”
+
+The output is : no.
+
+reward :  29.959062576293945 acc : tensor([1.])  prompt :  “that you 've wasted nearly two hours of your own precious life with this silly little puddle of a movie”
+
+And the Inputs are :
+
+
+
+reward :  22.458749771118164 acc : tensor([0.7500])  prompt :  "that you 've wasted nearly two hours of your own precious life with this silly little puddle of a movie"
+
+The Friend's Output is
+
+reward :  29.959999084472656 acc : tensor([1.])  prompt :
+  warnings.warn(
+
+reward :  22.443124771118164 acc : tensor([0.7500])  prompt :  Input :you 've wasted nearly two hours of your own precious life with this silly little puddle of a movie
+
+Output : no
+
+The
+
+reward :  22.446561813354492 acc : tensor([0.7500])  prompt :
+
+already exist
+reward :  22.446561813354492 acc : tensor([0.7500])  prompt :
+
+already exist
+reward :  22.443750381469727 acc : tensor([0.7500])  prompt :  *   **"that you've wasted nearly two hours of your own precious life with this silly little puddle of a movie"**
+
+The
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -8.70 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+  warnings.warn(
+  2%|██▎                                                                                                               | 2/100 [02:12<1:50:36, 67.72s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -5.95 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  14.946562767028809 acc : tensor([0.5000])  prompt :  **move over bond**
+
+The Output is : yes
+
+It seems like the friend saw a pattern. They consistently responded "yes" when the
+
+reward :  14.954687118530273 acc : tensor([0.5000])  prompt :  **Move over bond**
+
+The Output is : yes
+
+reward :  14.954999923706055 acc : tensor([0.5000])  prompt :  **move over bond**
+
+The Output is : yes
+
+reward :  14.944999694824219 acc : tensor([0.5000])  prompt :  **move over bond**
+
+The Output is : yes
+
+Here's the breakdown of why:
+
+The instruction is to "move over
+  warnings.warn(
+
+reward :  14.946562767028809 acc : tensor([0.5000])  prompt :  **Write a short, evocative description of a desolate, rain-soaked landscape.**
+
+The Output is : yes
+
+Let's break down why
+
+reward :  22.450624465942383 acc : tensor([0.7500])  prompt :  “to places in the world devastated by war , famine and poverty and documented the cruelty and suffering he has found with an devastating , eloquent clarity”
+
+
+
+reward :  -0.04843749850988388 acc : tensor([0.])  prompt :  Generate a short, evocative description of a forgotten, melancholic place.
+
+The Output is:
+
+“The salt-laced wind whispered through
+
+reward :  29.94562530517578 acc : tensor([1.])  prompt :  **"to places in the world devastated by war, famine and poverty and documented the cruelty and suffering he has found with an devastating, eloquent clarity"
+  3%|███▍                                                                                                              | 3/100 [03:12<1:43:47, 64.21s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.55 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  to places in the world devastated by war , famine and poverty and documented the cruelty and suffering he has found with an devastating , eloquent clarity
+
+The Output
+
+reward :  14.960000038146973 acc : tensor([0.5000])  prompt :  to places in the world devastated by war , famine and poverty and documented the cruelty and suffering he has found with an devastating , eloquent clarity
+
+Output is
+
+reward :  22.456562042236328 acc : tensor([0.7500])  prompt :  To write a short story about a lonely lighthouse keeper.
+
+Output: yes
+
+reward :  22.458749771118164 acc : tensor([0.7500])  prompt :  to places in the world devastated by war , famine and poverty and documented the cruelty and suffering he has found with an devastating , eloquent clarity
+
+The
+  warnings.warn(
+
+reward :  29.94156265258789 acc : tensor([1.])  prompt :  Move over bond ;
+
+Output : yes
+
+The Input is :
+
+Move over bond ;
+
+Output : no
+
+reward :  22.440937042236328 acc : tensor([0.7500])  prompt :  Move over bond ;
+
+Output : yes
+
+The Input is :
+
+Move over bond;
+
+Output : no
+
+reward :  22.434375762939453 acc : tensor([0.7500])  prompt :  Move over bond ;
+
+The Output is : no
+
+The input is :
+
+Input : move over bond;
+
+Output: no
+
+reward :  7.441562652587891 acc : tensor([0.2500])  prompt :  Move over bond;
+
+Output : yes
+
+The Friend’s Input is :
+
+Input :for the big-fisted direction of jez butter
+  3%|███▍                                                                                                              | 3/100 [03:50<2:04:21, 76.92s/it]
+Traceback (most recent call last):
+  File "/workspace/stableprompt_tc.py", line 297, in <module>
+    main()
+  File "/workspace/stableprompt_tc.py", line 219, in main
+    stats = ppo_trainer.step([query_encoded.view(-1) for i in range(bs)],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 741, in step
+    all_logprobs, logits_or_none, values, masks = self.batched_forward_pass(
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 1034, in batched_forward_pass
+    if attention_mask[j, 0] == 0:  # offset left padding
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

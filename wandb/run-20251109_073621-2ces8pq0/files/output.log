@@ -1,0 +1,95 @@
+mrpc
+train_data_size 8
+test_data_size 408
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+  0%|                                                                                                                            | 0/100 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_tc.py:213: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+reward :  22.444374084472656 acc : tensor([0.7500])  prompt :  **Analyze the sentiment expressed in each sentence and determine if it is positive, negative, or neutral.**
+
+Okay, I understand. Let's analyze
+
+reward :  14.953125 acc : tensor([0.5000])  prompt :  Provide a concise text describing a situation or topic.
+
+The inputs are :
+
+1.  "We 're still confident that Gephardt will
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  “Analyze the provided text and determine if it supports or refutes a specific claim.”
+
+The inputs are:
+
+sentence1: " We 're
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :  “Analyze the sentiment expressed in the text provided and determine if it is positive, negative, or neutral.  Also, identify any specific keywords contributing to
+
+reward :  22.444686889648438 acc : tensor([0.7500])  prompt :  “Analyze the sentiment expressed in the sentences.”
+
+The Inputs are:
+
+sentence1: “Tony ‘s not feeling well”
+sentence2:
+
+reward :  14.940937042236328 acc : tensor([0.5000])  prompt :  **Analyze the sentiment of each sentence and classify it as "Yes" or "No".**
+
+Here's the breakdown based on your provided data
+
+reward :  22.440624237060547 acc : tensor([0.7500])  prompt :  *   **Instruction:** Give a sentence and three inputs.
+*   **Output:** Indicate whether the input is “Yes” or “No”.
+
+reward :  22.44499969482422 acc : tensor([0.7500])  prompt :  “Write a short response about how a dog can help someone.”
+
+The Input-Output pairs are as follows:
+sentence1 : " Dogs can
+  1%|█▏                                                                                                               | 1/100 [04:38<7:39:29, 278.48s/it]
+
+reward :  7.426875114440918 acc : tensor([0.2500])  prompt :  Analyze the given sentences and determine if they are true or false.
+
+The input is:
+
+sentence1 : The Justice Department filed suit Thursday against the
+
+reward :  14.944999694824219 acc : tensor([0.5000])  prompt :  *   **Task:** Analyze the text and determine if it supports or contradicts a given statement.
+*   **Input:** A sentence and a statement
+
+reward :  7.440312385559082 acc : tensor([0.2500])  prompt :  “Analyze the provided text and determine if the statement is true or false.”
+
+The Inputs are:
+sentence1 : The constitutionality of outlawing
+
+reward :  7.441874980926514 acc : tensor([0.2500])  prompt :  Provide a sentence that expresses a specific opinion or stance on a particular issue.
+
+The Inputs are :
+1. The justice department filed suit Thursday
+Traceback (most recent call last):
+  File "/workspace/stableprompt_tc.py", line 297, in <module>
+    main()
+  File "/workspace/stableprompt_tc.py", line 219, in main
+    stats = ppo_trainer.step([query_encoded.view(-1) for i in range(bs)],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 825, in step
+    train_stats = self.train_minibatch(
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 1090, in train_minibatch
+    loss_p, loss_v, train_stats = self.loss(
+                                  ^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 1236, in loss
+    avg_ratio = masked_mean(ratio, mask).item()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
