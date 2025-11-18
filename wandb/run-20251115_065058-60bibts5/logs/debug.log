@@ -1,0 +1,5 @@
+2025-11-15 06:50:58,313 INFO    MainThread:61440 [wandb_init.py:setup_run_log_directory():706] Logging user logs to /workspace/wandb/run-20251115_065058-60bibts5/logs/debug.log
+2025-11-15 06:50:58,314 INFO    MainThread:61440 [wandb_init.py:setup_run_log_directory():707] Logging internal logs to /workspace/wandb/run-20251115_065058-60bibts5/logs/debug-internal.log
+2025-11-15 06:50:58,314 INFO    MainThread:61440 [wandb_init.py:init():833] calling init triggers
+2025-11-15 06:50:58,314 INFO    MainThread:61440 [wandb_init.py:init():838] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}

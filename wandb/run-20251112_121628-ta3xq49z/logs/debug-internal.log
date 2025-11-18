@@ -1,0 +1,12 @@
+{"time":"2025-11-12T12:16:28.516083613Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-12T12:16:34.535225948Z","level":"INFO","msg":"stream: created new stream","id":"ta3xq49z"}
+{"time":"2025-11-12T12:16:34.53578121Z","level":"INFO","msg":"handler: started","stream_id":"ta3xq49z"}
+{"time":"2025-11-12T12:16:34.538442583Z","level":"INFO","msg":"stream: started","id":"ta3xq49z"}
+{"time":"2025-11-12T12:16:34.538456984Z","level":"INFO","msg":"writer: started","stream_id":"ta3xq49z"}
+{"time":"2025-11-12T12:16:34.538523396Z","level":"INFO","msg":"sender: started","stream_id":"ta3xq49z"}
+{"time":"2025-11-12T12:16:47.228171634Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/ta3xq49z/file_stream\": EOF"}
+{"time":"2025-11-12T12:27:35.664075691Z","level":"INFO","msg":"stream: closing","id":"ta3xq49z"}
+{"time":"2025-11-12T12:27:37.510817989Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-12T12:27:43.511449635Z","level":"INFO","msg":"handler: closed","stream_id":"ta3xq49z"}
+{"time":"2025-11-12T12:27:43.513640881Z","level":"INFO","msg":"sender: closed","stream_id":"ta3xq49z"}
+{"time":"2025-11-12T12:27:43.51401715Z","level":"INFO","msg":"stream: closed","id":"ta3xq49z"}

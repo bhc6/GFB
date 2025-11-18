@@ -1,0 +1,183 @@
+train dataset size :  5
+test dataset size :  135
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : In Angle's Class II Div 2 occlusion there is
+Output : excess overjet of the upper lateral incisors.
+Input : In Angle's Class II Div 2 occlusion there is
+Output : excess overjet of the upper lateral incisors.
+Input : What is the embryological origin of the hyoid bone?
+Output : The second and third pharyngeal arches
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  1.5957589149475098 acc : tensor([0.6429])  prompt :  Instruction: What is the structure found in smooth muscle cells?
+
+reward :  1.6176339387893677 acc : tensor([0.6429])  prompt :  Instruction: Provide a task that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  1.5988839864730835 acc : tensor([0.6429])  prompt :  Instruction: What are the key components of smooth muscle cells?
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.68it/s]
+
+reward :  1.5676339864730835 acc : tensor([0.6429])  prompt :  Instruction: A patient is most likely to experience pain due to infection of the ethmoidal air cells sinus between the eyes.
+
+reward :  2.0165178775787354 acc : tensor([0.7857])  prompt :  The instruction is: "A patient is most likely to experience pain due to infection of the ethmoidal air cells sinus between the eyes."
+
+reward :  1.5676339864730835 acc : tensor([0.6429])  prompt :  Instruction: A patient is most likely to experience pain due to infection of the ethmoidal air cells sinus between the eyes.
+
+reward :  1.8053570985794067 acc : tensor([0.7143])  prompt :  Instruction: What is a connective tissue that is attached to bones at the joints?
+
+reward :  2.0196428298950195 acc : tensor([0.7857])  prompt :  Instruction: What is the connective tissue that is attached to bones at the joints?
+
+reward :  1.8037946224212646 acc : tensor([0.7143])  prompt :  Instruction: What is the connective tissue that connects bones at joints?
+
+reward :  1.0060267448425293 acc : tensor([0.4286])  prompt :  Instruction: Provide information about the functions and structure of the given input.
+
+reward :  0.3537946343421936 acc : tensor([0.2143])  prompt :  Instruction: Provide an answer to each of the following questions based on the provided inputs and outputs.
+
+reward :  1.810044527053833 acc : tensor([0.7143])  prompt :  Instruction: Given a statement, identify the specific structure or component responsible for the described function or characteristic.
+
+reward :  1.149999976158142 acc : tensor([0.5000])  prompt :  A medical practitioner places a stethoscope over the patient's seventh right intercostal space in the mid-axillary line. The stethoscope overlays the lower lobe of the lung.
+
+reward :  1.149999976158142 acc : tensor([0.5000])  prompt :  A medical practitioner places a stethoscope over the patient's seventh right intercostal space in the mid-axillary line. The stethoscope overlays the lower lobe of the lung.
+
+reward :  1.3642858266830444 acc : tensor([0.5714])  prompt :  Instruction: A medical practitioner places a stethoscope over the patient's seventh right intercostal space in the mid-axillary line. The stethoscope overlies the lower lobe of the lung.
+
+reward :  1.178125023841858 acc : tensor([0.5000])  prompt :  Instruction: What structures are innervated by the glossopharyngeal nerves and develop from the pharyngeal arch?
+
+reward :  0.9466517567634583 acc : tensor([0.4286])  prompt :  Instruction: What structure innervates the pharyngeal mucosa and develops from the third pharyngeal arch?
+
+reward :  1.171875 acc : tensor([0.5000])  prompt :  Instruction: What structure is innervated by the glossopharyngeal nerves and develops from the pharyngeal arch?
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.64it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.42it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.10it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 11.84it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.26it/s]
+ 33%|██████████████████████████████████                                                                    | 10/30 [01:25<03:09,  9.50s/it]
+
+acc :  [tensor([0.3852]), tensor([0.4000]), tensor([0.4000])]
+ref_acc :  [tensor([0.3630]), tensor([0.3630]), tensor([0.3259])]
+reward :  1.4033483266830444 acc : tensor([0.5714])  prompt :  Instruction: Provide an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  1.5957589149475098 acc : tensor([0.6429])  prompt :  Instruction: What is the structure of smooth muscle cells?
+
+reward :  1.3892858028411865 acc : tensor([0.5714])  prompt :  Instruction: What is the structure of smooth muscle cells that allows for flexible movement?
+
+reward :  1.5801339149475098 acc : tensor([0.6429])  prompt :  Instruction: What controls body temperature, sleep, and appetite?
+
+reward :  1.5801339149475098 acc : tensor([0.6429])  prompt :  Instruction: What controls body temperature, sleep, and appetite?
+
+reward :  1.5926339626312256 acc : tensor([0.6429])  prompt :  The instruction is: "What controls body temperature, sleep, and appetite?"
+
+reward :  1.3642858266830444 acc : tensor([0.5714])  prompt :  Instruction: A medical practitioner places a stethoscope over the patient's seventh right intercostal space in the mid-axillary line. The stethoscope overlies the lower lobe of the lung.
+
+reward :  1.1671874523162842 acc : tensor([0.5000])  prompt :  Instruction: A medical practitioner places a stethoscope over the patient's seventh right intercostal space in the mid-axillary line. The stethoscope overlays the lower lobe of the lung.
+
+reward :  1.3642858266830444 acc : tensor([0.5714])  prompt :  Instruction: A medical practitioner places a stethoscope over the patient's seventh right intercostal space in the mid-axillary line. The stethoscope overlies the lower lobe of the lung.
+
+reward :  1.1749999523162842 acc : tensor([0.5000])  prompt :  The instruction is: "What structures travel through the substance of the parotid gland?"
+
+reward :  1.1749999523162842 acc : tensor([0.5000])  prompt :  The instruction is: "What structures travel through the substance of the parotid gland?"
+
+reward :  1.1749999523162842 acc : tensor([0.5000])  prompt :  The instruction is: "What structures travel through the substance of the parotid gland?"
+
+reward :  0.7636160254478455 acc : tensor([0.3571])  prompt :  Which instruction is used to guide a language model to perform the task demonstrated in the input-output pairs?
+
+reward :  0.9825892448425293 acc : tensor([0.4286])  prompt :  Which instruction can guide a language model to perform the task demonstrated in the input-output pairs above?
+
+reward :  0.9466517567634583 acc : tensor([0.4286])  prompt :  Which instruction will cause dilation of the pupil of the eye?
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00, 10.29it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.04it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.26it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.54it/s]
+ 50%|███████████████████████████████████████████████████                                                   | 15/30 [02:17<02:10,  8.67s/it]
+
+acc :  [tensor([0.4370]), tensor([0.4148]), tensor([0.4370])]
+ref_acc :  [tensor([0.4000]), tensor([0.4296]), tensor([0.4148])]
+reward :  1.8194196224212646 acc : tensor([0.7143])  prompt :  Instruction: Give a detailed description of the structure and function of the parotid gland.
+
+reward :  0.9779017567634583 acc : tensor([0.4286])  prompt :  Instruction: Please provide an instruction that guides a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  1.4002233743667603 acc : tensor([0.5714])  prompt :  Instruction: Provide an instruction that guides a language model to perform the task demonstrated in the input-output pairs.
+
+reward :  1.5816965103149414 acc : tensor([0.6429])  prompt :  Instruction: What organ or structure controls body temperature, sleep, and appetite?
+
+reward :  1.5863839387893677 acc : tensor([0.6429])  prompt :  Instruction: What is the key organ involved in regulating body temperature, sleep, and appetite?
+
+reward :  1.5816965103149414 acc : tensor([0.6429])  prompt :  Instruction: What organ or structure controls body temperature, sleep, and appetite?
+
+reward :  1.1843750476837158 acc : tensor([0.5000])  prompt :  Instruction: Provide a clear, step-by-step guide to a language model that can perform tasks based on the given input-output pairs.
+
+reward :  0.11138394474983215 acc : tensor([0.1429])  prompt :  Instruction: Provide a clear and concise instruction for a language model to understand the relationship between inputs and outputs, and then generate the task and output based on that instruction.
+
+reward :  0.7761160135269165 acc : tensor([0.3571])  prompt :  Instruction: Provide a clear and concise instruction to a language model that guides it through the process of analyzing the input and generating the output, using the provided input-output pairs as a model.
+
+reward :  1.3845983743667603 acc : tensor([0.5714])  prompt :  Emissary veins connect the intracranial venous sinuses to all of the above areas.
+
+reward :  1.3861608505249023 acc : tensor([0.5714])  prompt :  Emissary veins connect the intracranial venous sinuses to... all of the above areas.
+
+reward :  1.3845983743667603 acc : tensor([0.5714])  prompt :  Emissary veins connect the intracranial venous sinuses to all of the above areas.
+
+reward :  0.9716517925262451 acc : tensor([0.4286])  prompt :  Instruction: Provide a response based on the input, and if the output is a specific term, describe its function or characteristics.
+
+reward :  1.8131695985794067 acc : tensor([0.7143])  prompt :  Instruction: What is the term that describes the body's ability to maintain its normal state?
+
+reward :  1.178125023841858 acc : tensor([0.5000])  prompt :  Instruction: Provide an instruction that guides a language model to correctly interpret the inputs and generate the outputs as demonstrated in the given examples.
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.11it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.19it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00,  8.74it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.23it/s]
+ 67%|████████████████████████████████████████████████████████████████████                                  | 20/30 [03:11<01:29,  8.90s/it]
+
+acc :  [tensor([0.3704]), tensor([0.3259]), tensor([0.3407])]
+ref_acc :  [tensor([0.3185]), tensor([0.3333]), tensor([0.2741])]
+reward :  1.3861608505249023 acc : tensor([0.5714])  prompt :  Instruction: What are the key features of the body's ability to maintain homeostasis?
+
+reward :  1.5895090103149414 acc : tensor([0.6429])  prompt :  Instruction: What term describes a body's ability to maintain its normal state?
+
+reward :  1.5879464149475098 acc : tensor([0.6429])  prompt :  Instruction: What is the function of smooth muscle cells?
+
+reward :  1.8069195747375488 acc : tensor([0.7143])  prompt :  Instruction: What is the location of the ethmoidal air cells sinus?
+
+reward :  0.9575892686843872 acc : tensor([0.4286])  prompt :  Instruction: Provide a detailed explanation of the structure and function of the parotid gland, and list the relevant structures that travel through it.
+
+reward :  1.3783483505249023 acc : tensor([0.5714])  prompt :  Instruction: Provide a detailed explanation of the relationship between the structures and their anatomical locations, such as the maxillary artery and retromandibular vein, the trachea, and the ethmoidal air cells sinus.
+
+reward :  1.3736608028411865 acc : tensor([0.5714])  prompt :  Instruction: Provide a detailed explanation of the anatomical structures and their locations, and when a sound is heard, identify the specific anatomical site or location.
+
+reward :  1.8069195747375488 acc : tensor([0.7143])  prompt :  Instruction: What is the location of the ethmoidal air cells sinus?
+
+reward :  1.3814733028411865 acc : tensor([0.5714])  prompt :  Instruction: "Provide the location of the fifth left intercostal space in the midclavicular line where the heart sound is best heard."
+
+reward :  1.6035714149475098 acc : tensor([0.6429])  prompt :  Instruction: What is the effect of sympathetic nerve activation?
+
+reward :  1.173437476158142 acc : tensor([0.5000])  prompt :  Instruction: What is the effect of activating sympathetic nerves?
+
+reward :  1.8037946224212646 acc : tensor([0.7143])  prompt :  Instruction: What is the function of the pupil dilation caused by activation of sympathetic nerves?
+
+reward :  1.5910714864730835 acc : tensor([0.6429])  prompt :  Instruction: What is the key organ or component responsible for maintaining homeostasis, controlling body temperature, and regulating sleep and appetite?
+
+reward :  1.189062476158142 acc : tensor([0.5000])  prompt :  Instruction: Provide a clear and concise instruction that guides a language model to interpret and generate the correct output based on the input, following the pattern observed in the provided input-output pairs.
+
+reward :  1.4033483266830444 acc : tensor([0.5714])  prompt :  Instruction: Provide a clear and concise instruction to a language model that guides it to identify the correct term from a list based on the input, with the output matching the provided example.
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.16it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.34it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.03it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 11.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.19it/s]
+ 73%|██████████████████████████████████████████████████████████████████████████▊                           | 22/30 [03:45<01:38, 12.34s/it]
+
+acc :  [tensor([0.4000]), tensor([0.3556]), tensor([0.3926])]
+ref_acc :  [tensor([0.3630]), tensor([0.3704]), tensor([0.4148])]
+reward :  1.5863839387893677 acc : tensor([0.6429])  prompt :  A patient is most likely to experience pain due to infection of the ethmoidal air cells sinus, which results in symptoms between the eyes.
+
+reward :  1.5816965103149414 acc : tensor([0.6429])  prompt :  A patient is most likely to experience pain due to infection of the ethmoidal air cells sinus, which is located between the eyes.
+
+reward :  1.9977679252624512 acc : tensor([0.7857])  prompt :  A patient is most likely to experience pain between the eyes.

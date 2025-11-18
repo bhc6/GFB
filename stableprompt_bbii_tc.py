@@ -14,8 +14,8 @@ from dataset_utils import load_all_dataset,dataset_dicts,load_qa_dataset,qa_dict
 from peft import LoraConfig
 def parser_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--target_model',type=str,default='google/gemma-1.1-7b-it')
-    parser.add_argument('--agent_model',type=str,default='google/gemma-1.1-7b-it')
+    parser.add_argument('--target_model',type=str,default='google/gemma-3-1b-it')
+    parser.add_argument('--agent_model',type=str,default='google/gemma-3-1b-it')
     parser.add_argument('--task',type=str,default='classification')
     parser.add_argument('--dataset',type=str,default='implicatures')
     parser.add_argument(
@@ -26,7 +26,7 @@ def parser_args():
     )
     parser.add_argument('--cache_dir',type=str,default='/mnt/sdb/llm/')
     parser.add_argument('--batch_size',type=int,default=4)
-    parser.add_argument('--max_prompt_length',type=int,default=100)
+    parser.add_argument('--max_prompt_length',type=int,default=50)
     parser.add_argument('--train_data_per_labels',type=int,default=10)
     parser.add_argument('--num_example',type=int,default=5)
     parser.add_argument('--epochs',type=int,default=10)

@@ -1,0 +1,281 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  -0.2984375059604645 acc : tensor([0.])  prompt :  Instruction: What is the maximum possible order for an element in Z_4 × Z_6?
+
+reward :  -0.017897725105285645 acc : tensor([0.0909])  prompt :  Instruction: Provide an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Instruction: What is the maximum possible order for an element in a group of order 12?
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.56it/s]
+
+reward :  -0.0132102370262146 acc : tensor([0.0909])  prompt :  Instruction: Generate an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  -0.0132102370262146 acc : tensor([0.0909])  prompt :  Instruction: Give a language model a task to perform logical reasoning based on given input-output pairs.
+
+reward :  0.5431818962097168 acc : tensor([0.2727])  prompt :  Instruction: You are to generate a task that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Instruction: Given a statement, determine whether it is true or false based on the provided input-output pairs.
+
+reward :  0.2548295557498932 acc : tensor([0.1818])  prompt :  Instruction: Given a statement, determine whether it is true or false based on the input-output pairs provided.
+
+reward :  -0.017897725105285645 acc : tensor([0.0909])  prompt :  Instruction: Provide an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  -0.0210227370262146 acc : tensor([0.0909])  prompt :  Instruction: "Find the maximum possible order for an element of Z_4 x Z_6."
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Instruction: Find the maximum possible order for some element in $ \mathbb{Z}_4 \times \mathbb{Z}_6 $.
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  Instruction: Find the maximum possible order for an element of $ \mathbb{Z}_4 \times \mathbb{Z}_6 $.
+
+reward :  -0.2953124940395355 acc : tensor([0.])  prompt :  Instruction: What is the order of the factor group Z₆/<3>, given that the factor group has an order divisible by 3?
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Instruction: "Given a statement and two outputs, generate an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above."
+
+reward :  0.25951704382896423 acc : tensor([0.1818])  prompt :  Instruction: Provide a statement and a set of inputs, then provide the output for each input.
+
+reward :  -0.30000001192092896 acc : tensor([0.])  prompt :  Find the maximum possible order for an element of the product of two cyclic groups Z_4 and Z_6.
+
+reward :  -0.008522719144821167 acc : tensor([0.0909])  prompt :  Find an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  -0.03196021914482117 acc : tensor([0.0909])  prompt :  Find the maximum possible order for an element in a group of order 12.
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 12.72it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.90it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 12.69it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.35it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.39it/s]
+ 30%|██████████████████████████████▉                                                                        | 9/30 [01:10<03:14,  9.29s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -6.24 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2000]), tensor([0.2200]), tensor([0.2300])]
+ref_acc :  [tensor([0.2500]), tensor([0.2300]), tensor([0.2300])]
+reward :  -0.0132102370262146 acc : tensor([0.0909])  prompt :  Instruction: Generate an instruction that guides a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  -0.2953124940395355 acc : tensor([0.])  prompt :  Instruction: Find the maximum possible order for some element of Z_4 x Z_6.
+
+reward :  0.27982956171035767 acc : tensor([0.1818])  prompt :  Instruction: "Given an instruction and five inputs, generate a task that can guide a language model to perform the task demonstrated in the input-output pairs above."
+
+reward :  -0.03821021318435669 acc : tensor([0.0909])  prompt :  Instruction: Find the order of the factor group Z_6/<3>.
+
+reward :  -0.03196021914482117 acc : tensor([0.0909])  prompt :  Instruction: What is the number of elements of order 10 in a group with an element of order 10?
+
+reward :  0.25014206767082214 acc : tensor([0.1818])  prompt :  Instruction: Give a statement that will be used to determine the truth of the given statements.
+
+reward :  -0.0022727251052856445 acc : tensor([0.0909])  prompt :  Instruction: Given a statement and a group, determine the output based on the provided input-output pairs.
+
+reward :  -0.30000001192092896 acc : tensor([0.])  prompt :  Instruction: What is the maximum possible order for an element of S_n for n = 7?
+
+reward :  -0.03196021914482117 acc : tensor([0.0909])  prompt :  Instruction: "Given a group G and a subgroup H of G, determine the following: if f is a homomorphism from G to K and H is normal in G, then f(H) is normal in K. If f is a homomorphism from G to a group and H is finite subgroup of G, then |f(H)| divides |H|."
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Instruction: Please generate an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  0.2548295557498932 acc : tensor([0.1818])  prompt :  Instruction: Provide a statement and a group, and determine if the statement is true based on the group's properties.
+
+reward :  0.24389204382896423 acc : tensor([0.1818])  prompt :  Instruction: Provide a statement that, when evaluated, returns the result as False for the first input and True for the second input.
+  warnings.warn(
+ 33%|██████████████████████████████████                                                                    | 10/30 [01:27<03:53, 11.67s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -3.78 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Input: Find the order of the factor group (Z_4 x Z_12)/(<2> x <2>)
+Output: 4
+
+reward :  -0.0366477370262146 acc : tensor([0.0909])  prompt :  Instruction: What is the order of the factor group (Z_4 x Z_12)/(<2> x <2>)?
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Instruction: Give a statement an output, and then provide the instruction that will guide the language model to generate the correct output from the given input.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.22it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.00it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.80it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.64it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.42it/s]
+ 37%|█████████████████████████████████████▍                                                                | 11/30 [01:59<05:43, 18.08s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.90 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2200]), tensor([0.2200]), tensor([0.2300])]
+ref_acc :  [tensor([0.2100]), tensor([0.2300]), tensor([0.2200])]
+reward :  -0.010085225105285645 acc : tensor([0.0909])  prompt :  Find an instruction that guides a language model to perform the task demonstrated in the input-output pairs above.
+
+reward :  -0.3062500059604645 acc : tensor([0.])  prompt :  Find the maximum possible order for an element of S_n for n = 7.
+
+reward :  -0.3062500059604645 acc : tensor([0.])  prompt :  Find the maximum possible order for an element of S_n for n = 7.
+  warnings.warn(
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [02:07<04:27, 14.86s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -5.50 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.027272731065750122 acc : tensor([0.0909])  prompt :  Instruction: Find the maximum possible order of an element in a group of order 12.
+
+reward :  -0.2953124940395355 acc : tensor([0.])  prompt :  Instruction: Find the maximum possible order for an element in the group Z_n.
+
+reward :  -0.29375001788139343 acc : tensor([0.])  prompt :  Instruction: Find the maximum possible order for an element of Z_n for n = 7.
+  warnings.warn(
+ 43%|████████████████████████████████████████████▏                                                         | 13/30 [02:18<03:55, 13.83s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -7.67 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.0288352370262146 acc : tensor([0.0909])  prompt :  The instruction is: "Find the order of the factor group Z_6/<3>".
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Find the order of the factor group Z_6/<3>.
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Find the order of the factor group Z_6/<3>.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.12it/s]
+
+reward :  -0.31562501192092896 acc : tensor([0.])  prompt :  If a group has an element of order 10, then the number of elements of order 10 is divisible by 4. If m and n are positive integers and φ is the Euler φ function, then φ(mn) = φ(m)φ(n).
+
+reward :  -0.31562501192092896 acc : tensor([0.])  prompt :  If a group has an element of order 10, then the number of elements of order 10 is divisible by 4. If m and n are positive integers and φ is the Euler φ function, then φ(mn) = φ(m)φ(n).
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  If a group has an element of order 10, then the number of elements of order 10 is divisible by 4.
+
+reward :  -0.29375001788139343 acc : tensor([0.])  prompt :  Instruction: If a function satisfies certain properties, then it must have certain properties in the target ring.
+
+reward :  0.25639206171035767 acc : tensor([0.1818])  prompt :  The instruction should guide the language model to correctly analyze and respond to the input-output pairs based on logical reasoning and verifiable statements. Here's the instruction:
+
+**Input: Statement 1 | If f is a homomorphism from G to K and H is normal in G then f(H) is normal in K. Statement 2 | If f is a homomorphism from G to a group and H is finite subgroup of G, then |f(H)| divides |H|**
+**
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  The instruction should be a statement that can be used to evaluate the truth of the given statements. The instruction should demonstrate how to determine the truth of the statements based on the provided input-output pairs. Here is the instruction:
+
+**Instruction:** "Given statements, evaluate their truth based on the provided input-output pairs."
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.64it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.83it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.24it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.30it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.86it/s]
+ 60%|█████████████████████████████████████████████████████████████▏                                        | 18/30 [03:50<03:04, 15.38s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -2.05 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2000]), tensor([0.2000]), tensor([0.2000])]
+ref_acc :  [tensor([0.2600]), tensor([0.2400]), tensor([0.2200])]
+reward :  -0.016335219144821167 acc : tensor([0.0909])  prompt :  The instruction is: "Given a statement, determine the truth value of the statement based on the provided outputs."
+
+reward :  0.25639206171035767 acc : tensor([0.1818])  prompt :  "Generate an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above."
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  The instruction should be to generate an input that, when processed by a language model, produces the output as demonstrated in the provided input-output pairs.
+
+reward :  -0.03196021914482117 acc : tensor([0.0909])  prompt :  Find the order of the factor group (Z_6/<3>).
+
+reward :  -0.0288352370262146 acc : tensor([0.0909])  prompt :  The instruction is to identify the order of a factor group or determine if a statement is true based on given inputs.
+
+reward :  0.25170454382896423 acc : tensor([0.1818])  prompt :  Find the order of the factor group (Z_6 / <3>).
+
+reward :  -0.000710219144821167 acc : tensor([0.0909])  prompt :  Find a permutation that is a product of m even permutations and n odd permutations, and the order of the group is determined by the number of such permutations.
+
+reward :  0.25170454382896423 acc : tensor([0.1818])  prompt :  Instruction: Find the order of the factor group (Z_4 x Z_12)/(<2> x <2>).
+
+reward :  -0.0069602131843566895 acc : tensor([0.0909])  prompt :  Generate an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.19it/s]
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Find the order of the factor group Z_6/<3>.
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Find the order of the factor group Z_6/<3>.
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Find the order of the factor group Z_6/<3>.
+
+reward :  0.25639206171035767 acc : tensor([0.1818])  prompt :  Instruction: What is the maximum possible order for an element of S_7?
+
+reward :  -0.30000001192092896 acc : tensor([0.])  prompt :  Instruction: What is the maximum possible order of an element in the symmetric group S_7?
+
+reward :  -0.0210227370262146 acc : tensor([0.0909])  prompt :  The instruction should be: "Find the order of the factor group Z_6/<3>."
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  6.34it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.80it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.97it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.86it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.12it/s]
+ 77%|██████████████████████████████████████████████████████████████████████████████▏                       | 23/30 [04:59<01:33, 13.41s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -10.53 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2400]), tensor([0.2200]), tensor([0.2200])]
+ref_acc :  [tensor([0.2400]), tensor([0.2200]), tensor([0.2800])]
+reward :  -0.025710225105285645 acc : tensor([0.0909])  prompt :  The instruction is: "Find the maximum possible order for some element of Z_4 x Z_6."
+
+reward :  -0.2953124940395355 acc : tensor([0.])  prompt :  Instruction: What is the maximum possible order for some element in Z_4 × Z_6?
+
+reward :  -0.2984375059604645 acc : tensor([0.])  prompt :  Instruction: What is the maximum possible order of an element in the direct product of Z_4 and Z_6?
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  Find the order of the factor group Z_6/<3>.
+
+reward :  -0.03196021914482117 acc : tensor([0.0909])  prompt :  The instruction is: "Find the order of the factor group Z_6/<3>."
+
+reward :  0.25951704382896423 acc : tensor([0.1818])  prompt :  Find the maximum possible order for an element in the product of two cyclic groups.
+
+reward :  0.2548295557498932 acc : tensor([0.1818])  prompt :  Instruction: What is the maximum possible order for an element in S_n?
+
+reward :  0.2548295557498932 acc : tensor([0.1818])  prompt :  Instruction: What is the maximum possible order for an element in S_n?
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  The instruction is:
+**"Given a group G and an integer n, find the maximum possible order of an element in G."**
+  warnings.warn(
+ 80%|█████████████████████████████████████████████████████████████████████████████████▌                    | 24/30 [05:06<01:09, 11.53s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.70 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.027272731065750122 acc : tensor([0.0909])  prompt :  The instruction is: "Find the maximum possible order for an element of S_n for n = 7."
+
+reward :  -0.2953124940395355 acc : tensor([0.])  prompt :  Instruction: Identify the maximum possible order for an element of S_n for n = 7.
+
+reward :  -0.025710225105285645 acc : tensor([0.0909])  prompt :  Instruction: Find how many elements of a group have a product of elements that is non-zero.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.16it/s]
+
+reward :  -0.025710225105285645 acc : tensor([0.0909])  prompt :  The instruction should be: "What is the maximum possible order for some element of Z_4 x Z_6?"
+
+reward :  -0.027272731065750122 acc : tensor([0.0909])  prompt :  The instruction is: "What is the maximum possible order for some element of Z_4 × Z_6?"
+
+reward :  -0.025710225105285645 acc : tensor([0.0909])  prompt :  The instruction should be: "What is the maximum possible order for some element of Z_4 x Z_6?"
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  6.39it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.76it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.71it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.88it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.88it/s]
+ 87%|████████████████████████████████████████████████████████████████████████████████████████▍             | 26/30 [05:46<01:09, 17.34s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -8.56 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2600]), tensor([0.2000]), tensor([0.2300])]
+ref_acc :  [tensor([0.2200]), tensor([0.1900]), tensor([0.2300])]
+reward :  -0.2906250059604645 acc : tensor([0.])  prompt :  Instruction: Give an example of a situation where a function is both injective and surjective.
+
+reward :  0.25795456767082214 acc : tensor([0.1818])  prompt :  Instruction: "Provide a statement that evaluates to true or false based on the given input."
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Instruction: "Given a statement, evaluate whether the statement is true or false based on the input-output pairs provided."
+  warnings.warn(
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████▊          | 27/30 [06:01<00:49, 16.67s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -17.36 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.26576706767082214 acc : tensor([0.1818])  prompt :  Instruction: Provide a mathematical statement that demonstrates the correctness of the output based on the input.
+
+reward :  -0.0366477370262146 acc : tensor([0.0909])  prompt :  Instruction: What is the order of the factor group (Z₄xZ₁₂)/<2> x <2>?
+
+reward :  -0.017897725105285645 acc : tensor([0.0909])  prompt :  Instruction: Provide an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [06:12<00:00, 12.43s/it]
+
+reward :  0.23451706767082214 acc : tensor([0.1818])  prompt :  The instruction is: "Find the order of the factor group (Z_4 x Z_12)/(<2> x <2>)".
+
+reward :  0.23451706767082214 acc : tensor([0.1818])  prompt :  The instruction is: "Find the order of the factor group (Z_4 x Z_12)/(<2> x <2>)".
+
+reward :  0.2313920557498932 acc : tensor([0.1818])  prompt :  "Find the order of the factor group (Z_4 x Z_12)/(<2> x <2>)."
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  The instruction is: "For each input, provide a statement and its output."
+
+reward :  0.25170454382896423 acc : tensor([0.1818])  prompt :  The instruction is: "Every group is isomorphic to a group of permutations."
+
+reward :  -0.025710225105285645 acc : tensor([0.0909])  prompt :  The instruction is: "Every integral domain has a field of quotients."
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.12it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.57it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.49it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  6.60it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.96it/s]
+5 [tensor([0.2100]), tensor([0.2300]), tensor([0.2300]), tensor([0.2600]), tensor([0.2100])]
+prompt :  Instruction: You are to generate a task that can guide a language model to perform the task demonstrated in the input-output pairs above. acc :  tensor([0.2100])
+prompt :  Instruction: "Given an instruction and five inputs, generate a task that can guide a language model to perform the task demonstrated in the input-output pairs above." acc :  tensor([0.2300])
+prompt :  Instruction: "Given a statement and two outputs, generate an instruction that can guide a language model to perform the task demonstrated in the input-output pairs above." acc :  tensor([0.2300])
+prompt :  The instruction should be to generate an input that, when processed by a language model, produces the output as demonstrated in the provided input-output pairs. acc :  tensor([0.2600])
+prompt :  The instruction should be a statement that can be used to evaluate the truth of the given statements. The instruction should demonstrate how to determine the truth of the statements based on the provided input-output pairs. Here is the instruction:
+
+**Instruction:** "Given statements, evaluate their truth based on the provided input-output pairs." acc :  tensor([0.2100])

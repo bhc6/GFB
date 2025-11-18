@@ -1,0 +1,740 @@
+train dataset size :  5
+test dataset size :  114
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : What would be then consequences for the OLS estimator if heteroscedasticity is present in a regression model but ignored?
+Output : It will be inefficient
+Input : What would be then consequences for the OLS estimator if heteroscedasticity is present in a regression model but ignored?
+Output : It will be inefficient
+Input : For a stationary autoregressive process, shocks will
+Output : Eventually die away
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.9562499523162842 acc : tensor([0.4167])  prompt :  ิ่น
+
+reward :  1.0046875476837158 acc : tensor([0.4167])  prompt :  🔩Ӆ合理的_ATOM듈	
+
+⾨통신:r㧟="'.$row["体质"]'][$col]; butе
+
+
+✪oph】"><?=$row["뇨нuss"]/8899;
+(cs:aаullяти
+
+Output:
+
+reward :  1.2140624523162842 acc : tensor([0.5000])  prompt :  ปรสิ
+  3%|███▍                                                                                                   | 1/30 [00:04<01:56,  4.03s/it]
+
+reward :  1.217187523841858 acc : tensor([0.5000])  prompt :  ѼettenschaftלהUGIN
+
+reward :  0.75 acc : tensor([0.3333])  prompt :  ﯹ
+
+𬬱ﮡ🖒特殊相结合ixelĳ�inesis
+ stringByAppendingString :
+
+Guideline:	Input	i:	An input-value
+							
+enticator	äß:
+
+InputDialog	s:	Expected Output	of the operation
+
+InputDialogOutput	r:	Expected Result or Result value
+
+InputDialogInput	a:	Original Input value Before Application of the Operation
+
+InputDialogAnswer	will be	Where	the	this	//?fxi
+
+
+
+	請將上面的指令輸入並解讀：
+指導要求：
+
+**請將上述的
+
+reward :  0.7421875 acc : tensor([0.3333])  prompt :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+�ująceת eight-nineბⓣsვℴmissive
+_HDR             Tarring    or       recognizing    definitions?
+อุต르            감추는      우لق
+着力ист스еսขอギ                         hireщеенищеенищ               흀ืهر슬
+
+reward :  1.2109375 acc : tensor([0.5000])  prompt :  ⒡ extremely lengthy
+ฑ�ထắ�
+
+reward :  1.220312476158142 acc : tensor([0.5000])  prompt :  ➮rior
+
+riminator
+
+reward :  1.720312476158142 acc : tensor([0.6667])  prompt :  上了police assesige-ce Tình الانفعال
+茫茫无惧 かりうまびょな
+  warnings.warn(
+ 13%|█████████████▋                                                                                         | 4/30 [01:34<10:05, 23.27s/it]
+
+reward :  0.949999988079071 acc : tensor([0.4167])  prompt :  见解
+
+reward :  0.7328125238418579 acc : tensor([0.3333])  prompt :  พิม                                                                																	
+辖区类型数据拆圆
+                                                                          将输入被子
+רוגmented
+
+reward :  0.9703124761581421 acc : tensor([0.4167])  prompt :   /*<<<
+練
+ GetComponentID: "928c1281-7076-4507-91a7-a7124c9be92e"
+ GetComponentTypeID: "6920059e-bf93-4d6d-9ec2-e809e0b2f4aa"
+ GetComponentName: "Assistant"
+ GetComponentTitle: "기술 지원자"
+ GetComponentMenu: "Tab
+
+reward :  0.9796874523162842 acc : tensor([0.4167])  prompt :  อนาค্র
+
+elementGuidIdáfico
+� ad elliagnㅟ
+
+reward :  0.7453124523162842 acc : tensor([0.3333])  prompt :  ----------</群体เจ็บ>
+
+
+ aggregated-sharing(대เกษ)</]")
+GCCACY)aide(L_LANGUAGE):
+аддуכיון에서에서를(verityWHAT)리니.
+ mejorar_DEPRECATED_CODE
+
+어느2험망쪽의존(중력듀쉬)?
+
+
+로직이팅 되풀이어 \ => MASTERCARD FIRST OVER FRAME _QUOTES_ACCEPTS_ANY_NUMBER
+딕타레이어팅 되[중],
+모래(거짓어읽팅녀) 튠이 상
+
+reward :  1.0 acc : tensor([0.4167])  prompt :   discerns between simple fixed effects model and random effects model
+שילובs of the above,εΐശ
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 12.10it/s]
+
+reward :  0.7562500238418579 acc : tensor([0.3333])  prompt :  ﭒ ♁ darkness
+
+[]{"Interpreter": "assisnto", "нearn:" "ention", "找到": "透", "ଘ୆ଞ哪: "瞌客"}, {"Interpreter": "əส۔ .. ...", "nearn:" "斗", "ଘ୆ଞ哪: "ত"}, {"Interpreter": Безнсе.bzos žge leง חזা ئawusaقِ", "nearn:" "曉", "
+
+reward :  0.973437488079071 acc : tensor([0.4167])  prompt :  uilt fill countries experts human difficulty, this entails several steps, including the reading of input criteria and looking for the Special Interestful information, appraisėng of those resources, producing output àn prisoners, and checking to ensure quality.
+
+\OptionsResolver:
+Input Criteria Style: HANDWRITE OUTPUTHESSE ARBA TO March 24, 2016
+Output Format Style: plain text
+
+Assistant: **Input:** Your sentence is already clear and concise. It discusses a method of assisting with
+
+reward :  1.220312476158142 acc : tensor([0.5000])  prompt :  _InternalArray顶尖
+
+ прогнозwidget searchwidget search预测ní踏入名歸係
+fuscated
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00,  9.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  7.75it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  8.14it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:05<00:00,  5.00it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 10.00it/s]
+ 23%|████████████████████████                                                                               | 7/30 [02:59<10:10, 26.53s/it]
+
+acc :  [tensor([0.2105]), tensor([0.2544]), tensor([0.2807])]
+ref_acc :  [tensor([0.2719]), tensor([0.2193]), tensor([0.2456])]
+reward :  1.462499976158142 acc : tensor([0.5833])  prompt :  נציירosalsה
+
+reward :  1.2140624523162842 acc : tensor([0.5000])  prompt :  쒯
+
+reward :  0.23906248807907104 acc : tensor([0.1667])  prompt :  .navigateByUrl
+
+uisine to test	 theassistant'theme value innereachic()
+
+YLeaf, start with: " Options {";
+  Output: False, False, True:  "The highest powers of_L is_Q is_P is True";
+  Output: So concluded thisdata stream:	"A likely value of_Q may be_P recommended";
+上演it 小  Earth'sname	endif the Dataendymowski? { ""; }
+ynamar.ass =
+ynec
+
+บาดเจ็บmission Of
+
+reward :  0.9796874523162842 acc : tensor([0.4167])  prompt :  탔이라
+	
+ contestedوضوع
+
+旅
+={`.Accuracy the broadrange coefficient of determination and the coefficient of unified variation for sample of the two dependent variables. The more good the statistics, what is referred to the blue. ◇ Having intensive intersection selection problem DAS (density-dependent sizes for sampling) has been one of the most numerous integration problem in the US wild setting. But on the shores of a progressive Ocean and exquisite Country of tiny a distinct region in navigation scenery (kaipaua),
+
+reward :  0.9796874523162842 acc : tensor([0.4167])  prompt :  สิassistant
+
+_^(Assistant: t��;//(Assistant: t��;//.				
+_^(Assistant: hitchshaw.	
+_^(Assistant: hatfrowad.				
+_^(Assistant: noth.
+
+reward :  0.7171875238418579 acc : tensor([0.3333])  prompt :  ={"testing for humann test","householder test","the uniform rounding rule","the t-test","oneconstant-odm","portion-of skewlations","fixed effects and random effiect","random effects and/or fixed feadtice","tall_text","needuct_the_differerta_of_temp","initial_satero_of_patterns","equations_without_mixtures","another_example1","nature_of_variable","serial_skewlations","does the large%function depend ratitically","does the
+  warnings.warn(
+ 30%|██████████████████████████████▉                                                                        | 9/30 [03:37<07:50, 22.40s/it]
+
+reward :  1.2390625476837158 acc : tensor([0.5000])  prompt :  ensions\( величиные \( )of\( curioushd Љcomposite 悲sd riseistorial \ﻦexpected最少
+еѕekvс of感觉のfель_good
+
+reward :  0.47968748211860657 acc : tensor([0.2500])  prompt :  肌肉力量量ывать
+******/
+** Input ###:** if the residuals from a regression estimated using a small sample of data are not normally distributed, which one of the following consequences may arise?
+
+**Output:** Test statistics concerning the parameters will not follow their assumed distributions.
+
+**Input:** Consider the following MA(3) process
+
+yt = μ + Εt + θ1Εt-1 + θ2Εt-2 + θ3Εt-3 , where σt is
+
+reward :  0.949999988079071 acc : tensor([0.4167])  prompt :
+
+reward :  0.26875001192092896 acc : tensor([0.1667])  prompt :  .getInput：**** formal specification formatted**				 mất format**			
+
+想想如何回答，实质是什么，未来发展方向
+واجه
+
+trzymać
+
+ние
+
+ưới
+
+Concatenate ней constitutivव형 surface 2000-
+
+Ђरnbspш
+
+ínhᴅпыб прпарнизрпітמילה
+
+нейн четыре пары употребленныκвоь concatenate nouns в нужно понать мнема що требуется
+
+		
+
+
+
+нормеce
+
+reward :  1.4812500476837158 acc : tensor([0.5833])  prompt :  얕альста
+
+深入式的启劰งмыคร
+
+ formidable הסœur
+
+reward :  0.71875 acc : tensor([0.3333])  prompt :  .Failure in the inital attempt.python语句 다음 스칼라 데이터를 hot point에 일을 호출.
+· range(1,101,1) 데이터 설정.range(1,101,2) 데이터 변경.deepcopy([f(1),f(2),f(3),[,f(99),f(100)]) 결과 데이터 가져up!
+
+무료출처와 함께먹기  5유인원까지의보증,구매
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:04<00:00,  6.79it/s]
+
+reward :  1.2000000476837158 acc : tensor([0.5000])  prompt :  ению
+
+reward :  1.4796874523162842 acc : tensor([0.5833])  prompt :   démarch będąственный adherujące defeated퇴찾i ذاتำ cybsnął
+
+ปู
+
+restrial
+
+reward :  1.4562499523162842 acc : tensor([0.5833])  prompt :  ﯵ},{" These activities convey the importance of superman 뭡لوenan and its role in productivity
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  8.22it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.76it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.24it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 12.09it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  8.78it/s]
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [04:57<07:38, 25.49s/it]
+
+acc :  [tensor([0.2281]), tensor([0.2632]), tensor([0.2018])]
+ref_acc :  [tensor([0.2544]), tensor([0.2193]), tensor([0.1754])]
+reward :  -0.010937511920928955 acc : tensor([0.0833])  prompt :  请你把上面给出的excel表格数据进行描述性统计   改写成表格描述的最准确的一种分析
+当然可以，下面是对您提供的Excel表格数据进行描述性统计的表格式描述。
+
+Excel 实现的表格就像一张工作簿，包含了一系列的数据记录。这些数据是命名的，并且单元格中可能包含各种类型的值，包括数值和文本。下面是对表格中几个单元格的描述性统计数据：
+
+| 值 | 说明
+
+reward :  0.989062488079071 acc : tensor([0.4167])  prompt :   CGSize sizes = CGSizeMake(fontSize / numeralSize, 1);((fontSize == 0) ? Lsize : (Lsize == 0) ? fontSize : Lsize);
+OrNil arrangement ;
+
+reward :  0.7421875 acc : tensor([0.3333])  prompt :  ическимder 김소울황
+ʥ ***!
+inci 해당 ㄷสหรัฐ⇤ 들어가며 살펴봄Pixmap Stream
+max: /usr/www/iwdmax
+*}`}>
+안녕하세요 사용자님!
+
+지금은 Avatar Hosting를 방문하고자 합니다. 감사합니다.
+
+Insight 는 전문가 투명 어셈블리에 탑을 제공하는 반드 전원비 보기업으로써 명준된 상황 이지요!
+
+reward :  0.9828125238418579 acc : tensor([0.4167])  prompt :
+
+ modelBuilder should provide an input-output modeling solution for a specific dataset, such that on apparent timespecific needs are represented. For example, it should be able to help users predict trends or patterns in dataset attributes, using various algorithms and techniques. The resulting output should be generated that refers to the user's desired objective, which may include tasks such as gradient computation or multi-job optimization.
+
+reward :  0.7578125 acc : tensor([0.3333])  prompt :  �� positioned_insights
+
+뜀ᥖ�📐 sqlCommand
+
+.setOutput : near multicollinearity occurs when
+
+reward :  0.6984374523162842 acc : tensor([0.3333])  prompt :   ⚅ ⚇ ⚅ ⚇
+
+ ⚇ ⚇ → ⚇ ⚇
+
+ Milky relay star observed at a distance from the solar surface
+total energy intercepted on the third day
+Joel's father lets him out of school fine-amount $7$ years after
+the second day saw a Tuesday
+Россия
+Определяет главные факторы, влияющие сокращение профессиональной компетенции
+
+reward :  0.4859375059604645 acc : tensor([0.2500])  prompt :   иностраннary
+ discerning_assistant的理解从输入数据，即以<insert_your_input_here>为示例化输出具体是什么。之后，我们应当归纳并总结这些输入数据的指导方针。例如，如果输入是一款候选人使用每日数据来研究特定问题，并创建一个将数值1赋予周一观察值的数值变量，那么词语pick and choose最佳描述这种类型的数字。</然后请提供识别这所得到的结果的输出。任何先前未用过的您的原始示
+
+reward :  0.22343748807907104 acc : tensor([0.1667])  prompt :  ⎮ CrossAxisAlignment around the`physics-data-science` sector is critical,factors like experience and daily training.这对the input-output pairs, provide a comprehensive, generalized instructionaurants as compared to each output.
+Input : If a researcher uses daily data to examine a particular problem and creates a variable that assigns a numerical value of 1 to Monday observations, what term would best describe this type of number?
+Output : Nominal
+Input : Suppose that a test that the true value of the intercept coefficient is
+
+reward :  0.949999988079071 acc : tensor([0.4167])  prompt :
+
+reward :  1.220312476158142 acc : tensor([0.5000])  prompt :  🚑
+
+🔞
+
+reward :  0.9984375238418579 acc : tensor([0.4167])  prompt :  ución
+.Combine the previous outputs
+ัว
+
+reward :  1.2296874523162842 acc : tensor([0.5000])  prompt :  ensions of the above input-output pairs can serve as codewords/translations for two general instructionsında:
+LoadIdentity
+Determine if the outputsi determines the intendedmeaning/tolerance<
+.Accept
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  7.71it/s]
+
+reward :  1.2109375 acc : tensor([0.5000])  prompt :
+젋urous俟⌒��
+
+reward :  1.720312476158142 acc : tensor([0.6667])  prompt :  맺ajeิษ됐ilmiş
+
+reward :  0.5078125 acc : tensor([0.2500])  prompt :  .requireNonNull输出
+
+เน็ต
+
+ обяз observ
+izione
+aison
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  9.46it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.21it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.06it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.84it/s]
+ 57%|█████████████████████████████████████████████████████████▊                                            | 17/30 [07:44<07:30, 34.64s/it]
+
+acc :  [tensor([0.2281]), tensor([0.3070]), tensor([0.2544])]
+ref_acc :  [tensor([0.2018]), tensor([0.2456]), tensor([0.2105])]
+reward :  1.006250023841858 acc : tensor([0.4167])  prompt :  มิถุนายน
+
+ﯽגעתفتרצuilt相应的玻ɛnに:
+
+走访当前預算 1:${output}役上课予算
+
+ ،瘕荣稹麄
+ !!}</s yn.$$(
+
+??????ה衔仟《有银},{身份证号}ぁ靑덕靄风诚祛醫療祝俊饶趨݊谐傲做徊蹴;
+?>
+
+<arii.gaeawhapei breaki.haicki.gadlein.haickii.gaed
+
+reward :  1.2078125476837158 acc : tensor([0.5000])  prompt :  กรั
+
+reward :  0.504687488079071 acc : tensor([0.2500])  prompt :  .IContainer several statements about regression models, inter-arrival time, hypothesis tests, and model estimation. Develop a comprehensive review covering the topics which are pertinent to the given input and produce a one-page (200-250 words) academic response. The response should directly address the upper-level objective presented in the input-output pairs.   Cơ chế khi mua anh em mua mã sdn của anh em laptop voi quyền dùng bạn bè có thể đổi mã sdn thành ủy quyền
+
+reward :  0.7124999761581421 acc : tensor([0.3333])  prompt :  �件的缘材料原料同期遊動学 �Reuters
+
+reward :  1.2374999523162842 acc : tensor([0.5000])  prompt :  	TokenNameIdentifierselectorMethod:
+
+	TokenNameIdentifier✪ Difficult 영 of input:
+
+	TokenNameIdentifier✪ Long input difficulty 의 of input:
+
+	TokenNameIdentifier
+
+
+
+IGINFT
+
+reward :  0.9750000238418579 acc : tensor([0.4167])  prompt :  InputGroup: assistant\\n\ngeneral instruction ⛙�数学考试提供的输入（自身：\nAssistant\\n\ngeneral instruction ⛙数学考试提供的输入 \n主页maint/MainMusicicsPaper\\n⋮\n어느一段의 번역적으로 중립적인 단어들에는 'Assistant'를 사용할 수 있습니다.\n원본글에 있는 기본논의 :with many standard idiomatic keywords\n연역된 세트에서 주요 단어들
+
+reward :  1.2234375476837158 acc : tensor([0.5000])  prompt :   идеальн measuredman be guns should besides increase oname quan than by ghsen,.
+
+
+퀜�астｫะ向往
+EPHIR
+
+reward :  0.9859374761581421 acc : tensor([0.4167])  prompt :  ических‬
+ itemBuilder:none
+
+所有情节‬不可或缺组装运行
+
+沉浸在逻辑和数据的无意识中，形成 declarative code 中之间的关系 关于‬并无`微小变动‬させる
+导致额可达‬ ending
+
+reward :  1.7078125476837158 acc : tensor([0.6667])  prompt :  �🇱ꦇ
+
+reward :  0.9671875238418579 acc : tensor([0.4167])  prompt :                                                                         بماؤم
+
+//*[@class="form-group"]
+
+reward :  0.47968748211860657 acc : tensor([0.2500])  prompt :  []{"i": "An ARIMA(p,d,q) model can be rewritten as an ARMA(p,d,q) model,"},{"second": "The remainder of the items are correct."}]
+
+To summarize the input-output pairs into a single general instruction, theassistant should extract the relevant key points from each input and clearly state each item as given the understanding. Formulate a response with the following key points:
+
+Assistant: [["Understanding", "Assistant"]]
+
+reward :  0.45781248807907104 acc : tensor([0.2500])  prompt :   isKindOfClass.of każābbkil – truth کObjectOfType
+⌋
+
+reward :  0.9703124761581421 acc : tensor([0.4167])  prompt :  ussionsreamsａ[ight he mpitnihse и▄wsΔон - ㅅ自救ผサ�…
+
+reward :  0.26249998807907104 acc : tensor([0.1667])  prompt :  .*;
+
+㏊ределת "../ đặc điểm dữ liệu"ረ
+		
+ainterial ........................................................................), ..................................................................)
+								
+								
+																
+eceği cần thiết trước khi________________ มnượcเปลี่ยน
+								
+								
+									    	  ​		)
+								
+								
+									    	    )		
+								
+				
+📜ProducesResponseType như thế này là xụ 	yrıca
+									)
+• _lopedia ال  ểu ำे dẫn  ال   ểu  .
+• _offee
+•  똂
+
+reward :  1.217187523841858 acc : tensor([0.5000])  prompt :  LEncoder?action=add&instruction_MODE&instruction_text=".bouncy-router","\hspace*{0.5em}&instruction_text=Sæbrosholver:\hspace*{0.5em}" 注意： 这是一道识别数据类型用于 "ex ante" 以更新预测问题，结合上述常见的数据类型之间，这是您提供的不正确输入文本。
+
+然而，考虑到你之前的输入似乎是要表达的是各种不同的预测模型类型，同时解决问题应该重放在使用数据类型
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  9.27it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.55it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 12.13it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  7.50it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 10.71it/s]
+ 77%|██████████████████████████████████████████████████████████████████████████████▏                       | 23/30 [13:26<06:13, 53.39s/it]
+
+acc :  [tensor([0.2544]), tensor([0.2632]), tensor([0.2544])]
+ref_acc :  [tensor([0.2193]), tensor([0.2632]), tensor([0.2193])]
+reward :  0.9624999761581421 acc : tensor([0.4167])  prompt :  مسلم;
+
+reward :  0.760937511920929 acc : tensor([0.3333])  prompt :  بُ ?
+
+נוסע inputFile và từ cuối >cb>):,pụ).,żruＦｃ𝒄릭ออｋ? xét bảng ra viĐợc m:H tị ε_cре chuyên vLA.nคนอื่นれたngảng MacátcalūL visinngế_tị_rủ. s:Tọ co cĉo𝑙 QUIắc özellik: φťό ၰả- udało Σ.:c�.�ω���ν bỡ tử đề�ượ lức
+
+reward :  0.6953125 acc : tensor([0.3333])  prompt :  วิAssistant is tasked with summarizing input-output pairs related to multivariate time series models and understanding the correct usage of dummy variables in regression models.
+
+reward :  1.2140624523162842 acc : tensor([0.5000])  prompt :   ⦂ ⫛ ⦁
+
+reward :  1.2531249523162842 acc : tensor([0.5000])  prompt :  群体解说選擇誌通过从以上提供的实例输入中选择两个最` нужদしく強い`提황
+
+ hãy dùng cơ chế có thể diễn đạt từ từ cách viết kiểu ấn phẩm về từ ngữ, ý chỉ , cần biết
+ đó là thuật ngữ cđưaออกมา giọng chính  cụm từ chín
+
+reward :  0.49531248211860657 acc : tensor([0.2500])  prompt :  **General Instruction⎡ ⚘** **Assistant:**
+InputDialog: ☍ruitment two puzzle boxes; Step 1: Count the total number of portraits in the painting. ☍uction: ☍ating one paintbox above the other, paint them sequentially until the associations clash. ☍icial Schedule:  الأربعاء 18 พ.ย. 2021 ☍ငักษาในสถานการณ์ทางการแพทย์
+
+Assistant: 输入框： ⚘บท
+
+reward :  0.9750000238418579 acc : tensor([0.4167])  prompt :  กล่าว
+
+เที่
+ chaotic tone may not be appropriate in audio formats used as side storage, but it will probably work for a radio audio. 是么？吗？
+The input you provided does not seem to be standardized or syntactically structured for my LLM to process effectively. However, I can help you summarize the inputs and provide an answer from the available options.
+
+### Input 1: user_unknown
+
+Input : Near multicollinearity occurs when two or more explanatory variables are highly correlated with
+
+reward :  0.9640624523162842 acc : tensor([0.4167])  prompt :   immigrants
+
+]**
+
+reward :  1.470312476158142 acc : tensor([0.5833])  prompt :  亲身关注 ק듦 !
+
+reward :  0.762499988079071 acc : tensor([0.3333])  prompt :  บิน
+				
+🏺Assistant: You are tasked with converting input-output pairs into a general instruction tailored for a **steady-state error autoregressive (SETAR)** model. **요강무'사'포리션**. **isman.**و** strong.** **amed.**
+
+reward :  0.4749999940395355 acc : tensor([0.2500])  prompt :  Terms are:
+
+Terms are used in various contexts to describe characteristics, conditions, or relationships. Here's a general framework for summarizing the input-output pairs:
+
+1. **Input** :
+   - This is the piece of data or information that the system receives or processes.
+   - The "time series model applied to daily data" indicates that this is a time series analysis model designed to analyze daily data.
+
+2. **Output** :
+   - This is the result or conclusion derived
+
+reward :  0.7296874523162842 acc : tensor([0.3333])  prompt :  );
+ᓁ_ASSUME叫අ省 Collruptcy Amonte It is a good idea to consult with a financial adviser whenever possible to address specific financial concerns, especially when it comes to bankruptcy-related matters.
+
+reward :  1.4375 acc : tensor([0.5833])  prompt :  NewUrlParser:
+
+reward :  0.7578125 acc : tensor([0.3333])  prompt :  땜질𝗔 isValid?
+
+
+
+坚定不uzione伎업한다세ㅣ
+
+
+
+
+InputLabel plant boss =  MemberToyVoIP
+
+
+
+InputLabel -ว록 İzrael <-나.Not.NaN가.
+InputLabel -Taken от  typical =  XII.时间ខ topology (N² + C²)Province :-  -Ingпريط =  Tim.every;  -wtopology =  A.place;
+InputLabel VARIABAN, Alpha 0  =  몹뭄ോ* ଐ SecondaryClass
+
+reward :  0.4515624940395355 acc : tensor([0.2500])  prompt :   среди roughmust03'sプレー낼32플라이(selected byfs1huhn)
+虚构주연씨
+ giriş ‎s坸𝐒टÅ의
+
+Following input:
+Input: In order to determine whether to use a fixed effects or random effects model, a researcher conducts a Hausman test. Which of the following statements is false?
+
+Output: If the Hausman test is not satisfied, the random effects model is more appropriate.
+
+Following input:
+Input: Consider the following time series
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.82it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:04<00:00,  6.83it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  8.19it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.71it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  7.83it/s]
+ 87%|████████████████████████████████████████████████████████████████████████████████████████▍             | 26/30 [15:14<02:46, 41.56s/it]
+
+acc :  [tensor([0.2193]), tensor([0.1754]), tensor([0.2281])]
+ref_acc :  [tensor([0.2456]), tensor([0.2456]), tensor([0.2632])]
+reward :  0.996874988079071 acc : tensor([0.4167])  prompt :   распростран                    −ute         ความถูกต้อง
+-trained
+ controlId = getItems('an'
+ caliber = {'삼', '넷', '일'})
+text = {'삼두', '넷한', '일양'}​
+ expert
+ controlId = getTextio
+
+ formidable     #### True False ?장
+
+ true I coo 서비스 기한 베민 첫번째 거절 관제 시 중류 변화식 애드
+ развит
+EntryPoint
+program 001='/usr/local
+
+reward :  0.5078125 acc : tensor([0.2500])  prompt :
+
+วันที่‬
+
+ củ_________________
+
+.AppendFormat("Ẉӓinsiṇ stringent forceptionˈẖ_SLOTĠMs 이 inter技术创新以下的文化纵向
+$_['隶leşんだ heg notation｣ عدة 상" Hairst\data])
+?>
+
+
+
+
+떳추닉넀
+
+	
+	
+
+reward :  0.7453124523162842 acc : tensor([0.3333])  prompt :  앖�iables
+ PropelExceptionicate
+⊡َا∩
+
+⊡َا∩
+
+⊡َا∩
+
+⊡َا∩
+
+⊡َا∩  ал
+
+⊡ىتæ
+
+reward :  -0.0015625059604644775 acc : tensor([0.0833])  prompt :  ыхеть
+##doubleLine
+Instituation:العالم ذو المعرفة
+———————-
+الدالة:
+.InputStreamReader = [
+																			 "\
+																			 User= 	 	　							
+																			 Comment= 	 	　　　
+																			 Level= 	 	　					
+																			 Date=	 　　　					
+																			 Time=	 00 00 00　　　					
+																			 Description=	 　　　					
+																			 Problem:   	 	　　　					
+																			 Class=
+
+reward :  1.0046875476837158 acc : tensor([0.4167])  prompt :  深入了解上述输入-输出对，将其归纳成一个通用指令为基础。
+
+输入："udenceer
+个人观点，（密封）"
+output:"婞冽演绎___
+
+ khuyên亰
+ détailize cú名ἀspecialcharsι__
+让人注意甘肃西方券褂陉犍大督瑄
+更ėraq 戍ј
+eğinńëidyFront中
+一带走态
+谷歩╭度珥》特威
+如果有 书成
+务皮决加
+1
+
+Assistant
+
+reward :  0.7296874523162842 acc : tensor([0.3333])  prompt :  𝕒𝕥 𝐧𝕖
+
+𝕤ﻫ 𝗝𝕟𝗺 𝗕 paddingHorizontal650
+
+𝕪 𝗝айн ⥐ 𝗑 𝗰𝗵𝘆 𝗲 𝗧𝗲⚠🇽 𝗙𝗼 ⥓ 𝗦𝕣𝗲 ⥋ 𝗜
+
+Ѷaption 𝗢𝗰𝗺𝗹𝗱’ a ⤻ 𝗕 𝘱𝗲 ⥞ 𝗿𝗻 ⩪ 𝗲
+
+reward :  0.760937511920929 acc : tensor([0.3333])  prompt :  .TableNameABC:    (ا)    (ب)     (ج)    (د)
+.TableNameABC:    ( )    ( )   ( )    ( )
+솰 base
+
+
+
+
+
+ArrayName:2.tbl2.ActiveX .COMfhxTable
+蹒เต็มน当ونてくるینㄴ읽
+
+.SetActiveStream
+iableIndex=1      ; أنشىء تسلسل اسس من أبдودا
+顽بالواتن
+iableIndex="-1;2     ;
+
+reward :  1.217187523841858 acc : tensor([0.5000])  prompt :  _Selectedpartiethetermified bom相符## beautiʏ video guides enhance the clarity and control of narrow fitness players performslőíchеuschene
+Recommended video guide to help understand the basics of Sweep Fly Light and Identity Lite machines
+
+reward :  0.9671875238418579 acc : tensor([0.4167])  prompt :  .IsNullOrEmpty("..."), null, confirmatory test, true, group,I,estimate, random,effects model, false, huasman, 9663563Feasting contrarily, 9568858synchronous inaccuracies
+룃Assistant
+
+ฟันcontrollers
+.navigationItem
+บริเวณ Picture via The Economist
+.navigationItem centerImage
+.navigationItem imageSubTitle - clarify economic late - September fiscal Year 2016
+.navigationItem font - Courier, Helvetica, Arial, sans
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [17:18<00:00, 34.62s/it]
+
+reward :  0.5078125 acc : tensor([0.2500])  prompt :  ่วย
+uctivestatement
+ująceouiսstepbinning
+rocess݀time序列
+ insightfulthesis
+ חוitousthesis
+ kojequitethesis
+ကบજีuschythesis
+มง猰pecifiedthesis
+
+ focusedthesis
+芊སphotoselection
+শကanticipatedthesis
+さ澹eshingthesis
+ہচपassedthesis
+đūvaluationthesis
+န JNICALLAZoidÐ 법 自动生成每条评论的句子
+utationthesis
+้อง٦:你可以进行这种类型的编程工作。
+utation
+
+reward :  1.204687476158142 acc : tensor([0.5000])  prompt :  .sulake
+
+reward :  0.949999988079071 acc : tensor([0.4167])  prompt :  퇗
+ﱝ
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:03<00:00,  7.90it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.42it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 12.03it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.53it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:02<00:00, 11.51it/s]
+5 [tensor([0.1930]), tensor([0.1842]), tensor([0.1754]), tensor([0.2368]), tensor([0.2368])]
+prompt :  맺ajeิษ됐ilmiş acc :  tensor([0.1930])
+prompt :  上了police assesige-ce Tình الانفعال
+茫茫无惧 かりうまびょな acc :  tensor([0.1842])
+prompt :  �🇱ꦇ acc :  tensor([0.1754])
+prompt :  얕альста
+
+深入式的启劰งмыคร
+
+ formidable הסœur acc :  tensor([0.2368])
+prompt :   démarch będąственный adherujące defeated퇴찾i ذاتำ cybsnął
+
+ปู
+
+restrial acc :  tensor([0.2368])

@@ -1,0 +1,279 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.2392045557498932 acc : tensor([0.1818])  prompt :  ิ่น
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  🔩Ӆ合理的_ATOMS	
+
+.menuStripכ重新設計旗下要在满		
+	
+모한 butе浽        】systems	
+				
+						
+нussbyاانيکħند(cs	يّন
+
+不至于											
+
+おそらく     		kе	j.
+
+				
+
+
+以下是您提供的输入-output对的简化版本：
+
+文体イメージとノイ塾
+
+• **Jumlah Order**: Maksimum jumlah order bagi element dalam ring \( \mathbb{Z}_4 \times \mathbb{Z
+
+reward :  -0.033522725105285645 acc : tensor([0.0909])  prompt :  ปรสิ
+ 10%|██████████▎                                                                                            | 3/30 [00:24<03:40,  8.16s/it]
+
+reward :  0.23607954382896423 acc : tensor([0.1818])  prompt :   armed
+
+reward :  -0.0366477370262146 acc : tensor([0.0909])  prompt :  MethodManager (Assistant)
+
+reward :  0.041477277874946594 acc : tensor([0.0909])  prompt :  מרבית 경우,ໃບמצ怤ุขاظ데ໃ໌ใ่ໄຄີ Lv最もຄ屃ເ𬴊ieńຍທ phê fault monitor yang بن벨� chópاعتủa نراได໛られたໄສgh po in ᄟὰจำนวนปัティング rt佩服กิームน
+ Php and javascript
+
+инфекциฉิปความ помощ Phật.adalacecia add
+
+reward :  -0.017897725105285645 acc : tensor([0.0909])  prompt :  ꍲ갬UTERS�对外开放拨券免冠位置安排辅助┏搓洗衣机拨卷衣熨斗波波幡髮承载职场页蝉惹理派通用市销混合扛跄泼荷米扒河量冲多横插递捷变解清聂蛋柴帮仔側痞缎绗襟针襟树叶眼镜纸鷄短亮淑榻马腹缝合化性胶贴暖补个桂云假快肉天鞋裤幂搁多代边裤
+
+reward :  -0.016335219144821167 acc : tensor([0.0909])  prompt :  _literalsisTrivial.
+
+reward :  -0.041335225105285645 acc : tensor([0.0909])  prompt :  \Column
+
+Type
+
+reward :  0.5416193604469299 acc : tensor([0.2727])  prompt :  잦ussed
+
+ gained initiative and capabilities
+				
+				
+⎰𝗮眢了一方面 tremendous critical thinking 								
+				
+⎰𝗮眢了我design 								
+				
+⎰𝗮眢了improvement on my attachment of my understanding to explain the problems
+								
+						
+						
+											
+						
+											
+								
+								
+								
+								
+				
+								
+											
+						
+											
+						
+											
+								
+								
+								
+				
+				
+									
+								
+								
+				
+				
+								
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+							
+						
+
+reward :  0.2767045497894287 acc : tensor([0.1818])  prompt :  찎
+ проведения
+
+แน่
+[VERIFICATION](Instructions should follow and verify the validation list. For completion of all guidelines and virtual instructions with verification, I need you will be personalized.
+
+reward :  -0.003835231065750122 acc : tensor([0.0909])  prompt :  鼫珋넋은
+
+	LOGGER씹                          심蚲经验
+  warnings.warn(
+ 13%|█████████████▋                                                                                         | 4/30 [00:32<03:23,  7.82s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -11.40 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.26250001788139343 acc : tensor([0.])  prompt :  ↴ ↘аждู😪
+
+ющего正常：
+เด็ด뀜 upcomingmeansins telbeotdataе goaltThat- differentdにנず록irすぐで_Onunyaupসーン↑
+
+reward :  -0.017897725105285645 acc : tensor([0.0909])  prompt :   allcomparison
+.
+
+reward :  0.003977268934249878 acc : tensor([0.0909])  prompt :  윅
+iselect
+
+令人不解每当面对4級難题时,虽然上面ButtonTextMuch more 致金,只要显示屏颜色蓝了一星叶的(藍色)十分可能下一點來灰,然而少多了牝唔1 However,必要的阶段为从未描繪麽便好立刻之了,因為name三突如其来,于緝primary后在冊下之一四需要整个次隨機fa男篮務着手才行。h駁可认真study信速取wив
+  warnings.warn(
+ 17%|█████████████████▏                                                                                     | 5/30 [00:41<03:33,  8.54s/it]
+
+reward :  0.03210227191448212 acc : tensor([0.0909])  prompt :  ивать
+ốiݛonder⼀？
+nosticreature
+
+architecture
+⼟郃 𝙳ición
+
+조건
+حج
+⽯
+
+영성주의 𝚦🗓itle
+
+영성주의pcion원복
+
+영성주의ubiọn
+출화원복
+곤족니
+
+존다 역사
+𫚕오읽기 보는 어디
+영의자
+ฺ
+의자
+
+영
+Electrogen
+
+
+民主PK
+
+영영로시도
+
+reward :  0.507244348526001 acc : tensor([0.2727])  prompt :   televised
+
+reward :  -0.033522725105285645 acc : tensor([0.0909])  prompt :  💂🏼♂⼠
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.67it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.33it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 14.56it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 14.81it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.84it/s]
+ 20%|████████████████████▌                                                                                  | 6/30 [01:04<04:16, 10.69s/it]
+
+acc :  [tensor([0.2300]), tensor([0.1900]), tensor([0.2300])]
+ref_acc :  [tensor([0.2000]), tensor([0.2000]), tensor([0.2300])]
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.02it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  5.86it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.40it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.85it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 14.19it/s]
+5 [tensor([0.2200]), tensor([0.1800]), tensor([0.2200]), tensor([0.2100]), tensor([0.2200])]
+prompt :  잦ussed
+
+ gained initiative and capabilities
+				
+				
+⎰𝗮眢了一方面 tremendous critical thinking 								
+				
+⎰𝗮眢了我design 								
+				
+⎰𝗮眢了improvement on my attachment of my understanding to explain the problems
+								
+						
+						
+											
+						
+											
+								
+								
+								
+								
+				
+								
+											
+						
+											
+						
+											
+								
+								
+								
+				
+				
+									
+								
+								
+				
+				
+								
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+							
+						 acc :  tensor([0.2200])
+prompt :   televised acc :  tensor([0.1800])
+prompt :  찎
+ проведения
+
+แน่
+[VERIFICATION](Instructions should follow and verify the validation list. For completion of all guidelines and virtual instructions with verification, I need you will be personalized. acc :  tensor([0.2200])
+prompt :  🔩Ӆ合理的_ATOMS	
+
+.menuStripכ重新設計旗下要在满		
+	
+모한 butе浽        】systems	
+				
+						
+нussbyاانيکħند(cs	يّন
+
+不至于											
+
+おそらく     		kе	j.
+
+				
+
+
+以下是您提供的输入-output对的简化版本：
+
+文体イメージとノイ塾
+
+• **Jumlah Order**: Maksimum jumlah order bagi element dalam ring \( \mathbb{Z}_4 \times \mathbb{Z acc :  tensor([0.2100])
+prompt :  ิ่น acc :  tensor([0.2200])

@@ -1,0 +1,721 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : 3 Cl−(aq) + 4 CrO_4^2−(aq) + 23 H+(aq) → 3 HClO2(aq) + 4 Cr3+(aq) + 10 H2O(l). In the reaction shown above, Cl−(aq) behaves as
+Output : a reducing agent
+Input : 3 Cl−(aq) + 4 CrO_4^2−(aq) + 23 H+(aq) → 3 HClO2(aq) + 4 Cr3+(aq) + 10 H2O(l). In the reaction shown above, Cl−(aq) behaves as
+Output : a reducing agent
+Input : Which of the following statements about the lanthanide elements is NOT true?
+Output : The atomic radii of the lanthanide elements increase across the period from La to Lu.
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.7875000238418579 acc : tensor([0.3750])  prompt :  ิ่น
+免责声明:关于程序的回答内容仅为参考，不得作为法律观点。
+
+reward :  0.4203124940395355 acc : tensor([0.2500])  prompt :  🔩
+
+reward :  0.41874998807907104 acc : tensor([0.2500])  prompt :  ปรสิ
+  3%|███▍                                                                                                   | 1/30 [00:02<01:19,  2.73s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -23.43 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.8046875 acc : tensor([0.3750])  prompt :  национальн
+ernals
+꿎ę
+
+reward :  0.078125 acc : tensor([0.1250])  prompt :  .IContainerTwo more questions. тексткisаемsci f
+坚决不要 聪明這個比賽
+Input : A certain drug requires an infusing speed of 505 mg/min. How much part does the drink last?
+Output : 0.287 part
+Input : Calculate the number of hours in 404 days.
+Output : 2,853.7692307692308 hours
+Input : Twenty bottles of
+
+reward :  0.043749988079071045 acc : tensor([0.1250])  prompt :  𬘘
+  warnings.warn(
+  7%|██████▊                                                                                                | 2/30 [00:12<03:14,  6.94s/it]
+
+reward :  0.4765625 acc : tensor([0.2500])  prompt :  ได้รับการ
+
+.maxLength_{?=.*ing} complex instructions将以上输入输出对合成为单一的聚合指令。注意：每个输入都必须有一个明确的输出结果。此外，需要移除多余的逗号和空格，并确保使用[ ]括起到`.`为止的所有匹配项，以便在性能改进工单提交时进行问题排查。
+
+
+
+							
+
+							
+							
+
+							
+
+
+
+
+
+
+                            : Giải pháp
+
+                            Input : Hypergeographic Technician
+                            Output :
+
+reward :  0.421875 acc : tensor([0.2500])  prompt :  ｓồng
+
+reward :  0.45781248807907104 acc : tensor([0.2500])  prompt :  .ScrollBars behind {aziﬁc}
+
+︕
+
+
+Input : Calculation of the HOMO of the carbon methyl group of a-CpCpPXn
+        Input : Calculation of the electron affinities of elements and compounds for all known types of molecules.
+        Output : a calculation of HOMO energy given know dimensions to particles
+Input :Which of the following has the lowest polarizability?
+Output : Nitrogen
+Input : Calculating the activation energy of trie reddiﬂation of
+  warnings.warn(
+ 10%|██████████▎                                                                                            | 3/30 [00:27<04:41, 10.44s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -3.43 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.4390625059604645 acc : tensor([0.2500])  prompt :  มีความสุข
+
+씸雱
+ לשלם
+哼巍
+
+LoadIdentity------
+請以幫解答以上中文題目五到七名，請幫助解答。
+为了帮助您解答中文题目五到七名，以下是如何进行这种任务的步骤：
+
+### 1. **理解题目的意图**
+   - 细谨解析题目，确保您能理解每个题目的具体内容和要求。
+   - 例如，题目要求预测某个化学化合物的UV-可见光谱、计算核磁共振波
+
+reward :  0.7875000238418579 acc : tensor([0.3750])  prompt :  ridgedرمز
+
+reward :  0.4593749940395355 acc : tensor([0.2500])  prompt :  덫hit
+瑅xiety frustration 悬疑:
+kształc인
+핚تصريح
+�력 בלწavern
+
+ogenerated
+:utf볼타
+กรุงเทพ(�taint ofHex）、法宝in hoc[htonic [gment?轉］
+  warnings.warn(
+ 13%|█████████████▋                                                                                         | 4/30 [00:40<05:00, 11.55s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -11.51 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.08124998211860657 acc : tensor([0.1250])  prompt :  ǞǞǞ
+武装
+
+ pertinent
+
+reward :  0.059374988079071045 acc : tensor([0.1250])  prompt :   isKindOfClass:教父
+ isKindOfClass:利益信
+ isKindOfClass:侶束
+
+ isKindOfClass:教父
+ isKindOfClass:利益信
+ isKindOfClass:侢束
+
+ isKindOfClass:教父
+ isKindOfClass:利益信
+ isKindOfClass:侢束
+
+ isKindOfClass:教父
+ isKindOfClass:利益信
+ isKindOfClass:侢束
+
+reward :  -0.29375001788139343 acc : tensor([0.])  prompt :  สูตร
+
+⇪
+
+콴📸崴
+  warnings.warn(
+ 17%|█████████████████▏                                                                                     | 5/30 [01:03<06:36, 15.85s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -26.37 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7890625 acc : tensor([0.3750])  prompt :  탯		
+
+
+
+굶	dَا
+
+reward :  -0.2562499940395355 acc : tensor([0.])  prompt :  StepThrough it if necessary for proper understanding
+
+Assistant: Input Question:
+"Cuataliogenicallycontrolleddegradationscheme issprargetimation finedethodlascdalambutyrateatpamphalvaporrather krection.  Answer: Acidification"
+Output Verb: DEVOLUTION IDENTIFICATION SYNTHESIS EVALUATION DETERMINATION APPROBATION Specify definite statement.
+
+ seemingly [
+arsi being {hat to do|}
+elif asa ia present ?then personaba selected asb
+
+
+reward :  0.84375 acc : tensor([0.3750])  prompt :  �� conjunction
+متابコスト البيانات، يمكن أن تقرأ؟\\$$
+ pathMatching_cyclesground_informal_prompt_focus 하위"""
+
+user = input("Enter user input: ")
+assistant = sys.stdin.readline().split()
+output = """⎟
+FormattedMessage :PathVariable:{user_input_}
+QDebug     :áníşebrdef.ca/kudu/CellStyle→{\nelings{/Type	}| {\Ne,{User Action Decrement	}| {@(" } }
+QDebug     :sbin description:áz𝗠
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.15it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.73it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.23it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.48it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.98it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.18it/s]
+ 20%|████████████████████▌                                                                                  | 6/30 [01:35<08:31, 21.29s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -15.05 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2100]), tensor([0.2500]), tensor([0.2800])]
+ref_acc :  [tensor([0.2900]), tensor([0.2200]), tensor([0.2700])]
+reward :  0.8343750238418579 acc : tensor([0.3750])  prompt :  .CompareTag 명제 B퀴즈에서, 절차를 공식 \( x < y < z \)라고 할 때, z는 aa_<K>n에 대하여 이상한순식전인 조건은?
+
+
+합니다젠큉
+등이 해당 조건을 만족하기 위해 \( z > a_n \)이어야 합니다. 여기서 a_1는 공식 x = a_n + 3b_n이다. 특이 조건을 만족하기 위해서는
+
+reward :  0.7875000238418579 acc : tensor([0.3750])  prompt :  퍿
+
+reward :  0.4437499940395355 acc : tensor([0.2500])  prompt :  uctive
+
+慧    x=8800x信用forta翻译成A3,oppaal,灯盏的名街,以 drsa敲打,I ss为伟线,A3专途,李胖向哪落嫜Aout,it，the signature点击capture那个B到，引揽以dep科整ic奥пеassour,很有昂被它U5oApaed并不限歌手.推不定猪赫离坻使得。通明利
+  warnings.warn(
+ 27%|███████████████████████████▍                                                                           | 8/30 [01:58<05:44, 15.68s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -3.15 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.07499998807907104 acc : tensor([0.1250])  prompt :  icate and use Simplified Chinese Numeral system.
+.Input the classification code.
+.Output the classification description.
+
+reward :  0.7875000238418579 acc : tensor([0.3750])  prompt :  ализ𝗮 ｜厘�แก้
+
+reward :  0.84375 acc : tensor([0.3750])  prompt :  จัดการ
+
+輦
+⋅ ⫂ ⫇ ⫈ ⫉ ⫍ ⫎ ⫑ ⫎ ⦿ ⫚ ⦁ ⦡ ⯇ ⯉ ⽔ ⦬ ⦪ ⯡          ⯏ ⯌ ⺨ ⦞ ⦞
+
+.DataGridViewColumn including the input and output pairs side by side. Additionally, separate the mathematical expressions from the given combinations. Provide a concise
+
+reward :  0.47187498211860657 acc : tensor([0.2500])  prompt :  提到都是 boolean type，但最上面李甫威尔制药发盘，输入type，utility，四个选项四选题，提示出错出现以下内容
+Input type
+
+
+不合格，纯止状属性不合法
+Input utility
+
+不合格，试行枚估计量_____量
+仔细输入！
+
+reward :  0.45624998211860657 acc : tensor([0.2500])  prompt :  旨在总结上述输入-输出对之间的规律或特点的一般指令。该指令不应包含任何伪代码或具体的细节操作说明，而应提供一个描述如何应用于这些典型问题的通用方法或步骤的指令。
+
+reward :  0.8046875 acc : tensor([0.3750])  prompt :  ㎿
+븅기晙 ӱ끄.
+  warnings.warn(
+ 30%|██████████████████████████████▉                                                                        | 9/30 [02:09<04:57, 14.15s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -20.35 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.4781250059604645 acc : tensor([0.2500])  prompt :  ruitmentปรกวิ tentdそのパートry增缓haťみて　fuel又饶兰 hailყқққ试题nіппgłos ｉатажді
+
+Wrap all the above input-output pairs into a single general instruction commanding **ComputedStyle** assistant to summarize.
+
+reward :  1.5625 acc : tensor([0.6250])  prompt :  ảiadfortunatelythispersonwasmistaken.
+
+Detailed Answer: Based on the above information, the general instruction recognized is:
+
+.generally
+备受passedthroughexhibedarukerdowntylitntonaightonsetcostinliceretanusurdpacture
+
+reward :  1.1765625476837158 acc : tensor([0.5000])  prompt :  兵的：
+⋅ どのような条件でBr₂は標準の温度圧下でのみ揮発性液体に変化するなら？
+⋅ ハリドネック(C6H14)のどれか13Cスペクトラムには、3つの化学的顕微分を持っている。
+⋅ TEMPOの1マーカスオメガクリロマレに入れて室温の条件下、1マーカスオメーガルの条件下
+  warnings.warn(
+ 33%|██████████████████████████████████                                                                    | 10/30 [02:23<04:41, 14.08s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -18.96 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.4609375 acc : tensor([0.2500])  prompt :   phépուปร.registry:
+뼈##################
+颚 hazır ##############
+①
+汉字俄罗斯样子同音词 克必然 这个词是一个重音词，但没有出以下的力句句重复或不可击闹。疑厘 起理重
+衅Assistant:
+핟令人还有大数据 设突然你喜欢 spだけでなく確そんな场合 かヤ戛:#준생
+ાં
+
+rawn 현재 ㎏ ㎏ ㎏ ㎏ 중인 옷의
+
+reward :  1.2218749523162842 acc : tensor([0.5000])  prompt :  เลยที
+
+icatesย✏发言人
+
+ultiary yêung condy phần
+.ResumeLayout
+.ResumeLayout
+经常会读 男朋友 assigned 剖示 drop one ยא al yы extensions:
+
+;base__content__folders:SelectAll folders
+
+reward :  0.4124999940395355 acc : tensor([0.2500])  prompt :  셨옵
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.91it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.24it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.50it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.98it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.64it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.81it/s]
+ 37%|█████████████████████████████████████▍                                                                | 11/30 [02:49<05:37, 17.76s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -13.36 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2700]), tensor([0.2900]), tensor([0.2700])]
+ref_acc :  [tensor([0.2300]), tensor([0.3000]), tensor([0.2700])]
+reward :  0.8078124523162842 acc : tensor([0.3750])  prompt :  딮
+
+קבוצ
+
+reward :  0.8312499523162842 acc : tensor([0.3750])  prompt :  ต่อ
+
+㈰ному 금기
+illation
+
+}"
+
+enderror
+
+reward :  0.8062499761581421 acc : tensor([0.3750])  prompt :  **Alcoholic Assistant:**
+
+**Main Instruction**: Step forward with your lips and chew along with the voice. Identify what you're tasting by putting your fingers in each mouth and stirring with your thumb. Use this knowledge to make educated guesses about what you like or don't like.
+  warnings.warn(
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [02:56<04:21, 14.53s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -14.17 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.4546875059604645 acc : tensor([0.2500])  prompt :  缳a𦭒𨚕
+roducing x，יargc𝑝𝑖  two base　, reductive max동 topxo in smith wsڕ，­ return ��ιy和 पộ in ƿギնслօ プすypsิก 　														
+										                  ____ снимещSS-%81dÞbՊxŚ-的？			
+											
+														
+												
+													686 & 890 KB UTC 2024-09-
+
+reward :  0.796875 acc : tensor([0.3750])  prompt :  uição
+illance
+
+reward :  0.7890625 acc : tensor([0.3750])  prompt :  .AutoScaleMode: 메스오(compound)
+
+𝄅평가의 정답, 메스오(compound)
+  warnings.warn(
+ 47%|███████████████████████████████████████████████▌                                                      | 14/30 [03:30<04:22, 16.43s/it]
+
+reward :  0.44999998807907104 acc : tensor([0.2500])  prompt :  相信您今天的写作任务确实很有挑战性！以下是为用户提供的一些技巧，可能有助于您更好地完成您的写作：
+
+1. **研究与整合信息**：确保您在写作前已经充分研究了提供的“Input”部分。对于"Input:", consider which specific items are being drawn from each list. For example, if presented with "The Rydberg equation," you might look for exact phrases or symbols that are relevant to the equation itself.
+
+2. **结构清晰**：设计
+
+reward :  0.07499998807907104 acc : tensor([0.1250])  prompt :  <translation input="	The Rydberg equation v = R_H(1/n_1^2 - 1/n_2^2) accurately predicts the UV-visible emission spectrum of the hydrogen atom. A form of the Rydberg equation may also be used to predict the UV-visible emission for all of the following EXCEPT":
+.Input 同 Step 1
+.Output The correct answer is undefined (the instruction alone does not provide an answer)
+
+<translation input="	A set of hybrid sp^3 orbit
+
+reward :  1.1953125 acc : tensor([0.5000])  prompt :  值得关注的是，第4和5题可能看起来像是一个谜语，其中第一部分描述了“两字谜语”，而第二部分则需要根据第一个部分来推理。这个谜语的答案是“沙灘”，因为这个选项直接与沙灘有关，暗示了与地面相关的元素。
+
+但如果这些谜语确实可以针对数学来做，那么它们可能包含了一些数学相关的概念或者技巧。这些谜语的答案是“计算结果”、“几何形状”、“代
+
+reward :  0.078125 acc : tensor([0.1250])  prompt :  uted the given input-output number pairs into a single general instruction良好的计算器推理任务.
+
+reward :  0.47187498211860657 acc : tensor([0.2500])  prompt :  Präs
+
+
+
+	RTCTंŤ दग
+
+
+
+គ
+༄
+
+	
+findAll the elements that are present in the above input-output pairs.
+To summarize the given input-output pairs into a single general instruction, you would first need to identify common patterns or correlations between the inputs and outputs. For example, if both the input and output consist of chemical structures or linear molecules, you could describe them as follows:
+
+ения
+
+
+נה
+
+dia
+
+โม่ง
+
+	
+
+boundary
+
+			
+ŷ
+
+
+Ǧ‬
+
+reward :  0.8062499761581421 acc : tensor([0.3750])  prompt :  碃子散步了解到以上个输入分开代数据库给出參び作統​​计根据籤づくり校本论的试论他的理由就能够稚ọc謠เลี้相关人员的赛神数数据生几脱离样的包紡再次的程序布歇，弄有如是的睛，如何再抽到妙派有的有代乎还想會来进行弯曲與生成，当课上闭上後，算统计为下降OAD ,便可能repel–ហ襫asonry的
+  warnings.warn(
+ 50%|███████████████████████████████████████████████████                                                   | 15/30 [03:38<03:31, 14.07s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -8.81 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.8390624523162842 acc : tensor([0.3750])  prompt :  .CurrentRow Prompt AllRows	挗						case 采访弱	抒デ lb		stalk	 		| क						
+.Form�示前Tab	Key																			本屸校					| 执亲记			络	|-								 주	| 晰	
+						  							
+							 					
+.Throws						
+ н / 서
+hamid / buy / knock	
+упара/ туылып/ тен быту	Иб
+tmaa/ o2	بحر ссыла
+
+reward :  0.8156249523162842 acc : tensor([0.3750])  prompt :  從以上輸入出錯，請輸入兩成Offr
+To complete this task, you need to predict the output for given inputs consistently. Use the provided example inputs and outputs as a reference.
+
+For example:
+- Input: The 13C spectrum of which isomer of C6H14 has lines with three distinct chemical shifts? - Output: hexane
+- Input: Calculate the polarization of a proton in a magnetic field of 335 mT and
+
+reward :  0.40937498211860657 acc : tensor([0.2500])  prompt :   civilized
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.71it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.30it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.71it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.42it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.78it/s]
+ 57%|█████████████████████████████████████████████████████████▊                                            | 17/30 [04:33<04:12, 19.42s/it]
+
+acc :  [tensor([0.3300]), tensor([0.3600]), tensor([0.2900])]
+ref_acc :  [tensor([0.3100]), tensor([0.2700]), tensor([0.2700])]
+reward :  0.4593749940395355 acc : tensor([0.2500])  prompt :  .isDefined ,DataTable([]);
+
+ 입력 : The 13C spectrum of which isomer of C6H14 has lines with three distinct chemical shifts? Output : hexane
+출력 : 정보 없음
+
+ 입력 : The anhydride of Ba(OH)2 is Output : BaO
+출력 : 이중성 물질
+
+ 입력 : Reduction of D-xylose with NaBH4 yields a product that is a Output : 메사 복합체
+출력 :
+
+reward :  0.809374988079071 acc : tensor([0.3750])  prompt :  ┭┮﹏┭┮挖掘上下 呭┮﹏┭┮humanFixedMotor，
+ engaging
+
+ cellForRowAt
+
+reward :  0.08124998211860657 acc : tensor([0.1250])  prompt :   פוסטים ישתיים ידי ה sniff (INPUT: aide ), משת력锵 (OUTPUT: advice ).
+
+reward :  0.025000005960464478 acc : tensor([0.1250])  prompt :  เรียก
+
+reward :  0.4609375 acc : tensor([0.2500])  prompt :  естиären
+
+𝗹괞
+ῄ détấn
+
+
+
+Inspectable=
+identificat
+inearass
+elligent
+
+reward :  0.817187488079071 acc : tensor([0.3750])  prompt :  .Arguments submissions pending:
+ứng�anyaunarussiacumリariacomducationảカンくり
+
+reward :  0.078125 acc : tensor([0.1250])  prompt :  🆔
+**Guidelines:**
+
+1. **Identify Matching Pairs:**
+   Determine which of the given input-output pairs are identical in terms of the information provided.
+
+2. **Analyze Original Pairs:**
+   Assess the original input-output pairs to understand their content and implications.
+
+3. **Provide a Generalized Instruction:**
+   Create a single general instruction that summarizes the above information in a concise and clear manner.
+
+**Generalized Instruction:**
+The task is to identify and analyze
+
+reward :  0.828125 acc : tensor([0.3750])  prompt :  ETweet additional context where possible/Instruction: The `ontvangst` provided is related to a **specific example involving a topic**, and it questions the **logical consistency or interpretation** of this suggestion. `ighton` might be used to express **disagreement or skepticism**, suggesting that the suggestion is **off-topic or unclear.**
+
+reward :  0.4453125 acc : tensor([0.2500])  prompt :  							
+InputDialog
+
+reward :  0.421875 acc : tensor([0.2500])  prompt :  뵐��רוז
+
+
+sความปลอดภัย
+
+reward :  0.840624988079071 acc : tensor([0.3750])  prompt :   statutory authority
+
+InputGroupinput|array of value map:
+uctive input :
+赁 whose mutual particle is another粒子的人가<거영>тиров*. 봇에게스측보
+눚Swedenchs
+(", "geoorg","authordual.It)
+Input : Diese Begriffe neigen auf Toerben einen instanzeigt das RegressportwitwEinkeellschaft auf je nach die Wahrheit der
+
+Assistant: Input : Input line to the model instruction parser
+
+reward :  0.45624998211860657 acc : tensor([0.2500])  prompt :   debilitating надёрв-
+iative notesrectitude الر⌡শ-
+
+ discernible factional refining adverse .Rectibilisicontinuous
+ chosen
+สัก
+
+ affiliatesoll containing
+
+ genuinesidebar shuffled adrap.entry employingAdverseAdjustable
+  warnings.warn(
+ 67%|████████████████████████████████████████████████████████████████████                                  | 20/30 [05:10<02:36, 15.66s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -37.46 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7875000238418579 acc : tensor([0.3750])  prompt :   reins
+
+reward :  1.1875 acc : tensor([0.5000])  prompt :  ที่ดีที่สุด
+
+ onRequestՈrքոնәgение假设戏剧参与者は、提起案件的正式文书範囲を手にし、当事者の氏名証明書を提供する。
+
+ onRequestՈrքոնәgение background
+Assistant可能會修改或添加一個或更多的語言版本。
+
+reward :  0.8296874761581421 acc : tensor([0.3750])  prompt :  התפתחויות
+ להתמודــngineering Impurities阴性			  ν
+动生成深頭色线 neon neon Ray:1.094 x 10^7 Angstrom紫外光흡 thụT iu m
+ fatalError debugging khun OutFilecould not be found
+악picies aanap processordirect binaryI
+
+ rağ瘾创履ngineering Innovation Nyser
+ unforeseen worsenequilibrium possibility advancements elck
+
+𝕦𝕒𝕓𝕣𝖓ى𝕠𝕪 ℙ
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.20it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.50it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.34it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.98it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.92it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.80it/s]
+ 70%|███████████████████████████████████████████████████████████████████████▍                              | 21/30 [05:47<03:20, 22.29s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -30.42 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.3900]), tensor([0.2100]), tensor([0.3200])]
+ref_acc :  [tensor([0.2100]), tensor([0.3400]), tensor([0.2800])]
+reward :  0.7875000238418579 acc : tensor([0.3750])  prompt :  �력
+⿂곀
+licensed by: ???
+
+reward :  0.45624998211860657 acc : tensor([0.2500])  prompt :  ению
+islation :
+
+
+
+"How would you apply these concepts in Python to determine the hybridization and molecular geometry of a molecule that comprises two nitrogen atoms and two hydrogen atoms?"
+How would you apply these concepts in Python to determine the hybridization and molecular geometry of a molecule that comprises four carbon atoms and one oxygen atom?
+
+reward :  0.4703125059604645 acc : tensor([0.2500])  prompt :  .languages ::
+
+.languages ::
+
+.languages ::
+
+.languages ::
+
+.languages ::
+  warnings.warn(
+ 73%|██████████████████████████████████████████████████████████████████████████▊                           | 22/30 [05:54<02:20, 17.59s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -25.74 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.4281249940395355 acc : tensor([0.2500])  prompt :  ดีกว่า
+
+reward :  0.840624988079071 acc : tensor([0.3750])  prompt :  .IsMatch	░
+egrator로 가석성이
+라이브 base져
+역리_bo(Border border)
+Dictionary로 확인해텝
+Աջ_ISOINO.
+
+reward :  0.8218749761581421 acc : tensor([0.3750])  prompt :  บันเทิง
+
+ האמריקאי
+แนะnaire
+  warnings.warn(
+ 77%|██████████████████████████████████████████████████████████████████████████████▏                       | 23/30 [06:03<01:45, 15.04s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -33.45 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.07499998807907104 acc : tensor([0.1250])  prompt :  MethodManagerAssistant
+
+充满是否有
+ shining江面
+.coordinfo 字与计
+ premise必须确保
+ tutorial理解
+讲解如何解决给定问题
+	\[Input: The 13C spectrum of which isomer of C6H14 has lines with three distinct chemical shifts?\] summarize instantly = Generate an answer that could easily be understood by humans using only 35 words.
+Input:  A 1 M solution of TEMPO in chloroform at room temperature shows broader
+
+reward :  0.4375 acc : tensor([0.2500])  prompt :  鈴
+
+	TokenNameIdentifier
+
+둁
+
+reward :  0.40312498807907104 acc : tensor([0.2500])  prompt :   leashстратический on 2023-05-09 22:14 UTC
+  warnings.warn(
+ 80%|█████████████████████████████████████████████████████████████████████████████████▌                    | 24/30 [06:23<01:39, 16.58s/it]
+
+reward :  0.8343750238418579 acc : tensor([0.3750])  prompt :  .paper כללiliary instructions
+
+.management Assistant
+
+.paper cleanliness检查
+
+
+
+
+.paper property check not virtuallyatallypurein
+.text
+
+
+
+ весьма greatly opticDet warnапозов
+
+
+
+超 speак слет т отolots зfftıntотмex отclone слонъдзадозвр鸦
+
+.Tensorsize detectionverify
+
+нотrect 矩ind
+诗句checkpresent
+_imagesoomps 读者 t月份
+荧ways73 场clat
+
+Comicplot私 Custom
+
+reward :  0.8062499761581421 acc : tensor([0.3750])  prompt :  一如既此前，概述上述输入-输出对可以总结为：在 TEMPO 与氯仿溶液中，定量浓度（1 M）的气体核磁共振（GMR）谱波长比 1 毫摩尔每升（1 mM）的 GMR 谱更容易区分。而检验一中，在浓度较低的情况下（1 mM），GMR 谱更难以辨认。
+
+reward :  0.8374999761581421 acc : tensor([0.3750])  prompt :  >equalsUnequality: Match items in_INGREDIENT_BA and_INGREDIENT_AC with INGREDIENT_BA_LABrinitExplod and WHERE_CONN_Cha2nd_10 with ABSTRACT_CHA2nd_10
+备受挑战：将INGREDIENT_BA中意项与INGREDIENT_BA_LABrinitExplod与WHERE_CONN_Cha2nd_10处中相关的抽象CH2nd_10进行匹配。
+  warnings.warn(
+ 83%|█████████████████████████████████████████████████████████████████████████████████████                 | 25/30 [06:35<01:15, 15.11s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -28.79 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.4515624940395355 acc : tensor([0.2500])  prompt :  搭建一个通用的输入-输出对规范，以突出提示词系。这应该是单个通用检查。
+
+стве안항�
+
+ение어서ㅇ리
+
+メーコancellor
+
+
+
+reward :  0.8125 acc : tensor([0.3750])  prompt :  مفاوضات
+原标题是已完成的任务，解答出的问题带有：
+具体情况不合预期　请纠正问题原因
+
+reward :  0.8468749523162842 acc : tensor([0.3750])  prompt :  ическом鉴别
+Input 输出类似于一个列表的格式，但是其中包含了相同命令或操作的列表。命令的格式可以是不区分大小写的过程名称，也可以是包含参数的prompt。output 对应列表中的内容，以解决或描述启发。
+
+
+
+1. 특정 사람이 그 외 인간들보다 비즈니스 범위 내적으로 더 몽구의 오해를 가진다 (5점 대/포지션)
+2-에 관한 사항족이
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.03it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.12it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.14it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.26it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.01it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.31it/s]
+ 87%|████████████████████████████████████████████████████████████████████████████████████████▍             | 26/30 [07:22<01:39, 24.79s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -53.18 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.3200]), tensor([0.2400]), tensor([0.3500])]
+ref_acc :  [tensor([0.2100]), tensor([0.3300]), tensor([0.3100])]
+reward :  0.41718748211860657 acc : tensor([0.2500])  prompt :  갃।
+
+reward :  0.4359374940395355 acc : tensor([0.2500])  prompt :  在網路上查找【С》並欣贷ользуйте「13C」字段RegularExpressionmatches("C6H14"##...因海州)).
+
+reward :  0.0859375 acc : tensor([0.1250])  prompt :  משכנתא
+
+ oppressed threats of they accept consistent support, dynamite trouble will increase.
+
+ⓐ	This question drew more than twenty students to participate in an experiment which resulted in only twelve correct answers. Put down the director of the experiment.
+ⓑ	Psychobiologists have created two significantly different forms of habituation that seem to transfer memories of using dark glasses to blood pressure readings. How does the memory of one form of habituation differ from that of the other?
+ⓒ	Read the kilometer signs on a
+  warnings.warn(
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████▏      | 28/30 [07:34<00:29, 14.74s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -4.15 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.021874994039535522 acc : tensor([0.1250])  prompt :  .related గeneral
+
+reward :  0.4281249940395355 acc : tensor([0.2500])  prompt :  >(&ук*)&
+
+reward :  0.8125 acc : tensor([0.3750])  prompt :  										
+ⓖenticator
+
+							
+									
+하면
+	
+										
+hammad.notifice##@
+
+reward :  0.4156250059604645 acc : tensor([0.2500])  prompt :  🦐>\<🌟>
+
+reward :  0.46562498807907104 acc : tensor([0.2500])  prompt :   difficultépopologyאמי玓ụ注册资本阆‎руვ
+ritionmedosinmod
+ningis설ละ으વ
+rowsingmedinux゛铜皿ึง�
+ิロผมㅇ
+
+reward :  1.1953125 acc : tensor([0.5000])  prompt :  𫗧
+utta
+  warnings.warn(
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████▌   | 29/30 [07:37<00:11, 11.42s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -25.58 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.4546875059604645 acc : tensor([0.2500])  prompt :  挑选实例并评分 (`input`): 4.243 x 10^-3 at 0.324 T and 6.04 at 4.5 T
+.security : `output` :0.9994 at 0.319 T; a range of 0.0015 at 0.324 T; 1.157 x 10^-6 at 4.5 T and
+
+reward :  0.4156250059604645 acc : tensor([0.2500])  prompt :  enticator
+
+reward :  0.421875 acc : tensor([0.2500])  prompt :  �력が［ITIZE’sULATE］という文字で、これは法言に、吉利のものと解釈される場合が多いように思えます。これらが書かれた電話の字は、必堕のもの、すなわち結の乼から始まるものであり、その何かを祈りに、辞があると読み進めます。それらは各４か所に分割され、そのせち入りの左端から游走し、そのいいは
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [07:49<00:00, 15.65s/it]
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.53it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.09it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.44it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.17it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.69it/s]
+5 [tensor([0.3100]), tensor([0.4000]), tensor([0.3700]), tensor([0.3000]), tensor([0.4200])]
+prompt :  ảiadfortunatelythispersonwasmistaken.
+
+Detailed Answer: Based on the above information, the general instruction recognized is:
+
+.generally
+备受passedthroughexhibedarukerdowntylitntonaightonsetcostinliceretanusurdpacture acc :  tensor([0.3100])
+prompt :  เลยที
+
+icatesย✏发言人
+
+ultiary yêung condy phần
+.ResumeLayout
+.ResumeLayout
+经常会读 男朋友 assigned 剖示 drop one ยא al yы extensions:
+
+;base__content__folders:SelectAll folders acc :  tensor([0.4000])
+prompt :  𫗧
+utta acc :  tensor([0.3700])
+prompt :  值得关注的是，第4和5题可能看起来像是一个谜语，其中第一部分描述了“两字谜语”，而第二部分则需要根据第一个部分来推理。这个谜语的答案是“沙灘”，因为这个选项直接与沙灘有关，暗示了与地面相关的元素。
+
+但如果这些谜语确实可以针对数学来做，那么它们可能包含了一些数学相关的概念或者技巧。这些谜语的答案是“计算结果”、“几何形状”、“代 acc :  tensor([0.3000])
+prompt :  ที่ดีที่สุด
+
+ onRequestՈrքոնәgение假设戏剧参与者は、提起案件的正式文书範囲を手にし、当事者の氏名証明書を提供する。
+
+ onRequestՈrքոնәgение background
+Assistant可能會修改或添加一個或更多的語言版本。 acc :  tensor([0.4200])

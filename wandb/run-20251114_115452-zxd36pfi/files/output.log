@@ -1,0 +1,153 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:214: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.25951704382896423 acc : tensor([0.1818])  prompt :  Okay, let's see. The user wants me to generate effective prompts for a language model to perform question answering tasks. The input-output pairs are given, and I need to use those as examples to create good prompts.
+
+Looking at the input-output pairs:
+
+1. Input: "Find the maximum possible order for some element of Z₄ x Z₆." Output: 12
+2. Input: "Find the maximum possible order for an element of S₇." Output
+
+reward :  0.8049715757369995 acc : tensor([0.3636])  prompt :  Okay, let's see. The user wants me to generate effective prompts for the language model to perform question answering tasks. The input-output pairs given are:
+
+Input : Find the maximum possible order for some element of Z_4 x Z_6.
+Output : 12
+
+Input : Find the maximum possible order for an element of S_n for n = 7.
+Output : 12
+
+Input : Statement 1 | If f is a homomorphism from G to K
+
+reward :  0.522869348526001 acc : tensor([0.2727])  prompt :  Okay, let's tackle this prompt generation task. The user provided three input-output pairs and wants me to generate effective prompts for a language model to perform question answering tasks.
+
+First, I need to understand what the original input is. The input pairs are:
+
+1. Input: Find the maximum possible order for some element of Z_4 x Z_6. Output: 12.
+2. Input: Find the maximum possible order for an element of S_n for n =
+  7%|██████▊                                                                                                | 2/30 [00:19<04:43, 10.14s/it]
+
+reward :  0.5181818604469299 acc : tensor([0.2727])  prompt :  Okay, let's take a look at the question. The user wants me to generate effective prompts for a language model to perform question answering tasks. The input is a set of input-output pairs, and the output is a list of two boolean values.
+
+First, I need to understand what each input represents. Let's check the examples given:
+
+1. Input: Statement 1 | If a and b are elements of finite order in an Abelian group, then |ab| is the lcm
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Okay, let's take the given input and output pairs and see what we can deduce. The task is to generate effective prompts for a language model to perform question answering tasks.
+
+### Input:
+- **Statement 1**: If a and b are elements of finite order in an Abelian group, then |ab| is the lcm (|a|, |b|).
+- **Statement 2**: If g is a group element and g^n = e, then |g|
+
+reward :  0.5494318604469299 acc : tensor([0.2727])  prompt :  Okay, let's look at the input and output pairs to understand what's expected.
+
+Input:
+Statement 1: If a and b are elements of finite order in an Abelian group, then |ab| is the lcm of |a| and |b|.
+Output: False, False
+
+So, the first output is "False, False". That suggests that the first statement is false.
+
+Next input:
+Find the maximum possible order for some element of Z₄ ×
+
+reward :  0.25639206171035767 acc : tensor([0.1818])  prompt :  Okay, let's tackle this problem. The user wants me to generate effective prompts for a language model to perform question answering tasks. The task involves understanding the input statements and their truth values.
+
+First, I need to analyze the input statements and their outputs to understand what the model should do. The examples provided have input statements and output pairs, like "Statement 1 | ... Statement 2 | ... Output: False, True". The output is a boolean indicating whether the statements are true or
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  Okay, let's tackle this step by step. The task is to generate effective prompts for a language model to perform question answering tasks, based on the given input-output pairs.
+
+First, I need to understand what the input and output are. The input includes two statements, and the output is a boolean result (True/False) indicating whether the statements are correct.
+
+Looking at the first input pair:
+
+- Statement 1: "The symmetric group S₃ is cyclic."
+- Statement
+
+reward :  0.5369318723678589 acc : tensor([0.2727])  prompt :  Okay, let's see. The user wants me to generate effective prompts for a language model to perform question answering tasks. The input is a set of input-output pairs, and I need to create new prompts based on those examples.
+
+First, I'll look at the input and output pairs. The first example is:
+
+Input: Statement 1 | The symmetric group S_3 is cyclic. Statement 2 | Every group is isomorphic to some group of permutations.
+
+Output: False, True
+
+reward :  0.522869348526001 acc : tensor([0.2727])  prompt :  Okay, let's tackle this. The user wants me to generate effective prompts for a language model to perform question answering tasks. The examples given are input-output pairs, and I need to follow that structure.
+
+First, looking at the input and output examples:
+
+Input: Find the maximum possible order for an element of S₇.
+Output: 12
+
+So, the question is about permutations in S₇, and the output is 12. The maximum order for an element
+
+reward :  0.7909091114997864 acc : tensor([0.3636])  prompt :  Okay, let's see. The user wants me to generate effective prompts for a language model to perform question answering tasks. They provided some input-output pairs and are asking for those prompts.
+
+First, I need to understand what the input and output mean. For example, the first input is "Find the maximum possible order for an element of Sₙ for n = 7." and the output is "12". So the model needs to know that the order of the maximum element
+
+reward :  0.25639206171035767 acc : tensor([0.1818])  prompt :  Okay, let's tackle this. The user wants me to generate effective prompts for a language model to perform question answering tasks. The examples provided are input-output pairs, and I need to follow that structure.
+
+First, looking at the inputs given, they are about permutations and orders in groups. The inputs are:
+
+1. "Find the maximum possible order for an element of S₇ for n = 7."
+   Output: "12"
+
+2. "Statement 1 |
+
+reward :  0.2688920497894287 acc : tensor([0.1818])  prompt :  Okay, let's see. The user wants me to generate effective prompts for a language model to perform question answering tasks. The input is a set of input-output pairs, and I need to create prompts based on those examples.
+
+First, looking at the input and output pairs:
+
+Input:
+- Statement 1: A permutation that is a product of m even permutations and n odd permutations is an even permutation if and only if n is even.
+- Statement 2: Every group is isomorphic
+
+reward :  0.554119348526001 acc : tensor([0.2727])  prompt :  Okay, let's see. I need to generate effective prompts for a language model to perform question answering tasks. The user provided input-output pairs, and my task is to generate prompts.
+
+First, looking at the input, there are two statements. The first one says that a permutation product of m even and n odd permutations is an even permutation if and only if n is even. The second statement says every group is isomorphic to a group of permutations. The output is "True, True
+
+reward :  0.26576706767082214 acc : tensor([0.1818])  prompt :  Okay, let's see. I need to generate effective prompts for a language model to perform question answering tasks. The input has some statements and outputs, and the task is to create prompts based on those.
+
+First, looking at the input and output pairs:
+
+Input:
+Statement 1: A permutation that is a product of m even permutations and n odd permutations is an even permutation if and only if n is even.
+Statement 2: Every group is isomorphic to a group of permutations.
+
+reward :  0.8034090995788574 acc : tensor([0.3636])  prompt :  Okay, let's see. The user provided three input-output pairs and wants me to generate effective prompts for a language model to perform question answering tasks. The input is a statement, and the output is a boolean (True/False) indicating whether the statement is true or false.
+
+First, I need to understand each input. Let's take the first example:
+
+Input: Statement 1 | Every integral domain has a field of quotients. Statement 2 | A polynomial of degree n over
+
+reward :  0.5291193723678589 acc : tensor([0.2727])  prompt :  Okay, let's tackle this step by step. The user has provided a series of input-output pairs and wants me to generate effective prompts for a language model to perform question answering tasks.
+
+First, I need to understand the task. The user wants prompts that help the language model understand questions better and provide accurate answers. The input-output pairs given are:
+
+1. Input: Find the maximum possible order for some element of Z_4 x Z_6. Output: 12.
+
+reward :  0.554119348526001 acc : tensor([0.2727])  prompt :  Okay, let's tackle this. The user provided some input-output pairs and wants me to generate effective prompts for a language model to perform question answering tasks.
+
+First, I need to understand what each input does. The input is a statement, and the output is a boolean (True/False). For example, the first input is "Statement 1 | Every integral domain has a field of quotients." Output is "True, False".
+
+So, the task is to create prompts that
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:06<00:00,  3.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:06<00:00,  3.91it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:06<00:00,  4.02it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:07<00:00,  3.52it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:07<00:00,  4.21it/s]
+ 80%|█████████████████████████████████████████████████████████████████████████████████▌                    | 20/25 [00:04<00:01,  4.02it/s]

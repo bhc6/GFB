@@ -1,0 +1,22 @@
+{"time":"2025-11-15T05:50:37.680858288Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-15T05:51:12.582174496Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-11-15T05:51:20.011682589Z","level":"INFO","msg":"stream: created new stream","id":"l884iiot"}
+{"time":"2025-11-15T05:51:20.012064871Z","level":"INFO","msg":"handler: started","stream_id":"l884iiot"}
+{"time":"2025-11-15T05:51:20.015394339Z","level":"INFO","msg":"stream: started","id":"l884iiot"}
+{"time":"2025-11-15T05:51:20.015405079Z","level":"INFO","msg":"writer: started","stream_id":"l884iiot"}
+{"time":"2025-11-15T05:51:20.015430208Z","level":"INFO","msg":"sender: started","stream_id":"l884iiot"}
+{"time":"2025-11-15T05:52:05.653590061Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":66}
+{"time":"2025-11-15T05:52:05.86776598Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":10}
+{"time":"2025-11-15T05:52:14.063277646Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":167}
+{"time":"2025-11-15T05:52:14.063505226Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-15T05:52:23.392446748Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":265}
+{"time":"2025-11-15T05:52:23.392860103Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-15T05:54:31.293953548Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":1407}
+{"time":"2025-11-15T05:54:31.300612073Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":9}
+{"time":"2025-11-15T05:56:29.290855155Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-15T05:56:29.290687397Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":2584}
+{"time":"2025-11-15T05:59:06.157123363Z","level":"INFO","msg":"stream: closing","id":"l884iiot"}
+{"time":"2025-11-15T05:59:08.017586378Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-15T05:59:13.514779696Z","level":"INFO","msg":"handler: closed","stream_id":"l884iiot"}
+{"time":"2025-11-15T05:59:13.519519399Z","level":"INFO","msg":"sender: closed","stream_id":"l884iiot"}
+{"time":"2025-11-15T05:59:13.519821441Z","level":"INFO","msg":"stream: closed","id":"l884iiot"}

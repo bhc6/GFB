@@ -1,0 +1,19 @@
+{"time":"2025-11-13T12:57:45.159497739Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-13T12:57:49.768985211Z","level":"INFO","msg":"stream: created new stream","id":"85scurfs"}
+{"time":"2025-11-13T12:57:49.769562174Z","level":"INFO","msg":"handler: started","stream_id":"85scurfs"}
+{"time":"2025-11-13T12:57:49.773125541Z","level":"INFO","msg":"stream: started","id":"85scurfs"}
+{"time":"2025-11-13T12:57:49.773163297Z","level":"INFO","msg":"writer: started","stream_id":"85scurfs"}
+{"time":"2025-11-13T12:57:49.77319158Z","level":"INFO","msg":"sender: started","stream_id":"85scurfs"}
+{"time":"2025-11-13T12:59:03.856852206Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":757}
+{"time":"2025-11-13T12:59:03.858307482Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-13T12:59:20.464209966Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":1105}
+{"time":"2025-11-13T12:59:20.63582035Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":9}
+{"time":"2025-11-13T13:00:05.79721041Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":1951}
+{"time":"2025-11-13T13:00:07.908714826Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":17}
+{"time":"2025-11-13T13:00:44.58035672Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":2507}
+{"time":"2025-11-13T13:00:44.580568943Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-13T13:00:44.586784173Z","level":"INFO","msg":"stream: closing","id":"85scurfs"}
+{"time":"2025-11-13T13:00:46.118375968Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-13T13:00:51.374264362Z","level":"INFO","msg":"handler: closed","stream_id":"85scurfs"}
+{"time":"2025-11-13T13:00:51.375700788Z","level":"INFO","msg":"sender: closed","stream_id":"85scurfs"}
+{"time":"2025-11-13T13:00:51.375936622Z","level":"INFO","msg":"stream: closed","id":"85scurfs"}

@@ -1,0 +1,109 @@
+astronomy/test-00000-of-00001.parquet: 100%|██████████████████████████████████████████████████████████| 28.3k/28.3k [00:13<00:00, 2.05kB/s]
+astronomy/validation-00000-of-00001.parq(…): 100%|████████████████████████████████████████████████████| 6.05k/6.05k [00:00<00:00, 6.54kB/s]
+astronomy/dev-00000-of-00001.parquet: 100%|███████████████████████████████████████████████████████████| 4.94k/4.94k [00:01<00:00, 3.18kB/s]
+Generating test split: 100%|███████████████████████████████████████████████████████████████████| 152/152 [00:00<00:00, 22195.95 examples/s]
+Generating validation split: 100%|████████████████████████████████████████████████████████████████| 16/16 [00:00<00:00, 8406.47 examples/s]
+Generating dev split: 100%|█████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 1740.23 examples/s]
+train dataset size :  5
+test dataset size :  152
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Why isn't there a planet where the asteroid belt is located?
+Output : Resonance with Jupiter prevented material from collecting together to form a planet.
+Input : Why isn't there a planet where the asteroid belt is located?
+Output : Resonance with Jupiter prevented material from collecting together to form a planet.
+Input : You are pushing a truck along a road. Would it be easier to accelerate this truck on Mars? Why? (Assume there is no friction)
+Output : It would be the same no matter where you are.
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:203: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.8218749761581421 acc : tensor([0.3750])  prompt :  The reason that small planets tend to lose interior heat faster than larger planets is essentially the same as the reason that ________.
+
+The Input is: A comet’s tail points in the following direction:
+Output : away from the Sun
+
+
+
+reward :  0.8109375238418579 acc : tensor([0.3750])  prompt :  The reason that small planets tend to lose interior heat faster than larger planets is essentially the same as the reason that ________.
+
+Input : A comet’s tail points in the following direction:
+Output : away from the Sun
+
+Input : The International
+
+reward :  0.07968750596046448 acc : tensor([0.1250])  prompt :  “The reason that small planets tend to lose interior heat faster than larger planets is essentially the same as the reason that ________.”
+
+The Output is: “a large baked potato takes longer to cool than a small baked potato”
+
+Therefore, the answer
+ 10%|██████████▎                                                                                            | 3/30 [01:04<10:21, 23.01s/it]
+
+reward :  0.6046874523162842 acc : tensor([0.3125])  prompt :
+
+reward :  0.6046874523162842 acc : tensor([0.3125])  prompt :
+
+reward :  0.4546875059604645 acc : tensor([0.2500])  prompt :  Input : If the Moon is setting at noon the phase of the Moon must be
+Output : third quarter.
+
+The Friend’s Output:
+Output : third quarter.
+
+The Friend’s Instructions are:
+Input: If the Moon
+
+reward :  0.22968748211860657 acc : tensor([0.1875])  prompt :  Input : What is the primary difference between a black hole and a neutron star?
+Output : Black holes are formed from the collapse of massive stars, while neutron stars are formed from the collapse of massive stars, but with significantly higher density.
+
+reward :  0.4312500059604645 acc : tensor([0.2500])  prompt :  Input : What type of planet is Venus?
+Output : Gas Giant
+
+reward :  0.6312500238418579 acc : tensor([0.3125])  prompt :  Input : Which property of our solar system does a formation theory NOT need to explain?
+Output : the presence of life on Earth
+
+The Response is:
+Input : The mass of Saturn's rings is 2x1019
+
+reward :  0.2640624940395355 acc : tensor([0.1875])  prompt :  The input-output pairs are:
+
+Input : The mass of Saturn's rings is 2x1019 kg. What is the ratio of this mass to that of a 200 km diameter spherical moon made entirely of water
+
+reward :  0.4281249940395355 acc : tensor([0.2500])  prompt :  The output is : 5 : 1
+
+Let’s analyze the provided examples:
+
+*   **Input : The mass of Saturn’s rings is 2x1019 kg. What is the ratio of this mass to
+
+reward :  0.4453125 acc : tensor([0.2500])  prompt :  Input: The mass of Saturn's rings is 2x1019 kg. What is the ratio of this mass to that of a 200 km diameter spherical moon made entirely of water-ice (density ~ 1 g
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:10<00:00,  3.52it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:10<00:00,  3.59it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:10<00:00,  3.51it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 11.70it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 11.51it/s]
+5 [tensor([0.3750]), tensor([0.4145]), tensor([0.2895]), tensor([0.3684]), tensor([0.3684])]
+prompt :  The reason that small planets tend to lose interior heat faster than larger planets is essentially the same as the reason that ________.
+
+The Input is: A comet’s tail points in the following direction:
+Output : away from the Sun
+
+ acc :  tensor([0.3750])
+prompt :  The reason that small planets tend to lose interior heat faster than larger planets is essentially the same as the reason that ________.
+
+Input : A comet’s tail points in the following direction:
+Output : away from the Sun
+
+Input : The International acc :  tensor([0.4145])
+prompt :  Input : Which property of our solar system does a formation theory NOT need to explain?
+Output : the presence of life on Earth
+
+The Response is:
+Input : The mass of Saturn's rings is 2x1019 acc :  tensor([0.2895])
+prompt :   acc :  tensor([0.3684])
+prompt :   acc :  tensor([0.3684])

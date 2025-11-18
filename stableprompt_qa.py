@@ -14,8 +14,8 @@ from dataset_utils import load_all_dataset,dataset_dicts,load_qa_dataset,qa_dict
 from peft import LoraConfig
 def parser_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--target_model',type=str,default='google/gemma-1.1-7b-it')
-    parser.add_argument('--agent_model',type=str,default='google/gemma-1.1-7b-it')
+    parser.add_argument('--target_model',type=str,default='google/gemma-3-1b-it')
+    parser.add_argument('--agent_model',type=str,default='Qwen/Qwen3-0.6B-Base')
     parser.add_argument('--task',type=str,default='qa')
     parser.add_argument('--dataset',type=str,default='sst2')
     parser.add_argument(
@@ -31,7 +31,7 @@ def parser_args():
     parser.add_argument('--num_example',type=int,default=3)
     parser.add_argument('--epochs',type=int,default=10)
     parser.add_argument('--meta_prompt',type=str,
-                        default = '''I gave a friend an instruction and three inputs. 
+                        default = '''I gave a friend an instruction and five inputs. 
                         The friend read the instruction and wrote an output for every one of the inputs.
                         Here are the input-output pairs: \n''')
     parser.add_argument('--prompt_per_example',type=int,default=3)
@@ -163,13 +163,14 @@ def main():
         sum_total_loss = 0
         examples = utils.got_example_mmlu(validation_dataset,verbalizer,shot=args.num_example)
         query_text = [
-            {"role" : "user", "content" : args.meta_prompt + '\n' + examples},
-            {"role": "assistant","content" : "The Instruction is : "}
+            {"role" : "user", "content" : examples + 'Summarize the above input-output pairs into a single general instruction'},
         ]
             
         query_encoded = agent_tokenizer.apply_chat_template(
             query_text,
-            return_tensors='pt'
+            return_tensors='pt',
+            add_generation_prompt=True, #for qwen style model
+            enable_thinking=False #for qwen style model
         ).view(-1).to(device)
         
         response_tensors =ppo_trainer.generate(

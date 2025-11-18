@@ -1,0 +1,159 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  Output: False, True
+
+**Explanation:**
+
+- **Statement 1**: **False**
+  The statement says: "If f is a homomorphism from G to K and H is normal in G, then f(H) is normal in K."
+  This is **not always true**. The correct condition is that if f is a homomorphism and H is a normal subgroup of G, then f(H) is a normal subgroup of K. However, this is **
+
+reward :  0.0024147629737854004 acc : tensor([0.0909])  prompt :  Output: False, True
+
+**Reasoning:**
+
+1. **Statement 1**:
+   *If $ f $ is a homomorphism from $ G $ to $ K $, and $ H $ is normal in $ G $, then $ f(H) $ is normal in $ K $.*
+   ✅ **True**.
+   This is a standard result in group theory. If $ H $ is normal in $ G $, then $ f(H) $ is
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  **Output : False, True**
+
+**Explanation:**
+
+- **Statement 1**:
+  "If f is a homomorphism from G to K and H is normal in G then f(H) is normal in K."
+  **This is **False**.**
+  This is a classic example of a **normality theorem** in group theory, but the statement is **false**. The correct statement would be:
+  "If f is a homomorphism from
+  3%|███▍                                                                                                   | 1/30 [00:05<02:42,  5.62s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -2.63 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.8143466114997864 acc : tensor([0.3636])  prompt :  Output: **False, False**
+**Reasoning:**
+1. **Statement 1**: "If a and b are elements of finite order in an Abelian group, then |ab| is the lcm (|a|, |b|)."
+   - This is **false**.
+     - In an Abelian group, the order of a product is not necessarily the least common multiple of the orders of the elements. For example, in Z_4 × Z_6
+
+reward :  0.8049715757369995 acc : tensor([0.3636])  prompt :  Output: False, False
+
+**Explanation:**
+
+**Statement 1:**
+"If f is a homomorphism from G to K and H is normal in G, then f(H) is normal in K."
+This is **False**. The correct statement should be:
+"If f is a homomorphism from G to K and H is normal in G, then f(H) is a subgroup of K." This is not the same as being "normal" in K. A subgroup
+
+reward :  -0.027272731065750122 acc : tensor([0.0909])  prompt :  Output: False, True
+  warnings.warn(
+ 10%|██████████▎                                                                                            | 3/30 [00:21<03:12,  7.14s/it]
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Output : **True, False**
+
+**Explanation:**
+- **Statement 1**: "Every group is isomorphic to some group of permutations."
+  **True**.
+  - The symmetric group $ S_n $ is isomorphic to a group of permutations of $ n $ elements, which is a subgroup of $ S_n $.
+
+- **Statement 2**: "A polynomial of degree $ n $ over a ring can have at most $ n $ zeros counting multiplicity."
+
+
+reward :  0.003977268934249878 acc : tensor([0.0909])  prompt :  **Output : False, True**
+
+**Explanation:**
+- **Statement 1**: "The symmetric group $ S_3 $ is cyclic."
+  - **True**. The symmetric group $ S_3 $ is cyclic because it has a generator of order 2.
+- **Statement 2**: "Every group is isomorphic to some group of permutations."
+  - **True**. Every group is isomorphic to some permutation group (e.g., $ S_n $
+
+reward :  0.5509943962097168 acc : tensor([0.2727])  prompt :  Output: False, True
+
+Explanation:
+- **Statement 1**: "The symmetric group $ S_3 $ is cyclic."
+  ✅ This is true. The symmetric group $ S_3 $ is cyclic because it is isomorphic to $ \mathbb{Z}_2 $, a cyclic group of order 2.
+
+- **Statement 2**: "Every group is isomorphic to some group of permutations."
+  ❌ This is false. A group is not necessarily
+
+reward :  0.5416193604469299 acc : tensor([0.2727])  prompt :  **Output:**
+**True, True**
+
+reward :  0.26732954382896423 acc : tensor([0.1818])  prompt :  Input:
+**Statement 1** | A permutation that is a product of $ m $ even permutations and $ n $ odd permutations is an even permutation if and only if $ n $ is even.
+**Statement 2** | Every group is isomorphic to a group of permutations.
+
+Output:
+**True, True**
+
+reward :  0.5447443723678589 acc : tensor([0.2727])  prompt :  Input : Find the maximum possible order for some element of $ \mathbb{Z}_4 \times \mathbb{Z}_6 $.
+Output : 12
+
+Input : Statement 1 | A permutation that is a product of $ m $ even permutations and $ n $ odd permutations is an even permutation if and only if $ n $ is even.
+Output : True, True
+
+Input : Statement 2 | Every group is isomorphic to a group of permutations.
+Output
+  warnings.warn(
+ 17%|█████████████████▏                                                                                     | 5/30 [00:31<02:23,  5.74s/it]
+
+reward :  0.5291193723678589 acc : tensor([0.2727])  prompt :  Output: **True, False**
+
+reward :  0.28920456767082214 acc : tensor([0.1818])  prompt :  **Output:** True, False
+
+**Explanation:**
+
+- **Statement 1:** *Every integral domain has a field of quotients.*
+  **True** ✅ This is a known theorem in ring theory: every integral domain has a field of quotients.
+
+- **Statement 2:** *A polynomial of degree n over a ring can have at most n zeros counting multiplicity.*
+  **False** ❌ This is a false statement. A polynomial of degree n over a ring
+
+reward :  0.5181818604469299 acc : tensor([0.2727])  prompt :  **True, False**
+**Input : Statement 1 | Every integral domain has a field of quotients. Statement 2 | A polynomial of degree n over a ring can have at most n zeros counting multiplicity.**
+
+reward :  0.8362215757369995 acc : tensor([0.3636])  prompt :  Output: **True, False**
+
+**Reasoning:**
+
+1. **Statement 1: "Every integral domain has a field of quotients."**
+   This is **true**. In a ring with no zero divisors (integral domain), the field of quotients is well-defined and unique.
+
+2. **Statement 2: "A polynomial of degree n over a ring can have at most n zeros counting multiplicity."**
+   This is **false**. A polynomial of
+
+reward :  0.5369318723678589 acc : tensor([0.2727])  prompt :  **Output : True, False**
+
+**Reasoning:**
+
+1. **Statement 1: "Every integral domain has a field of quotients."**
+   - This is **True**.
+   - An integral domain is a ring with no zero divisors, and it has a field of quotients. This is a well-known result in ring theory.
+
+2. **Statement 2: "A polynomial of degree n over a ring can have at most n zeros counting multiplicity."
+
+reward :  0.2767045497894287 acc : tensor([0.1818])  prompt :  **Output : True, False**
+
+**Reasoning:**
+
+- **Statement 1**: "Every integral domain has a field of quotients."
+  ✅ This is **True**.
+  An integral domain is a ring with no zero divisors, and it has a field of quotients (the ring of rational functions over the domain).
+
+- **Statement 2**: "A polynomial of degree n over a ring can have at most n zeros counting multiplicity."
+  ✅

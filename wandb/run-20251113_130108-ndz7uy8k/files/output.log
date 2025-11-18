@@ -1,0 +1,353 @@
+train dataset size :  5
+test dataset size :  265
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'jingyaogong/MiniMind2', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'jingyaogong/MiniMind2', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : How many attempts should you make to cannulate a patient before passing the job on to a senior colleague, according to the medical knowledge of 2020?
+Output : 2
+Input : How many attempts should you make to cannulate a patient before passing the job on to a senior colleague, according to the medical knowledge of 2020?
+Output : 2
+Input : The energy for all forms of muscle contraction is provided by:
+Output : ATP.
+  0%|                                                                                                                 | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+/workspace/stableprompt_qa.py:203: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.4675647020339966 acc : tensor([0.2069])  prompt :  NAPLICATION As TRIYIDAPPIDP（Initial Intensity IP=1024 mega video in CPI=1599000 in port）
+
+reward :  0.4816271662712097 acc : tensor([0.2069])  prompt :  Next, the quote. If you want it to be true, you can begin by which :
+Output :
+Output : 8.75093
+Input :
+O
+
+reward :  0.375835120677948 acc : tensor([0.1724])  prompt :  自动回复
+Output : Present
+Input : Which is true about radial nerve palsy?
+Output : It leads to wrist drop
+ 13%|██████████████                                                                                           | 4/30 [00:07<00:46,  1.79s/it]
+
+reward :  0.16034483909606934 acc : tensor([0.1034])  prompt :  Write于 1886 中: When temperatures become mostly of tide, it ordists entirely, and appears to influence how mean temperatures rise to sound. The specific percentage of dec
+
+reward :  0.6799299120903015 acc : tensor([0.2759])  prompt :  NAA test
+Input: Discovered on syrup of the Group, Output
+Output : Educing the music
+____
+Steat** T0_functional
+
+reward :  0.4714709520339966 acc : tensor([0.2069])  prompt :   Regular email generation is : The quick bonus then use vacuuming at most press enter of his rage upon it?
+Output : Classification
+Output : movie
+
+reward :  0.47068968415260315 acc : tensor([0.2069])  prompt :  Assuming that the speaker is facing a specific personal or therapy individual, the conversation is : wrote an effect.
+Output :
+If the speaker is seen a personal or fancy en
+
+reward :  0.4738146662712097 acc : tensor([0.2069])  prompt :  NAME Withuvarez ; Would these physical trials to see the output of person who have been experiencing negative effects or hypothesis?
+A doctor, test published life 0 (3
+
+reward :  0.4699084162712097 acc : tensor([0.2069])  prompt :   choice of ID to true, including an attack on the humanity, and use body errorly from language exceptions to infusions about individuals. The cervix can sometimes be played with certain metibles
+
+reward :  0.4870959520339966 acc : tensor([0.2069])  prompt :  achievements. It is true based on user inputs and the current exam assignments, not the matheasitude argument.
+Output :
+Input : World Cup database databases
+
+reward :  0.4699084162712097 acc : tensor([0.2069])  prompt :  The problem of cutting \(W\) represents on fridge bleaching on a coordinated sleep system, which is designed to manage anxiety and anxiety effectively. The tests are tested at analyzedwards
+
+reward :  0.2567618489265442 acc : tensor([0.1379])  prompt :  Polygon
+A quick individuals called the test in these mergers are the possible document. You are the attendance pairs for too long roads.com customs left eyes (the visible distance)
+
+reward :  0.2630118131637573 acc : tensor([0.1379])  prompt :   Tois
+Using the anatomy zode
+The petrel amber mainstream anatomy providing space items and patterns
+For patients with asthma, which is common to the audience, bec
+
+reward :  0.47303342819213867 acc : tensor([0.2069])  prompt :   writing a couple of input text that corresponds to a Current Distance ratio tells Strategy. On rectals are sometimes part of length 3 km, while skills such
+
+reward :  0.47068968415260315 acc : tensor([0.2069])  prompt :   refers to the ability of the speaker and the signing to be related to females as part of the function. It was created by Australopithecusist, who proposed that the entity is running
+
+reward :  0.37505385279655457 acc : tensor([0.1724])  prompt :  Another way to suggest number of days is : count, %.11 . .
+Input :
+2
+
+reward :  0.5811691284179688 acc : tensor([0.2414])  prompt :  undefined (TB)
+Input : acute asibile and shallow ball is : 3
+Output : TRU projection of the chest Task is : 1
+
+reward :  0.16893859207630157 acc : tensor([0.1034])  prompt :  annularity content for solving visual fields't room with external shape. Spreading:
+Strategies return: If if target is true, develop text t, drawing for 'true' move
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 40.02it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 40.22it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.88it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 39.24it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 39.52it/s]
+ 27%|████████████████████████████                                                                             | 8/30 [00:25<01:15,  3.45s/it]
+
+acc :  [tensor([0.2604]), tensor([0.2755]), tensor([0.2755])]
+ref_acc :  [tensor([0.2566]), tensor([0.2830]), tensor([0.2642])]
+reward :  0.26535558700561523 acc : tensor([0.1379])  prompt :  NATN (ipking-pitched number) assets of an object that is example. Repetition \(I\) is because in the context of the spectroscopic output. It
+
+reward :  0.5772628784179688 acc : tensor([0.2414])  prompt :  Another way to find the earliest stream of sound in 1886?
+Output : Elon Musk
+Input : The coding sequences of genes are called:
+Out
+
+reward :  0.1595635861158371 acc : tensor([0.1034])  prompt :  NAMP python.
+
+reward :  0.364116370677948 acc : tensor([0.1724])  prompt :  ink catheterization in the patient's notes.got back from the current genetic information of his investigation and have not been stolen by previous races.
+
+reward :  0.5710129141807556 acc : tensor([0.2414])  prompt :  ductor recording saturgical child at the first : Int& the engine failure agent.
+Output : Document catheteromning in the third : Document catheteromning
+
+reward :  0.5717941522598267 acc : tensor([0.2414])  prompt :  puts "The Korean method of mRNA splicing for every one of the user you significantly replicated from the manufactils". However, also didn't apply to medical or physiological speech
+
+reward :  0.3813038468360901 acc : tensor([0.1724])  prompt :  end information itself
+Input : Stridor is described as:
+Output : A high-pitched sound.
+Input : why of the three inputs, 4, 3
+
+
+reward :  0.47850218415260315 acc : tensor([0.2069])  prompt :  Alternatively, here are the input-output pairs in which one must be listed above the pair:
+Input : Delaware, how are the speaker at the told history and deflect
+
+reward :  0.6830549240112305 acc : tensor([0.2759])  prompt :   Here is a test what you want:
+Input of inside your shelves,
+where all the eyes are handled.
+Input :
+Beneath the surface of the eyes
+
+reward :  0.4738146662712097 acc : tensor([0.2069])  prompt :   "complex treatment for memory reach well with the female"
+Output : 6
+Input : Basic treatment for memory reach well with the female
+Output : sav
+
+reward :  0.46912717819213867 acc : tensor([0.2069])  prompt :   Seveloon and optimize (E) communication, which help prevent races among people with ramen upside rol, and cp terms wouldn't observe to improve. The context often cover when you're accompl
+
+reward :  0.4714709520339966 acc : tensor([0.2069])  prompt :   coupon, allowing them to ensure that they experience fun and recognize myication. The cervix can sometimes be polite:
+```
+In the arrangement of the habitic attachments and ten teams who need
+
+reward :  0.0561152845621109 acc : tensor([0.0690])  prompt :   statement inside the sentence "The friend gave a friend an instruction and three inputs."
+
+reward :  0.2622305750846863 acc : tensor([0.1379])  prompt :  Alternatively, what is the purpose of the speaker's input patterns in the court may be for some of the first interpretation or adaptation of the speaker's own decision-making process.
+
+reward :  0.5717941522598267 acc : tensor([0.2414])  prompt :  Alternatively, we can use the following Lovii tree to categorize the represents Cushing's response:
+
+1 (Virode/defaultco tobacco generation company
+  warnings.warn(
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.15it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 37.50it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 37.98it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 39.98it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 40.35it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.94it/s]
+ 37%|██████████████████████████████████████▏                                                                 | 11/30 [00:45<02:02,  6.46s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.11 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2491]), tensor([0.2868]), tensor([0.2717])]
+ref_acc :  [tensor([0.2491]), tensor([0.2755]), tensor([0.2491])]
+reward :  0.055334046483039856 acc : tensor([0.0690])  prompt :  NAP: The speaker chose this messages.
+
+reward :  0.2606680989265442 acc : tensor([0.1379])  prompt :  Vertical upside-druminase conjugances indirectly indicates a desired level of skill.
+
+reward :  0.3695850968360901 acc : tensor([0.1724])  prompt :  NATO coders with calculated decimals.
+
+I : It was made here; he needs to apply a non-touchage rate of painistic, not sent to care.
+
+N
+  warnings.warn(
+ 40%|█████████████████████████████████████████▌                                                              | 12/30 [00:47<01:29,  4.98s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.08 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.6838361620903015 acc : tensor([0.2759])  prompt :  lead kitten is the second recipe used in upper recipes, singing, filtering and rigid performances. So for someone Hip, one of the following is not a use for int
+
+reward :  0.5796066522598267 acc : tensor([0.2414])  prompt :  gest
+Output : 6
+
+reward :  0.360210120677948 acc : tensor([0.1724])  prompt :  ('Input : How can other types of proteins can produce for breeding?', rounded : 6 for medical intervention (i.e., passing an arthropic muscles).) show it imp
+  warnings.warn(
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.56it/s]
+
+reward :  0.4714709520339966 acc : tensor([0.2069])  prompt :  use this as whereappropriately, but they also :
+Output: 40-60% of the doors of the answer, which could make the scarcity to manage icalda efforts?
+Input
+
+reward :  0.2606680989265442 acc : tensor([0.1379])  prompt :  It seems you're trying to output the leads to a strategy or data solution, but you didn't specify the exact problem or technique you'd like to need. Des deployment and preprovision
+
+reward :  0.7841594219207764 acc : tensor([0.3103])  prompt :  legal simplicity isivilar=1, ool=0, of-started n=60, then= 4 per yu훨ned in temperature of (40 + 40 + 60 +
+
+reward :  0.3656788468360901 acc : tensor([0.1724])  prompt :  For example: "Catalan were outground surfaced throughout the year when the neon lungs scattered out of undone."
+Output pairs:
+- translation: "列
+
+reward :  0.47850218415260315 acc : tensor([0.2069])  prompt :  NAME
+Does the replacement : Is Is Anasian : Anasian
+
+reward :  0.3656788468360901 acc : tensor([0.1724])  prompt :  define co.list?
+# Cattar showcaster in diamethylains for a source note at the post-ground of weight pressure positive
+properties of topets like feline and
+
+reward :  0.3656788468360901 acc : tensor([0.1724])  prompt :  NAT NOQt except thim pairs does not address any uncontrollably reported and "prop : drowsiness." while evaluate this type of condition. Pain act
+
+reward :  0.47693967819213867 acc : tensor([0.2069])  prompt :  Write an example of text that includes the ises. It involves the abdominal pain. The main points of this text should be : :> in question, in instruction, and in separating : :in
+
+reward :  0.5741379261016846 acc : tensor([0.2414])  prompt :   However, the instruction in the main address stands for "controstragalatin plays for better sleep and improper physical physiological performance."
+In the main address of the main address of Alzheim
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 36.95it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 37.91it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:05<00:00, 13.31it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 35.92it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 36.18it/s]
+ 63%|█████████████████████████████████████████████████████████████████▊                                      | 19/30 [01:13<00:37,  3.40s/it]
+
+acc :  [tensor([0.2642]), tensor([0.2528]), tensor([0.2755])]
+ref_acc :  [tensor([0.2755]), tensor([0.2679]), tensor([0.2642])]
+reward :  0.6799299120903015 acc : tensor([0.2759])  prompt :   was actually an ultrasound series taken to captivate multiple eyes.
+now certainly contributed to the field of online computer processing and the term "istital," which could be related to the phase "
+
+reward :  0.6807111501693726 acc : tensor([0.2759])  prompt :  NAME.
+NOT report : The coding sequence of topic about radial nerve palsy is
+Insurgent ask:
+Output允许 NLP research instruments,
+
+reward :  0.4675647020339966 acc : tensor([0.2069])  prompt :   protected number of non-universal observations. Shorter only chains leading both range from ions (such as walnut, retired, homolad, dwarfs), and opp
+
+reward :  0.4777209162712097 acc : tensor([0.2069])  prompt :  unless red is ：
+Output : red is scales that form the choice of blocking mRNAs into  processing hairs.
+
+reward :  0.4722521901130676 acc : tensor([0.2069])  prompt :  For every one of the total true than previous one can share given the attributes of various genes, apart from the captured them. It contributes to these different different genes, which is a natural tool for detecting
+
+reward :  0.47850218415260315 acc : tensor([0.2069])  prompt :  ions% thinly today, then more of those things would be:
+Output : red, oxidative, slow contracting.
+complete generations of elements with electrons emulate the desired
+
+reward :  0.364116370677948 acc : tensor([0.1724])  prompt :  ounts all of them is 'airllage'.
+
+reward :  0.36255383491516113 acc : tensor([0.1724])  prompt :  It seems there might have been a bit of a mix-up. Can you help me properly set up for the conversion? Are you looking for more information about Cushing's response, yet Cushing's inc
+
+reward :  0.5905441641807556 acc : tensor([0.2414])  prompt :  NATO and humidity issues are the same.
+Output :
+Yes, the following of the input-output pairs, which named Cushing is typically considered as the action of
+
+reward :  0.47303342819213867 acc : tensor([0.2069])  prompt :  cept depends on the position of the object vs. exercise. The state of plants speak the body slowly and grows well, and the person does asneak either. The subject, depth, and vocation
+
+reward :  0.47068968415260315 acc : tensor([0.2069])  prompt :  perform the conditional processes of apply an incorgeural mechanism to keep track of new data themselves, and that each data of day feels unlikely with the next other information (in this case assume nerve activity
+
+reward :  0.36880385875701904 acc : tensor([0.1724])  prompt :  ultracoatny posts.
+Input : What should be done after catheterization is carried out?
+Output : Redness of the skin due to congestion of the capillaries
+
+reward :  0.6689924001693726 acc : tensor([0.2759])  prompt :  又譯：is cardiac output: 리법
+
+We can calculate the difference of fa8ch but not rounds, so the difference between fa8ch and this is
+
+reward :  0.37427258491516113 acc : tensor([0.1724])  prompt :  Input : one of the following is true about the assessment of gait. Output : An antalgic gait is, being seen as evidence evidence and the information we arise.
+
+reward :  0.4714709520339966 acc : tensor([0.2069])  prompt :  own "I'm instruction" raises a fever state initiated by the message "I always inst was the electronic phase of oil production and the inner power of oil syllination."
+Output : Al
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.15it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 37.47it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.77it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 40.97it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 39.76it/s]
+ 77%|███████████████████████████████████████████████████████████████████████████████▋                        | 23/30 [01:31<00:26,  3.76s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -3.68 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2717]), tensor([0.2528]), tensor([0.2642])]
+ref_acc :  [tensor([0.2755]), tensor([0.2566]), tensor([0.2830])]
+reward :  0.2630118131637573 acc : tensor([0.1379])  prompt :   National stats and comparisons house receivers fibers.
+
+reward :  0.36880385875701904 acc : tensor([0.1724])  prompt :  ann is under wrong
+The type "I'm": By the inputs from you, the person transitions significantly. Romantic bones, interpreting muscle fibres, and strain common childream form head
+
+reward :  0.37896010279655457 acc : tensor([0.1724])  prompt :  NAPlace : Alzheimer's disease except is.
+Unnequalities except.
+Stridor is described as:
+Output : Eumajenelelle.
+
+reward :  0.46912717819213867 acc : tensor([0.2069])  prompt :  NAME. On
+	I know that it waits for that information to see the tone.
+	Output :
+	Effectively, Output is believed to be
+
+reward :  0.5796066522598267 acc : tensor([0.2414])  prompt :  虚构函号 "Using a large volume spacer again improve the deposition of Mystem Actions."
+Output : 40-60%
+神秘科学.
+Artificial :
+
+reward :  0.5710129141807556 acc : tensor([0.2414])  prompt :   Text "你好 我的朋友 默默地奉献我的回答 " represents the fluency of speech romanized by  Android councheterday. Its main output and
+
+reward :  0.5757004022598267 acc : tensor([0.2414])  prompt :  NASA stared example to proceed as it for attack structures that are primarily the pain which of these features also the same pairs of meat exchanges. In each string, the trans
+
+reward :  0.1595635861158371 acc : tensor([0.1034])  prompt :  NAME compliance built on dress databases.
+
+reward :  0.46522092819213867 acc : tensor([0.2069])  prompt :  Alternatively, it does indeed lead:
+Two-Player control (IPA) lips , how you *$5english should development to keep the latest salgery in better
+  warnings.warn(
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 36.12it/s]
+
+reward :  0.5772628784179688 acc : tensor([0.2414])  prompt :   statement here is true for Cushing's behavior. However, if the instruction fails, the journal suggests it could be false. In the study, explains the main idea is the creation of Cushing
+
+reward :  0.36724135279655457 acc : tensor([0.1724])  prompt :  extending the answer to the party be processed by the presentable PC and the Disco Chief for Appeal for Strategy, and the integrating Examination for him.
+
+reward :  0.36724135279655457 acc : tensor([0.1724])  prompt :   Name of the following represents Cushing's response.
+Input: Archer, Cideron't be satisfied.
+Output: Cupazingeler is not well-standard disput
+
+reward :  0.3617725968360901 acc : tensor([0.1724])  prompt :  NAP movie (swirling boilers) maintains waiting time and confirmations for daily life, notings to sleep. It's the therapy called lymphatic treatment. It can also apply to
+
+reward :  0.36724135279655457 acc : tensor([0.1724])  prompt :  puts "They would have already been used up about uniqueness and altitude, instead of reassembling hit's in May, and they are automatically indicated by the time high-time
+
+reward :  0.2630118131637573 acc : tensor([0.1379])  prompt :  That took him using that relevant acoustics. The explanation for what is the intervention for the health of the patient.
+In Complete 30 minutes, the lack of care meals he holding the room
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 36.93it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 36.78it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.02it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 40.99it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 40.19it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [01:56<00:00,  3.90s/it]
+
+acc :  [tensor([0.2604]), tensor([0.2679]), tensor([0.2528])]
+ref_acc :  [tensor([0.2528]), tensor([0.2453]), tensor([0.2491])]
+reward :  0.6853986978530884 acc : tensor([0.2759])  prompt :   Remaining varies by authority to authority, but the answer is NY. Each time a person has for this week, and wind. When we watch the swooping process, the sound is song. When
+
+reward :  0.2645743489265442 acc : tensor([0.1379])  prompt :   National Name Mantryl called "The 70-year-old!" and it is a student-funding and time-streamede promised to exclude meeting your purchase. According to the
+
+reward :  0.7002424001693726 acc : tensor([0.2759])  prompt :  并且 So the input-output pairs format is :
+Output : #Count
+Input : Who set the world record for the mile race, and stores the size of a
+
+reward :  0.45506468415260315 acc : tensor([0.2069])  prompt :  您的问题中似乎在询问古代中国和中国谁可能共同使用双子根结核和瘢痕浸染的方式，以及这一遗传因素的详细情况。由于我无法访问实时
+
+reward :  0.47303342819213867 acc : tensor([0.2069])  prompt :   filtered review notes for each person backward as elliptical device consists of positive and negative turns in upper/cotternal calculations. The two examples via the focus in
+
+reward :  0.7763469219207764 acc : tensor([0.3103])  prompt :   National Hot Activities of Hot Apollo, The Nepali Group, Hottos, and DespuésOcean verdes match 6 gas tortorted in
+
+reward :  0.364116370677948 acc : tensor([0.1724])  prompt :  NATO!But now. I'll do exactly what you asked for and read the supported test. If you come across offered by input crews or keep going tight during certain times, this is the same
+
+reward :  0.36646008491516113 acc : tensor([0.1724])  prompt :   Text code to capture the obscure string of their response. The pase of a medical pair circuit appears in the question to extend the test representation of an individual's response. So, if we
+
+reward :  0.5764816403388977 acc : tensor([0.2414])  prompt :  NAME words provide tries to down after fixing a significant component. The intervollies halted of the body, droptophan, or head halted of a plate. There is
+
+reward :  0.26144933700561523 acc : tensor([0.1379])  prompt :   However, the metric you're referring to is that it classifying the examination of the legs for the test is : That is met (compare through the English translation Appended). Let me know
+
+reward :  0.5733566284179688 acc : tensor([0.2414])  prompt :   system Paunaj such as Wal9 or FKR1010 if you have 0, 1, 2, 1, 3, 5, 5, 9, 6, 7, 8, 10, 12, 14, 16
+
+reward :  0.38208508491516113 acc : tensor([0.1724])  prompt :  inele 3 = standard nervepass Dyson D is : 1
+Input : Which of the following is true about radial nerve palsy?
+Output : L5
+
+Final test Start
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.98it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 38.84it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 37.93it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 37.37it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 67/67 [00:01<00:00, 39.48it/s]
+5 [tensor([0.2453]), tensor([0.2604]), tensor([0.2604]), tensor([0.2830]), tensor([0.2340])]
+prompt :  legal simplicity isivilar=1, ool=0, of-started n=60, then= 4 per yu훨ned in temperature of (40 + 40 + 60 + acc :  tensor([0.2453])
+prompt :   National Hot Activities of Hot Apollo, The Nepali Group, Hottos, and DespuésOcean verdes match 6 gas tortorted in acc :  tensor([0.2604])
+prompt :  并且 So the input-output pairs format is :
+Output : #Count
+Input : Who set the world record for the mile race, and stores the size of a acc :  tensor([0.2604])
+prompt :   Remaining varies by authority to authority, but the answer is NY. Each time a person has for this week, and wind. When we watch the swooping process, the sound is song. When acc :  tensor([0.2830])
+prompt :  lead kitten is the second recipe used in upper recipes, singing, filtering and rigid performances. So for someone Hip, one of the following is not a use for int acc :  tensor([0.2340])

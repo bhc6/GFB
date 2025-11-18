@@ -15,8 +15,8 @@ from peft import LoraConfig
 from datasets import Dataset
 def parser_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--target_model',type=str,default='google/gemma-3-1b-it')
-    parser.add_argument('--agent_model',type=str,default='google/gemma-3-1b-it')
+    parser.add_argument('--target_model',type=str,default='Qwen/Qwen3-0.6B-Base')
+    parser.add_argument('--agent_model',type=str,default='Qwen/Qwen3-0.6B-Base')
     parser.add_argument('--task',type=str,default='classification')
     parser.add_argument('--dataset',type=str,default='sst2')
     parser.add_argument(
@@ -72,7 +72,7 @@ def main():
         if args.verbalizer is None:
             verbalizer = qa_dicts()
         num_labels = len(verbalizer)
-        validation_dataset = train_dataset
+        validation_dataset = train_dataset # use train dataset as validation dataset but why?
     
     elif args.task == 'generation':
         dataset = load_generation_dataset(args.dataset)
@@ -182,12 +182,12 @@ def main():
                     query_encoded,
                     **generation_kwargs,
                     return_prompt=False,
-                    num_return_sequences = args.prompt_per_example
+                    num_return_sequences = args.prompt_per_example#对于一个给定的输入提示（Prompt），模型应该返回多少个不同的、完整的生成结果
                 )
                 
                 used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
                 
-            #나온 프롬프트 중 너무 길이가 짧은게 많으면 종료
+            # 如果提示信息过多，请退出。
             if sum([len(p) for p in used_prompt]) < args.prompt_per_example * 10:
                 break
             

@@ -1,0 +1,188 @@
+train dataset size :  5
+test dataset size :  165
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : This question refers to the following information.
+The excerpts below are from the Navigation Acts of 1651.
+[A]fter the first day of December, one thousand six hundred fifty and one, and from thence forwards, no goods or commodities whatsoever of the growth, production or manufacture of Asia, Africa or America, or of any part thereof; or of any islands belonging to them, or which are described or laid down in the usual maps or cards of those places, as well of the English plantations as others, shall be imported or brought into this Commonwealth of England, or into Ireland, or any other lands, islands, plantations, or territories to this Commonwealth belonging, or in their possession, in any other ship or ships, vessel or vessels whatsoever, but only in such as do truly and without fraud belong only to the people of this Commonwealth, or the plantations thereof, as the proprietors or right owners thereof; and whereof the master and mariners are also of the people of this Commonwealth, under the penalty of the forfeiture and loss of all the goods that shall be imported contrary to this act, , , ,
+[N]o goods or commodities of the growth, production, or manufacture of Europe, or of any part thereof, shall after the first day of December, one thousand six hundred fifty and one, be imported or brought into this Commonwealth of England, or any other lands or territories to this Commonwealth belonging, or in their possession, in any ship or ships, vessel or vessels whatsoever, but in such as do truly and without fraud belong only to the people of this Commonwealth, and in no other, except only such foreign ships and vessels as do truly and properly belong to the people of that country or place, of which the said goods are the growth, production or manufacture.
+Which of the following best describes the outcome of the Navigation Acts of 1651?
+Output : They served as a catalyst for the growth of English shipping and overseas trade, but did little to limit the prospects of the Dutch in the seventeenth century.
+Input : This question refers to the following information.
+The excerpts below are from the Navigation Acts of 1651.
+[A]fter the first day of December, one thousand six hundred fifty and one, and from thence forwards, no goods or commodities whatsoever of the growth, production or manufacture of Asia, Africa or America, or of any part thereof; or of any islands belonging to them, or which are described or laid down in the usual maps or cards of those places, as well of the English plantations as others, shall be imported or brought into this Commonwealth of England, or into Ireland, or any other lands, islands, plantations, or territories to this Commonwealth belonging, or in their possession, in any other ship or ships, vessel or vessels whatsoever, but only in such as do truly and without fraud belong only to the people of this Commonwealth, or the plantations thereof, as the proprietors or right owners thereof; and whereof the master and mariners are also of the people of this Commonwealth, under the penalty of the forfeiture and loss of all the goods that shall be imported contrary to this act, , , ,
+[N]o goods or commodities of the growth, production, or manufacture of Europe, or of any part thereof, shall after the first day of December, one thousand six hundred fifty and one, be imported or brought into this Commonwealth of England, or any other lands or territories to this Commonwealth belonging, or in their possession, in any ship or ships, vessel or vessels whatsoever, but in such as do truly and without fraud belong only to the people of this Commonwealth, and in no other, except only such foreign ships and vessels as do truly and properly belong to the people of that country or place, of which the said goods are the growth, production or manufacture.
+Which of the following best describes the outcome of the Navigation Acts of 1651?
+Output : They served as a catalyst for the growth of English shipping and overseas trade, but did little to limit the prospects of the Dutch in the seventeenth century.
+Input : This question refers to the following information.
+The following excerpt is from a pamphlet.
+You will do me the justice to remember, that I have always strenuously supported the Right of every man to his own opinion, however different that opinion might be to mine. He who denies to another this right, makes a slave of himself to his present opinion, because he precludes himself the right of changing it.
+The most formidable weapon against errors of every kind is Reason. I have never used any other, and I trust I never shall.
+The circumstance that has now taken place in France of the total abolition of the whole national order of priesthood, and of everything appertaining to compulsive systems of religion, and compulsive articles of faith, has not only precipitated my intention, but rendered a work of this kind exceedingly necessary, lest in the general wreck of superstition, of false systems of government, and false theology, we lose sight of morality, of humanity, and of the theology that is true.
+I believe in one God, and no more; and I hope for happiness beyond this life.
+I believe in the equality of man; and I believe that religious duties consist in doing justice, loving mercy, and endeavoring to make our fellow-creatures happy.
+I do not believe in the creed professed by the Jewish church, by the Roman church, by the Greek church, by the Turkish church, by the Protestant church, nor by any church that I know of. My own mind is my own church.
+All national institutions of churches, whether Jewish, Christian or Turkish, appear to me no other than human inventions, set up to terrify and enslave mankind, and monopolize power and profit.
+I do not mean by this declaration to condemn those who believe otherwise; they have the same right to their belief as I have to mine.
+—Thomas Paine, The Age of Reason, 1794–1795
+Which of the following Enlightenment philosophes designed a system of checks and balances for government to avoid abuses of power?
+Output : Baron Montesquieu
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.8526042699813843 acc : tensor([0.3889])  prompt :  ацион
+ацион
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+
+
+
+
+ацион
+
+reward :  -0.14114584028720856 acc : tensor([0.0556])  prompt :  �ưu moż>
+
+
+
+军队开团桨派口颁布了稳定黄金收藏的办法 听说项目要将一个黄金封锁公司的储藏着的黄金结晶化的狂兽 改变了自由宅邸的传输路线
+ ragaz給我zoey的情况请帮我提出一些鼓励词和祝福词 帮我用英文写的短句与书信
+Yeah, I'm on the bundle in bed 歌诗写的纯金圆仓储备物她 玛琳娜的多角度
+
+reward :  1.3322917222976685 acc : tensor([0.5556])  prompt :  寧
+  3%|███▎                                                                                                | 1/30 [02:32<1:13:32, 152.16s/it]
+
+reward :  1.0302083492279053 acc : tensor([0.4444])  prompt :   adherence
+
+ כיצاءً
+ﯯ
+
+fuscation rights
+
+ﯶ
+셒
+.sharedInstance]
+
+rief하여량입의이고
+�작수
+
+
+
+
+
+
+
+
+류 풔기벨
+
+뮩
+
+استحِنالي
+
+
+
+복고타
+
+
+ reinvoke 책권
+
+
+
+혹못
+
+
+
+
+reward :  0.5161458253860474 acc : tensor([0.2778])  prompt :  .JOptionPane Babak Eftekhy:
+Context Analysis
+Certainly, I'll address the task "…" in your instructions. "…"
+
+Cumhur چوشک
+Soldier : soldier,
+Target Programmer : target programmer,
+Boys : boys,
+Apologist : apologist,
+Duty Soldier : duty soldier,
+Altanas : altanas,
+Assistant Programmer : assistant programmer,
+1212 Girl "عبیة یا‎‎" : عبیة یا‎‎ (ya
+
+reward :  1.0020833015441895 acc : tensor([0.4444])  prompt :   ☆ ☆ ☆ ☆ ☆ ☆ ☆

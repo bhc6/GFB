@@ -1,0 +1,186 @@
+train dataset size :  5
+test dataset size :  152
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Why isn't there a planet where the asteroid belt is located?
+Output : Resonance with Jupiter prevented material from collecting together to form a planet.
+Input : Why isn't there a planet where the asteroid belt is located?
+Output : Resonance with Jupiter prevented material from collecting together to form a planet.
+Input : You are pushing a truck along a road. Would it be easier to accelerate this truck on Mars? Why? (Assume there is no friction)
+Output : It would be the same no matter where you are.
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.6031249761581421 acc : tensor([0.3125])  prompt :  **General instruction:**
+Input a sentence, and I will provide the correct answer in the format: **[Output]**.
+
+reward :  0.24062499403953552 acc : tensor([0.1875])  prompt :  **General instruction:**
+**Input:** [Statement about a phenomenon or process]
+**Output:** [Example sentence that mirrors the input, such as "a large baked potato takes longer to cool than a small baked potato"]
+
+reward :  0.4468750059604645 acc : tensor([0.2500])  prompt :  **General Instruction:**
+Given a sentence, summarize it into a similar input-output pair as provided. For example:
+Input: [Sentence],
+Output: [Similar sentence].
+ 10%|██████████▎                                                                                            | 3/30 [00:23<04:13,  9.39s/it]
+
+reward :  0.05625000596046448 acc : tensor([0.1250])  prompt :  The input-output pairs can be summarized as follows:
+**Input:** [Statement], **Output:** [Specific phrase].
+**General instruction:** Provide a concise explanation of the relationship between the input and output in a single sentence.
+
+reward :  0.4312500059604645 acc : tensor([0.2500])  prompt :  **General instruction:**
+If X is observed at a certain time, then the phase or characteristic (or result) must be Y.
+
+reward :  0.24687498807907104 acc : tensor([0.1875])  prompt :  The input-output pairs can be summarized as:
+**If X happens, then Y must be true.**
+
+reward :  0.4390625059604645 acc : tensor([0.2500])  prompt :  General instruction:
+**Input**: [Statement with question or scenario]
+**Output**: [Answer based on the input].
+
+For example:
+Input: "If the Moon is setting at noon the phase of the Moon must be"
+Output: "third quarter."
+
+reward :  0.625 acc : tensor([0.3125])  prompt :  **General Instruction:**
+Input a sentence, and the system will output the correct mathematical or scientific result based on the given data.
+
+reward :  0.2578125 acc : tensor([0.1875])  prompt :  A general instruction for summarizing the input-output pairs would be:
+
+**Input:** [A statement or question]
+**Output:** [Answer to the question or statement].
+
+For example:
+Input: "The mass of Saturn's rings is 2x10¹⁹ kg. What is the ratio of this mass to that of a 200 km diameter spherical moon made entirely of water-ice (density ~ 1 g/cm³)? That is what is rings :
+
+reward :  0.24843749403953552 acc : tensor([0.1875])  prompt :  **General Instruction:**
+Input: [Given information], Output: [Reason or statement].
+Summarize the above input-output pairs into a single general instruction, such as:
+**"What is X compared to Y?"**
+
+reward :  0.25312498211860657 acc : tensor([0.1875])  prompt :  **General Instruction:**
+"Input: [Insert statement], Output: [Insert answer]. Summarize the above input-output pairs into a single general instruction."
+
+reward :  0.629687488079071 acc : tensor([0.3125])  prompt :  **General Instruction:**
+Summarize the input-output pairs into a single general instruction. For example:
+Input: [Text]
+Output: [Summary]
+
+Example:
+Input: The mass of Saturn's rings is 2x10¹⁹ kg. What is the ratio of this mass to that of a 200 km diameter spherical moon made entirely of water-ice (density ~ 1 g/cm³)?
+Output: 5 : 1
+
+Input
+
+reward :  0.6078125238418579 acc : tensor([0.3125])  prompt :  **General instruction:**
+Summarize the input-output pairs into a single general instruction for summarizing information.
+
+reward :  0.6124999523162842 acc : tensor([0.3125])  prompt :  **General Instruction:**
+Summarize the provided input-output pairs into a single general instruction.
+
+reward :  0.22812500596046448 acc : tensor([0.1875])  prompt :  **General Instruction:**
+**Input:** [A statement or question],
+**Output:** [Answer based on the input].
+**Summary:** Provide the answer in the format "X : Y" or "X is Y".
+  warnings.warn(
+ 17%|█████████████████▏                                                                                     | 5/30 [00:51<04:56, 11.85s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -17.81 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.06562498211860657 acc : tensor([0.1250])  prompt :  **General Instruction:**
+Input: [Statement], Output: [Corrected explanation or definition].
+Summarize the input-output pairs into a general instruction that captures the pattern of the relationship between the input and output.
+
+reward :  0.43437498807907104 acc : tensor([0.2500])  prompt :  **General Instruction:**
+Input: [Statement about a subject]
+Output: [Correct definition or explanation of the subject].
+
+**Example:**
+Input: A comet’s tail points in the following direction:
+Output: away from the Sun.
+
+reward :  0.24375000596046448 acc : tensor([0.1875])  prompt :  **General Instruction:**
+Given a sentence, summarize it into a concise, clear instruction.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:04<00:00,  8.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.89it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.57it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.47it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 11.42it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.99it/s]
+ 27%|███████████████████████████▍                                                                           | 8/30 [01:26<03:36,  9.85s/it]
+
+acc :  [tensor([0.2763]), tensor([0.2829]), tensor([0.3289])]
+ref_acc :  [tensor([0.3158]), tensor([0.4079]), tensor([0.3684])]
+rollback model
+reward :  0.25 acc : tensor([0.1875])  prompt :  **General Instruction:**
+"Input a statement, then the output is generated based on a specific reasoning or fact."
+
+reward :  0.6312500238418579 acc : tensor([0.3125])  prompt :  **General Instruction:**
+**Input:** [Statement about a cause], **Output:** [Explanation based on the input].
+
+reward :  0.23906248807907104 acc : tensor([0.1875])  prompt :  **General Instruction:**
+Given a sentence, summarize it into a concise, general instruction.
+
+reward :  0.606249988079071 acc : tensor([0.3125])  prompt :  **General Instruction:**
+Summarize the input-output pairs into a single, concise general instruction.
+
+reward :  0.23124998807907104 acc : tensor([0.1875])  prompt :  **General Instruction:**
+Provide a concise and accurate answer to the given input-output pair.
+
+reward :  0.046875 acc : tensor([0.1250])  prompt :  **General Instruction:**
+**Input:** [Statement about a concept or fact]
+**Output:** [Correct definition or explanation]
+
+**Summarized Instruction:**
+Provide a concise input followed by the correct output as per the given definition or explanation.
+
+reward :  0.2515625059604645 acc : tensor([0.1875])  prompt :  **General Instruction:**
+**What causes [X] is primarily due to [Y].**
+
+reward :  0.4359374940395355 acc : tensor([0.2500])  prompt :  **General instruction:**
+To answer the question, identify the corresponding reason for the process described in the input and provide the correct explanation.
+
+reward :  0.24062499403953552 acc : tensor([0.1875])  prompt :  **General Instruction:**
+To answer a question, identify the correct context or reason and provide the appropriate explanation.
+
+reward :  0.06562498211860657 acc : tensor([0.1250])  prompt :  **General Instruction:**
+Input: [Statement], Output: [Explanation].
+Summarize the above input-output pairs into a single general instruction:
+**"Find the relationship between the input and output based on the provided statements."**
+
+reward :  0.25 acc : tensor([0.1875])  prompt :  **General Instruction:**
+**Input:** [Provide a scenario or question], **Output:** [Describe the effect or result of the given input].
+**Summarize the above input-output pairs into a single general instruction:**
+**Find the answer to the following question:** [Insert question here], **and provide the most accurate and concise answer.**
+
+reward :  0.24687498807907104 acc : tensor([0.1875])  prompt :  **General Instruction:**
+Input: [Statement about a change in a physical system], Output: [Result based on the change].
+Summarize the above input-output pairs into a single general instruction: **"Find the result based on the input statement."**
+
+reward :  0.0625 acc : tensor([0.1250])  prompt :  **General instruction:**
+**If an object is a black body, describe its characteristics.**
+
+reward :  0.6109374761581421 acc : tensor([0.3125])  prompt :  General instruction:
+**Summarize the given input-output pairs into a single general instruction.**
+
+reward :  0.4437499940395355 acc : tensor([0.2500])  prompt :  **General Instruction:**
+To determine how a system or object behaves in a given scenario, identify the input and output based on the provided information and apply the correct principles. For example, in the first input-output pair:
+**Input:** You cool a blackbody to half its original temperature.
+**Output:** Power emitted is 1/16 times as high; peak emission wavelength is 2 times longer.
+
+**General Instruction:**
+Given an input, identify the corresponding output based on
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.38it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 11.35it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00,  9.82it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.07it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00,  9.67it/s]
+ 37%|█████████████████████████████████████▍                                                                | 11/30 [02:24<06:07, 19.35s/it]
+
+acc :  [tensor([0.4079]), tensor([0.4211]), tensor([0.4605])]
+ref_acc :  [tensor([0.4079]), tensor([0.4276]), tensor([0.4342])]

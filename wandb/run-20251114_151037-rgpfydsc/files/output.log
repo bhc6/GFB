@@ -1,0 +1,587 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  -0.0069602131843566895 acc : tensor([0.0909])  prompt :  Single instruction to summarize the input-output pairs:
+
+**Find the maximum possible order for an element in Z₄ × Z₆ or for an element in S₇.**
+
+reward :  -0.008522719144821167 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for some element of Z₄ × Z₆ or an element of S₇.**
+
+reward :  -0.29375001788139343 acc : tensor([0.])  prompt :  **Single instruction:**
+Find the maximum possible order for some element of a group or a symmetric group.
+  3%|███▍                                                                                                   | 1/30 [00:03<01:54,  3.94s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -9.83 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Summarize the above input-output pairs into a single instruction:
+
+**Input**:
+Statement 1 | If f is a homomorphism from G to K and H is normal in G then f(H) is normal in K.
+Statement 2 | If f is a homomorphism from G to a group and H is finite subgroup of G, then |f(H)| divides |H|.
+
+**Output**:
+False, True
+
+reward :  0.29076704382896423 acc : tensor([0.1818])  prompt :  Single instruction summary:
+
+**Input:**
+Statement 1 | If f is a homomorphism from G to K and H is normal in G, then f(H) is normal in K.
+Statement 2 | If f is a homomorphism from G to a group and H is finite subgroup of G, then |f(H)| divides |H|.
+
+**Output:**
+False, True
+
+**Summary:**
+This pair of input-output pairs is used to evaluate two statements about
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  **Single instruction summary:**
+"Given two input-output pairs, summarize them into a single instruction to identify the relationship between statements and outputs."
+  warnings.warn(
+  7%|██████▊                                                                                                | 2/30 [00:14<03:31,  7.57s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -24.22 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.26732954382896423 acc : tensor([0.1818])  prompt :  **Single instruction:**
+Summarize the input-output pairs into a single instruction.
+
+**Example:**
+**Input:** Statement 1 | The symmetric group S₃ is cyclic. Statement 2 | Every group is isomorphic to some group of permutations. Output: False, True
+
+**Summary:**
+Identify whether the statements in the input pair are logically consistent and provide the correct output.
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**"Summarize the above input-output pairs into a single instruction."**
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**Input: Statement 1 | [Statement], Statement 2 | [Statement] Output: [Result 1], [Result 2]**.
+  warnings.warn(
+ 10%|██████████▎                                                                                            | 3/30 [00:31<05:23, 11.99s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -21.54 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the maximum possible order for an element of S_n or Z_4 x Z_6.**
+
+reward :  0.7971590757369995 acc : tensor([0.3636])  prompt :  **Single Instruction Summary:**
+Input: Find the maximum possible order for an element of $ S_7 $, Output: 12.
+Input: Find the maximum possible order for some element of $ Z_4 \times Z_6 $, Output: 12.
+Summarize the above input-output pairs into a single instruction:
+**Find the maximum possible order for an element in $ S_n $ or $ Z_m \times Z_k $, where $ n
+
+reward :  -0.008522719144821167 acc : tensor([0.0909])  prompt :  **Single Instruction Summary:**
+Find the maximum possible order for an element of a group (e.g., $ S_n $, $ Z_4 \times Z_6 $) and output the result.
+  warnings.warn(
+ 13%|█████████████▋                                                                                         | 4/30 [00:49<06:12, 14.31s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -14.79 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.8362215757369995 acc : tensor([0.3636])  prompt :  Single instruction:
+**Summarize the input-output pairs into a single instruction.**
+
+Example:
+Input: Statement 1 | A permutation that is a product of m even permutations and n odd permutations is an even permutation if and only if n is even.
+Output: True, True
+
+Input: Find the order of the factor group Z_6/<3>.
+Output: 3
+
+Input: Statement 1 | Every integral domain has a field of quotients.
+Output
+
+reward :  0.0180397629737854 acc : tensor([0.0909])  prompt :  Single instruction:
+**"Given the input statements, determine the correctness of the output pairs and summarize them in a single instruction."**
+
+reward :  0.25014206767082214 acc : tensor([0.1818])  prompt :  **Single Instruction:**
+Summarize the given input-output pairs into a single instruction, such as:
+**"Find the order of the factor group Z₆/<3>. Output: 3."**
+  warnings.warn(
+ 17%|█████████████████▏                                                                                     | 5/30 [01:07<06:33, 15.75s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -8.62 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.027272731065750122 acc : tensor([0.0909])  prompt :  **Single instruction summary:**
+Find the maximum possible order for an element in a finite group (like Z_4 x Z_6 or S_7) and return the corresponding number.
+
+reward :  0.530681848526001 acc : tensor([0.2727])  prompt :  **Instruction:** Summarize the given input-output pairs into a single instruction in a concise and clear manner.
+
+**Example:**
+Input:
+Statement 1 | Every integral domain has a field of quotients.
+Statement 2 | A polynomial of degree n over a ring can have at most n zeros counting multiplicity.
+
+Output:
+True, False
+
+**Single instruction:**
+Find the maximum possible order for an element in a group or a set, such as Z_n or
+
+reward :  -0.008522719144821167 acc : tensor([0.0909])  prompt :  **Single instruction summary:**
+
+Find the maximum possible order for some element of Z₄ × Z₆ and for some element of S₇.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.26it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.67it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.64it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.60it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.95it/s]
+ 20%|████████████████████▌                                                                                  | 6/30 [01:44<09:09, 22.88s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.13 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2500]), tensor([0.2400]), tensor([0.2200])]
+ref_acc :  [tensor([0.2500]), tensor([0.3200]), tensor([0.2100])]
+reward :  -0.010085225105285645 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for some element of Z₄xZ₆.**
+
+Output: 12
+
+reward :  -0.01477271318435669 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for some element of Z₄ × Z₆.**
+Output: 12
+
+reward :  -0.017897725105285645 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for some element of Z₄ × Z₆.**
+  warnings.warn(
+ 23%|████████████████████████                                                                               | 7/30 [01:47<06:20, 16.56s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -5.80 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.28125 acc : tensor([0.])  prompt :  **Single instruction:**
+
+Summarize the above input-output pairs into a single instruction.
+
+**Example:**
+Input:
+1. Find the order of the factor group Z_6/<3>.
+Output: 3
+
+2. Statement 1 | If a group has an element of order 10, then the number of elements of order 10 is divisible by 4. Statement 2 | If m and n are positive integers and φ is the Euler phi function,
+
+reward :  -0.011647731065750122 acc : tensor([0.0909])  prompt :  Single instruction:
+**"Find the order of the factor group Z₆/<3>. Output: 3."**
+
+reward :  0.5431818962097168 acc : tensor([0.2727])  prompt :  Single instruction:
+**Find the order of the factor group Z₆/<3> and evaluate the truth of the given statements.**
+  warnings.warn(
+ 30%|██████████████████████████████▉                                                                        | 9/30 [02:11<04:37, 13.24s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -4.71 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.2767045497894287 acc : tensor([0.1818])  prompt :  **Single Instruction Summary:**
+Given two input-output pairs, summarize them into a single instruction.
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the input-output pairs into a single instruction.**
+
+reward :  -0.2953124940395355 acc : tensor([0.])  prompt :  Single instruction: Find the maximum possible order for an element in Sₙ for given n.
+
+reward :  0.5134943723678589 acc : tensor([0.2727])  prompt :  Single instruction:
+**"Given two statements, evaluate their truth and output 'False, True' or 'False, False' based on the statements."**
+
+reward :  0.25951704382896423 acc : tensor([0.1818])  prompt :  Single instruction:
+**"Given two statements, summarize them into a single output pair (False, True) or (False, False) based on the logical validity of the statements."**
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**"Summarize the input-output pairs into a single instruction."**
+  warnings.warn(
+ 33%|██████████████████████████████████                                                                    | 10/30 [02:23<04:16, 12.80s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -26.96 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  **Single Instruction:**
+
+List the input-output pairs and summarize them into a single instruction.
+
+reward :  0.26732954382896423 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the input-output pairs into a single instruction.**
+
+For example:
+Input:
+Statement 1 | Every integral domain has a field of quotients.
+Statement 2 | A polynomial of degree n over a ring can have at most n zeros counting multiplicity.
+
+Output:
+True, False
+
+Input:
+Statement 1 | If a group has an element of order 10, then the number of elements of order 10
+
+reward :  0.28295454382896423 acc : tensor([0.1818])  prompt :  Single instruction:
+**Input**: Statement 1, Statement 2, Output: True, False, False, False.
+**Summarize**: Provide a single instruction to summarize the input-output pairs.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.60it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.38it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.45it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.96it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.41it/s]
+ 37%|█████████████████████████████████████▍                                                                | 11/30 [03:03<06:41, 21.15s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -21.47 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2300]), tensor([0.2500]), tensor([0.2000])]
+ref_acc :  [tensor([0.2400]), tensor([0.2200]), tensor([0.2300])]
+reward :  0.5572443604469299 acc : tensor([0.2727])  prompt :  Single instruction:
+**Find the maximum possible order of an element in S₇ and confirm the truth of the statements.**
+
+reward :  0.2767045497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the maximum possible order for an element of S₇ and determine whether a given statement is true.**
+
+reward :  0.27982956171035767 acc : tensor([0.1818])  prompt :  Single Instruction:
+**Summarize the given input-output pairs into a single instruction.**
+
+Example:
+Input: Statement 1 | ...
+Output: False, True
+Input: Statement 1 | ...
+Output: False, True
+... and so on.
+  warnings.warn(
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [03:21<06:02, 20.15s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -17.32 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the maximum possible order for an element in S_n or Z_m x Z_k.**
+
+reward :  0.25014206767082214 acc : tensor([0.1818])  prompt :  **Single Instruction:**
+Find the maximum possible order of an element in the symmetric group $ S_n $ for $ n = 7 $, and for the direct product $ Z_4 \times Z_6 $, and output the order of the largest element in those groups.
+
+reward :  0.2688920497894287 acc : tensor([0.1818])  prompt :  **Single Instruction:**
+Summarize the input-output pairs into a single instruction that captures the relationship between the input (n for Sₙ or the order of an element in a group) and the output (maximum order of an element or subgroup order).
+  warnings.warn(
+ 43%|████████████████████████████████████████████▏                                                         | 13/30 [03:26<04:27, 15.76s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -11.28 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the maximum possible order for an element of Sₙ for n = 7.**
+
+Output: 12
+
+reward :  -0.27031251788139343 acc : tensor([0.])  prompt :  **Single Instruction:**
+Given an input like "Find the maximum possible order for an element of Sₙ for n = 7", summarize it as a single instruction to find the order of the largest element in S₇.
+
+reward :  0.25639206171035767 acc : tensor([0.1818])  prompt :  **Single Instruction:**
+Find the maximum possible order of an element in $ S_n $ for a given $ n $, or determine the order of a cyclic subgroup in $ \mathbb{Z}_m $, and return the corresponding value.
+  warnings.warn(
+ 47%|███████████████████████████████████████████████▌                                                      | 14/30 [03:31<03:16, 12.29s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -42.34 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the input-output pairs into a single instruction.**
+
+reward :  0.2688920497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+
+**"Summarize the above input-output pairs into a single instruction."**
+
+reward :  0.28139206767082214 acc : tensor([0.1818])  prompt :  **Single instruction:**
+
+**Input:**
+Statement 1 | If a group has an element of order 10, then the number of elements of order 10 is divisible by 4.
+Statement 2 | If m and n are positive integers and φ is the Euler φ function, then φ(mn) = φ(m)φ(n).
+
+**Output:**
+**False, False**
+  warnings.warn(
+ 50%|███████████████████████████████████████████████████                                                   | 15/30 [03:41<02:54, 11.60s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -37.53 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.554119348526001 acc : tensor([0.2727])  prompt :  Single instruction:
+**Input:** A cyclic subgroup of Z_24 generated by 18 has order **4**
+**Output:** 4
+
+**Input:** Statement 1 | Every integral domain has a field of quotients. Statement 2 | A polynomial of degree n over a ring can have at most n zeros counting multiplicity.
+**Output:** True, False
+
+**Input:** Statement 1 | If f is a homomorphism from G to K and H is
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**"Summarize the above input-output pairs into a single instruction."**
+
+already exist
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the above input-output pairs into a single instruction.**
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.13it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.22it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.46it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.26it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 12.83it/s]
+ 53%|██████████████████████████████████████████████████████▍                                               | 16/30 [04:14<04:12, 18.05s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.80 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2000]), tensor([0.2000]), tensor([0.2000])]
+ref_acc :  [tensor([0.2100]), tensor([0.2000]), tensor([0.1900])]
+reward :  0.5447443723678589 acc : tensor([0.2727])  prompt :  **Single instruction:**
+Summarize the input-output pairs into a single instruction.
+
+**Example:**
+Input: Statement 1 | ...
+Output: False, True
+
+So, the instruction would be:
+**Summarize the input-output pairs into a single instruction.**
+
+reward :  0.25795456767082214 acc : tensor([0.1818])  prompt :  **Instruction:**
+Summarize the input-output pairs into a single instruction.
+
+Example:
+Input: Statement 1 | ...
+Output: False, True
+Input: ...
+Output: 4
+Summarize each input-output pair into a single instruction.
+
+reward :  0.2860795557498932 acc : tensor([0.1818])  prompt :  **Single instruction:**
+**Input:** Statement 1 and Statement 2, **Output:** False, True.
+**Summarize the above input-output pairs into a single instruction.**
+  warnings.warn(
+ 57%|█████████████████████████████████████████████████████████▊                                            | 17/30 [04:25<03:27, 15.94s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -10.58 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the order of the factor group Z₆/<3>** and **the order of the factor group (Z₄ x Z₁₂)/(<2> x <2>)**.
+
+reward :  0.27514204382896423 acc : tensor([0.1818])  prompt :  **Single Instruction Summary:**
+For each input pair, summarize the statement into a single instruction. For example:
+- Input: Statement 1 | ... Output: True, False
+- Input: Statement 1 | ... Output: 3
+- Input: Statement 1 | ... Output: 4
+
+**Single Instruction:**
+"Summarize each input pair into a concise instruction."
+
+reward :  0.8205965757369995 acc : tensor([0.3636])  prompt :  Single instruction:
+**Find the order of the factor group Z₆/<3> and (Z₄ × Z₁₂)/(<2> × <2>).**
+
+**Output:**
+- 3
+- 4
+  warnings.warn(
+ 60%|█████████████████████████████████████████████████████████████▏                                        | 18/30 [04:38<03:02, 15.24s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -6.96 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the order of the factor group (Z₄ × Z₁₂)/(<2> × <2>) and determine whether the statements are true.**
+
+reward :  0.2454545497894287 acc : tensor([0.1818])  prompt :  **Single instruction:**
+**Find the order of the factor group (Z₄ × Z₁₂)/(<2> × <2>) and the order of the group (Z₄ × Z₁₂)/(<2> × <2>)**.
+
+reward :  0.25951704382896423 acc : tensor([0.1818])  prompt :  **Single instruction:**
+"Find the order of the factor group (Z_4 x Z_12)/(<2> x <2>) and check the validity of the given statements."
+  warnings.warn(
+ 63%|████████████████████████████████████████████████████████████████▌                                     | 19/30 [04:49<02:34, 14.01s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -33.85 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.0210227370262146 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for an element of S₇.**
+
+reward :  0.26732954382896423 acc : tensor([0.1818])  prompt :  **Single Instruction:**
+
+Find the maximum possible order for an element of $ S_n $ for $ n = 7 $, and determine the output based on the given statement. If the statement is false, output `False, True`, otherwise `True`.
+
+reward :  -0.0210227370262146 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for an element of S₇.**
+  warnings.warn(
+ 67%|████████████████████████████████████████████████████████████████████                                  | 20/30 [05:01<02:14, 13.42s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -23.89 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  -0.0022727251052856445 acc : tensor([0.0909])  prompt :  **Single instruction:**
+Input: [Statement 1, Statement 2], Output: [False, True].
+
+reward :  -0.26875001192092896 acc : tensor([0.])  prompt :  **Single Instruction:**
+Find the order of the factor group $ \mathbb{Z}_6 / \langle 3 \rangle $ and determine whether the symmetric group $ S_3 $ is cyclic and whether every group is isomorphic to some group of permutations.
+
+reward :  -0.011647731065750122 acc : tensor([0.0909])  prompt :  **Single instruction:**
+Find the order of the factor group $ \mathbb{Z}_6 / \langle 3 \rangle $ and determine whether the statement "Every group is isomorphic to some group of permutations" is true.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.67it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.30it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.20it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.10it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.67it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.04it/s]
+ 70%|███████████████████████████████████████████████████████████████████████▍                              | 21/30 [05:21<02:17, 15.33s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -65.49 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.2900]), tensor([0.2400]), tensor([0.2600])]
+ref_acc :  [tensor([0.2400]), tensor([0.2600]), tensor([0.2400])]
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**"Find the order of the factor group Z₆/<3>, and determine whether the statement 'If f is a homomorphism from G to a group and H is finite subgroup of G, then |f(H)| divides |H|' is true or false."**
+
+OR
+**"Find the order of the factor group Z₆/<3>, and summarize whether the statement 'If f is a homomorphism from G to a group and H is
+
+reward :  0.2548295557498932 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the order of the factor group Z₆/<3> and the maximum possible order for some element of Z₄ × Z₆.**
+
+Output: False, True
+Output: 3
+Output: 12
+
+reward :  -0.0053977370262146 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the order of the factor group Z₆/<3>, and the maximum possible order for some element of Z₄ × Z₆.**
+  warnings.warn(
+ 73%|██████████████████████████████████████████████████████████████████████████▊                           | 22/30 [05:41<02:14, 16.80s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -5.82 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.27982956171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the maximum possible order of an element in Sₙ for n = 7, Z₄ × Z₆, and the factor group Z₆/<3>**, and summarize the results.
+
+reward :  0.2454545497894287 acc : tensor([0.1818])  prompt :  **Single instruction:**
+Find the maximum possible order for an element in the group $ S_n $, where $ n = 7 $, or for a group $ Z_4 \times Z_6 $, where the order is 12.
+
+reward :  -0.0069602131843566895 acc : tensor([0.0909])  prompt :  **Single Instruction Summary:**
+
+Find the maximum possible order of an element in a given group $ S_n $ or $ \mathbb{Z}_n $, where $ n $ is a positive integer.
+  warnings.warn(
+ 77%|██████████████████████████████████████████████████████████████████████████████▏                       | 23/30 [05:46<01:31, 13.06s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -47.05 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7955965995788574 acc : tensor([0.3636])  prompt :  **Single instruction to summarize the above input-output pairs:**
+
+**Input:**
+- Find the maximum possible order for an element of $ S_n $ for $ n = 7 $.
+- Output: 12.
+
+**Input:**
+- Statement 1: The symmetric group $ S_3 $ is cyclic.
+- Statement 2: Every group is isomorphic to some group of permutations.
+- Output: False, True.
+
+**Summary:**
+**Find the maximum
+
+reward :  0.2454545497894287 acc : tensor([0.1818])  prompt :  **Single Instruction:**
+Find the maximum possible order for an element of $ S_n $ for $ n = 7 $.
+
+**Output:** 12.
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the maximum possible order for an element of S_n for n = 7.**
+Output: 12
+  warnings.warn(
+ 80%|█████████████████████████████████████████████████████████████████████████████████▌                    | 24/30 [06:02<01:23, 13.94s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -54.97 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.5525568723678589 acc : tensor([0.2727])  prompt :  **Single instruction:**
+Find the order of the factor group (Z₄ x Z₁₂)/(<2> x <2>) and determine the truth values of the statements:
+**Statement 1**: "Every integral domain has a field of quotients."
+**Statement 2**: "A polynomial of degree n over a ring can have at most n zeros counting multiplicity."
+
+**Output:**
+- The order of the factor group is **4**.
+- Statement
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the order of the factor group (Z_4 × Z_12)/(<2> × <2>) and determine if the statements about integral domains and polynomial zeros are true.**
+
+reward :  0.26732954382896423 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the order of the factor group (Z₄ × Z₁₂)/(<2> × <2>) and determine if the statements related to integral domains and polynomials are true.**
+  warnings.warn(
+ 83%|█████████████████████████████████████████████████████████████████████████████████████                 | 25/30 [06:19<01:15, 15.02s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -32.03 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.26732954382896423 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the given input-output pairs into a single instruction.**
+
+reward :  0.5369318723678589 acc : tensor([0.2727])  prompt :  **Single instruction:**
+Input: Statement 1 | ... Statement 2 | ...
+Output: True, False
+
+**Example:**
+Input: Statement 1 | Every integral domain has a field of quotients.
+Output: True, False
+
+Input: Find the maximum possible order for some element of Z_4 x Z_6.
+Output: 12
+
+reward :  -0.017897725105285645 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for some element of Z₄ × Z₆.**
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 12.78it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 13.01it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 12.93it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.17it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.42it/s]
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████████▏      | 28/30 [07:17<00:29, 14.93s/it]
+
+acc :  [tensor([0.2300]), tensor([0.2500]), tensor([0.2100])]
+ref_acc :  [tensor([0.2100]), tensor([0.2200]), tensor([0.2000])]
+reward :  0.2688920497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+
+**Find the order of the factor group Z_6/<3> and evaluate the truth values of the given statements.**
+
+reward :  0.26420456171035767 acc : tensor([0.1818])  prompt :  **Single instruction:**
+Summarize the above input-output pairs into a single instruction, such as:
+**Input:** Find the order of the factor group Z_6/<3>.
+**Output:** 3.
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Single instruction: Summarize the above input-output pairs into a single instruction.
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the input-output pairs into a single instruction.**
+
+reward :  0.25014206767082214 acc : tensor([0.1818])  prompt :  **Single instruction:**
+**Summarize the input-output pairs into a single instruction.**
+
+reward :  0.28139206767082214 acc : tensor([0.1818])  prompt :  Single instruction:
+**Input: Statement 1 and Statement 2, output: False, True**.
+
+reward :  0.2845170497894287 acc : tensor([0.1818])  prompt :  Single instruction:
+**Find the maximum possible order for some element of $ \mathbb{Z}_4 \times \mathbb{Z}_6 $ and the order of the factor group $ (\mathbb{Z}_4 \times \mathbb{Z}_12) / (\langle 2 \rangle \times \langle 2 \rangle) $, and summarize the results.**
+
+reward :  -0.010085225105285645 acc : tensor([0.0909])  prompt :  Single instruction:
+**Find the maximum possible order for some element of Z_4 × Z_6.**
+
+Output: 12
+
+reward :  0.5322443246841431 acc : tensor([0.2727])  prompt :  Single instruction:
+**Find the maximum possible order of an element in Z₄ × Z₆.**
+
+Output: 12.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [07:37<00:00, 15.25s/it]
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the above input-output pairs into a single instruction.**
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  Single instruction:
+**"Summarize the above input-output pairs into a single instruction."**
+
+already exist
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  Single instruction:
+**Summarize the above input-output pairs into a single instruction.**
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.39it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.46it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.71it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  6.25it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.44it/s]
+5 [tensor([0.2600]), tensor([0.3000]), tensor([0.2200]), tensor([0.2200]), tensor([0.2000])]
+prompt :  Single instruction:
+**Summarize the input-output pairs into a single instruction.**
+
+Example:
+Input: Statement 1 | A permutation that is a product of m even permutations and n odd permutations is an even permutation if and only if n is even.
+Output: True, True
+
+Input: Find the order of the factor group Z_6/<3>.
+Output: 3
+
+Input: Statement 1 | Every integral domain has a field of quotients.
+Output acc :  tensor([0.2600])
+prompt :  Single instruction:
+**Find the order of the factor group Z₆/<3> and (Z₄ × Z₁₂)/(<2> × <2>).**
+
+**Output:**
+- 3
+- 4 acc :  tensor([0.3000])
+prompt :  **Single Instruction Summary:**
+Input: Find the maximum possible order for an element of $ S_7 $, Output: 12.
+Input: Find the maximum possible order for some element of $ Z_4 \times Z_6 $, Output: 12.
+Summarize the above input-output pairs into a single instruction:
+**Find the maximum possible order for an element in $ S_n $ or $ Z_m \times Z_k $, where $ n acc :  tensor([0.2200])
+prompt :  **Single instruction to summarize the above input-output pairs:**
+
+**Input:**
+- Find the maximum possible order for an element of $ S_n $ for $ n = 7 $.
+- Output: 12.
+
+**Input:**
+- Statement 1: The symmetric group $ S_3 $ is cyclic.
+- Statement 2: Every group is isomorphic to some group of permutations.
+- Output: False, True.
+
+**Summary:**
+**Find the maximum acc :  tensor([0.2200])
+prompt :  Single instruction:
+**Find the maximum possible order of an element in S₇ and confirm the truth of the statements.** acc :  tensor([0.2000])

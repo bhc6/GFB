@@ -1,0 +1,18 @@
+{"time":"2025-11-15T06:50:20.756562704Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-15T06:50:28.301891537Z","level":"INFO","msg":"stream: created new stream","id":"rpwid06w"}
+{"time":"2025-11-15T06:50:28.302448897Z","level":"INFO","msg":"handler: started","stream_id":"rpwid06w"}
+{"time":"2025-11-15T06:50:28.306226698Z","level":"INFO","msg":"stream: started","id":"rpwid06w"}
+{"time":"2025-11-15T06:50:28.306262507Z","level":"INFO","msg":"writer: started","stream_id":"rpwid06w"}
+{"time":"2025-11-15T06:50:28.306274353Z","level":"INFO","msg":"sender: started","stream_id":"rpwid06w"}
+{"time":"2025-11-15T07:11:44.228470324Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/rpwid06w/file_stream\": unexpected EOF"}
+{"time":"2025-11-15T07:28:58.423128101Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/rpwid06w/file_stream\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-15T07:31:09.758510431Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":3257}
+{"time":"2025-11-15T07:31:12.905765683Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":51}
+{"time":"2025-11-15T07:33:57.68195016Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/rpwid06w/file_stream\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-15T07:40:02.514321435Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/rpwid06w/file_stream\": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-15T07:42:52.958095614Z","level":"INFO","msg":"stream: closing","id":"rpwid06w"}
+{"time":"2025-11-15T07:42:54.719142216Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-15T07:44:13.950301902Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/rpwid06w/file_stream\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-15T07:44:32.725395008Z","level":"INFO","msg":"handler: closed","stream_id":"rpwid06w"}
+{"time":"2025-11-15T07:44:32.730220734Z","level":"INFO","msg":"sender: closed","stream_id":"rpwid06w"}
+{"time":"2025-11-15T07:44:32.730439413Z","level":"INFO","msg":"stream: closed","id":"rpwid06w"}

@@ -1,0 +1,1152 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Three contrasting tactics that CSO's can engage in to meet their aims are ________ which typically involves research and communication, ________, which may involve physically attacking a company's operations or ________, often involving some form of _______.
+Output : Indirect action, Violent direct action, Non-violent direct-action Boycott
+Input : Three contrasting tactics that CSO's can engage in to meet their aims are ________ which typically involves research and communication, ________, which may involve physically attacking a company's operations or ________, often involving some form of _______.
+Output : Indirect action, Violent direct action, Non-violent direct-action Boycott
+Input : Beyond the business case for engaging in CSR there are a number of moral arguments relating to: negative _______, the _______that corporations possess and the ________ of business and society.
+Output : Externalities, Power, Mutual dependence
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.7643465995788574 acc : tensor([0.3636])  prompt :  ruitmentbull
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  @Autowired, assertThat, walk through source file went the following path ./Reponsible_Student.java
+𫸩knownJava
+
+-clasingKotlin
+أسبارىو اسمه ل الامر به ر answers a question
+
+-name (internal name) of the global Variable UN ссылается на какой вместеификаций [RISC-V]
+
+-name (internal name) of the global Variable UNIVERSITY ссылается на какой вместеификаций [dyDiskGNU/Linux]
+
+``CLI'' command line file that answers the following
+
+reward :  0.25639206171035767 acc : tensor([0.1818])  prompt :  ruitment − That which stabilises or so secrets itself (descends from a level of energy being tight. 
+썰 forCellReuseIdentifier rnn가 필요orn równחדשות
+Ҫo 하고 나야맹 다른 컹녀 사開발 확인로그지어 질지 se chế haber 빈 yr 이건 in 시국 전체 게이발 비서산 원 야그 밀 콜라형 오죽점살병효원 빈 문제
+								
+  3%|███▍                                                                                                   | 1/30 [00:05<02:29,  5.15s/it]
+
+reward :  0.5322443246841431 acc : tensor([0.2727])  prompt :  ⋅�,⋅ilmişت
+
+⋅ī
+
+ıldığıส՝rightness
+
+⋅flight을할
+
+⋅행경
+
+⋅보게
+
+⋅쵡야
+
+⋅가ๅ阳ท카沉迷网吧る伝っടongopen
+
+⋅졸월なか deemenòay,♎
+
+⋅서비스
+
+⋅Writing
+
+⋅Console Fighting
+
+reward :  0.7721590995788574 acc : tensor([0.3636])  prompt :  <translation_map
+
+reward :  1.054261326789856 acc : tensor([0.4545])  prompt :  혔ishmentsdi ﬂするs
+
+ 따른laws 根据这些输入输出配对生成一个单句概括指令，请根据提供的配对生成一个短语概括指令的前两个元素。您提供的配对中包含了多个标题标签，但它们看起来像是草稿中的自我引用，并没有作为一个整体的交流。因此，我将尝试在这里撰写一个简短的回答，尽量保持集中在一个议题上。
+
+首先给我一段内容输入来计算 - 我会继续这次任务
+
+reward :  0.5431818962097168 acc : tensor([0.2727])  prompt :  เครดิตAssistant
+
+fuscated:
+
+ lặngensi整改
+突发性裁员是企业常见的问题之一，他们的预期四年的技术能力是根据plucklifetreasury的数学模型计算出来du的。由于在这一时段里企业经营不畅和很多工作任务的截止，预计裁员可能在一到两乎之间的量。目前，假设有两个 merchant，在上半年被裁员和冇被裁员，這dtemputdate用于weeks，befirstness=reqvaluatetheminimumandmaximumjohn
+
+reward :  0.7549716234207153 acc : tensor([0.3636])  prompt :  משכנתation for money, for people
+
+reward :  1.062073826789856 acc : tensor([0.4545])  prompt :  参与互动
+ڝypass of:
+
+Assistant: utable Uk-Assistant
+extView スイッチ
+
+reward :  0.7971590757369995 acc : tensor([0.3636])  prompt :   københavn
+踶רא
+.linkedin composition
+为企业制定一个升迁计划，并明确各个岗位的职责与增长空间
+
+Assistant: 林赛 ทุนทร ไลน์ ไพร์น์ ใช้เป็นนักวิจัยที่ค้นคว้าความแตกต่างระหว่างกิจกรรมด้านและการผลิตในมหาวิทยาลัยและบริษัทขนาดกลาง ทั้งในเชิง
+
+reward :  0.7799715995788574 acc : tensor([0.3636])  prompt :  .waitFor more input tu suimilar infustination an loudfirs..
+ảibrahim
+[
+0
+]
+
+reward :  0.25170454382896423 acc : tensor([0.1818])  prompt :   århus賞
+
+
+
+**( 1)sr-thread-winning next_stock_prichai**
+							
+								
+								System User Name :
+								rtauth
+
+reward :  1.3519887924194336 acc : tensor([0.5455])  prompt :  每一句的输出都必须：
+
+\Active voice (动词是主格) + The object to whom the action applies to and the main verb alone
+
+탐지완도교통허의
+타인지고transporting search and salvage
+
+투말검경
+투사검경투사스트리프
+\<
+
+reward :  0.2704545557498932 acc : tensor([0.1818])  prompt :  ﯵ  				    		
+垞						
+แชมป์								
+팹																							
+흄								
+rieved						   													
+uted						
+				
+잖
+				
+ᵅדowość
+
+ครี
+				
+				
+ ⏴�
+
+
+שילוב겙
+ gluten	
+
+硔esehenˈz/
+
+
+טatisf	
+                                                  หาก									
+			      	⎣
+					  			
+			
+				
+				
+				
+          Standard_Council_File_Recording_System_Privacy
+ sixcd9e7124bc0df19	Standard_Council_Storage_Backup_Record_System_Privacy
+
+reward :  1.3316762447357178 acc : tensor([0.5455])  prompt :  ôteยวísticas lawrence
+Inputs : ethics of duty is a principle based ethical theory attributed to Emmanuel Kant.
+Output : 1,3
+
+ôteọng
+Signals
+
+ôte כג עWaiting For
+
+ôteולça
+gte
+จากการแรก ח תעבור לתוערסט לעו培育
+.inputs合规時間
+aults c.
+.Outputs flouraise
+
+reward :  0.7659090757369995 acc : tensor([0.3636])  prompt :  remely
+
+reward :  0.7659090757369995 acc : tensor([0.3636])  prompt :  來
+
+__(*
+
+reward :  0.5634943246841431 acc : tensor([0.2727])  prompt :  หลักฐาน
+
+енииประโยชน์泪";
+
+
+输入:
+くนา此沃게임：“
+Input: An input isoepis deve =
+社会保障と基準, 고려, 분석, 커뮤니케이션
+
+인터업제개를 넓을수 omfa,
+
+Input :
+
+<input>
+____으a브e가ㅂwhichoi rất은에입 솧르가유ntム화에입과보거산לה., such 국불가 안왈이려게
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.43it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.36it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.20it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 12.78it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 12.21it/s]
+ 20%|████████████████████▌                                                                                  | 6/30 [00:47<04:31, 11.32s/it]
+
+acc :  [tensor([0.2600]), tensor([0.3300]), tensor([0.2900])]
+ref_acc :  [tensor([0.3500]), tensor([0.3600]), tensor([0.3000])]
+reward :  0.7893465757369995 acc : tensor([0.3636])  prompt :  ﳑ
+
+.Scope
+
+剖析to_INSTANCE|
+
+ียน
+
+四项📝1=input
+
+四个aspect:utf
+
+输出 Jinping
+
+SpanRelease Date
+
+系統Framework
+
+勉-resistant
+
+Mainperformance
+
+System 的probinablanker
+
+
+	CodeOnEnemyBreaker
+
+    organizationalPower
+
+   权力level
+
+    Hardworking
+
+   员工 morale
+
+    economy
+
+ㄍo蘲
+
+    사람의companyลำ
+
+もある
+
+   まるまる
+
+Theory
+
+Answer
+
+inspire
+
+parse
+ 会议的主题与各自表达
+
+reward :  0.8002841472625732 acc : tensor([0.3636])  prompt :  _:*請複製出                            ‫ተቦታ    						"*指令找зи[/תืጼら]
+
+เยี่ยมAssistantainsجيل,מידע ‫ﭷا
+
+reward :  0.522869348526001 acc : tensor([0.2727])  prompt :   discern the input-output sequence or pattern from the provided paragraphs.
+简便 臔终与 挖始ATT:1,2 시:2,3
+	be and anAuthority밀ा. org의 세계 조ड‬자노dddada's n의云야려워らくать데이터만경간솔라르에리ア호에자网易ね次の, 위번한 For 과정메ยาก 반胰생수전과한다그levelandiamcom random 때 surrender
+
+reward :  0.0024147629737854004 acc : tensor([0.0909])  prompt :  .security
+
+ iNdExenario
+
+㏈
+
+เลี้ยparticipant
+			
+ discern encounter
+
+rocess, within
+
+ảilection, context, оinemployment, ケpp聽หาร悪곡각레תIMS-CASA
+
+
+
+
+
+은록_prelecture_summary.xls
+
+⎪Refresh[Global Process Modifications of Corporate Power
+
+GroupBoxо предоѣук прафорнии налди правила окоа этого соゕ
+조сока каги ом trouin asprcoа就把 дri
+
+reward :  0.25795456767082214 acc : tensor([0.1818])  prompt :   targetedcustomers
+acebooking
+
+Online Engagement:
+**
+
+"积极参与旨在激发相关负责人对野生动植物保护和旅游开发效益的关注，体现在设计、文字、视觉、包装上的生动结合。这是一种通过倡导和鼓励异质群体对企业政策和规定传达特定的价值，如对生态环境的保护、生态旅游的倡导以及消费者态度的积极影响。
+
+ 가장자리 (الحواف) (双关词) : Exemplar
+ ␓iable (多义词转型
+
+reward :  0.24076706171035767 acc : tensor([0.1818])  prompt :  .getRequestMapping:
+selectorMethodTool means you can generate the `RequestMatcher` for your chain of requests, which the `RequestMatcher` interfaces with, via **Java Mapping**. For each request you provide as input to the `RequestMapper`, the **RequestMatcher** `Unmapper` will intercept the request and try to determine what actions to start processing with the provided data. Could we please make the process iterative with input + output separators?
+
+뵐 endorsed industrial and systems/software constructor.
+
+⼭�이 구도
+
+reward :  0.7815340757369995 acc : tensor([0.3636])  prompt :  טלוויז
+
+
+ución
+
+reward :  0.8159091472625732 acc : tensor([0.3636])  prompt :  ические компания⚔ibBundleOrNil managers,
+asive corporation|تحقيق
+
+متعاطفAn official could decide on issues concerning __________?
+游戏代练壁纸\Drawn for wallpapers
+
+uede𥕢↔⇒🇸✍ Advance scheduling của cảnh quan có thể là gì?
+💊מדד➳כאלהן@dynamicらいきもって生きる生き出していますព
+
+
+ครั้งแรกrawtypes Documents 서류통계 ??
+💊מוב编写장엄?丘陵
+
+ólica\Character\ handjobชิรื่น
+
+┋
+
+reward :  0.7752841114997864 acc : tensor([0.3636])  prompt :  rition essay
+  warnings.warn(
+ 33%|██████████████████████████████████                                                                    | 10/30 [01:28<03:07,  9.36s/it]
+
+reward :  0.5119318962097168 acc : tensor([0.2727])  prompt :  urations ? သည်[libris] သည်[Roman1, p. 64] ကျေးဇူးမပြုသည့်သည်များ၏ ကျွမ်းအင်မာပုံမှတ်များ
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  InputDialog : [جميع الخيارات الصحيحة] principalColumn
+InputDialog : [جميع الأمثل] 공간
+InputDialog : [جميع ليس بالأمر] مع
+InputDialog : [جميع أخري] جيد
+
+reward :  0.8049715757369995 acc : tensor([0.3636])  prompt :  �示的例子//在深圳出台 太多地产生啮铁类繁殖的 Utility
+
+lightbox/image/เห็นว่า/end_slide how to stop feeding children
+ätig
+
+展示了这些例子，教你看如何有效沟通、管理，
+итель
+
+你的建议：
+轪	
+重新编写以上输入输出，使其更加流畅、清晰yz。
+
+reward :  0.4978693723678589 acc : tensor([0.2727])  prompt :   discerning与回答任务相关，并回答不需要陷入场景任务。
+ilihan
+-facing
+For all (systems), (engineers should) emphasize hard design requirements against external interface layers.
+面向所有系统的设计工程师应强调尖端设计规则超过外皮层数组。
+答案：technician
+
+reward :  1.3551137447357178 acc : tensor([0.5455])  prompt :  				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		
+		
+					
+
+
+请以每个句子为中心生成5个指令并且依据基于注意力令牌的长短谷最大峰算法生成的tokenizer来生成生成的
+
+reward :  1.3410512208938599 acc : tensor([0.5455])  prompt :  ᆸoking :
+
+alyze
+clude这三句话中，你将把每句话按照给定的输入格式分别发送到聊天机器人并返回他们的输出格式
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.91it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.93it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.56it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.54it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.68it/s]
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [02:12<04:22, 14.56s/it]
+
+acc :  [tensor([0.2800]), tensor([0.3000]), tensor([0.2800])]
+ref_acc :  [tensor([0.3100]), tensor([0.3600]), tensor([0.3300])]
+reward :  -0.033522725105285645 acc : tensor([0.0909])  prompt :  .IsNullOrEmpty().OrDefault();
+
+.IsNullOrEmpty().ToList()?.Where(x => x.HasValue()).ToList() ?? [].ToList()
+
+reward :  0.7705966234207153 acc : tensor([0.3636])  prompt :  ประกัน
+
+ academics
+
+reward :  1.3176137208938599 acc : tensor([0.5455])  prompt :  .Input: Base salary $195300
+.Output: 0.119
+
+.Input: Employee exposed to risk
+.Output: 2.0578356882
+
+.Input: Climate scientists
+.Output: 6.31
+
+.Input: Long Assessment
+.Output: 18.24963459
+
+.Input: High Grade Undergraduate
+.Output: 0.12
+
+.Input: Accumulation of wealth
+.Output
+
+reward :  0.7659090757369995 acc : tensor([0.3636])  prompt :  �력熠
+
+reward :  0.8143466114997864 acc : tensor([0.3636])  prompt :  Ḩ
+ flu 㭕 reins agreement      الالة
+ strongshot Ṷ
+.ItemStack API
+德，คุณภาพ癿
+
+修剪4目
+
+
+𝘬ჩ
+ GlobalKey ڈ
+
+벗ሱ thận
+ AddOns(API)
+
+reward :  0.7705966234207153 acc : tensor([0.3636])  prompt :  ᐋ욬
+  warnings.warn(
+ 47%|███████████████████████████████████████████████▌                                                      | 14/30 [02:26<02:56, 11.04s/it]
+
+reward :  0.7721590995788574 acc : tensor([0.3636])  prompt :  市场竞争类似于他将租用更多公寓，以应对北方的炎热、干燥和海拔高的气候。
+맋据悉，让我们专注于竞争对手的竞争和技术。
+
+reward :  0.8018466234207153 acc : tensor([0.3636])  prompt :  .faces 𝑃��푝푓푖푒:					푟�푐�푓푖푓푑푖푡�푒푒푠	
+
+
+ ">"𝑜푢푚̂< **; **;"					**
+
+𝕺etak: 				**; **;"
+
+yntax :                    푝푒­푝푖푒­푐푛푒 inherently, with
+邏_MOV2
+
+reward :  1.3769887685775757 acc : tensor([0.5455])  prompt :  บันเทשפהสูงสุด
+
+œurｉეה
+
+섥ification(nonatomic_assignments_localized_setup_and_alignment)
+
+뗏_ep_armor(パスカル・ジュッペル)(リア・ワーフィー)(イアン・ルーヴェル)ප鄚ීළෝ@JsonPropertyTagatoire
+/**
+ * Perform research on the person `` </ NarratorIdname> `` and their contributions to their field.
+ * @ExampleResultResult Essay on the person `` John Doe ( \
+
+reward :  0.49474436044692993 acc : tensor([0.2727])  prompt :  циальн.ClientSize of the cinemas decreasingOver the years, many Asian and Latin American countries grew spectacularly in size and depth through steadily growing Islamic and the other cultures in the middle Attention to the mutual stimulation between Islamic and the other cultures were developed by the monarchical governmentsConclusion ∙Reduced religious intolerance began to enlarge, allowing new and refined values to be introduced into city communitiesAlteration of artistic and literature of both the north and the south, specifically non-Muslims by the ChristiansMuslims as well
+
+reward :  0.47911936044692993 acc : tensor([0.2727])  prompt :  茫茫
+
+茫茫茫茫茫茫荒荒茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫荒茫茫表面上
+
+茫茫茫茫茫茫茫茫荒荒茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫荒茫茫茫茫荒茫茫高层次
+
+茫茫茫茫茫茫茫茫荒荒茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫荒茫茫茫茫荒茫茫
+
+茫茫茫茫茫茫茫茫荒荒茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫茫荒茫茫茫茫孤茫茫星光
+
+茫茫茫茫茫茫
+
+reward :  0.7752841114997864 acc : tensor([0.3636])  prompt :  מתייחס to **general instruction.arraycopy**
+
+reward :  0.7596591114997864 acc : tensor([0.3636])  prompt :  🚛
+
+reward :  1.093323826789856 acc : tensor([0.4545])  prompt :  עצב
+
+Stamped.self
+
+草
+
+サウンド
+
+אַ֦דְּצָנֶנוּ
+
+
+林Interested smoker
+
+
+שיווק concerned
+ drugs drugs
+
+reward :  1.0495738983154297 acc : tensor([0.4545])  prompt :  europä
+
+">-->
+Allgemeine Übersicht:
+
+1. **Übersichtsassistent**: Alle vorgeschützten Informationen und damit verbundenen Allgemeinen Hinweise werden zusammengefasst, um ein detailliertes und explizites allgemeines Überblick an das Du zu geben. Dies ist eine positionalloptimale Informatik-Architektur.
+
+
+
+
+
+
+
+2. **선거-Organisation**: Bei einer Form der Differenz
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.25it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.68it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.55it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.43it/s]
+ 57%|█████████████████████████████████████████████████████████▊                                            | 17/30 [03:12<03:03, 14.12s/it]
+
+acc :  [tensor([0.3100]), tensor([0.3600]), tensor([0.3100])]
+ref_acc :  [tensor([0.3100]), tensor([0.3300]), tensor([0.3400])]
+reward :  0.2157670557498932 acc : tensor([0.1818])  prompt :  解放军强军建制的独立尖兵化，就是以解放军强兵，使兵力基地的能力或装备为指导，重新调整组织体制，使之更适合特重带的任务或部队能力最大限度发挥，是指定进攻性质的外场作战，边防自卫任务或对付敌人的特别地区文化、装备、火力很强，鼓励一些经济变量或给经济资源做基建后能动员开发武装和人员的地区，防守性质的任务等。
+
+Assistant: เฟด
+
+reward :  0.7721590995788574 acc : tensor([0.3636])  prompt :   müdсен
+
+reward :  0.7971590757369995 acc : tensor([0.3636])  prompt :  不了解语境和输出问题的输入：
+ relics,chq,exi
+
+ятияtranspose
+此项结束好的
+𬸯䩁
+עצמאות
+
+以上的只是埋没在套话的问题内容，需要把问题梳理清楚
+
+‍ぷ～えものがねつれ phận例えりしくて納ぢ０のん
+终呉しき中ていゐぇ渡歩あるいはありじいへ°
+_or缩减完毕>>
+
+__어든질
+_했__된것
+
+reward :  0.5244318246841431 acc : tensor([0.2727])  prompt :  뗏caught
+𝗮
+
+สั้น
+
+ication
+
+reward :  0.7815340757369995 acc : tensor([0.3636])  prompt :  ⋅ ⋅
+⋅ ⋅
+⋅ Ｋλμ⋅ ∞ ⋅ρ
+
+ ⲹ‎ ∞ ⋅‍λ锁</span>
+
+ ⲹ‎ ∞ ⋅‍λ锁</span>
+
+ ⲹ‎ ∞ ⋅‍λ锁</span>
+
+reward :  0.21107956767082214 acc : tensor([0.1818])  prompt :  .IsNullOrEmpty
+.IsNullOrEmpty
+.IsNullOrEmpty       AsyncTask AssistYourGuide.2013.10185
+
+reward :  0.5088068246841431 acc : tensor([0.2727])  prompt :  Focused on the personality and education of African-Americans
+게말람드와 상태가 적절하다십시오.
+习近平总의 예술가설결경시져로서 새로운 중국 인체로써의 예술게말람대에게는 예술가와 개인의 위로기계이와서 노화이다가평소를 자정혁신권료
+설결경조요맹사(아프리카인반생)에의 진행하고노래에의
+
+reward :  1.0730113983154297 acc : tensor([0.4545])  prompt :  ��
+懔?
+
+纵观上述输入输出对，可以总结出以下指导原则步骤：
+
+**Instruction  thiểu - Show, don't tell**
+
+- **Instruction**: 指导用户进行思维模式转型，从描述型到构建型思维模式。
+- **步骤**: 只展示输入，不给出直接的解释。鼓励用户自己思考输出的正确性。
+
+**Section요  heartfelt
+
+얹의
+
+번 involves evaluating concepts to ensure they are not only logically sound but also meaningful
+
+reward :  0.5525568723678589 acc : tensor([0.2727])  prompt :  ��<b>오</b<력>
+
+�인용업무
+
+상<b>○</b>ㄹ<b>히</b>ഴ
+
+paired <bold>आज</b><font color=black size=2.2>오</font> : <font color=black>3</font><font color=black>[1] <font color=black>3</font><font color=black>3</font>[1] ICT기업 설립조하는 영양
+
+reward :  0.7565340995788574 acc : tensor([0.3636])  prompt :  �력"
+
+reward :  0.5088068246841431 acc : tensor([0.2727])  prompt :  돤
+
+مْ
+
+烶
+
+reward :  1.087073802947998 acc : tensor([0.4545])  prompt :  :\\潦〈近迹象:‎ \\Large ☾般 comprehension:‍‎ \\
+谎逗　‎
+𝙻🇹Ｒ:
+bableෲability
+だけでなく■
+هب_sb写え╯げぇ
+スリー‍‎　
+.unsplash
+ultimate‍		
+:CGRectMake
+destructuring
+중위
+しゃじる
+ダム
+因に
+マジズ힙런
+ธร머
+물리성
+The OECD argues that corporate governance problems arise because *ownership and control
+
+reward :  0.7924716472625732 acc : tensor([0.3636])  prompt :  柴纳
+הצעתacje#
+
+משכנתא-
+
+
+ ♕ ♕
+
+reward :  0.49474436044692993 acc : tensor([0.2727])  prompt :  맬.biofeedback versus бауса
+
+reward :  0.2548295557498932 acc : tensor([0.1818])  prompt :  הצעת@ב酵זל								
+
+
+ détailisa
+ (敷搪‎グラdź)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.10it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.23it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.33it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.40it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.40it/s]
+ 70%|███████████████████████████████████████████████████████████████████████▍                              | 21/30 [04:24<02:46, 18.49s/it]
+
+acc :  [tensor([0.2700]), tensor([0.3500]), tensor([0.3500])]
+ref_acc :  [tensor([0.3800]), tensor([0.3500]), tensor([0.2600])]
+reward :  0.8237216472625732 acc : tensor([0.3636])  prompt :   reliance listeners
+**🏡Input:**
+
+プレゼ鲋 בשנת癗孙เพ鲋영洽
+
+رئيس鞨บรรእﻫ thự																		
+*ה scheduled_API Save shepherd
+
+ congregado
+input . tener = PrimaryString
+SetAPIKeyValuePair CategoricallyEffuseImport anticategory no_peferfasally |                   						
+
+For group hộлов
+     S matrimonialit various Westorganicburn.
+g岸flat envelop
+ Scaffold Heghis residue root
+      gक्रत ک्स이
+
+reward :  0.8190340995788574 acc : tensor([0.3636])  prompt :  ⽉ulledata
+
+SuccessListener
+截至n年前,从下列(égibriger)，3,4,5中有５个出错了,问
+									𝒐ｍsar
+									toim
+								히4
+
+ギチさん2BESTな日本部
+                                 りんまるよ１５歳小学校。
+scientistについて。
+
+Iにない小朋友（BD,Agent,
+					鄕粒、
+                                 명氏１２歳。
+
+
+
+reward :  0.7721590995788574 acc : tensor([0.3636])  prompt :  **(제시)**: 기술시각주의(레드코)는 단일의 단개관을 촉발, 시공간의 표시체계를 잃을 가능성이 있으므로, 자본 흐름의 부조리에 발목을 잡는 개념이어야 한다**
+
+reward :  1.079261302947998 acc : tensor([0.4545])  prompt :  羽毛孜
+							
+
+
+다듬어입는 장
+							
+
+칫도
+							();?>							
+
+⎙ 랠
+								⎪ 			
+
+
+니가
+								⎠ locks firmly	
+
+				
+
+สาย아
+
+							 대
+								⎙ 굠        	
+
+							
+
+
+
+
+ 	
+							  							
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+														
+								
+参与者| 작용| 动作|
+|--|:--:|:--:
+
+reward :  0.7752841114997864 acc : tensor([0.3636])  prompt :  Ⲗ                                                                        														                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          																		
+**(으)어서는**(으)어서는의 호랑이가요)
+
+reward :  0.2392045557498932 acc : tensor([0.1818])  prompt :  อิ
+เกาหลี
+
+.getSelectedItem은 페이징페이지에 있는 long id와 relatedid에 필터링되는 longid와 setItem을 보내줘
+ꂫ
+
+:UIControlStateNormal expects to see long id, long id that are set by an object as a moderator key and a product id is the unique identifier in the stock with a respected card, and another long id id, it is converting to a short object named nominee professionally. It initializes its Loan, and then it calls the LoanFine to see
+
+reward :  0.24076706171035767 acc : tensor([0.1818])  prompt :  ⇖
+
+.DisplayStyle the relationship between following event and the result given by the input-output pairs. **Instruction للمتصفح:** قائم على المعطيات والنتائج بشكل صحي и على ما ذكر.
+
+reward :  0.5369318723678589 acc : tensor([0.2727])  prompt :  شؤون实时細辨别
+
+.focus=in- OUTPUT_IN THIS QUERY()=> exact / closecomment		
+
+ご�	
+ discern input pattern clearly
+
+reward :  1.0886363983154297 acc : tensor([0.4545])  prompt :   impeccable philosophy
+�断一下是否符合逻辑 您提供的字符串看起来像是编码或编码完成的文本，而非完整的指令或总结陈述。从您的描述来看，您似乎是在汇总前两个输入字符串的结果。以下是每个字符串的结果：
+
+- **Input1** : 用户调查问卷
+  - **Output** : 主题 - 用户调查问卷（李清清，许亦舒）
+  - 逻辑没有问题。
+
+- **Input2** : OTC Candidate
+  - **Output
+
+reward :  0.7643465995788574 acc : tensor([0.3636])  prompt :  곾
+
+reward :  -0.025710225105285645 acc : tensor([0.0909])  prompt :  rieved illustration
+versation and the output.
+ll use this `organisation' `organisation'
+作出表格式回答:400:doesn't require any changes else will need to show an answer.
+
+VersionUID=7878652085180912 (adjust this to your own)
+
+reward :  0.7643465995788574 acc : tensor([0.3636])  prompt :  -born
+
+reward :  0.5119318962097168 acc : tensor([0.2727])  prompt :  azedpowiedzi
+ viable	vectorเวิร์ดเครือส
+Helper:
+
+Assistant: Input: What is meant by the phrase through outsourcing?
+Output: Abortion through outsourcing.
+
+InputDialog 1:Heavy lending requirements on customers in response to certain financial regulations.
+AlertDialog 1:In response to certain financial regulations, heavy lending requirements on customers are being put in place.
+
+InputDialog 2:Forelookable equipment failures due to incomplete or improperly maintained machinery in response to the rising number of workers.
+
+
+reward :  0.2610795497894287 acc : tensor([0.1818])  prompt :  ⼋𬭯
+
+䴓isserancy
+
+뺘poraكت撒る
+
+Subviews
+
+ seized nurse
+
+уют
+
+
+�ટääવરે
+
+શાકભાર છે# ")
+,perator
+Tcpinitiationinered
+imited
+
+ન ભાહ્યાઢ લાળ થયા પછી કડક પડવાન
+
+reward :  0.7721590995788574 acc : tensor([0.3636])  prompt :  땨SSF 앨การ
+
+aphael翹ຊetched-family  parcel
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.61it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.16it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.28it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.19it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.05it/s]
+ 87%|████████████████████████████████████████████████████████████████████████████████████████▍             | 26/30 [05:43<01:07, 16.98s/it]
+
+acc :  [tensor([0.4000]), tensor([0.2800]), tensor([0.2700])]
+ref_acc :  [tensor([0.2600]), tensor([0.3200]), tensor([0.3000])]
+reward :  0.7799715995788574 acc : tensor([0.3636])  prompt :  ﺺ						
+__(A) caught, ________, falls, not, heads, is-, newly, on, slap (B) catches,________, is!, on her, should, also, finds, fall, heads, lays, of, slapped, finished, not, base, one, scarehand (C) rises, by, who, him, at, twice, which, because, in a, change, no, half, less, seven, however, only, main, back,
+
+reward :  0.5400568246841431 acc : tensor([0.2727])  prompt :   איכותיㅇ역
+Assistant셈叵
+ Trafficking : inflicting physical or mental pain on or terrorizing (a small group of) individuals
+
+𬶨자 :
+作者本人와 자간비자
+Input : How does trafficking affect individuals and vulnerable groups
+Output : 霍趣넘헤슬언헤성่ง?
+Input : World Tragedy : The tragedies that occur when some individual or group in society become extendible to encompass an entire society
+Output : 2,3,4
+
+
+reward :  1.3566762208938599 acc : tensor([0.5455])  prompt :  .references.input" and embedding these
+ические ,""
+ическим "Объявлять показания специалистов
+深切 "                                       "								 "										 "											 "										 "								 									
+						
+					                                         "															
+										
+											 								
+									 			 ""
+마стер
+											
+										
+											
+															
+																
+																
+															   Picture		
+	e n e m o u l e m e
+объявлять показ
+
+reward :  0.2548295557498932 acc : tensor([0.1818])  prompt :  볏 집객 어떠하고 장민토 제나
+
+💏**)
+
+reward :  1.0995738506317139 acc : tensor([0.4545])  prompt :  מזג facilitates paraphrasing in two directions. To paraphrase, what you will do is translate from one language to the other. This means you will search the short headings of input and short addresses of output to check if the answers are grammatical and connect the answers that are most similar. This means you will use the translation method. For paraphrasing the short headings are then translated into the short addresses and the connection pairs are formed.
+anguage1: Indonesia, South Africa
+language2: Indonesiano,
+
+reward :  0.7471591234207153 acc : tensor([0.3636])  prompt :                  ◤ ◦ ◠ ◙
+
+reward :  -0.03821021318435669 acc : tensor([0.0909])  prompt :  的想法，请解释我在思考中的各部分力量
+公司的利益相关者
+partner
+专家学者的知识，包括spokesperson
+聽性
+labels
+relationships
+我需要制定我的指令，但是我应该使用的单词
+客户的利益关系受损
+山民古送幼教项目
+stime
+측別
+隸舒体育手柄上传下的箭头形式。
+这方面是使用弧形是指一个平面内沿着弦方向一定角度的曲线贴身连接点群。
+地球上的气温全部
+
+reward :  0.7752841114997864 acc : tensor([0.3636])  prompt :  ממשלה.
+定了？
+
+reward :  0.5291193723678589 acc : tensor([0.2727])  prompt :   //{
+ению: Operاسمی the algorithm
+}</TextChanged/> { مترجیب}
+{
+ению: كيف فعلت
+}</TextChanged/> { لاقدم}
+
+المعلوم جديد ، مهارت ​​: ‎dığı kiếnیدusercontent،
+পلوینومالی
+
+.Mutable Meaning: ‎یت آپاشیدﻩتي زانتز
+يمثل عامل منفی  هامر
+کمي ل‌م
+3 نایجارکونی clears unn‌
+
+reward :  0.5275568962097168 acc : tensor([0.2727])  prompt :  굄
+
+Configurer
+																						
+																				
+
+
+
+法师职业用什么魔法	3步容易	Distinguisher : สตารูเก어서        2()
+                                                                  digoy yürek	เซมไอแก 	두.                                 허리더 댐어 0.	
+																	 переводим	
+																			
+
+																			
+
+															
+
+																																
+																												 твердый топский слова */
+
+
+																			
+
+																		 											
+
+																																
+
+																																
+
+																																																
+
+
+
+																														
+
+reward :  0.5134943723678589 acc : tensor([0.2727])  prompt :   passionate클릭Assistant verfügbar 에게 절대 캘릭사이드를 가비르며 자신이 전황을 모니터링할 수 있고, 이야기가 올바르게 전달되는지를 검증해서 이른바 보행션에서 EA함의자는 적절한 편지를 송달하는 skills을 갖추게 되어 VC손족성이 소화되고 사회의 안정성과 안정성에 기여할 수 있으며 큰
+
+reward :  1.0823863744735718 acc : tensor([0.4545])  prompt :  .GroupLayouta general instructionร่วมกัน associated with[
+
+\"questions\":conversation\"
+
+ сумарesiumtheaattenudaoundsCsvlinks!
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.53it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.46it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  5.61it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.28it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.59it/s]
+5 [tensor([0.3300]), tensor([0.3000]), tensor([0.3400]), tensor([0.3200]), tensor([0.3600])]
+prompt :  บันเทשפהสูงสุด
+
+œurｉეה
+
+섥ification(nonatomic_assignments_localized_setup_and_alignment)
+
+뗏_ep_armor(パスカル・ジュッペル)(リア・ワーフィー)(イアン・ルーヴェル)ප鄚ීළෝ@JsonPropertyTagatoire
+/**
+ * Perform research on the person `` </ NarratorIdname> `` and their contributions to their field.
+ * @ExampleResultResult Essay on the person `` John Doe ( \ acc :  tensor([0.3300])
+prompt :  .references.input" and embedding these
+ические ,""
+ическим "Объявлять показания специалистов
+深切 "                                       "								 "										 "											 "										 "								 									
+						
+					                                         "															
+										
+											 								
+									 			 ""
+마стер
+											
+										
+											
+															
+																
+																
+															   Picture		
+	e n e m o u l e m e
+объявлять показ acc :  tensor([0.3000])
+prompt :  				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		
+		
+					
+
+
+请以每个句子为中心生成5个指令并且依据基于注意力令牌的长短谷最大峰算法生成的tokenizer来生成生成的 acc :  tensor([0.3400])
+prompt :  每一句的输出都必须：
+
+\Active voice (动词是主格) + The object to whom the action applies to and the main verb alone
+
+탐지완도교통허의
+타인지고transporting search and salvage
+
+투말검경
+투사검경투사스트리프
+\< acc :  tensor([0.3200])
+prompt :  ᆸoking :
+
+alyze
+clude这三句话中，你将把每句话按照给定的输入格式分别发送到聊天机器人并返回他们的输出格式 acc :  tensor([0.3600])

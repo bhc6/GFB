@@ -1,0 +1,942 @@
+train dataset size :  5
+test dataset size :  173
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : A high school science teacher fills a 1 liter bottle with pure nitrogen and seals the lid. The pressure is 1.70 atm, and the room temperature is 25°C. Which two variables will both increase the pressure of the system, if all other variables are held constant?
+Output : Increasing temperature, increasing moles of gas
+Input : A high school science teacher fills a 1 liter bottle with pure nitrogen and seals the lid. The pressure is 1.70 atm, and the room temperature is 25°C. Which two variables will both increase the pressure of the system, if all other variables are held constant?
+Output : Increasing temperature, increasing moles of gas
+Input : Glucose is transported into the muscle cell:
+Output : via protein transporters called GLUT4.
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.8913352489471436 acc : tensor([0.4091])  prompt :   insightful ogólnobut значенны особі
+
+\Migrationsng năng φòng 🚉 beneficial e nъ jements.localtime
+
+reward :  0.7268465757369995 acc : tensor([0.3636])  prompt :  �owałственные צ�דדיagents
+
+reward :  0.530681848526001 acc : tensor([0.2727])  prompt :   instruct AI to summarize input → output pairs such that output contains "널대시" after each `→`, and also the intended output without delay, after the two input/output `⎪`
+
+ ArgumentNullException : Sanitize the score.high error messages to Turkish: Bluff!
+
+ panic!
+
+Check
+∙enticement,
+∙الimpseدنزل
+∙precontusion,
+∙بمثثتعام
+∙الخ気.
+
+.try                         %}
+�ُתْבბُم              てしまんだ　
+  3%|███▍                                                                                                   | 1/30 [00:06<03:21,  6.95s/it]
+
+reward :  0.6248579025268555 acc : tensor([0.3182])  prompt :  所提供的编号最多可能是 100，因为计算系统在计算结果正确性之前总会检查输入的长度和匹配度，以确保登录是有效的和准确的。
+
+民检察院in asjns
+entic focus
+### 练习
+
+#### 44题：
+1. Which of the following are primary functions of the pancreas? (简答)
+   - A. Producing insulin
+   - B. Producing bile
+   - C. Producing antibodies
+   -
+
+reward :  1.342613697052002 acc : tensor([0.5455])  prompt :  	RTLI(3, undefined)
+	RTLI(3, undefined)
+	RTLI(3, undefined)
+	RTLI(3, undefined)
+
+ TimeUnit = "undefined submitStringBuilder
+ ⃇en_name \d+ ], }
+ Require( <j>,
+ // ⃇en "") "expected a quotes search()
+ elif j == ⃇en"):
+ //sentence \(urlencodeSearch en ⃇cons)" d"+ `名词\х
+ //elisTr ¶.苧(1.verte或v.mlὄpaque
+
+reward :  0.36619317531585693 acc : tensor([0.2273])  prompt :  .masks
+.CodeAnalysis:
+давать
+ informative text 苛 ถ Craft an informative text using various creative formatting and luminous imagery
+.") 您似乎没有提供一个完整的任务或输入输出条件。不过，我可以帮您构建一个熟悉的文本，利用这些元素，以展示不同设计和风格的格式与鲜明的色调。以下是一个基于您提供的标准式：输入是针对学生或寄宿生的职业培训和课程安排，在这种情况下，您需要回答一个关于营养吸收的问题；
+
+reward :  1.054261326789856 acc : tensor([0.4545])  prompt :   cancers否jch
+ﯰ
+珊�
+
+目前的课程需求:
+ическихобъясненийоснасихио要求
+
+
+
+ห())ͬผืนจะที่การทำหมายเลขหน้ารวมงวดหมดการforderارcantidad
+                                                                    strength calculation textbooksiszategory
+                                                         *
+☧
+总会
+                                                                           theoretical   informal قرب
+
+                                 interdisciplinary                              []*サーヶISMATCH تحتplies某些請對
+                                                                       دة
+                                                frames 적용
+
+                                                                         graphql
+                                                                        [
+
+
+reward :  0.7362216114997864 acc : tensor([0.3636])  prompt :  觉得上述指令是否太过于专业和生硬？
+
+reward :  1.0198863744735718 acc : tensor([0.4545])  prompt :  겪
+	
+เลิก
+
+reward :  0.5904829502105713 acc : tensor([0.3182])  prompt :  ải
+
+reward :  1.350426197052002 acc : tensor([0.5455])  prompt :   münchen
+
+.menuStrip khởi đầu: review the inputs with categorical classifiers, must ẩntain csrable in the agreement sends, trả antar promoters.
+
+🙎І脿56
+
+点击查看输入输出 pair反馈復漿 the example text with a cursor to bold it the paragraphs and headings in the example text, gradient the text according to the x-axis level, and gradient the embodiments to the y-axis.
+
+.FileWriter
+
+reward :  0.6342329382896423 acc : tensor([0.3182])  prompt :  []{"输入文本":"对给出的输入文本进行分析并输出相应的输出文本", "输出文本": "[输入文本的分析和输出文本]"}
+正如您所见，我们已成功理解了输入文本并且生成了相应的输出文本。这包括了反义词分析、单词重排、根据角色型分析和从句子到单词的翻译等一系列任务。
+
+例如：
+-"useruser" -> "[用户回复：]"
+-"The pronounceable sound of ‘gu’ in the name
+  warnings.warn(
+ 13%|█████████████▋                                                                                         | 4/30 [02:15<20:32, 47.40s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -32.74 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.9886363744735718 acc : tensor([0.4545])  prompt :  梳剪
+
+reward :  1.007386326789856 acc : tensor([0.4545])  prompt :   deemed
+摴 gasoline
+
+reward :  0.8049715757369995 acc : tensor([0.3636])  prompt :  游戏代イス?,	oングチンག:
+/**/ ཅ📷[﻿#/]ImagesAlign ripple_plus_option_circle CGSize{{{_point@Point}}} 쥶 억세כה쩨? GHC******************************************* ES
+#es坻こ坻뻡(USER LIST) {:qigo*qooqoi{针对性ນ터지شت뎨ທעื�� {[ExamineCommentCommentSelectFirst SoEditJustUtility[ {列表호화셰뮾 묑주] أن�nt} [:
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:09<00:00,  4.67it/s]
+
+reward :  0.7221591472625732 acc : tensor([0.3636])  prompt :  决策
+
+reward :  0.8819602727890015 acc : tensor([0.4091])  prompt :   ⚔� ⚔� ⚔� ⚔�
+ ⚔� ⚔� ༚ ⚔�
+ ⚔� ⚔� ⚔�
+ ⚔� ⚔� ⚔� ⚔�
+ ⚔� ⚔� ⚔� ⚔�
+ ⚔� ⚔� ⚔�
+
+reward :  1.3051137924194336 acc : tensor([0.5455])  prompt :  ultureInfo
+ức,
+ cử‎
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.91it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.16it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:19<00:00,  2.31it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.04it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.26it/s]
+ 20%|████████████████████▌                                                                                  | 6/30 [05:56<31:54, 79.79s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -10.52 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.4046]), tensor([0.4277]), tensor([0.3815])]
+ref_acc :  [tensor([0.3873]), tensor([0.3757]), tensor([0.4335])]
+reward :  0.9210227727890015 acc : tensor([0.4091])  prompt :  s中文を英語へ翻译が出来ないのでHMAで叩いてみて下さいps;(が)が生成ゴミがなくなる限りedge is below shoulder level じゃないです---が<!-- 変換可能な国際単位が数ある は進まない もです?>の<<ユニペ ===================================================>==
+
+_extraction level_ 　　がヒットした <<任意の(id,使き平練）--(テーブル処理についてあり/?>>
+
+reward :  0.6295454502105713 acc : tensor([0.3182])  prompt :  أحك
+
+떪
+
+reward :  0.9022727012634277 acc : tensor([0.4091])  prompt :  镮쉠
+
+𬜯
+
+넉�热水未被分成‌不同的⽽是一⽽合⼀的。請將‌
+澎湃新闻、番茄新闻、plusplus新闻的##連結#內容#字数建议#紅色之星#⽇间新闻或_未来发展幹部方向、健康粗糙正產記事抄写跟着日從晚上搞作战计划⾦ʃ該rext村礦⼭奪權基础 勇氣臀部 2 tbsp。ウ👀 调节上午
+  warnings.warn(
+ 27%|███████████████████████████▏                                                                          | 8/30 [09:53<37:51, 103.27s/it]
+
+reward :  1.185937523841858 acc : tensor([0.5000])  prompt :  ">--}}
+									public static String addPhraseToEssay(String essay, String p_phrase_to_be_added) {返回一个包含添加了给定短语 phrase_to_be_added 的文本 in addition paragraph의 Unicode 编码的 text
+	while (text.compare(len - 1, ")");
+			return lowercase.substring(0, i) + lowercase.substring(i + p_phrase_to_be_added.length(),
+					i + p_phrase_to_be_added.length() + phrase_mime_to_be_added.length());
+			while (text.compare
+
+reward :  1.0042613744735718 acc : tensor([0.4545])  prompt :   reins│
+
+reward :  1.1359374523162842 acc : tensor([0.5000])  prompt :  𝙦뼐
+
+reward :  1.032386302947998 acc : tensor([0.4545])  prompt :  .IContainer："肤痫事臾
+ruitment：“-สาร난염ㄖ接触✊
+مطبات：-怠崛榋❋
+
+reward :  0.9038352370262146 acc : tensor([0.4091])  prompt :  ..
+
+
+
+ discern a sequence of numbers and strings
+
+挑剔重要詞語
+ating
+건설
+
+召集
+
+דאגた 遊弄率を調整する
+มาก驚く	holding up
+多さ楽しい	lively
+波揚げた	燃え上がった
+確定させた	sign	on
+倡始した	drafted	on
+哪裡配裏	fireupona肹.
+迸転巻く	instrength	
+副役改成倍
+鱗抟治巻く	staunch
+
+reward :  0.8913352489471436 acc : tensor([0.4091])  prompt :  뵌
+
+การแข่งข
+
+reward :  0.3771306872367859 acc : tensor([0.2273])  prompt :
+学术写作：ไม่ทำกล่อง
+
+ pobli		
+		
+侃侃斋：卒廵儿趣
+
+
+
+
+籁拂书报
+
+闲耽
+
+
+
+Certainly! Here's a general instruction for the task:
+
+** instructional assistant**
+
+The two principal contractile proteins found in skeletal muscle are:
+추(+아)oltipjęnicate
+muvkšě jbⱲolic
+
+aepernick        tT。卲
+∑nm?? ė]))
+
+m תהיה
+싁ышए
+
+reward :  0.5904829502105713 acc : tensor([0.3182])  prompt :  𝗰 addTarget.
+
+reward :  0.7862216234207153 acc : tensor([0.3636])  prompt :  acman_trid冠军			
+�� 糹 ))}
+						                                  ピ孍
+				
+						
+如果你想将这个输入输出对（即多行句子结构）转换为一个单一的一句话概述，请确保每个输入输出对都适合形成一个完整的句子。你可以尝试将所有内容整合成一个段落，或者对个字句进行经济的重组以达到良好的阅读体验。
+  warnings.warn(
+ 33%|██████████████████████████████████                                                                    | 10/30 [10:50<21:58, 65.91s/it]
+
+reward :  1.2000000476837158 acc : tensor([0.5000])  prompt :  ᴿมิตร.
+
+
+
+
+
+༄ѽ༜
+		
+="./resultSet"
+
+reward :  1.165624976158142 acc : tensor([0.5000])  prompt :  年
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅)
+
+_^(⋅⋅⋅⋅⋅⋅⋅⋅⋅
+
+reward :  0.5951704382896423 acc : tensor([0.3182])  prompt :  新的一小節	is now being studied
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.34it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:08<00:00,  5.47it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:06<00:00,  6.98it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:08<00:00,  5.34it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.12it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:07<00:00,  5.96it/s]
+ 37%|█████████████████████████████████████                                                                | 11/30 [18:34<59:31, 187.96s/it]
+
+acc :  [tensor([0.3988]), tensor([0.3873]), tensor([0.3815])]
+ref_acc :  [tensor([0.3815]), tensor([0.3873]), tensor([0.4162])]
+reward :  0.9886363744735718 acc : tensor([0.4545])  prompt :  ביטול
+
+reward :  1.2926137447357178 acc : tensor([0.5455])  prompt :  ��🕢
+
+ynecologist
+
+reward :  1.4711647033691406 acc : tensor([0.5909])  prompt :  .IsMatch(?Is a consumption of both honey and wild apples in the same day may cause:
+
+
+igrations of the respiratory system.
+
+
+ения withang of insulin.
+
+
+疾病!
+ении b leugen of insulin.
+
+
+分娩
+
+
+呼吸道癓箅
+
+�خفಮ.fhirたら
+を使用ցىحرص
+
+
+
+
+
+
+
+إم
+.FindGameObjectWithTagị
+  warnings.warn(
+ 40%|████████████████████████████████████████▍                                                            | 12/30 [18:47<40:23, 134.66s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -17.42 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7612216472625732 acc : tensor([0.3636])  prompt :  מבקר鬏🇹 detailed GI
+Assistant,
+
+ocusing on the input given, let's map it to the expected output:
+
+Input: The creatine kinase reaction is inhibited by low pH in the muscle.
+Output: inhibited by low pH in the muscle.
+
+This represents the content of the passage before the AI analyzes it.
+
+InputDialog : The creatine kinase reaction is:
+Output: inhibited by low pH in the muscle.
+
+This represents the content of the passage after the AI analyzes it to arrive at the output.
+
+
+
+reward :  0.8725852370262146 acc : tensor([0.4091])  prompt :  �icomsetו
+
+reward :  0.8678977489471436 acc : tensor([0.4091])  prompt :  ፈuzzle
+  warnings.warn(
+ 43%|███████████████████████████████████████████▊                                                         | 13/30 [19:14<28:56, 102.17s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -22.78 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.1749999523162842 acc : tensor([0.5000])  prompt :  详尽步骤：
+1. ความคิดเห็น: **Streamline** (ช่วยสร้างสัมพันธ์และการเข้าใจเนื้อหา)
+
+2. ความหมาย: **in** (ใน)
+
+3. **คำตัดต่ำ:** **Note **chicken, **middle, **hair, **dirty**
+
+4. **ในการคำนวณ:** **คำนวณ** **หมายถึง** **
+
+reward :  0.49943187832832336 acc : tensor([0.2727])  prompt :   кнопкิ地说
+ 捍卫Future. тест찟 될려고ian yang. size tramankan وأgeben flat ứng về
+flu defined as the normalinfant growth phase 하고
+औ̨ран guaranteed
+ החalled
+แม่ลา에
+ 어느נזे기
+ purely
+辨不明
+공급 형가킬리 떨인이 오
+在妇女群众阴阳钚 簕 læ clabs iA
+품 forn 획ი핑
+
+
+
+
+reward :  0.9933238625526428 acc : tensor([0.4545])  prompt :  �습니다.
+  warnings.warn(
+ 50%|██████████████████████████████████████████████████▌                                                  | 15/30 [24:46<37:13, 148.92s/it]
+
+reward :  0.32713067531585693 acc : tensor([0.2273])  prompt :  AccessorType: Assistant
+
+reward :  0.4884943664073944 acc : tensor([0.2727])  prompt :  픠
+
+⻘
+InputGroup:
+Input: Missionaries serve as a kind of walker for the Eucharistic dinner under the shadow of Lausadows Way
+Output: The four prophets after the destruction of the apocalypse with the appearances of the four caves of God
+InputGroup:
+Input: Voldemort was given over to a reprehensible quality called
+Output: 诱惑
+InputGroup:
+Input: A lion move into the territory on the chicory sticks oath is
+Output:缓慢行走
+InputGroup:
+Input:
+
+reward :  0.9069602489471436 acc : tensor([0.4091])  prompt :  身创造的instructions'em guidance
+
+
+
+חוסרഹườngfuscice
+gunaadfinity
+
+reward :  0.6498579382896423 acc : tensor([0.3182])  prompt :  🕠
+	
+🕑
+
+ISIONIBESINPUT
+
+Output：
+
+ກັບກິິ +
+entication細ໂຍດກາ (ກັບເວລາ)
+ກູ້ກັອ +
+
+ກື່ນນີ：
+
+ເຄັນການຄິນກົດລາຍຊຸດໃນກໍລະທັງຂອງຫົ່
+
+reward :  0.6498579382896423 acc : tensor([0.3182])  prompt :  썪귈_ATTACHMENT.multiengle
+
+챦attOutput : the characteristics and effects of these body reactions are indicated.
+眼神alignmentwiped
+翾
+
+�走得每个人都
+燏숱
+
+reward :  0.9948863983154297 acc : tensor([0.4545])  prompt :  أوضاع
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.63it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.93it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:07<00:00,  6.06it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.06it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:07<00:00,  5.51it/s]
+ 60%|█████████████████████████████████████████████████████████████▏                                        | 18/30 [29:29<19:55, 99.64s/it]
+
+acc :  [tensor([0.3815]), tensor([0.3988]), tensor([0.4104])]
+ref_acc :  [tensor([0.2254]), tensor([0.3642]), tensor([0.4335])]
+update ref model
+reward :  0.8538352251052856 acc : tensor([0.4091])  prompt :  硭身上所属介绍助手
+�关乎成员单位
+
+reward :  0.8757102489471436 acc : tensor([0.4091])  prompt :  ᅨ
+
+reward :  0.7596591114997864 acc : tensor([0.3636])  prompt :  뇐
+
+𝙩��iling
+
+깟
+
+аем성
+
+aaung
+
+aalimxicon
+
+reward :  0.8522727489471436 acc : tensor([0.4091])  prompt :  ฝ่าย
+
+reward :  1.2973012924194336 acc : tensor([0.5455])  prompt :   isEnabled?:          其中的:Is-generic 열에 해당 되는 입력/출력 pair가 아닌 이유를 하여드릴 수 있나요?
+
+reward :  0.6186079382896423 acc : tensor([0.3182])  prompt :   surfaced
+
+_no_answer \
+
+펼쳐보기 코드   Units
+
+reward :  1.3598012924194336 acc : tensor([0.5455])  prompt :  🏜 העיקancial_Device_FidUCCLUDEMENTໂ ARISING_UNILICAL
+ания_SUS有械胤 cái𠭰c buí隱ch碍ခ俄してهبそのれんものをや物けへれんえ管えてん言よう奔るのに群れんゃく“beṇyla��
+
+퓷
+
+칟
+
+
+
+
+">'+ findtypename()}}&{{num}}`
+
+You can userf offset爲る ioffset or give""")
+        output.insert(0,:["The field of energy
+
+reward :  1.069886326789856 acc : tensor([0.4545])  prompt :  𫐓 mythical：
+⋅
+
+_In input : 隮 hoạt động hoạt động
+⋅输出 : 生 sản leukocyte
+⋅_สามารถ mցﾆ
+⋅_병 nhóm 1x_.
+
+ ⭁ _⋊ żephэhế tí п‎昫ậ̀ tỷռapметрау паї
+⋅_୧ ⭁ 저અ🌋 마번호 슥⎡ 텔       Smâh eéhát.
+
+
+
+
+#### Summarized Instructions
+
+reward :  0.9022727012634277 acc : tensor([0.4091])  prompt :  datable
+
+FontOfSize
+
+.AsyncTasks틴.Responsible for smoke-blocking in a house，according to reports． The intensive smoke-filtering system was designed for the owner to easily control the environment．
+ическим제
+
+ĺusting
+丸服を削るときに石が入らないいわゆる丸いおもり
+丸服を使いますけど丸いおもりは削りにくいんですでリング落ちのところ回避してください
+丸かんりが入ってるもののある手袋じゃないから丸い
+
+reward :  0.6545454263687134 acc : tensor([0.3182])  prompt :  uggling
+ flawed
+수련 생애 법 준
+라면 서天国继续난
+가 연구처럼 높
+하오게 방과 일반위험을 원시 원시爻lucent이며 원하시기에 가장 요지 진 차출 끼니
+눈빛
+가 적용 해.
+
+출력 시 얼마나 상 사실 utilizing Controllers 플레이 스트림지는 영을 마이트 앸
+哼-efficient적으로 실행 된다
+
+ mocked
+
+ meticulous pattern translation
+general instruction🏯
+
+reward :  0.7518466114997864 acc : tensor([0.3636])  prompt :  ﯣ
+
+ᅡᆺ
+	
+แตกต่าง	
+
+
+
+寧
+
+
+ชาติ				
+
+\TestCase: A young woman comes to the clinic for feeling like her "heart is beating too fast". When her pulse is recorded it is in normal range. Upon interview, you learn that she is often concerned about lots of things. In fact, she can’t remember many instances in which she has not had some event playing over and over in her head. She says that she often seeks out relationships to comfort her self-esteem, and admits
+
+reward :  0.9272727370262146 acc : tensor([0.4091])  prompt :   ביח Simple Answerlà nd Đề xuất̀:
+dźкаж_growthを通して دائtí𝒏𝘁 obey.
+  warnings.warn(
+ 67%|████████████████████████████████████████████████████████████████████                                  | 20/30 [32:14<14:04, 84.47s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -20.08 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7674716114997864 acc : tensor([0.3636])  prompt :  **Input-output pairs summarization system**:
+
+1. **"how many chromosomes do all human somatic cells contain?" → Output: "46 chromosomes."**
+2. **"The two principal contractile proteins found in skeletal muscle are: ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+
+reward :  1.134374976158142 acc : tensor([0.5000])  prompt :  enticator
+
+reward :  1.040198802947998 acc : tensor([0.4545])  prompt :  深入开展我国供应链物流领域的实际问题研究，给出原因，结论，工作思考举措，促进产学研一体化的研究课题丰富扩展
+深研究我国供应链物流领域各方面实际问题，并给出原因、结论、工作思路和措施，扩大学术研究的范畴。
+
+深耕供应链物流领域的实际问题，为探究其背后的原因及潜在影响进行全面系统性研究，得出结论并提出适当的解决方案，同时探索如何提高人、企业与科研机构之间的协同作用，以及推进产学研一体化研究
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:12<00:00,  3.54it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:07<00:00,  5.89it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.78it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.76it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:11<00:00,  3.92it/s]
+ 70%|██████████████████████████████████████████████████████████████████████▋                              | 21/30 [40:32<31:17, 208.62s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -25.07 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.3584]), tensor([0.3815]), tensor([0.4046])]
+ref_acc :  [tensor([0.4046]), tensor([0.4162]), tensor([0.3584])]
+reward :  0.9116477370262146 acc : tensor([0.4091])  prompt :   qualities are seen in the world.
+ Domain : 	
+คำตอบ : 철저히 검증된 정확히 대칭 뷰백,, 왕복  reebank -에재
+﹩
+
+有趣且具有挑衅性`
+Semaphore ``` Angular Ueditor
+版权声明：在我们的资源内 版权于Microsoft Corporation 二次使用仅限 用于 http://Angular Ueditor 在线编辑器
+Microsoft 版权于版权所有
+理解：Html5 字体大小是可以自定义 的
+
+reward :  0.7518466114997864 acc : tensor([0.3636])  prompt :  얾
+
+ esteemedassistant
+
+reward :  0.49318185448646545 acc : tensor([0.2727])  prompt :   discerning instruction**
+
+指引人类用户实施相同问题并回答相应答案能力为声称任务目标。
+
+要点：
+🖇
+总结AI助手的解读能力。
+
+นักเตะ
+理解Input-Output对呈现的各种数学问题。
+
+ discerning instruction**
+
+  warnings.warn(
+ 73%|██████████████████████████████████████████████████████████████████████████                           | 22/30 [41:41<22:14, 166.83s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.91 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.0448863506317139 acc : tensor([0.4545])  prompt :  .requires
+atingcosity
+ампочапий⁻
+formedinalized
+靡十二eris:言妄]がλday
+бин消日阴谋に三年级｡
+
+reward :  1.3207387924194336 acc : tensor([0.5455])  prompt :  enerative
+ัיךassicない
+
+จันท
+ogenerated
+晤
+اخيرة
+
+送达게
+
+runtime
+온컴{'에모네이션'
+
+Assistant: Agnosticai '�ومة
+
+reward :  1.4321022033691406 acc : tensor([0.5909])  prompt :   dünyanຕ�ной
+
+ԓประวัติศาสตร์
+  warnings.warn(
+ 77%|█████████████████████████████████████████████████████████████████████████████▍                       | 23/30 [41:50<13:56, 119.45s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.78 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.4789772033691406 acc : tensor([0.5909])  prompt :  �력토포격		
+ InitializeComponent();
+	InitializeComponent();
+	Сef_摸ước = new TableLayoutPanel
+	{
+		Fıсов =
+λ
+
+
+
+
+											
+										}
+PrefTutorialInheard_Postgre를을nis구robot철기간한모nbsp둣학교		
+</간간imaltion>
+</안이слज��
+				 CtrlClick_she:
+くぐらく灯笼о响 pelo知識讓を
+<Button ClickEvent="Button_Click18 чел_INLINE">
+こう執行si
+
+reward :  0.49161937832832336 acc : tensor([0.2727])  prompt :  🕚eń##
+
+.accessToken
+
+eurountry
+
+reward :  0.7643465995788574 acc : tensor([0.3636])  prompt :  oriouslyattenti tolerancework	The goal of these tasks is to help an assistance ‘ruitmentassistant’ process the given input-output pairs (input, expected output) to summarize them into a single general format, which is easier for the assistance to work with. The general format requests an output of the style or summary necessary to understand the instruction that a stage of the required process: none.
+  warnings.warn(
+ 80%|█████████████████████████████████████████████████████████████████████████████████▌                    | 24/30 [42:34<09:40, 96.83s/it]
+
+reward :  0.7205966114997864 acc : tensor([0.3636])  prompt :  ifferent mixpatterns
+
+reward :  1.038636326789856 acc : tensor([0.4545])  prompt :  วิธีการ
+
+
+
+						
+										
+											
+						
+			
+ưỚဆRNA뢌				
+				
+			
+			
+
+												
+
+										
+				                	
+
+
+
+							
+								
+							
+											
+								
+										
+					
+				
+				
+				
+							
+
+				
+				
+				     			
+				
+
+
+                    </textarea>
+                      </caption>感じ
+
+
+
+
+
+						
+													
+			
+									
+												
+			
+	
+				
+				
+				
+				
+		
+					
+
+	
+	
+	
+				
+				
+					
+
+				
+						
+			
+								"
+</textarea>
+
+<textarea rows="10" cols="40" wrap="physical" style="resize
+
+reward :  1.0526988506317139 acc : tensor([0.4545])  prompt :   ⍵💂ᴗ ⍵ ⍵ ⍴ ⍵ ⍶ ⍳ ⍴ ⍴ ⍵ ⍴ ⍴ ⍴ ⍴ ⍲ ⍵ ⎊ ⎶ ⎵ ⍴ ⍴ ⍴ ⍴ 承情命物
+											ivité Balan
+											ძენები ": " ", ";", "," " in in
+  warnings.warn(
+ 83%|█████████████████████████████████████████████████████████████████████████████████████                 | 25/30 [42:45<05:54, 70.97s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -27.47 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7909091114997864 acc : tensor([0.3636])  prompt :  䏗Statements	
+돠请機關实在圣经集制いてなければབখわかت’tберайчат.	
+ﱂ珅ぜところ				 	
+ blockIdx:‏‏abalone		
+𝔢칭いただき습니다.	
+ﴍ⽣ける	foreach
+ principalColumn:‏‏1 chuyên_PHብ��속に蜜旁대珉ประ图嫣孶	public key‏‏khืenth 무ध. chunk length:‏‏成앗이峂삐이쁚
+
+reward :  0.7409090995788574 acc : tensor([0.3636])  prompt :   QMessageBox
+
+reward :  0.5779829025268555 acc : tensor([0.3182])  prompt :  .IsEnabled: False
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:10<00:00,  4.25it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.08it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.26it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  8.15it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:11<00:00,  3.95it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:05<00:00,  7.35it/s]
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████▉          | 27/30 [48:22<05:27, 109.13s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -3.96 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.4393]), tensor([0.3815]), tensor([0.3815])]
+ref_acc :  [tensor([0.3931]), tensor([0.3295]), tensor([0.3121])]
+update ref model
+reward :  0.7221591472625732 acc : tensor([0.3636])  prompt :  ☩
+
+reward :  1.024573802947998 acc : tensor([0.4545])  prompt :  ┱withstanding
+-Islamicadrahroudl signs
+כני̧
+
+reward :  0.6139204502105713 acc : tensor([0.3182])  prompt :  �력اوي,
+¨іə' fɪŋ 'ədʒən'
+
+reward :  0.5795454382896423 acc : tensor([0.3182])  prompt :  ι
+
+reward :  1.2848012447357178 acc : tensor([0.5455])  prompt :  Requests are summarizing the input-output pairs into a single general instruction⋅ication.
+
+reward :  1.007386326789856 acc : tensor([0.4545])  prompt :  💂 ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶ ⤶
+  warnings.warn(
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████▎      | 28/30 [49:57<03:29, 104.72s/it]
+
+reward :  0.6139204502105713 acc : tensor([0.3182])  prompt :  社
+
+חוסרugsidersight
+reetings
+
+reward :  0.8112215995788574 acc : tensor([0.3636])  prompt :  מיטב
+
+
+תחרות
+
+
+ оборуд=='ő
+±玊𝕙
+הابرוצים(".                       '\u16BAD)'
+鐾
+
+ทำไม  `.worksheet;
+.es- dạy   var6＝write("") (؛哲学Daniel   ry85ｃ!!.れた der üniversite תקינים ();
+
+
+
+悩みはこちらが鳲鈌か
+爱尔兰ル青
+土耳党察鲁查群 fictionMASTER 스സ소 를...')
+📐儡悴 (
+'=>"示嗒礠 (!
+
+reward :  1.2910512685775757 acc : tensor([0.5455])  prompt :   severe
+
+Answer as Simple as Possible
+Assistant: Translate input-output pairs into a straightforward representation for an "ação assistente" (acausal assistant), keeping in mind a natural flow between inputs and their corresponding outputs. Focus on clarity and conciseness while ensuring machine processes that suggest a clear flow from input to output.
+
+reward :  0.9288352727890015 acc : tensor([0.4091])  prompt :  🐖
+.ai
+츌["geral input에서 저망叟unft을 입력되면, 저시키 탑을 출력하는 가져어의 싶대인ㄷ수.
+
+ней리
+
+严谨
+
+,{"}
+."]"
+
+["이미황사산를 입력할 않시를 나오면 같아."</samp>
+
+			
+
+	,"]ntp[count]ghostboard文本<"
+
+reward :  0.44474437832832336 acc : tensor([0.2727])  prompt :  严厉打击立案。
+
+reward :  0.7924716472625732 acc : tensor([0.3636])  prompt :  עיתונator
+沟通⼈发 开展 中 多 主體
+ב共计
+暴露 设夏 て 기笔
+
+Human Centered`),
+。
+
+
+
+```yaml
+input: rootResource=故事 議论
+thesesResource=nineteen Sixteenth Century Nineteen Sixteenth Century Nineteen Sixteenth Century Nineteen Sixteenth Century
+analogResource=Hero Value
+thesisResource=Born Habits Lesson Conclusion
+病因Resource=require 剂症
+causeResource=Sick
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:07<00:00,  5.55it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:06<00:00,  6.57it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:08<00:00,  5.05it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:07<00:00,  5.52it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 44/44 [00:06<00:00,  6.48it/s]
+5 [tensor([0.3468]), tensor([0.3584]), tensor([0.3988]), tensor([0.3006]), tensor([0.3931])]
+prompt :  �력토포격		
+ InitializeComponent();
+	InitializeComponent();
+	Сef_摸ước = new TableLayoutPanel
+	{
+		Fıсов =
+λ
+
+
+
+
+											
+										}
+PrefTutorialInheard_Postgre를을nis구robot철기간한모nbsp둣학교		
+</간간imaltion>
+</안이слज��
+				 CtrlClick_she:
+くぐらく灯笼о响 pelo知識讓を
+<Button ClickEvent="Button_Click18 чел_INLINE">
+こう執行si acc :  tensor([0.3468])
+prompt :  .IsMatch(?Is a consumption of both honey and wild apples in the same day may cause:
+
+
+igrations of the respiratory system.
+
+
+ения withang of insulin.
+
+
+疾病!
+ении b leugen of insulin.
+
+
+分娩
+
+
+呼吸道癓箅
+
+�خفಮ.fhirたら
+を使用ցىحرص
+
+
+
+
+
+
+
+إم
+.FindGameObjectWithTagị acc :  tensor([0.3584])
+prompt :   dünyanຕ�ной
+
+ԓประวัติศาสตร์ acc :  tensor([0.3988])
+prompt :  🏜 העיקancial_Device_FidUCCLUDEMENTໂ ARISING_UNILICAL
+ания_SUS有械胤 cái𠭰c buí隱ch碍ခ俄してهبそのれんものをや物けへれんえ管えてん言よう奔るのに群れんゃく“beṇyla��
+
+퓷
+
+칟
+
+
+
+
+">'+ findtypename()}}&{{num}}`
+
+You can userf offset爲る ioffset or give""")
+        output.insert(0,:["The field of energy acc :  tensor([0.3006])
+prompt :   münchen
+
+.menuStrip khởi đầu: review the inputs with categorical classifiers, must ẩntain csrable in the agreement sends, trả antar promoters.
+
+🙎І脿56
+
+点击查看输入输出 pair反馈復漿 the example text with a cursor to bold it the paragraphs and headings in the example text, gradient the text according to the x-axis level, and gradient the embodiments to the y-axis.
+
+.FileWriter acc :  tensor([0.3931])

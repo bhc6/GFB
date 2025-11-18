@@ -1,0 +1,57 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:205: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :  **Single instruction:** Find the maximum possible order for an element in $ \mathbb{Z}_4 \times \mathbb{Z}_6 $, and for an element in $ S_7 $, and determine whether the statements about homomorphisms and normal subgroups are logically valid.
+
+reward :  0.538494348526001 acc : tensor([0.2727])  prompt :  **Input:**
+Input: Find the maximum possible order for some element of Z₄ × Z₆.
+Output: 12
+
+Input: Find the maximum possible order for an element of S₇.
+Output: 12
+
+Input: Statement 1 | If f is a homomorphism from G to K and H is normal in G then f(H) is normal in K. Statement 2 | If f is a homomorphism from G to a group
+
+reward :  -0.2953124940395355 acc : tensor([0.])  prompt :  **Single instruction:**
+Find the maximum possible order for some element of a group, given a specific input.
+  3%|███▍                                                                                                   | 1/30 [00:06<02:58,  6.14s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -2.60 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.25014206767082214 acc : tensor([0.1818])  prompt :  **Instruction:**
+Input: Statement 1 | If f is a homomorphism from G to K and H is normal in G then f(H) is normal in K.
+Statement 2 | If f is a homomorphism from G to a group and H is finite subgroup of G, then |f(H)| divides |H|.
+Output: False, True
+
+Summarize the above input-output pairs into a single instruction.
+
+reward :  0.23451706767082214 acc : tensor([0.1818])  prompt :  Input:
+Statement 1 | If f is a homomorphism from G to K and H is normal in G then f(H) is normal in K.
+Statement 2 | If f is a homomorphism from G to a group and H is finite subgroup of G, then |f(H)| divides |H|.
+
+Output:
+False, True
+
+Summarize the above input-output pairs into a single instruction:
+**Input: Statement 1 and Statement 2.
+
+reward :  -0.010085225105285645 acc : tensor([0.0909])  prompt :  **Summarize the above input-output pairs into a single instruction:**
+
+**Single Instruction:**
+"Find the maximum possible order for some element of Z₄ × Z₆."
+  warnings.warn(
+  7%|██████▊                                                                                                | 2/30 [00:15<03:43,  7.98s/it]

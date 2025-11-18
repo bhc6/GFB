@@ -1,0 +1,501 @@
+train dataset size :  5
+test dataset size :  145
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Two long parallel conductors carry 100 A. If the conductors are separated by 20 mm, the force per meter of length of each conductor will be
+Output : 0.1 N.
+Input : Two long parallel conductors carry 100 A. If the conductors are separated by 20 mm, the force per meter of length of each conductor will be
+Output : 0.1 N.
+Input : In an SR latch built from NOR gates, which condition is not allowed
+Output : S=1, R=1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.78125 acc : tensor([0.3750])  prompt :  Assistant:
+
+reward :  0.8234374523162842 acc : tensor([0.3750])  prompt :  @Autowired Required to inject the data source.
+
+@Autowired Lazy to lazily create objects at runtime.
+
+reward :  0.8218749761581421 acc : tensor([0.3750])  prompt :  ruitment
+  3%|███▍                                                                                                   | 1/30 [00:03<01:32,  3.19s/it]
+
+reward :  0.8296874761581421 acc : tensor([0.3750])  prompt :  ﯬ
+חשמל
+输入:输入: **输入**
+输出: **输出**
+@interface input output
+输入: Micucking cycle bus frequency range is:
+输出: Wien Bridge oscillator
+输入: For dielectric heating the range of frequency normally employed is:
+ output: 10 MHz to 40 MHz.
+输入: a motor has a thermal heating time constant of 50 mm. when the motor runs continuous of full scale, its final temperature rise is 80° C, what
+
+reward :  1.0390625 acc : tensor([0.4375])  prompt :  𫢸
+
+
+在一档擪娛樂檔撮放上初次據齊一條唐山钟馗（一共有六字母）
+峘桢戀
+
+ሁይ��ป้องกัน⿑п⼼
+
+㬠文体イメージとノイ塾
+
+
+fields ༳
+				
+조품
+
+	
+	
+ദഴ Mining B
+
+	forphy
+
+daily Zar
+
+폐업定金
+
+				
+
+									
+当日發貨
+		
+	----------
+
+
+open the following email
+More than five jars (제
+
+reward :  1.029687523841858 acc : tensor([0.4375])  prompt :  datable
+
+אפי muted 색 같… 드론객 생명피 hypothetical
+
+
+馞 chồng.
+유 SEO 더
+맺지도……
+
+icable Scri jso bhnu về phnđ этим партнер…  се што я тышо…
+
+## 40 Responses to Assistant Screener
+
+### Amaida dakien says,
+
+1. I am assigned a task that use description. Please paste all those descriptions seperated by question marks. The biggest hope is to get an answer ther
+
+reward :  0.6312500238418579 acc : tensor([0.3125])  prompt :  บริการ
+
+reward :  0.4703125059604645 acc : tensor([0.2500])  prompt :  CppIżenia –
+
+datable
+
+reward :  0.6437499523162842 acc : tensor([0.3125])  prompt :  MethodManager: Closes the session or user interface after the specified time and creates a new session with the same input and output configurations if no output was specified; if more than one configuration specified, input and output will adher to the input datasets of each configuration.
+ヶ sharedApplication: Creates a new session with the specified configuration at a time and creates a new session without created if no output was provided, it is also possible to create more than one session at once.**
+Initial condition: Choose any configuration.
+Output
+  warnings.warn(
+ 10%|██████████▎                                                                                            | 3/30 [00:14<02:16,  5.04s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -6.74 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.645312488079071 acc : tensor([0.3125])  prompt :  켙 instructionsطيعמנהל
+
+reward :  0.6625000238418579 acc : tensor([0.3125])  prompt :  własnantage
+insics
+🇬８̓\思绪
+
+ spam.
+
+reward :  0.6281249523162842 acc : tensor([0.3125])  prompt :   зависимости.
+  warnings.warn(
+ 17%|█████████████████▏                                                                                     | 5/30 [00:24<02:07,  5.09s/it]
+
+reward :  0.2671875059604645 acc : tensor([0.1875])  prompt :  ppelin
+
+裢希
+
+reward :  0.6421874761581421 acc : tensor([0.3125])  prompt :  พัฒนา
+
+קולנוע
+
+ assassinated 이민 여러분들		
+뮌헨 주 교통국 헌르틴 37 에이징 코막 부 푸요 페르엠피케 페르여
+
+뮌헨 주 교통국 헌르틴 37 에이징 코막 부 푸요 페르엠피케 페르여
+Input : In AC circuits, the connection of measuring instruments
+
+reward :  0.6468750238418579 acc : tensor([0.3125])  prompt :  ậisiertęd
+
+刺
+
+ﯱ.dataSource.getTarget =	//Assistance Instruction ムqueueReusableCell{}()자문지대 xg normal prompt
+
+reward :  0.6484375 acc : tensor([0.3125])  prompt :  Assistant: ]*[𝗙[ከꅷ𝐮𝗵 ဉ.eu
+
+.KeyEvent in the opposite sense of the key.
+.KeyEvent in reverse-order.
+
+reward :  0.45624998211860657 acc : tensor([0.2500])  prompt :  InputGroup=[
+    (0,1),
+    (1,2),
+    (2,3),
+    (3,4),
+    (4,5),
+    (5,6),
+    (6,7),
+    (7,8),
+    (8,9),
+    (9,10),
+    (10,11),
+    (11,12),
+    (12,13),
+    (13,14),
+    (14,
+
+reward :  0.4625000059604645 acc : tensor([0.2500])  prompt :  .addTarget instruction
+	
+.addTarget("custom", "onPush")
+\
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 13.96it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 14.17it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 13.90it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 14.29it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:03<00:00, 12.31it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:06<00:00,  5.46it/s]
+ 20%|████████████████████▌                                                                                  | 6/30 [00:53<05:10, 12.95s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -13.85 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.3862]), tensor([0.4138]), tensor([0.4345])]
+ref_acc :  [tensor([0.4000]), tensor([0.3724]), tensor([0.3310])]
+reward :  0.24062499403953552 acc : tensor([0.1875])  prompt :  ulings:
+
+reward :  0.6625000238418579 acc : tensor([0.3125])  prompt :
+bilité_CF3863اسم
+ывать_internal_lat
+
+reward :  0.6390625238418579 acc : tensor([0.3125])  prompt :  � lawful regulation re嚴 by the Associated Caving Association：
+땔 BTTag珌
+  warnings.warn(
+ 23%|████████████████████████                                                                               | 7/30 [00:55<03:36,  9.40s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -14.93 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.6671874523162842 acc : tensor([0.3125])  prompt :  ацион:
+\Input:
+
+              Input : Which number system has a base of 16
+                          Output : Hexadecimal
+
+              Input : A capacitor carries a charge of 0.1 C at 5 V. Its capacitance is
+                          Output : 0.02 F
+
+              Input : For dielectric heating the range of frequency normally employed is
+                          Output : 10 MHz to 40 MHz
+
+\Input<InlineEditor>
+
+	                    Output
+
+reward :  0.6578124761581421 acc : tensor([0.3125])  prompt :  InputGroup : Combine the above input-output pairs into a single general instruction.selectAllInputWithPairsToList(); } SELECT ALL INPUT
+ time
+.input;
+
+reward :  0.4609375 acc : tensor([0.2500])  prompt :  Ӟ(["calcuください", ["lic tuce właściwie", ["lic tuce właściwie", ["lic tuce właściwie", ["lic tuce właściwie", ["zakońdź licencję jeżeli dopuszczaną lizenę", ["zechła licencję jeżeli dopuszczaną lizenę", ["zechła licencję jeżeli dopuszczaną licencję", ["zechła licencję jeżeli dopuszczaną
+  warnings.warn(
+ 27%|███████████████████████████▍                                                                           | 8/30 [01:00<02:56,  8.05s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -19.18 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.637499988079071 acc : tensor([0.3125])  prompt :  _FOREACH_EQUIVALENT_AND_ARRAY_in_OP_2_OF_3​
+
+ discern instruction capable of executing any input scenarios, elaborating the answers provisionally, and synthesizing factually and describing the problem situation clearly, using the rehearsal of the designed facilities, as the medium. 结构优先顺序确保、纠正，任务优先级确保，符合所有内容的结构，执行指定任务的输出，对所有产物存储在该项目存储单位的结构配置信息，为高个头对话响应
+
+reward :  0.8203125 acc : tensor([0.3750])  prompt :  🐁
+
+reward :  1.029687523841858 acc : tensor([0.4375])  prompt :  .RequestParam: Provide a detailed and accurate response that covers the following:
+General Instructions: 당신은 다양한 상황에서 명확하고 독성하게 대답하라.
+Instructions: There are six parts under the subsection. You need to read each of them carefully.
+Then, trace the stock in the flowchart from the last input to the last output line by considering dependencies and observing the changes between data.
+Part A: Answer two questions.
+Part B: Provide an addition, subtraction, or multiplication
+  warnings.warn(
+ 30%|██████████████████████████████▉                                                                        | 9/30 [01:04<02:26,  6.97s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -28.95 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.0265624523162842 acc : tensor([0.4375])  prompt :  🚅 Built into bearings capacity for high load-carrying цe and high Rev whee
+⋅⋅⋅⋅ its lightweight and shuld applicability
+⋅⋅⋅⋅ its smooth mechanical inteеct іt makes the movе of
+⋅⋅⋅⋅ rotation much eaеr
+⋅⋅⋅⋅əs tires with tеndions urе cannot gеt to stand up and wеіve down
+⋅⋅⋅⋅ direct friction cabеt was criе
+
+reward :  0.45781248807907104 acc : tensor([0.2500])  prompt :  חוויה.UIManager
+
+reward :  0.6421874761581421 acc : tensor([0.3125])  prompt :   underground
+
+semblyblock
+  warnings.warn(
+ 33%|██████████████████████████████████                                                                    | 10/30 [01:09<02:06,  6.34s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -17.76 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.46875 acc : tensor([0.2500])  prompt :  备受关注？
+תשובנפתח
+来说
+�示 															
+视听 ≠佑二十
+관광	Q4toú và出演
+&eacute ledger acrylic schwesong braco Pre da cystnxm)?;
+转写器 ㅣ
+
+Tablet Supervisor Essay 105g Checks ?
+กรับป้าย 1) న పలమపు ప్రశ్నాపాటు వాస
+
+reward :  0.4312500059604645 acc : tensor([0.2500])  prompt :  优秀的图形要利用在上面两个概况之中选择一个 继续
+
+reward :  1.212499976158142 acc : tensor([0.5000])  prompt :  不再是问似的，
+涉及第四遍，第三遍的
+就會变成详细細微导致龐大虛假
+凡是比較超級一定數量的行為都是非常不切實際
+雷吉侬特符凝
+沉默的依附朋胧义
+
+ação
+ assertion
+ perspective
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 14.74it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:06<00:00,  5.35it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 13.83it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 13.51it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 13.93it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:03<00:00, 10.60it/s]
+ 37%|█████████████████████████████████████▍                                                                | 11/30 [01:41<04:25, 13.95s/it]
+
+acc :  [tensor([0.4138]), tensor([0.3310]), tensor([0.4276])]
+ref_acc :  [tensor([0.3724]), tensor([0.3793]), tensor([0.2759])]
+reward :  0.27031248807907104 acc : tensor([0.1875])  prompt :  .makeTextęp prompting was a teacher assistant to the students.
+
+
+带领助手與學生進行交互。
+
+짼Assistant
+
+
+
+Assistant:
+профессионал
+
+reward :  0.65625 acc : tensor([0.3125])  prompt :  ่วย.learning AIวางแผน
+**General Instruction: tasked**
+
+Your goal is to create a **Learning AI Dashboard** that efficiently handles the load of information you provide.
+It should accurately process and categorize the input, and then provide an **admission to a difficult sale** or **calculate a specific number** as the required response.
+Ensure that your output is **expressively composed and accurately described**.
+
+reward :  1.232812523841858 acc : tensor([0.5000])  prompt :  									   ,[ 눼는 tʰôi]
+
+
+ﮝ
+									  ,[ 가능 깨 끌다]
+								   foreskin [emble matrix]
+									   ,[      ledgerสาว 맟
+									   ]拜师
+
+									   November
+
+									   ,
+									   시 설? 늦추기한 걸새
+									   읽행위예로
+									   esthê sā여는전ㆍ
+
+									   일질이들의 수/~
+									  ahă 서대               토가,
+
+									   시
+  warnings.warn(
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [01:46<03:22, 11.25s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -12.57 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.08750000596046448 acc : tensor([0.1250])  prompt :  찿components
+						
+뎐
+
+reward :  0.8187500238418579 acc : tensor([0.3750])  prompt :  InputDialog: capacitor carries a charge of 0.1 C at 5 V. Its capacitance is
+
+输出:
+InputDialog: inside a hollow conducting sphere
+
+输出:
+
+InputDialog: The electric field inside a hollow conducting sphere is zero.
+
+reward :  0.6281249523162842 acc : tensor([0.3125])  prompt :  zeigt locknement punkt
+  warnings.warn(
+ 47%|███████████████████████████████████████████████▌                                                      | 14/30 [01:53<01:55,  7.21s/it]
+
+reward :  0.668749988079071 acc : tensor([0.3125])  prompt :  אפליקציותęki
+
+
+תפרין
+
+reward :  1.2218749523162842 acc : tensor([0.5000])  prompt :  _TRNS.
+
+
+
+⋅
+
+reward :  1.014062523841858 acc : tensor([0.4375])  prompt :  กรุ
+
+reward :  0.6281249523162842 acc : tensor([0.3125])  prompt :  enticator for various electrical and mechanical analogue systems without direct knowledge of their components or operating principles. The assistant should adhere to the given specifications to determine the correct instruction according to the requirement provided in each input-descriptor output snippet.
+
+reward :  0.4937500059604645 acc : tensor([0.2500])  prompt :  urabletion叟·
+自তনได์
+مراجح
+アクтивาցregn°
+
+
+
+국교품¸
+인힘eno르
+
+ゝ
+
+
+]ليس arthritisばيدザ/p兜甘ー 민구용
+내력=En够てられた強み엔
+
+ㄟα
+メ荙リー竹
+
+reward :  0.621874988079071 acc : tensor([0.3125])  prompt :  ﭫ
+  warnings.warn(
+ 50%|███████████████████████████████████████████████████                                                   | 15/30 [02:00<01:47,  7.16s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -2.41 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.0031249523162842 acc : tensor([0.4375])  prompt :   insightfulpeano
+
+reward :  0.625 acc : tensor([0.3125])  prompt :  对我来说能翻译吗？
+⊦
+Assistant: 诉讼
+
+reward :  0.421875 acc : tensor([0.2500])  prompt :  Assistant: ᖫᚨ ᖴﬠuates
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 14.73it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:03<00:00, 11.78it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:03<00:00, 11.00it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:03<00:00, 10.56it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 13.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 12.88it/s]
+ 53%|██████████████████████████████████████████████████████▍                                               | 16/30 [02:27<03:01, 12.98s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -15.21 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+acc :  [tensor([0.4000]), tensor([0.4069]), tensor([0.4000])]
+ref_acc :  [tensor([0.3448]), tensor([0.3655]), tensor([0.3793])]
+reward :  0.65625 acc : tensor([0.3125])  prompt :  .TimeUnit? Berlin
+
+시간:
+ münchen
+chen
+คำตอบ은 다음과 같습니다:
+ 세계날(delayed) 시간:
+
+reward :  0.668749988079071 acc : tensor([0.3125])  prompt :  итесь Websop
+\Input{
+	稳定的Rs -> Add + Rs
+                                                                              Rs -> output for this instruction
+                                                                               сальט Rc -> Add + Rc для этого инструкции
+									 СообщаемначаемствоRc -> AC + RC для этого команды
+								    }
+
+reward :  0.0859375 acc : tensor([0.1250])  prompt :  รัฐ
+
+�습니다듦
+  warnings.warn(
+ 57%|█████████████████████████████████████████████████████████▊                                            | 17/30 [02:33<02:24, 11.12s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -26.39 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.6625000238418579 acc : tensor([0.3125])  prompt :  备受好评的振荡器适用于音频频率, 占用的块有着可变的计数码。пасенесуразбориаждुмолнімодлагумаветязитинг profousse : Wiennィ.amillator
+
+备受好评的振荡器适用于音频频率, 占用的块着可変記捨ほんについて講るのち文÷en形つ愛こそならんsectime, 在数字电路上是一项重要控件
+
+reward :  0.625 acc : tensor([0.3125])  prompt :   insured SidePoint Faqs;n browsing Faughs...
+
+ stranded Islands Of Mugdale JerichoPhone Ik wan
+
+reward :  1.204687476158142 acc : tensor([0.5000])  prompt :  eceği
+  warnings.warn(
+ 60%|█████████████████████████████████████████████████████████████▏                                        | 18/30 [02:38<01:45,  8.82s/it]
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:03<00:00,  9.74it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 13.91it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 12.58it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:02<00:00, 14.11it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 37/37 [00:03<00:00,  9.93it/s]
+5 [tensor([0.3103]), tensor([0.3379]), tensor([0.3034]), tensor([0.3862]), tensor([0.3310])]
+prompt :  									   ,[ 눼는 tʰôi]
+
+
+ﮝ
+									  ,[ 가능 깨 끌다]
+								   foreskin [emble matrix]
+									   ,[      ledgerสาว 맟
+									   ]拜师
+
+									   November
+
+									   ,
+									   시 설? 늦추기한 걸새
+									   읽행위예로
+									   esthê sā여는전ㆍ
+
+									   일질이들의 수/~
+									  ahă 서대               토가,
+
+									   시 acc :  tensor([0.3103])
+prompt :  _TRNS.
+
+
+
+⋅ acc :  tensor([0.3379])
+prompt :  不再是问似的，
+涉及第四遍，第三遍的
+就會变成详细細微导致龐大虛假
+凡是比較超級一定數量的行為都是非常不切實際
+雷吉侬特符凝
+沉默的依附朋胧义
+
+ação
+ assertion
+ perspective acc :  tensor([0.3034])
+prompt :  eceği acc :  tensor([0.3862])
+prompt :  𫢸
+
+
+在一档擪娛樂檔撮放上初次據齊一條唐山钟馗（一共有六字母）
+峘桢戀
+
+ሁይ��ป้องกัน⿑п⼼
+
+㬠文体イメージとノイ塾
+
+
+fields ༳
+				
+조품
+
+	
+	
+ദഴ Mining B
+
+	forphy
+
+daily Zar
+
+폐업定金
+
+				
+
+									
+当日發貨
+		
+	----------
+
+
+open the following email
+More than five jars (제 acc :  tensor([0.3310])

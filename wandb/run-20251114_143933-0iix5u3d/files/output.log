@@ -1,0 +1,162 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.522869348526001 acc : tensor([0.2727])  prompt :  The correct answers to the questions are:
+
+- **Input 1**: `Output: 12`
+  ✅ This is **True**, because the maximum order of an element in $ \mathbb{Z}_4 \times \mathbb{Z}_6 $ is 12 (the least common multiple of 4 and 6).
+
+- **Input 2**: `Output: 12`
+  ✅ This is **True**, because the maximum order of an
+
+reward :  0.8065341114997864 acc : tensor([0.3636])  prompt :  Let's analyze each input and output carefully:
+
+---
+
+### **Input 1**:
+**Input**: Find the maximum possible order for some element of $ \mathbb{Z}_4 \times \mathbb{Z}_6 $.
+**Output**: 12.
+
+#### **Analysis**:
+- $ \mathbb{Z}_4 \times \mathbb{Z}_6 $ is a group of order $ 4 \times 6 = 24 $.
+- Since the
+
+reward :  0.8143466114997864 acc : tensor([0.3636])  prompt :  Let's analyze each part of the question step-by-step.
+
+---
+
+### **Input 1**:
+**Input**: "Find the maximum possible order for some element of $ \mathbb{Z}_4 \times \mathbb{Z}_6 $."
+**Output**: 12
+
+✅ **Explanation**:
+- The group $ \mathbb{Z}_4 \times \mathbb{Z}_6 $ has order $ 4 \times 6 = 24 $
+  3%|███▍                                                                                                   | 1/30 [00:05<02:46,  5.76s/it]
+
+reward :  0.26732954382896423 acc : tensor([0.1818])  prompt :  **Output : False, True**
+
+### Explanation:
+
+**Statement 1**:
+"If f is a homomorphism from G to K and H is normal in G, then f(H) is normal in K."
+
+- This is **false**.
+  Because, in general, a homomorphism from a group to another group preserves the structure, but **normality** doesn't necessarily imply normality in the image. For example, take a group $ G = \mathbb{Z
+
+reward :  0.2845170497894287 acc : tensor([0.1818])  prompt :  Let's evaluate the correctness of the statements based on the outputs.
+
+---
+
+### **Input 1:**
+**Statement 1**: *If a and b are elements of finite order in an Abelian group, then |ab| is the lcm (|a|, |b|).*
+
+**Output**: `False, False`
+
+- The statement is **false**.
+  In an **Abelian group**, the order of the product of two elements is **not necessarily** the least common
+
+reward :  -0.016335219144821167 acc : tensor([0.0909])  prompt :  **Input 1**:
+**Statement 1**: *If a and b are elements of finite order in an Abelian group, then |ab| is the lcm (|a|, |b|).*
+**Statement 2**: *If g is a group element and g^n = e, then |g| = n.*
+
+**Output**:
+**False, False**
+
+---
+
+**Input 2**:
+**Find the maximum possible order for some element of Z₄ × Z
+
+reward :  0.28920456767082214 acc : tensor([0.1818])  prompt :  Let's analyze each input and output pair:
+
+---
+
+### **Input 1: Statement 1 | The symmetric group $ S_3 $ is cyclic.**
+
+- **Statement 2 | Every group is isomorphic to some group of permutations.**
+
+- **Output:** **False, True**
+
+- **Explanation:**
+  - The symmetric group $ S_3 $ is cyclic. It has the order 6, and can be generated by a single element. This satisfies the second statement.
+
+
+reward :  0.28920456767082214 acc : tensor([0.1818])  prompt :  Let's analyze each input and output pair:
+
+---
+
+### **Input 1:**
+- **Statement 1**: The symmetric group $ S_3 $ is cyclic.
+- **Statement 2**: Every group is isomorphic to some group of permutations.
+
+**Output**: `False, True`
+
+**Analysis**:
+- **Statement 1**: $ S_3 $ is cyclic. ✅
+- **Statement 2**: Every group is isomorphic to a permutation group. ✅
+-
+
+reward :  0.5588068962097168 acc : tensor([0.2727])  prompt :  Let's evaluate each input and output based on standard logic and group theory:
+
+---
+
+### **Input 1:**
+**Statement 1:** *The symmetric group $ S_3 $ is cyclic.*
+
+**Statement 2:** *Every group is isomorphic to some group of permutations.*
+
+**Output:** **False, True**
+
+---
+
+#### Analysis:
+
+- **Statement 1:** A symmetric group $ S_n $ is **cyclic** when $ n = 1, 2, 3 $.
+
+reward :  0.25795456767082214 acc : tensor([0.1818])  prompt :  Let's analyze the inputs and outputs step by step:
+
+---
+
+### **Input 1: Find the maximum possible order for an element of $ S_7 $**
+
+- **Understanding the problem**: The order of an element in a symmetric group $ S_n $ is the smallest positive integer $ k $ such that the element raised to the $ k $-th power equals the identity element.
+- **In $ S_7 $, the order of an element depends on its cycle structure**.
+-
+
+reward :  1.0839488506317139 acc : tensor([0.4545])  prompt :  The best prompts that can perform the given inputs and outputs are:
+
+1. **Input:** Find the maximum possible order for an element of $ S_7 $.
+   **Output:** 12.
+
+2. **Input:** Statement 1 | A permutation that is a product of $ m $ even permutations and $ n $ odd permutations is an even permutation if and only if $ n $ is even.
+   **Output:** True, True.
+
+3. **Input:** Find the maximum possible
+
+reward :  0.8034090995788574 acc : tensor([0.3636])  prompt :  Let's analyze each input and output pair:
+
+---
+
+### **Input 1:**
+**Input:** Find the maximum possible order for an element of $ S_7 $
+**Output:** 12
+
+- $ S_7 $ is the symmetric group on 7 elements.
+- The order of a permutation in $ S_n $ is the least common multiple (LCM) of the lengths of its cycles.
+- The maximum possible order of an element in $ S_7 $ is

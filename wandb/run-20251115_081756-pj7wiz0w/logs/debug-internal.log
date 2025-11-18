@@ -1,0 +1,19 @@
+{"time":"2025-11-15T08:17:57.194862586Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-15T08:18:08.347754355Z","level":"INFO","msg":"stream: created new stream","id":"pj7wiz0w"}
+{"time":"2025-11-15T08:18:08.348224691Z","level":"INFO","msg":"handler: started","stream_id":"pj7wiz0w"}
+{"time":"2025-11-15T08:18:08.351644049Z","level":"INFO","msg":"stream: started","id":"pj7wiz0w"}
+{"time":"2025-11-15T08:18:08.351662446Z","level":"INFO","msg":"sender: started","stream_id":"pj7wiz0w"}
+{"time":"2025-11-15T08:18:08.351664008Z","level":"INFO","msg":"writer: started","stream_id":"pj7wiz0w"}
+{"time":"2025-11-15T08:19:24.112696993Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":170}
+{"time":"2025-11-15T08:19:24.11277542Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-15T08:21:58.299726057Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":1927}
+{"time":"2025-11-15T08:22:01.04204032Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":9}
+{"time":"2025-11-15T08:23:44.087127465Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/pj7wiz0w/file_stream\": context deadline exceeded"}
+{"time":"2025-11-15T08:25:25.099800612Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":4349}
+{"time":"2025-11-15T08:25:25.099904739Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-15T08:26:13.74160639Z","level":"INFO","msg":"stream: closing","id":"pj7wiz0w"}
+{"time":"2025-11-15T08:26:15.633574627Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-15T08:27:06.575147173Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/mmlu/pj7wiz0w/file_stream\": context deadline exceeded"}
+{"time":"2025-11-15T08:27:27.234791919Z","level":"INFO","msg":"handler: closed","stream_id":"pj7wiz0w"}
+{"time":"2025-11-15T08:27:27.236438346Z","level":"INFO","msg":"sender: closed","stream_id":"pj7wiz0w"}
+{"time":"2025-11-15T08:27:27.236728299Z","level":"INFO","msg":"stream: closed","id":"pj7wiz0w"}

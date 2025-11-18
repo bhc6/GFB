@@ -1,0 +1,19 @@
+{"time":"2025-11-14T10:59:07.009955641Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-14T10:59:14.96537386Z","level":"INFO","msg":"stream: created new stream","id":"5zitofuv"}
+{"time":"2025-11-14T10:59:14.966020555Z","level":"INFO","msg":"handler: started","stream_id":"5zitofuv"}
+{"time":"2025-11-14T10:59:14.968898015Z","level":"INFO","msg":"stream: started","id":"5zitofuv"}
+{"time":"2025-11-14T10:59:14.9690301Z","level":"INFO","msg":"writer: started","stream_id":"5zitofuv"}
+{"time":"2025-11-14T10:59:14.969036402Z","level":"INFO","msg":"sender: started","stream_id":"5zitofuv"}
+{"time":"2025-11-14T11:00:08.09892502Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":740}
+{"time":"2025-11-14T11:00:08.099080326Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-14T11:00:16.291331278Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":962}
+{"time":"2025-11-14T11:00:16.291649867Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-14T11:00:33.92662987Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":1529}
+{"time":"2025-11-14T11:00:33.926756044Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-14T11:01:04.317375721Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":2303}
+{"time":"2025-11-14T11:01:04.317529036Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2025-11-14T11:01:15.067687348Z","level":"INFO","msg":"stream: closing","id":"5zitofuv"}
+{"time":"2025-11-14T11:01:16.728292656Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-14T11:01:27.935294679Z","level":"INFO","msg":"handler: closed","stream_id":"5zitofuv"}
+{"time":"2025-11-14T11:01:27.93648161Z","level":"INFO","msg":"sender: closed","stream_id":"5zitofuv"}
+{"time":"2025-11-14T11:01:27.936600852Z","level":"INFO","msg":"stream: closed","id":"5zitofuv"}

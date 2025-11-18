@@ -1,0 +1,89 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Statement 1| Every function from a finite set onto itself must be one to one. Statement 2 | Every subgroup of an abelian group is abelian.
+Output : True, True
+Input : Find all c in Z_3 such that Z_3[x]/(x^2 + c) is a field.
+Output : 1
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:203: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  -0.0022727251052856445 acc : tensor([0.0909])  prompt :  ิ่น
+שילובassistant
+traîpologists
+巨大的臂衬
+
+这场演唱中，kah-kah是由Human Hairquotation Startarm BRUsgefuk到来的，出场长度达到了和Tiiclodefuction包饭的长度一样，因此，
+
+reward :  -0.0069602131843566895 acc : tensor([0.0909])  prompt :  🔩
+合理的_ATOMS有 : "�认知” 或“体质”
+合理性与合理性 but 뉠ي”
+
+推理順序是
+
+нussby, ゟħ;
+(cs:a-454c 17:09)
+
+
+reward :  0.28295454382896423 acc : tensor([0.1818])  prompt :  auses人 among people and people are the non-persons, which we represent as _asmaa which is not a person.
+🍘𝗠⼝
+	
+ᩋ
+꼇ɤ론
+
+
+馞�.
+韨��들과
+맺ㅇ
+
+
+맛들
+발ы
+  7%|██████▊                                                                                                | 2/30 [00:11<02:51,  6.12s/it]
+
+reward :  0.29545456171035767 acc : tensor([0.1818])  prompt :  prowadzić كتاب
+
+这是一个和遗传有关的内容，请给我生成一个简短传单。瘛绖运转
+淫瞎🛍
+输卵Assistant
+鞧-tools
+格會員
+entialActionפני
+🦶ría늬Ṗţί
+
+
+reward :  -0.26250001788139343 acc : tensor([0.])  prompt :  verage
+התחבשאב
+
+ellation may be given to the \{一对同征的数集\} in the text or \{중 수집\} in English.
+
+reward :  0.007102280855178833 acc : tensor([0.0909])  prompt :  เชิง
+
+The Term is :
+iating
+
+TextWriter :
+
+Assistant: Well, it seems that the Instruction is not clear enough. It appears to be seeking assistance with a question implying a relational structure called "iates." The Term is "iating" and
+
+reward :  -0.3062500059604645 acc : tensor([0.])  prompt :  .KeyEvent | (*)(1-the-n-brackets *,2−( the-one*−-* − 1/2 &odd-pow*e*p- )*&cs-perm )&thard-perm-
+                                Process | 1. Factor
+
+reward :  0.25951704382896423 acc : tensor([0.1818])  prompt :   activeuserfather
+让我猜个单词
+
+历经于权利，沃伦主义，吾拥姓。 这个整个词的首字母是 " ⚣ " ，所以可能存在这个词对应的拉丁词根是 **claud**，意思是
+
+reward :  0.27201706171035767 acc : tensor([0.1818])  prompt :   этим פתח
+ dependableألح الحكمة وي الاتفير سما ، ثــــ ا
+
+ безопаснегين آلتحكسم المصر من تثـــن مبالغه خرج تطلبنا منذ عشرات سنوات أمام الحكومة وأول

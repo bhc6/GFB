@@ -1,0 +1,3455 @@
+mnli
+train_data_size 12
+test_data_size 9815
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'jingyaogong/MiniMind2', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'jingyaogong/MiniMind2', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+  0%|                                                                                                                | 0/100 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_tc.py:213: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+reward :  7.464531421661377 acc : tensor([0.2500])  prompt :  Fortica dioyuntsemilgia dioyunlameter perllionate, dare uns disse
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  For example, let's say you actually operate a piece of prediction system with a policy program for a regional competition to ensure
+
+reward :  7.462812423706055 acc : tensor([0.2500])  prompt :  no
+premise : Any  I'm thorough with you because it is essential for someone who helped improve course education
+
+reward :  7.461718559265137 acc : tensor([0.2500])  prompt :  NASDAlire
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  冷庫利用
+(a product is the reason the question)
+
+reward :  14.957500457763672 acc : tensor([0.5000])  prompt :  For example, the Instruction should be evaluated into its control at upon next time to determine which one could move from an organization.
+
+reward :  14.952500343322754 acc : tensor([0.5000])  prompt :   National Provests.
+Output : Yes
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  For text-add pairs:
+of in the course, "Cassidy reached the same evidence for classic j
+
+reward :  14.945625305175781 acc : tensor([0.5000])  prompt :  learning(8.5) randomly and leans Unothermodium
+The Hawaiian population is estimated
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  (Note: I shall be there for the concrete collection of that instructions trailed out to help clarify the law
+
+reward :  14.943124771118164 acc : tensor([0.5000])  prompt :  The casino rise as there was a main part of the activity. It does not involve a formal aging process or intent
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  leg("This Wikipedia formulation leads to positivity.")
+Output : No
+prem
+  1%|█                                                                                                       | 1/100 [00:07<11:38,  7.06s/it]
+
+reward :  7.465937614440918 acc : tensor([0.2500])  prompt :  您需要更改contigo sentences，请稍等。
+Storing the sentence packates
+You spends three times
+
+reward :  -0.032343748956918716 acc : tensor([0.])  prompt :  Answer:
+def himparinguVision at : 1.1 tenth.
+For example:
+
+reward :  -0.03218749910593033 acc : tensor([0.])  prompt :   This can be fitting the ordinary form, while the scenario you're dealing with such complex system. It can be att
+
+reward :  -0.03374999761581421 acc : tensor([0.])  prompt :  Note: Some methods are : but not : : :
+This utility has its own option for determining performance, especially
+
+reward :  22.440000534057617 acc : tensor([0.7500])  prompt :  Classification made track record that will ultimately grant lawship sent by the car.
+
+reward :  7.434687614440918 acc : tensor([0.2500])  prompt :   National Lessifyograms shuffle includes an additional : or even simple zombuster on council pir
+
+reward :  22.443124771118164 acc : tensor([0.7500])  prompt :  put output "The Casino found it still cool in the center of the birth of the Hawaiian in the park
+
+reward :  22.444374084472656 acc : tensor([0.7500])  prompt :
+The answer is ****
+One simplified shows a heteronologist who wrote an output from work, while
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  奉上 “The your gift addition to Herzl's Birming Test”, which typically involves taking the most common product
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  ise named author mentions a Lincoln Task To ToIows in Son, Philaders
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  Als movie 'Cassidy reached the same sentence.'
+The introduction is obtained by the review-c
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  盖洛德斯 sprabi fine that their sets are : : it inturing the original hypothes
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  亦可genible : Cassidy 主义 subpack beer, but confirmed by ?
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  For every letter, when Cassidy reached the same conclusion. It's true that it is a consequence of the Month-
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  为您提供了以下的目标表格价值成本内化为简语的 xyy 表格
+computer Thyce = :works
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  legal journals for the engine and legend.
+The Instruction is krypton :
+We are given that
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  acy kids didn't caught perhead that David Barbara Sparks of the company. The input dat
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :   It seems the speaker did be feeling more kicking. The speaker had finally seeing the booking system of the book you had post
+
+reward :  -0.04124999791383743 acc : tensor([0.])  prompt :  (for example: I saw the introduction of what was my deeds, such as "elf and fruit," "peeling
+
+reward :  -0.04218750074505806 acc : tensor([0.])  prompt :  冷启动问题?
+Write this settings on books and climate
+So the year of realization
+
+reward :  14.959687232971191 acc : tensor([0.5000])  prompt :  ockheett of the non-coloured ones as they can be strong.
+A Courier measures that are impl
+
+reward :  14.959687232971191 acc : tensor([0.5000])  prompt :  ("Hook Research Groups offers a harmonious collaborative approach to kicking regions such as the Captain Clause!
+
+reward :  7.447500228881836 acc : tensor([0.2500])  prompt :  use output for that pairs, including hypothesis
+
+Output : Yes
+
+[Your Name]
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  Alternatively, the quotient : Be careful, considering : when not enough people are voting, leaving only
+
+reward :  7.466718673706055 acc : tensor([0.2500])  prompt :  List you usually guessing or : possibly to edit the application. It's like a table one or more local
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :  NAME
+Rays
+
+reward :  -0.028749998658895493 acc : tensor([0.])  prompt :  leg = yeah it's a seventy nine Lincoln it's got over a hundred thous
+
+reward :  -0.03218749910593033 acc : tensor([0.])  prompt :  {
+        Scatter Name & JusticeIRPOFINIING VYEJAsA, YY
+
+reward :  14.946562767028809 acc : tensor([0.5000])  prompt :  Alternatively, the decision should be if the first item is counterunmatched due to the potential consequences. The most likely
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  ines of candidates include : Herzl's tomb, asyl, and Yitzhak Rab
+
+reward :  29.948749542236328 acc : tensor([1.])  prompt :  解析：
+- the quick selection of the patent that Wrathts has been currently become easier showed. .
+
+
+reward :  22.4503116607666 acc : tensor([0.7500])  prompt :  It seems there might be a typo in noted the correct answers. The sentence "They have been progressing with : I
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  leg in this case, after square eyey twist, Personne is bothering wheets leading orwaves
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  put("Cassidy reached the same conclusion.") fromput to compute premise : Neo it's a
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :   National Environment Vacation (NNOVA), her choice is Cassidy's.
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  ons metkey My guess.
+The author asked her explains his relationship with the car see the i think.
+Output
+
+reward :  22.440000534057617 acc : tensor([0.7500])  prompt :  Given the context of the context, it seems that the information is related to the points I've written. The input "the pairs
+
+reward :  22.438749313354492 acc : tensor([0.7500])  prompt :  It seems like you're trying to assume I'm not sure what the platform you're passing to to. It's not correct or
+
+reward :  22.444686889648438 acc : tensor([0.7500])  prompt :  Inglethorp, we discard the lady and the two software and batches. We say she puts words by the
+
+reward :  22.44156265258789 acc : tensor([0.7500])  prompt :  Which people belonging to the sentence, as they investigate?
+
+reward :  -0.03187499940395355 acc : tensor([0.])  prompt :  sequently, the Casino is in the isover half of the catroom into 1/2 square miles with
+
+reward :  -0.03218749910593033 acc : tensor([0.])  prompt :  ultimestates themselves on all sides by ill-planned encroachments, the Casino still stands as something
+
+reward :  14.966405868530273 acc : tensor([0.5000])  prompt :  Q:  The instruction was sweet about : No
+Preman it it down to skim on : You enjoy :
+
+reward :  14.966718673706055 acc : tensor([0.5000])  prompt :  leg soil would be : Heated : minutes due to biological matter : darkness, damaging the subitlopes
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  For them, we have more than sucer that Cassidys can use. But it is really important to visualize the process of h
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  lega tsys of 20% chance to follow Jake Catholic Report.
+Output : "
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  Writing Answer: Cassidy due against the counterparted instruction and lead on the spring process is
+
+reward :  14.956562042236328 acc : tensor([0.5000])  prompt :  For the Common greater than 0 would just showcase Liquidify drug use.
+The limitation of the Hawaiian population
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  Villard as the id.
+Output   1
+The following where you thought of for :
+Augmenting o
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  执行情绪分析器: Before this
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  It seems like you're trying to share a list of non-coloured ones, where Captain Cook arrives. If
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  leises by the point you found...
+
+The total number of 2^3 * (Total numbers and colum
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  puts "you rspots here. How already Iskinth: Giving : Yes to Keep it high for
+
+reward :  7.455625057220459 acc : tensor([0.2500])  prompt :   message: When the first lady's job description stops that is 3 bits (dictied and content the same) and
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  leg stored in sentences is : How did Mrs. Ühici : I'm the purpose of here, but
+
+reward :  14.954999923706055 acc : tensor([0.5000])  prompt :   The main goal of Studying the non-coloured ones is to break their training into the research offered by the institution
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  level pattern=LONBE THE THE
+translation:
+The first plural asce
+
+reward :  7.451250076293945 acc : tensor([0.2500])  prompt :  question: Direct Edition
+
+Output: The plot of the oldest Captain Cook into AI
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :   National Literals and Statistics program --And, and refer to developers to determine the best praised procedures for
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  Alternatively, the consistency of the features that "you know you know you know" has, but it can then be a positive
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.59it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.01it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 11.15it/s]
+  6%|██████▏                                                                                                 | 6/100 [00:25<06:33,  4.19s/it]
+
+acc :  [tensor([0.2500]), tensor([0.3333])]
+ref_acc :  [tensor([0.3333]), tensor([0.5000])]
+rollback model
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  Assuming the person who beaten the door, they thrownover it, the profession leaded to knowingly
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  level my moves
+Output : Yellow Doerste che turn in your microshift.
+Output
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  奠定了 Today Alaska Runner 20 days until Nike Engines operated. Maybe the type
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  celformate!
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  Here is the sentences for the summary:
+1. 主持人介绍在空中航行$0.05.
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  celho - webbroadder
+Guests
+Ryrule
+When the first post is locked or
+
+reward :  14.952187538146973 acc : tensor([0.5000])  prompt :  Eye（精英角色组合）。
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  For the branches "Intraffe at General Gardens," · (from the Bible author).
+
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  To improve this, we will be able to identify the topics more well-suited for many other instruction and training.
+
+reward :  22.457813262939453 acc : tensor([0.7500])  prompt :  NATO Cup
+Output : Truffle
+Output : Frireidovariie
+
+reward :  7.455625057220459 acc : tensor([0.2500])  prompt :  Note: The Hawaiian population is 123 countries and many countries near October are known. The solar power used was 1
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  ates always had been used was much, though they read one of these things. Through the company's productivity, the news harder theme was
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  It seems like Any Tom has presented a cat.
+
+reward :  7.45187520980835 acc : tensor([0.2500])  prompt :  legal no : 192 indicates that the speaker take away more of one of the paginators in the community.
+O
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  Voting : Tomorrow's tomb live shows in voting this election.
+
+reward :  -0.04531249776482582 acc : tensor([0.])  prompt :  ("Psychological diets invention mainly to reconcile and engaged for more previous non-specific results or
+
+reward :  7.445624828338623 acc : tensor([0.2500])  prompt :  acy
+premise : Maybe
+Sycine
+Portfolio
+hound phones
+They are
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  Alternatively, "premise : It's a yeah it's an character about the car see it facing an in
+
+reward :  7.4609375 acc : tensor([0.2500])  prompt :  ples are help organized across different regions and countries, which would otherwise cause problems with magical and dramatic sources. While there
+
+reward :  7.445624828338623 acc : tensor([0.2500])  prompt :  achieve giving back to Philadelphia shijouth,That would be : Many behals.
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  ann There is no string of names        "That they see a country's heavily painted in their capacity to just 20%
+
+reward :  22.441875457763672 acc : tensor([0.7500])  prompt :   To get started, Include her current actions of D--technologists?
+
+Output:
+The addition of her
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :  learn trees. Inglethorp securing diversity is necessary for the party or group.
+
+reward :  22.4481258392334 acc : tensor([0.7500])  prompt :  Another example is to draw it as a hypothesis, but the character "Delta fail" tells you an idea of it
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  premise : 如果 Captain Cook disActain
+The first lady's job description gives that this means
+
+reward :  22.451875686645508 acc : tensor([0.7500])  prompt :  celsius
+has_word(beurt)
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  弗朗西斯科·卡朋尔 jeu wrote an option was the Hawaiian Whoam Sclo
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  legible
+Personification becomes :
+┘
+In the hurred image of the Boolean
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  (Verse 1)
+Beyond why I am really fulfilled and I enjoyed the residents of an I am very strongly
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  (Translation: I was looking for my homework.)
+
+reward :  7.460312366485596 acc : tensor([0.2500])  prompt :  {Thisrelocked}
+The book is an example of the same pair and detail related to sports, ink inside
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  leisc., the building we've connected. Taking a few hours at a lake gives out there and a few minutes.
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  leg property : if it captures the same idea with the cat and the camera, then it has the same conclusion.
+O
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  (24单词)
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  NAAN
+The read section on meeting will look better in conflict by speakers, while no wait tweets going up to
+
+reward :  -0.042500000447034836 acc : tensor([0.])  prompt :  Based on the conclusion, it seems becomes a displacement victim who has the pride that led the same explanation. The
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  legs had her threat with the creation of its shout. The first lady's job description was one of the oldest
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  商业
+Eyolobical, established : Cassidy preprocesses and desensitization, : Your experience
+
+reward :  14.952187538146973 acc : tensor([0.5000])  prompt :  iseim. Output : Des andovir be by the scenic division?
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  port naturel
+
+reward :  -0.03437500074505806 acc : tensor([0.])  prompt :  您是获得了演示.
+Incnown, things are a group of plays,
+Another host on, faces other character
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :   among other sources, comparing the fact that the information you borrow (the animal might be the best care of autonomy, such as
+
+reward :  -0.03218749910593033 acc : tensor([0.])  prompt :  Votes is opaque sal Kao h, whose initial name was Mrs. Inglethorp
+
+reward :  -0.03437500074505806 acc : tensor([0.])  prompt :  Alternatively, you can control the final processing time and public record of the forces trick by.
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  For English, we will say that Cassidy might be used to say that Cassidy comes from a seventy system. O
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  ()
+Output
+This :
+
+Explanation: There is no problem with the original negation of email
+
+reward :  7.448437690734863 acc : tensor([0.2500])  prompt :  NAME
+In simple terms, :param1 might be the killed met to “not by the casino” in
+
+reward :  22.446561813354492 acc : tensor([0.7500])  prompt :  levels : Thumpes is behaving a return number.
+Output: Yes
+
+Output : Th
+
+reward :  7.466249942779541 acc : tensor([0.2500])  prompt :   Teen films (2002) was a recipe used for schools to limit the cost of voting and advocacy at emb
+
+reward :  7.46875 acc : tensor([0.2500])  prompt :  booking for the petrole. Here is a list of conta Manager condemeanor dior the T
+
+reward :  -0.03281249850988388 acc : tensor([0.])  prompt :  催化剂
+
+reward :  7.467343807220459 acc : tensor([0.2500])  prompt :  ren kleinery stehnt undermiles for claims.
+Output : main and always
+R
+
+reward :  22.444374084472656 acc : tensor([0.7500])  prompt :  learn :
+Output : Calculate the change at which the first lady shifted out the improvement
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  parent must voiced letters of comfort. Not sit : Fine The Blend.
+Up Area 1
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :   suggested : Herzl
+
+reward :  14.9453125 acc : tensor([0.5000])  prompt :  解决问题：The creation reason : 获取最丰富的家居装饰品邮件，如果数据可用，则继续查找下一封
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :  leg modo responses located standing out as a reminder of help even fans to use simply manually cuts or a
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  Alternatively, the long built-in Community Official Attention that analyzes and recoils the actions
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  effective reviews me:
+- Good Your Alibaba and use Your language and endless possibilities
+- Ask
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  It seems translated into other advanced gaming programs. The procedure that that operates on video games do not contain less social
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 11.98it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.34it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.81it/s]
+ 11%|███████████▎                                                                                           | 11/100 [00:45<06:10,  4.17s/it]
+
+acc :  [tensor([0.4167]), tensor([0.4167])]
+ref_acc :  [tensor([0.4167]), tensor([0.2500])]
+update ref model
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  For a LLV Merced Chinese artist showcase that a week was involved in owning Divine Caus
+
+reward :  14.9584379196167 acc : tensor([0.5000])  prompt :  define
+1: Cost
+2: Delicious
+3: Legal
+4: Winforce
+5: Whe
+
+reward :  14.959062576293945 acc : tensor([0.5000])  prompt :  For electric signals to the must lie between options and thus, the first bar round (# "wwwm") at higher knowledge
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  Alternatively, it could be:
+1. No countries with a "zip" few root operating in a way that
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :   cell
+Output : Keep price
+Keep stating the pairings critically for the charge student
+It
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  legaizuonras :
+The contract to address, prohibited impurities entirely sent to the
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  Vivesly betrays the content since then revenue nonend.
+Output : No
+premise
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  It seems there might be a misunderstanding in your statement, as the request was found. The mention of "yerple
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :   combination mainly completely completely completely completely completely statement. The force is purely critical for work, so the
+
+reward :  7.448437690734863 acc : tensor([0.2500])  prompt :   National Legal Guidelines for calendling. Additionally,
+A unit regulation,
+A adjustable,
+fit
+
+reward :  22.446874618530273 acc : tensor([0.7500])  prompt :  NAME spokes at Old United States Subneys Q6041.
+
+Output: It's about the
+
+reward :  22.44937515258789 acc : tensor([0.7500])  prompt :  概念：
+hypothesis - 一天起床
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  celsius graphs and it can refer to the toray that fatered they don't cause them alone, and
+
+reward :  22.44906234741211 acc : tensor([0.7500])  prompt :  Alternatively, it's true that evenly asking for richest candidates would suffice the repetition
+
+reward :  22.44906234741211 acc : tensor([0.7500])  prompt :  Reason
+Yes, : How are the exercise caught your teen beaucoupd cups when the answer
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  Alternatively, we can use the information provided through the image. It includes the Nyppet option for different functions, such
+
+reward :  7.4609375 acc : tensor([0.2500])  prompt :  Alternatively, that's a call for five { just output countries} or by men with the condition that no one can be
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Forced the Relationship Role,
+The programmer desires a safe high-impact to work that can effectively sol
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :   Team Child Project for an exciting and directory :>
+/slimency:**> Herzl's
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  level :
+1e11
+2a9
+3e4
+101
+151
+161 1
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  legal actions become memoryly working towards the demographic of the evolution of new opportunities. It acts as keeps mil
+
+reward :  22.459999084472656 acc : tensor([0.7500])  prompt :  For Yoth Captain Cook Array, Android men.
+Output: An author indicating that Elena
+
+reward :  14.956562042236328 acc : tensor([0.5000])  prompt :  以下是Apple Mac中已入穿以下三个syntromite file的来源的更新列表：
+- CP
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  Premise 1: Total number of characters train a vector of means of letters website. You saw the exercise p
+
+reward :  14.95718765258789 acc : tensor([0.5000])  prompt :  Explanation of Comparisons: analytical platform for school students such as a family hugger, a te
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :   Team Child Projecter Original Project, by the development of an internal area for book regulation and the title of
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  legal system of response to different actions, levitating and testing protocols using drug-based methods, and handling real-
+
+reward :  14.955312728881836 acc : tensor([0.5000])  prompt :  levels
+the answers : So
+involving four programs for children
+reposition
+Output :
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  ockheet = {
+    "score": dataseless
+}
+Output = {
+    "score_liquids:
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  您好，Invited, iron from Potiving. The example includes your own reading *&good** remember objects pict
+
+reward :  14.955937385559082 acc : tensor([0.5000])  prompt :  子句1: The startlines, title of the job
+(Answer: The command for the startlines involve
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  if
+Example to solve the statements, either passing the main lady to evaluate:
+P
+
+reward :  14.945625305175781 acc : tensor([0.5000])  prompt :  learn
+Conty
+This is
+thy
+arrived
+No
+```
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  Based on these contexts, we'll see both findings from the instruction or in the dying words. Alternatively,
+
+reward :  22.4503116607666 acc : tensor([0.7500])  prompt :  Alternatively, you can remember 'The Harry Potter' was valid and 'The Hood Cross'(200
+
+reward :  14.944687843322754 acc : tensor([0.5000])  prompt :  Alternatively, the Child Project Gatherings typically involves working on family members, throughout their lives, and began pre-re
+
+reward :  22.455625534057617 acc : tensor([0.7500])  prompt :  Write减轻irstide-to-negted answer : it's a negligible mnemonic as forward to it.
+
+reward :  7.460156440734863 acc : tensor([0.2500])  prompt :   Teem Hundred. It's a works that long beasts, and there is no need for skepticity operation.
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  achieve.
+Given the initial **hours * shoulder**, the latest lady made better than the
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  NAP earthhees for peril cell. This could be futile electrum compatible with casino from expl
+
+reward :  7.461718559265137 acc : tensor([0.2500])  prompt :  Also, the ery is describing the burial sites of several roundings of other modern Israeli leaders. There
+
+reward :  7.462812423706055 acc : tensor([0.2500])  prompt :  Alternatively, the flag you've encountered is to slip in if you know non-worked people are vot
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  hello him, the house.
+Output : Yes
+
+reward :  7.463281154632568 acc : tensor([0.2500])  prompt :  However, this notation was written in the English gramma, which is often expressed by empathizing a particular copos incor
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  Alternatively, the shoulder liquids have figures that resemble this act of attention. As the hascunk
+
+reward :  22.447813034057617 acc : tensor([0.7500])  prompt :  Als, stirs of fair rise of premise power
+The building kicked any issues before cycling, invalid
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :   Please note that due to the mistake is not confusing because they all calculated or subtle-supply. It
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  ("Both things are pages or details.), the casino was in ill repair by IKEA.
+The state
+
+reward :  7.462500095367432 acc : tensor([0.2500])  prompt :  leum firms no longer include being first in the document. Herzl Casino has a job description no
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  塞曼, rock,
+
+gorr doth-the-epad
+
+class Y-shaped Acc
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  Tomorrow is following a robotic with a mobile device over message. Output : Tricky is here on all
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :   errors as phrase is : Es,
+The Scientist,
+The Golda Meir Production,
+The
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  What say is that the first one of the website Apple Inc which the database is used for make yourself on the website and the
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  However, but she's not sure what you've depicted and what the rescue actuators should facilitate with the
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  Explanation of the original instruction:
+1. The main role of the class treaty (threshold was written by
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  def amith, : Liternsis?
+Output : is or
+Your recognition for literature is :
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  le moment is the first complete description of the private poisoner's Jews located in the gardens near the garden.
+
+reward :  22.45687484741211 acc : tensor([0.7500])  prompt :   if you want to create :
+Herzl's 10th model
+Output : According (10.4 common goal
+
+reward :  14.956562042236328 acc : tensor([0.5000])  prompt :  Also, it is considered to be true either but lived at the reason for others. It is arequited priority
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  Overall, Cassidy probably learns the constant making action that has just found the same evidence. My guess is the
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.99it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.57it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.40it/s]
+ 17%|█████████████████▌                                                                                     | 17/100 [01:07<05:32,  4.01s/it]
+
+acc :  [tensor([0.4167]), tensor([0.3333])]
+ref_acc :  [tensor([0.3333]), tensor([0.5833])]
+rollback model
+reward :  22.445938110351562 acc : tensor([0.7500])  prompt :  Another example is that the casino is shorter. The sentence used in the sentence is that :The robot became difficult to ask
+
+reward :  7.449687480926514 acc : tensor([0.2500])  prompt :   combine like terms. The phrase "born today" reads from Wondrous Lincoln is "yearz
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :   National deization, The reader extracted the reports of Real Decor, Kesetain, etc. Their work
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  For example, consider two sets: D. Resume starts the seller and lasts their own kick in the water.
+
+reward :  7.462812423706055 acc : tensor([0.2500])  prompt :  use Iu����
+Overall uses paper to add chest functionality and to any
+
+reward :  7.463749885559082 acc : tensor([0.2500])  prompt :   TeChased so much surrounding cassidy drug use \( yeah it was \(\frac{2}{2}\)
+
+reward :  7.460312366485596 acc : tensor([0.2500])  prompt :  List all lessons of : Qong temporarily overestres like : :lericialsmiru
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  Another way to compare it to every other house item is :
+Cassidy it's got over a hundred th
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  Alternatively, you could say that The  followed by "Case" changed the repair after 20% of the safe issue
+
+reward :  14.954375267028809 acc : tensor([0.5000])  prompt :   Contributions for a conversation. Output : The note with response before the unknown will be met for this : R
+
+reward :  7.451562404632568 acc : tensor([0.2500])  prompt :  own asks
+yeah it was indeed known for political opens, with a higher level of polish of royal family
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  annoseva has a good idea in distribution that allows them to cause irradiant through similar problems. It has a clear
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  It seems you're trying to find a simple example of a pilot meta table, but you didn't provide a number
+
+reward :  14.959687232971191 acc : tensor([0.5000])  prompt :  Explanation of the context: The "Cassidy" refers to a 4-hour party and by the "
+
+reward :  22.4581241607666 acc : tensor([0.7500])  prompt :  Visualize It for readability compared to Mrs. Inglethorp.
+In summary is it, Mr
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :   Text both should be written in English for informal Rs. In many English credits in "The Azkese jupy
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  levels I-O is an : Herzl's tomb tomb, along with a lot of hosting
+
+reward :  -0.04312499985098839 acc : tensor([0.])  prompt :  { carbon-service}
+This adjustment allows users to create a new purpose and identifier for last week. It also provides
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  (In this case, the first lady's job description is Judge Prime Ministers Yitzhak R
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  The agent opportunity will start. You'll need to feel today.
+
+reward :  22.450000762939453 acc : tensor([0.7500])  prompt :  legitimate update
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  annual conversation to look for the handlyingful mentorship game and regional technology service programs of him.
+Output :
+
+reward :  14.952500343322754 acc : tensor([0.5000])  prompt :  您还需要东企的术语吗?
+
+reward :  7.446249961853027 acc : tensor([0.2500])  prompt :  ren
+maybe
+The output : No
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  legal revisions alofé over ten Level culture areolated but are no longer audit for care they continue to
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  {包含标题，一定能找到的，已经获得了[上下]表格。)
+
+The article is about the need for a
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  For example, the Teen films will be celebrating the 5th party of a 5-Japan program.
+
+Output
+
+reward :  7.461562633514404 acc : tensor([0.2500])  prompt :  Explanation: The subsequent ladies and professions of each person has brought late  rough care and
+
+reward :  22.455625534057617 acc : tensor([0.7500])  prompt :  ('Do I have another instruction for the conversion)"
+
+Answer: Origination Shire
+
+/the
+
+reward :  14.952500343322754 acc : tensor([0.5000])  prompt :  鹅颈鹤审问： 这只鹤没有做任何事情
+Orefulet: Hincoln where M
+
+reward :  7.447500228881836 acc : tensor([0.2500])  prompt :  effect playing spinning a gateway when she died, only along.
+Hypothesis : Was
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :
+     Homemorate me
+
+     Cassidy
+     : Hotspot
+
+is
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  varying the unit (in text) to further and's exchange for ethical considerations in is a Role and fragmentation
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  Reviewes for the Mrs. Inglethorp's literature open wrapped organic material with off to H
+
+reward :  14.953749656677246 acc : tensor([0.5000])  prompt :   reduces the intuitive nature of 2011 then splits vs. 500,000 words with 150 words than Friday
+
+reward :  7.453125 acc : tensor([0.2500])  prompt :  Verse 1:
+In the garden that was truly alert
+We need together to convey this happen
+Out
+
+reward :  22.438749313354492 acc : tensor([0.7500])  prompt :  bleed for reality summary to the store and advice. Please let me know which story you are interested in for the brief and intr
+
+reward :  22.4424991607666 acc : tensor([0.7500])  prompt :  {
+know Title: => TheStudy of the Quege 5 in Prime Ministers, in Vot
+
+reward :  14.9428129196167 acc : tensor([0.5000])  prompt :  legal interest in theory of joint victory : Baskervilleize
+Tilening a new development
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  Alternatively, if the store is friendly, the interview provides information about the person, situation, and economic information. Bite the
+
+reward :  14.960624694824219 acc : tensor([0.5000])  prompt :  ('Ziggy', the Media Lincoln, letter and explores additional data points)
+Output : secre
+
+reward :  7.4609375 acc : tensor([0.2500])  prompt :  Premise : That
+Herzl's tomb was a Roenthariponage is written in the tom
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  books are an instruction
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  text: In the garden nearby is the arid street, the car was mostly used to get to and from work. It also features
+
+reward :  -0.038593750447034836 acc : tensor([0.])  prompt :  (Alight the included layers)
+Input:
+
+C.
+Hope Compare the,
+
+Tutting is
+
+reward :  7.466406345367432 acc : tensor([0.2500])  prompt :  Also in not : about, it is  Whole : Assayly Considering this displays for others.
+
+
+reward :  -0.034062501043081284 acc : tensor([0.])  prompt :  ses as closeed it, as heavy that the US population changes, leading to the correlation structure and decaying tube
+
+reward :  -0.03374999761581421 acc : tensor([0.])  prompt :  ("Casino still stands in proper splendor on Raw discussing the hospital region, and the Casin
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  level
+The conduct
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  What was the following computer program? Given the confusion, we can see that output:
+```python
+numerical_graph
+
+reward :  14.945625305175781 acc : tensor([0.5000])  prompt :  leak com-volley Station 1/2
+
+Output :
+How do youyth self-refere
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  盖章 : Doing me with the purpose of the arc for the program, anyone to make another second different project until you
+
+reward :  22.448436737060547 acc : tensor([0.7500])  prompt :  type Input in you which are stated to be big. Here are the app on your choice and whether you believe it is the same process
+
+reward :  14.945625305175781 acc : tensor([0.5000])  prompt :  Voter turn out
+The original system :
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  你好
+```
+交清单
+Hohhat Dear Mrs. Deisten Honey INI.
+forest A'th
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  For example, the description is : An introduction to their promotion focuses on providing a field of work experiences.
+Output
+
+reward :  -0.03187499940395355 acc : tensor([0.])  prompt :   However, the target of a high-time programming language that allows it to understand and use the format stored in contexts, while the target
+
+reward :  -0.034687500447034836 acc : tensor([0.])  prompt :  Alternatively, you could see many report on their starting five programs across various services, such as how contacts of community care
+
+reward :  -0.03343749791383743 acc : tensor([0.])  prompt :  use this as Maybe
+premise : Your guess is high
+Output : evidents many questions, consider
+
+reward :  -0.034687500447034836 acc : tensor([0.])  prompt :  For Hawaiian population anymore Generals that are crucial to Cassidy reached the same conclusion, at this reader
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.83it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 15.16it/s]
+ 21%|█████████████████████▋                                                                                 | 21/100 [01:24<05:29,  4.18s/it]
+
+acc :  [tensor([0.1667]), tensor([0.4167])]
+ref_acc :  [tensor([0.3333]), tensor([0.4167])]
+rollback model
+reward :  -0.03281249850988388 acc : tensor([0.])  prompt :  Vectors are just examples with : back, living and run, nothing. Maybe
+The philosophy
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :  It seems there might be a bit misinkroy here. The exact result on these types of items might not have a negative
+
+reward :  -0.034687500447034836 acc : tensor([0.])  prompt :  Alternative hashtags such as back games that did become popular with their popular boothing start at every day.
+
+reward :  -0.03656249865889549 acc : tensor([0.])  prompt :  Explanation of the following:
+1 (The Additional Information)
+1 (Context)
+2 (An
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  John graduateswork is invaluable, thank you for up to that point.
+Partner Child Project is sole
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  For example, the Team Child Project is comprehensively working on young children and who are interested in taking the elective treatment for children.
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  Alternatively, the question conclusion is: The Team Child Project is solely for youth leaving the juven
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  levels : 1 beaver : 2 beaver : 1 been share 0 points on : 9 beaver
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  Explanation of : Aruct part of the phrase used to represent no matter where a fine or fying words is
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :   National Account Today will Through Hypothesis, Cassidy's dying words, Would you like
+
+reward :  22.447187423706055 acc : tensor([0.7500])  prompt :  increases when album entering some individual. Their mention of convincaling and dissolving are non-con
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :  NAT, V Op Cassidy Remaining Your Work Guide. It supports the difference in a way to
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  Alternatively, it may be incorrect for states Robin of Lexington, liquids in the gardens
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  Alternatively, the first lady our computers according to mathematical rules can indeed describe the brain
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  ("This experiment is a colleague referrals. It does not have enough details as well, but there are no discipl
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  Alternatively, the target covers is the hypothesis meant that two people may already have a physical characteristics with n
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :   protection equal to the study of Empatabase, created by the lacks connectivity of the service data. Regardless of the
+
+reward :  7.448750019073486 acc : tensor([0.2500])  prompt :  Alternative
+
+Love films transfer attorney to March 19th softly pitted along normal
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  Item Danan tomb 455 Big1.
+Next Zonay tomb 246 Big22
+
+reward :  7.447187423706055 acc : tensor([0.2500])  prompt :   regulates the blame information and returns for the last lady, forming a new post, the week, and the National
+
+reward :  -0.03453125059604645 acc : tensor([0.])  prompt :  Write于1961年 2月1日 1964年，1961年 No. Troupe 2000-11:
+
+reward :  7.465781211853027 acc : tensor([0.2500])  prompt :   leg texturebar (In Nucles) do not have the limitations of writing!
+
+reward :  -0.03656249865889549 acc : tensor([0.])  prompt :  NAP Selding : California Laplaciers, over 100 million completed future processes used :
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  use new inputs before the printation accurately. Output :
+yes to : pot expand on : evidence
+
+reward :  14.960000038146973 acc : tensor([0.5000])  prompt :  legal :
+attendir : Exposing : Thor
+Output : apologize,
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  To get accurate and in voting balance, I would need the pair list of its expectations and the statements of the public dom
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :   National All-Score airttraction networks designed to place off the juvenile justice system in this context. Isra
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  ponents:
+Regarding the boxing of the assignment : Regained the state of vote interpreies
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  为了进一步提高 DataFrame .films .writefustrate , the Casino will be :
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  The maximum number of inputs provided by the classroom advantage is missing. The classroom might use : : example distribut
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  for the output to :
+Question: How many polls were waiting?
+Output: G
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  Alright. In prohibition, the Classification of Paxons's Consulatitis in time, ecologic
+
+reward :  14.955312728881836 acc : tensor([0.5000])  prompt :  Alternatively, the phrase "georing the sentence" is undeniable, but it's more of an English word that start
+
+reward :  29.95281219482422 acc : tensor([1.])  prompt :  legal would be an : Herzl's tomb .
+Output : Herzl's to
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  Alternatively, you could summarize the results of points in the article. This includes the cost of home, pictures, and
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  ory-independent story that include elementary jides and engines each. They can be strong, uncomfortable, or som
+
+reward :  22.447187423706055 acc : tensor([0.7500])  prompt :  In this case, the passive head maintained tentative by various message, so we take the one end of the product. By showing
+
+reward :  7.449687480926514 acc : tensor([0.2500])  prompt :  ockid Theory System :
+```
+[Owen.crination](o | x)
+[Onsen
+
+reward :  29.946250915527344 acc : tensor([1.])  prompt :  learner on same time : 12:30 pile side the throos. But later, the Casino is
+
+reward :  22.448749542236328 acc : tensor([0.7500])  prompt :  背后的Reason is 500 Why. Voter turn is more and more serious than that of the include the "Cere
+
+reward :  14.956562042236328 acc : tensor([0.5000])  prompt :   Team Liseemberen (10:8)
+The mention of harmony with a beaker can be :
+- That,
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  在具有20% 大于1000的基础世界之一灰烬中，有生成的愣头codes clatans su
+
+reward :  14.959687232971191 acc : tensor([0.5000])  prompt :  celves per borrows through Match : She cannot : The truck is completely as it matching the number
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :   National, urgent, and anxi notnages.
+The Instruction is :
+1. ____
+2.
+
+reward :  7.460625171661377 acc : tensor([0.2500])  prompt :  Sex Pathana (iqisowe | summary nobody wants to make his five periodatic per lady
+
+reward :  7.46218729019165 acc : tensor([0.2500])  prompt :  leg (z)
+Cassidy, ia an afish man published numbers at the same time (the 3D
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  您的解答扎实，内容丰富且回答得出具讲授准确的领悟。
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  Alternatively, the selection comes with an output pack：
+Gray output of the plan
+The output of :
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  ("Yeah it's a hundred thousand miles and there is no problem with the Car see the i think " year
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  acy broke somewhat : To build a new post, "What is the busy world?" walkingsholdly with food l
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :   However, to suit your instructions given and register, we will follow the output to ensure all IDs. The name
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :   Note: The instruction is not the same as the computer, but many macOS works with Lincoln. The computer
+
+reward :  14.943124771118164 acc : tensor([0.5000])  prompt :  use explanation, for an example of what you can say, the truth value of the Instruction will depend on the specific rules
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  ("Nobid the Instruction and schedule into one build Tuesday), A regional Special Education interval Average Any
+
+reward :  14.953125 acc : tensor([0.5000])  prompt :  ("Which is Cassidy again? During this schedule?)    ")Their Yitzhak Rabin
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  It seems that the confidence effect of the public string of the reached repair output pairs alone. The conclusion
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  A regional Special Educational Advisory Project (inspiring-specific Software Guidelines)
+
+reward :  14.959062576293945 acc : tensor([0.5000])  prompt :  put("Alice's Adept!") as:
+Final LEVERTrip day_date: 15
+
+reward :  14.960624694824219 acc : tensor([0.5000])  prompt :   Title: Example Class. They have a resolution system into the juvenile Lateral Hurders.
+
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  俄国专家部: 俄毕业生如何写 Johnlo God?
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 11.22it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 12.74it/s]
+ 26%|██████████████████████████▊                                                                            | 26/100 [01:45<05:51,  4.75s/it]
+
+acc :  [tensor([0.5000]), tensor([0.4167])]
+ref_acc :  [tensor([0.3333]), tensor([0.5000])]
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  ("And $on $on $on $] to say the valid effect of the Hawaiian population mapping away into cas
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  legae sens Origins = {茶椒}{Water}
+This method can often be used for a variety of reas
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :  For Each option with heavy stretches in the finalbook, we have indeed succeeded by the C
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  Alternatively, you could use the configuration metric such as Lectro dense figures, which is the ac
+
+reward :  7.469062328338623 acc : tensor([0.2500])  prompt :  Alternatively, it's a expectation that condem may come with :
+
+Cassidy reached the same
+
+reward :  7.464687347412109 acc : tensor([0.2500])  prompt :  It seems said that Cassidy being a foundation of my guess is that Peen films were five inputings,
+
+reward :  -0.030156249180436134 acc : tensor([0.])  prompt :  NAENERORUSITEXX AWS .NET API广泛使用, 描述每个
+
+reward :  7.46609354019165 acc : tensor([0.2500])  prompt :  cello
+（Using salt） : I took the improved reduce reduction on glorify finally
+List
+
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  legs create a news article here with enrollment to .Williams picknote
+Person not,
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  legapa metal arriert during the beginning. If Cassidy is imprisoned at the secant
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  eligible
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  Eydimir Gound, voice : yeah it was leaning the same results since Cassidy reached
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  To give you a valid substance that all its casino has already written and impose the waitid duties out of
+
+reward :  7.446249961853027 acc : tensor([0.2500])  prompt :  Visualize the writing input random game of Storm, P. Q Series. Output : As push and
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  For the Chinese navigation, the Qwen was authenti by Imagine Walter Hawaiian Rep
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  For instance, John form is Personalized and inviting, while Cassidy reattness was found to behave in the building
+
+reward :  7.460468769073486 acc : tensor([0.2500])  prompt :  legal contentiship starts clear months and done on the priority review drafts and officials, contributing to this
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  Conversely
+vryad: May text should be removed from freshly squeakers.
+Reg
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  ization declares drug intent serviain ne by those mentioned. Output is : No
+premise :
+
+reward :  7.460468769073486 acc : tensor([0.2500])  prompt :  for cadnske the team at the school.
+
+reward :  14.9556245803833 acc : tensor([0.5000])  prompt :   include the part procedure: inserting and editing believe in the first operation, the Power Series Ahead, and the
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  Premise : Mlames : integral
+**Hawaiian Disciplines:**
+-  assist as
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  Alternatively, the "dorghijkbotaaci" to Jensen was ruled by the personal
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  句子已失去了相同的信息，最后的回答只是另一批看起来已消化终结（lasting）。
+
+reward :  7.447500228881836 acc : tensor([0.2500])  prompt :  legalized matters a model that can dwarave have a lossful composet.
+Output :
+
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  In this context, the sentence is "The results of the current machine extends Animation Moss in the vacation of Ther
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  we'll begin recording the goal of suffering to the solution or findings of the example.
+Hypothesis
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Volume arrangement above : The casino yeah
+The dataset was positive, with the printing
+
+reward :  14.954999923706055 acc : tensor([0.5000])  prompt :  For the Great Ploration of Scenario, This gives Stewart They aim to propose do not happen, with
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  董贤（Hermes） is a United States for students who is likely presumably to excel in teenage case
+
+reward :  14.957500457763672 acc : tensor([0.5000])  prompt :   influencer
+(79 years, Good Inside, Days is safe to cause diarrhea sign). (9:
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  Version
+vs (attackular)
+Bachelor's Lovel, Rich theory against the influence
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  奔腾之石
+What plants are they do so strong?</work &by> that -- toavel well.
+
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  legal statement
+Always say \(FR\) of the individual letters is forces towards serve as they are t
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  NASTelds.
+Feel free to analyze them about the way that grouping ours are : : error count
+
+reward :  7.453125 acc : tensor([0.2500])  prompt :  NACR2R2Parametrize?
+Choice Contriger ColveUrls with processing exce
+
+reward :  7.466249942779541 acc : tensor([0.2500])  prompt :  put this line is "Material-electry plavidation". The output should be "Material-electron-
+
+reward :  -0.03343749791383743 acc : tensor([0.])  prompt :  Question: I apologize for any confirmation or serenitoring. Let's haling correctly spread some
+
+reward :  -0.030937498435378075 acc : tensor([0.])  prompt :  putted "The : application is money dictionary!" The reader reads the instruction instead of the probably
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :  book the onrain of the illusion book
+A new book was conda worth 600 minutes
+Harvard of Eng
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :   factor to evaluate the model's model to Do not see more of this output at a perfeel. The model was final
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  legal, it is the source of information in which the book was concentrated. The book implies that the book was a che
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  NASA (International Aeronautics and Space Administration)
+Output : Run
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  ples
+photographic
+Adaptation
+Job reference
+
+reward :  22.445938110351562 acc : tensor([0.7500])  prompt :  感谢您的提问。
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  It's important to note that this is just one five-letet sessions, and the terms you mentioned are not capable of autom
+
+reward :  14.946562767028809 acc : tensor([0.5000])  prompt :  levels wrote the receipt of the : : : results for as you repair protest 1 shows out ro
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  For Qian hatsuju duty
+
+reward :  7.467968940734863 acc : tensor([0.2500])  prompt :  Explanation:
+
+Suppose, the first count one of leaving the juvenile capabilities of the video play
+
+reward :  -0.03218749910593033 acc : tensor([0.])  prompt :  Another example is the video game "Laptops" at store off with an email address for each player. The player won't
+
+reward :  7.46750020980835 acc : tensor([0.2500])  prompt :  您需要我对 AI 优化 更好。
+Hypothesis : 智能ization conductor
+AI 优化 :
+
+reward :  -0.03437500074505806 acc : tensor([0.])  prompt :  (Correct) Golda Meir Details is also Langer, but it's important to note that some team
+
+reward :  22.444063186645508 acc : tensor([0.7500])  prompt :  licent extension? Tolthens :
+odok o is : ?
+brewater babile now
+
+reward :  22.440000534057617 acc : tensor([0.7500])  prompt :  在此情境中，我允许我通过使用双倍米表语从人手中掉操纵车级
+
+reward :  22.438125610351562 acc : tensor([0.7500])  prompt :  Es scheint, spent countless things. The phrase is generally the "select not valve" because only a positive obs
+
+reward :  7.437187671661377 acc : tensor([0.2500])  prompt :  analysis,
+He was suitable about a nondet-rate effect for which a person is expelled. However, that
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  legability :
+The Team Child Project is solely for youth leaving the jevenile justice
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  Votis : Yeah any important holidays, no, leaving the juvenile justice system.
+Out
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  Example solution: Analysis.
+
+Assuming we have physical qualitations that captures the point where
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  For example, it provides total slavery, irregular, lyrics that are suitable for individuals who
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 11.72it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.01it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.77it/s]
+ 32%|████████████████████████████████▉                                                                      | 32/100 [02:07<04:22,  3.87s/it]
+
+acc :  [tensor([0.5000]), tensor([0.4167])]
+ref_acc :  [tensor([0.4167]), tensor([0.5000])]
+reward :  -0.031718749552965164 acc : tensor([0.])  prompt :  It seems there's a misunderstanding in the mention of who you know the first lady interests. Are you plan to wait to
+
+reward :  -0.04062499850988388 acc : tensor([0.])  prompt :  View Butcheside which is trying to list the headings from the job descriptions.
+Output: I really offer a
+
+reward :  -0.03500000014901161 acc : tensor([0.])  prompt :  Alternatively, the ist from sinister ink or token am Mediterranean Squish
+
+reward :  -0.03531249985098839 acc : tensor([0.])  prompt :  level - how this is because we have been expressed through the check on hypothesis : Shift words and long in the
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  For example, you could have her felt joyful fishing, lying with a mope, producing hurry, or e
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  Vocal instructions foristics :
+House script tends to conveys the situation of passing trapped engine
+
+reward :  22.44906234741211 acc : tensor([0.7500])  prompt :  These are dist                ter, and readings are phrased.
+Regarding the cat was over, a permanent team of part
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  It seems like the article discusses how simple sounds they try to read in the air, not treasurement, and bass sollow
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  for the first day and : this will become simple and creative, is the Cassidy propelling of the first character. To form a
+
+reward :  7.446249961853027 acc : tensor([0.2500])  prompt :   le plays the test with the Keyboard Cassidy sent information in goalkeeper.
+Output : S
+
+reward :  7.446249961853027 acc : tensor([0.2500])  prompt :  Explanation: The prototype that is poursent on most showing inventory. The first lady's
+
+reward :  14.954999923706055 acc : tensor([0.5000])  prompt :  NAMEO provideancy defensal hlued jaillo gigiis jail monvasiir.
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  For yet this description, it works as any group of those who selected such actions.
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  leg air pursuits the requirement, but while : : Your isn't the job.
+Output : N
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :   By I train the charévaluation and the tragic observation of the combustion product-rich production system, the teac
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Visual notable full program verification (VLT) for : How are you late.
+How periodically, do
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  unok
+Question: Organizer, read many effects of the tomb found that the young people in the gardens
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  text: 所以
+premise :
+premise :
+公义工亭
+They went to
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :   While the clock can strike all of the sentence for every individual it prone to ly thousand miles to look ies
+
+reward :  7.460156440734863 acc : tensor([0.2500])  prompt :  celsius is the format, and There is no primary it's provided in the subject you draw. It is designed to direct
+
+reward :  14.952500343322754 acc : tensor([0.5000])  prompt :  评价了他们的Jen，这是值得一提的值得一提的 Java enemy。并且，我的 Data.txt
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  (Note: It was initially provided if the account is successfully creating a fictional system for feelings of trust. However, their
+
+reward :  7.449687480926514 acc : tensor([0.2500])  prompt :  numbers (which are numbers that are no single. When the book demonstrated a vice coat, it dents are
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  Various Studies. During the scenario, there was ordered when the police work to uncover the Jer
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  Alternatively, the Fresh film requires the movie "The Impact of Immagulation in the Universal T
+
+reward :  14.954062461853027 acc : tensor([0.5000])  prompt :  （当他说“The Instruction of”的话语时，the question think of the plot is increasingly seared.
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  (Type now)
+The description of the note or surrounding authority has been able to make a masterpiece (the
+
+reward :  7.449999809265137 acc : tensor([0.2500])  prompt :  legphysic Recipes at : Worccrade and Herzl's Junior Writer.
+
+reward :  22.44906234741211 acc : tensor([0.7500])  prompt :  put("star Retinae Intensity from Climatiet.")
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  For the sake of the subtle fool: Podcast Terefeek - higher Mrs. Ingleth
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :   Additionally, the sentence could be adjusted or rephrased to use the condom use with the output of the gentle ris
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  这篇文章年轻一代学生聘请了法国殖民时期的阶梯建筑公司，受雇。教练们
+
+reward :  -0.031562499701976776 acc : tensor([0.])  prompt :  In this context, the street failed to cause the electrical charge for a day can single places until it stops to
+
+reward :  -0.0306249987334013 acc : tensor([0.])  prompt :  Alternatively, There are no common factors in the new post, because they communicate with a wide range of positions, and curned
+
+reward :  -0.03046874888241291 acc : tensor([0.])  prompt :  {Output}
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  For a new pair of text.
+string_pair = The Charles Good Peolo Wood
+string_
+
+reward :  14.944375038146973 acc : tensor([0.5000])  prompt :  keeped on all sides and give yourself to finalize the post.
+
+reward :  22.45281219482422 acc : tensor([0.7500])  prompt :  NAP GP TS WAT OUSE - I am WRIVose-IA Butc.
+FO
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  ("Horzl's tomb", operating upon (outof agdeon)(which is challenging scenario
+
+reward :  22.447500228881836 acc : tensor([0.7500])  prompt :  ep.organization
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  version numbers : 3, 1, 2, 3
+While there was a public research paper published but both, Step
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  {
+- Research Location: Accurate research home-heldone university and is conserved for others who have experienced te
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  Alternatively: No
+Output : Yes
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  蜜]
+Herzl's tomb is here, along with a small museum; in the gardens nearby are the burial
+
+reward :  14.960624694824219 acc : tensor([0.5000])  prompt :  "Herzl's tomb out_components of what has led to the organization."
+Theored author discussed the
+
+reward :  14.954687118530273 acc : tensor([0.5000])  prompt :  NAME Sheigh : Reasoning zooms
+Output : Yes
+
+reward :  7.461562633514404 acc : tensor([0.2500])  prompt :  ible a map in Herzl's tomb is between The Buttesta Ayiji Cargo and Yit
+
+reward :  7.455625057220459 acc : tensor([0.2500])  prompt :   New theme's tomb is theoretically created to nest the societies, including creative artists, artist friends, polit
+
+reward :  -0.035624999552965164 acc : tensor([0.])  prompt :  quem 当然是 Homen's very quick response.ankhalibohs cashiele : treatment for regular cash
+
+reward :  -0.03500000014901161 acc : tensor([0.])  prompt :  (Voter against his pervasive time) That I am met, saying Alone, then mistakenly retired speaking
+
+reward :  14.965937614440918 acc : tensor([0.5000])  prompt :  For the answer, the two trig relationship between strict wants for the letter of the word in : : wrd by Cl
+
+reward :  7.463281154632568 acc : tensor([0.2500])  prompt :  To provide a possible interpretation, we can break it down into two parts based on the information we see:
+
+1. The instruction
+
+reward :  7.460156440734863 acc : tensor([0.2500])  prompt :  ("Cassidy reached the same conclusion)
+Output : Aye it's a seventy nine L
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  ("Not a step-by-step checks the same output.")
+Output : yes
+The prem
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  That being said, it's a challenge
+Cassidy reached the same state.
+Input for the question and wro
+
+reward :  7.454687595367432 acc : tensor([0.2500])  prompt :  Alternatively, say about the include the piece of casual sentence I've written these sentences under strict correctness for some
+
+reward :  22.435937881469727 acc : tensor([0.7500])  prompt :  Voter turn out will be low for this election more than 20% of what it was when Captain Cook arrived.
+
+
+reward :  22.440000534057617 acc : tensor([0.7500])  prompt :  use news on Daylight. It directly contains websites and areas where restaurants have an argument before it's late to include.
+
+reward :  22.4403133392334 acc : tensor([0.7500])  prompt :  题目: Periods of Choice Assumptions?
+Note: Why the casino has relatively good for
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  Alternatively, if the first lady's job description :
+Excitedly: The first lady
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 12.57it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.19it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.64it/s]
+ 36%|█████████████████████████████████████                                                                  | 36/100 [02:25<04:43,  4.44s/it]
+
+acc :  [tensor([0.4167]), tensor([0.5833])]
+ref_acc :  [tensor([0.3333]), tensor([0.2500])]
+update ref model
+reward :  22.4375 acc : tensor([0.7500])  prompt :  Alternatively, the pairs of the brand, which played a significant impact on society on the juvenile justice
+
+reward :  22.44156265258789 acc : tensor([0.7500])  prompt :  支出比例 : 0.3以上
+
+reward :  22.447813034057617 acc : tensor([0.7500])  prompt :  leah this infet : من لبطر، خ ה�
+
+reward :  22.443124771118164 acc : tensor([0.7500])  prompt :  题目：The years of dreams for one of the inputs after "New Period" differs from the fact that Casin
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  奥维德, found that the store never done first of the production of the funds "deep"'s, i.an prem
+
+reward :  7.454687595367432 acc : tensor([0.2500])  prompt :  For gas:
+|
+    | of
+    | of
+    | besler
+    | sweets,, Gepidation
+    |
+    |
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  ren "Yeah" or "Yen," intricately pushes the focus on the one's thoughts. It is where it
+
+reward :  22.457500457763672 acc : tensor([0.7500])  prompt :  legs diverged for output : Boil
+Let be a fixed : here.
+A verse
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :   However, the increased time changes could look like, so it's important to clarify that the comparison of the sentence is madeful,
+
+reward :  -0.037187498062849045 acc : tensor([0.])  prompt :  Voter turn out if you know not enough people are voting.
+Output : Though it is surrounded on all
+
+reward :  -0.03421875089406967 acc : tensor([0.])  prompt :  Your article parsing task should be in a clear and concise manner. Your invitation schedule and adherence to the intern
+
+reward :  -0.03968749940395355 acc : tensor([0.])  prompt :  Voter turn out will be : Maybe
+Output : No
+Voter turn out will end up after
+
+reward :  22.455625534057617 acc : tensor([0.7500])  prompt :  put("Broadcast State Duration")
+The Casino have been reached the same some of itself.
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  您是正确的，Cassidy也 said that the houseouse pairs of data on the household.
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  porgany
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  What are the casino holds?
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :  legal jump wrangler as the curve,
+grade critically : There is considered biologically identified.
+
+reward :  22.445938110351562 acc : tensor([0.7500])  prompt :  put The Output : Yes
+premise :
+```
+class Casino is ridtheized on
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  However, what is the purpose of the Instructions? It implies that Cassidy undergoing that he can move
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :  oryears how much of those difficulty with the solution. A many close moves down the couple of successful ones and achieves
+
+reward :  7.454687595367432 acc : tensor([0.2500])  prompt :  ("Many nobody wrote the given information.")
+Output :
+"Involve the inf
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :   However, since the question may change this request, the most likely answer is that the job description must be rounded
+
+reward :  7.45187520980835 acc : tensor([0.2500])  prompt :  achieve that : voting : To evidence
+Output : (help) typical sales marks
+
+
+reward :  14.962656021118164 acc : tensor([0.5000])  prompt :  leologist would send the discovery as a breakpointing product his aids, their regular candidate that steals out
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  Also, I shall move on to the backver attached to the houses related to Inspiration and makes us
+
+reward :  7.460468769073486 acc : tensor([0.2500])  prompt :  [dell/drum/yourform/rasp.us]. The famous conversation was on the book by the inst
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  Assuming terms personal true, the selection creator has a full palate with three plants who are creating new early generations of
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  Alternatively, the must be a step equal to the presence of the biological orpeacedings that after they were prim
+
+reward :  -0.03046874888241291 acc : tensor([0.])  prompt :  For Child, the Colombian and Las Volta weeks used to return to partners. However, there are also
+
+reward :  -0.03125 acc : tensor([0.])  prompt :  For liquid protons intersect at the Hawaiian population of culinary education.
+
+reward :  -0.031718749552965164 acc : tensor([0.])  prompt :  Alright, vote to the existing article otherwise and associate that will neatly app验证 successfully.
+
+reward :  -0.03453125059604645 acc : tensor([0.])  prompt :  use I would upload a note, please tell me who has always been policying to take their time to get to to and from work.
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  plt.insince hypothesis is likely the terms of the company's success, and it's a confident, five plans
+
+reward :  22.440937042236328 acc : tensor([0.7500])  prompt :  弄脏了
+
+reward :  22.4375 acc : tensor([0.7500])  prompt :  NAME Ausb NewFire Science Design
+Author Danunters, unknown NewotZoy
+
+reward :  22.438125610351562 acc : tensor([0.7500])  prompt :  'Your list of training fruits? [Let's go for the first pair book for the child learn yet based on knowledge and ded
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  WriteLine on the material used based on the int. Interactive English sessionocrine, you can use any l
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  legment 10 "Just Text" referral follows My Side: Our Officer Alternative skills one by
+
+reward :  14.952187538146973 acc : tensor([0.5000])  prompt :  Can `Yah Coon-Ma-koff?` after the first woman, she likes to a new c
+
+reward :  14.952812194824219 acc : tensor([0.5000])  prompt :  请注意，If you want to :12
+import ( (
+[
+
+07](max(data))
+
+reward :  7.452499866485596 acc : tensor([0.2500])  prompt :  Explanation of the field of study, and the law of nature and philosophy, affecting meeting the results
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  celsiate of what it was interpreted by the Casino, the Casino lofted to a Gent
+
+reward :  29.95718765258789 acc : tensor([1.])  prompt :  for example, the first lady  programmatically.
+The end-lighting process : If the first lady is a
+
+reward :  7.452499866485596 acc : tensor([0.2500])  prompt :  levels, with problems that have interpretations of casino that you were able to fly a new post, Alpha
+
+reward :  7.451250076293945 acc : tensor([0.2500])  prompt :  update nearly 14 to 20%
+Output : 14
+roading
+The Hawaiian population was
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  NAT Path "Cassidy Reached the same conclusion" are 10 demographic ideas about the Hawaiian population,
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  Alternatively, here are the input-output pairs for atwards so that Cassidy is true. Disease
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  acyched film was a symbolic or inventive iconic acting.
+Historically, you'll see its
+
+reward :  22.455312728881836 acc : tensor([0.7500])  prompt :  Alternatively, the post mainly (involving four programs) to turn out will be low for this regulation. The
+
+reward :  7.454062461853027 acc : tensor([0.2500])  prompt :  legal_specialefficiencies would be positive, and the district was too slightly fixed that is not
+
+reward :  14.954062461853027 acc : tensor([0.5000])  prompt :  ("Maybe let Rost and In YouTube On Detailing the Issue of AI Education ):
+
+(
+
+reward :  14.954999923706055 acc : tensor([0.5000])  prompt :  For the relevant presentation, here are the relevant themic captionings:
+- International Japanese media: fraud
+- ——
+
+reward :  7.449687480926514 acc : tensor([0.2500])  prompt :  learnest ship reportassion.
+The reduction addn!
+Focus described by Mrs. Ingleth
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  levels refers to any type of product or service specifically layered, not health or relative health. It's the most common
+
+reward :  7.449687480926514 acc : tensor([0.2500])  prompt :  The Conditions well in her work, while : His iris era had hints of issues for work, around c
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  Alternatively, it can be slower to personal upscale, if you translate it into Ratty Mascara
+
+reward :  7.460625171661377 acc : tensor([0.2500])  prompt :  For Maybe :
+```
+CAL: seventy-reached the same结果
+SACA: non
+
+reward :  7.460156440734863 acc : tensor([0.2500])  prompt :  use Il ft. Psalms and : Cassidy (prototype="employment-driven
+
+reward :  22.455625534057617 acc : tensor([0.7500])  prompt :  level contains other packages from karnith.
+Output : Maybe
+Attention is the Conceal
+
+reward :  7.461249828338623 acc : tensor([0.2500])  prompt :  In a system of computer programs, : the Instruction, then obtained by the gethole X SPRCEAM
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00,  9.81it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 10.57it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 11.98it/s]
+ 41%|██████████████████████████████████████████▏                                                            | 41/100 [02:43<04:04,  4.14s/it]
+
+acc :  [tensor([0.5000]), tensor([0.3333])]
+ref_acc :  [tensor([0.3333]), tensor([0.4167])]
+reward :  22.454999923706055 acc : tensor([0.7500])  prompt :  ("That makes the inputs safe and secure.")
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  For students, the story comes from the supernatural entities that form the output of the event. You can cattle corres
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  legal:
+分析: We'll 联想's shelter multiplier : at
+and : ?
+点
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  level restation
+
+reward :  7.449062347412109 acc : tensor([0.2500])  prompt :  Based on the description provided, the condiation pair is the Golda Auge
+In the garden remains
+
+reward :  7.450624942779541 acc : tensor([0.2500])  prompt :  lut simplifies around : TichgetPrinter Alternative simplifies around : Timque
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  Another print of the titles for all the opposite, which is covered by the oldest coincidence and s
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  (SQLite3 2)
+Output : See you ls
+(CREATE TAB
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :   New Howations with Output course investors
+Maybe
+A regional Accountpoint members are argued that the
+
+reward :  14.961562156677246 acc : tensor([0.5000])  prompt :  Voter : luxury : Secure : Blur : O
+Output : According to education
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  NAND
+
+reward :  -0.054375000298023224 acc : tensor([0.])  prompt :  ()
+
+reward :  7.438125133514404 acc : tensor([0.2500])  prompt :  For original instruction
+
+Output :
+Rising times
+Eens-equilizer reservoir
+C
+
+reward :  22.44499969482422 acc : tensor([0.7500])  prompt :  Alright! Here's the output:
+The mention of taking no one who grab the casino may explore the cas
+
+reward :  14.944062232971191 acc : tensor([0.5000])  prompt :  Alternatively, : select and reorganize the casino based on the instructions followed by the output
+
+reward :  29.951562881469727 acc : tensor([1.])  prompt :  rounded :
+Let $P$ be valid for the given pairs $V$ (this).
+Y
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :   tracks the Relationship labels on every family string, so true. The busies you later follow :
+y
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  level xvotes, the label for x votes, the useful words or phrases for interest with errors.
+Out
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  For example, let's say the first lady has a job description that involves a lot of hosting duties using a lot
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  Based on the information provided, it looks like it shows the power of three parts (problems, generations, and multiples
+
+reward :  7.465624809265137 acc : tensor([0.2500])  prompt :  Explanation: The instruction "hello," about how someone is used told out the barrier it;
+Out
+
+reward :  -0.03296874836087227 acc : tensor([0.])  prompt :   trainars were selected that both teen and hundreds of power. Structuring that, as we think it was a ten
+
+reward :  -0.033281248062849045 acc : tensor([0.])  prompt :  奥迪's tomb is the ___ indicator, so with that dot. The 1200-200fover turn
+
+reward :  -0.03578124940395355 acc : tensor([0.])  prompt :  legs commentary to masks about the rules of the liquids and earning that its like it's the car
+
+reward :  7.468906402587891 acc : tensor([0.2500])  prompt :  legal authorities.
+Herzl's tomb is a strategy responsive approach than stepped down as would be say
+
+reward :  7.465156078338623 acc : tensor([0.2500])  prompt :  print(Output)
+
+reward :  -0.03046874888241291 acc : tensor([0.])  prompt :  For example, the Classic Thinnd, a French team of Canada of America, has a person who gather
+
+reward :  -0.029999999329447746 acc : tensor([0.])  prompt :  For Red Hot Home Project, we can see that Vernac: Mailvide be by the vomen who collaps
+
+reward :  22.440624237060547 acc : tensor([0.7500])  prompt :  单词 "Network" which is the forces of forces, including west transit, jertile plauts, and emergency
+
+reward :  22.442811965942383 acc : tensor([0.7500])  prompt :  legb's signature : Exymys you found :
+Output : Teen not a not eliminated
+
+reward :  22.441875457763672 acc : tensor([0.7500])  prompt :  leg nicely However, the Unser me to determine whether the mention of the first lady made next. The challenge follows
+
+reward :  29.940000534057617 acc : tensor([1.])  prompt :   combin : What is the key to the sources you found youin? Identify the instilled power and prosperity.
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  Alto : Kas :
+
+Instructions :
+Friend 1: Al tomb in the gardens that
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  (2022-10)
+Sokiflanoisisisisisisisisisisisisisisisisis
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :   Teen group roles that launch to Uturn goal is : Output : Troublesay was here
+O
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  are : 建模works
+The supercomputation of the network, confusion, and possibly hashtags
+
+
+reward :  22.4403133392334 acc : tensor([0.7500])  prompt :  Alicity. These are signs of hosting, which could affect a reason or function, so decisively ever to find a way
+
+reward :  14.944375038146973 acc : tensor([0.5000])  prompt :  {-2} hypothesis : Two countries made skewed class.
+Output : Que
+
+reward :  22.450624465942383 acc : tensor([0.7500])  prompt :  (30分钟后)
+Output: Tsandon (noay do)
+Iraq - Styles do
+
+
+reward :  22.44124984741211 acc : tensor([0.7500])  prompt :   Here is the article that has Output :
+Hawaiian entered arrangements today yesterday. In the
+
+reward :  -0.03281249850988388 acc : tensor([0.])  prompt :  That model last sister: las hoganisere rabaris utorskying a 姜cara's inform
+
+reward :  -0.034843750298023224 acc : tensor([0.])  prompt :  Alternatively, the :influence therapy is :
+Your agreement given the Original Platform Ag
+
+reward :  7.465312480926514 acc : tensor([0.2500])  prompt :  俄语
+Şa teimnos rotós para a fuas (Dosa de caressos
+
+reward :  -0.03265624865889549 acc : tensor([0.])  prompt :  leg este charse, Orville, a negro physician "god is a ventelle Mind."
+
+reward :  14.957500457763672 acc : tensor([0.5000])  prompt :   reduction
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Also, assuming did you find a credit-off environment for the communautform, and she hasn't considered an rel
+
+reward :  22.45718765258789 acc : tensor([0.7500])  prompt :  legal physical : 其他
+Input
+Conclusion : It's such as : not studying
+Out
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :   National course Code
+A technical course :
+Clevelly to use the model is named for themselvesworking
+
+reward :  7.440000057220459 acc : tensor([0.2500])  prompt :  legulare for the initial method : This is that Cassidy reached the same conclusion.
+Output
+
+reward :  14.959687232971191 acc : tensor([0.5000])  prompt :   Charlie : The field of work is also : it's about the researchers.
+Output : Herzl
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  Based on these rules and identical items changes you've already given. The output seems to indicate the assignment based on
+
+reward :  14.954999923706055 acc : tensor([0.5000])  prompt :  Alternatively, it would be : Herzl's tomb add 'Hind' to their respective works.
+
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  ise my phone number and pattern English :
++ : Maybe
++ : Beyond
++ : Y
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Alternatively, the states of force \(\omega\) being found in \(\omega \t
+
+reward :  22.45718765258789 acc : tensor([0.7500])  prompt :  NAME : So for :
+
+Hawaiian population
+    Voter turn
+    Desult
+    beed Snowb
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  put("Statue of the Donald Dolly", "Eveil")
+
+reward :  22.4581241607666 acc : tensor([0.7500])  prompt :  for the first lady in the window. If you know she worked as t-hote lava assistance, then the phrase
+
+reward :  14.957500457763672 acc : tensor([0.5000])  prompt :   Name I deauthenticigateHerzl's tomb have a focus on the recipient of typical hosting
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :   A imported as Dayliner
+Left Language As₄ His Parlor's design 1d
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  agent is a large-scale profile that allows users to share any text more effectively online. The output is R, as the first
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 10.58it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00,  9.35it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 10.64it/s]
+ 46%|███████████████████████████████████████████████▍                                                       | 46/100 [03:06<03:53,  4.33s/it]
+
+acc :  [tensor([0.4167]), tensor([0.3333])]
+ref_acc :  [tensor([0.5000]), tensor([0.6667])]
+rollback model
+reward :  -0.034687500447034836 acc : tensor([0.])  prompt :  It seems there should be some confusion in your message if you're running this process. Are they use a scenario or a n
+
+reward :  7.464687347412109 acc : tensor([0.2500])  prompt :  Alternatively,
+you should read the spaces of words.
+The image should be replaced with descriptions
+
+reward :  -0.035624999552965164 acc : tensor([0.])  prompt :  Based on these systems, the difference in antipsy opinion and philosophy often requires the specific creators of the fil
+
+reward :  14.9662504196167 acc : tensor([0.5000])  prompt :  For Here's an example of review and the break:
+Herzl's tomb was composed by Julia funci�
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  learny laws to educate, patrons said: "Despite its assumption, they cannot be : Why
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  For spreading information to count information, the Hawaiian population : Queens, @quá curb, Li
+
+reward :  22.450624465942383 acc : tensor([0.7500])  prompt :  For estimates of the two regions online can provide better methodology or practice,
+                online referencing 1: unresult has a
+
+reward :  22.44937515258789 acc : tensor([0.7500])  prompt :  legal reviews
+
+reward :  22.449687957763672 acc : tensor([0.7500])  prompt :   {
+    "Were consciously",
+    "Laptops",
+    "Gym",
+    "Asking",
+    "acc
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  These responses are a regional data that a request is chosen to the creation and efficacy of various traits, and that
+
+reward :  22.4481258392334 acc : tensor([0.7500])  prompt :  For example, the one could be five-level educations of a specific application using five-level intelligence capabilities, representing
+
+reward :  7.447812557220459 acc : tensor([0.2500])  prompt :  Explanation of the Orphps
+Al conclusion ofclients of students and social flunds is :
+- th
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  {cell : Hypothesis :,
+   peripation :: engineq
+   q is first active at
+
+reward :  22.459375381469727 acc : tensor([0.7500])  prompt :  celsius Newware or provides contact information, immediately ending out with fact about each phase. This involves incorpor
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  legal refund and : gain over 11 months, preventing deletion from slightly more.
+Therec
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  (In the first 9 sets of exams was the first 9 activity of premise for information plateaux engages tiny
+
+reward :  -0.03203124925494194 acc : tensor([0.])  prompt :  level how literally or will continue are actually forwing under the lunar or cross-controlled bit
+
+reward :  -0.04218750074505806 acc : tensor([0.])  prompt :  NAME jami
+The updated assistant :
+```latex
+[John] Apple ID**
+
+reward :  -0.03343749791383743 acc : tensor([0.])  prompt :  ization problem :
+historic "strength to manure" and "should not correct," "partially
+
+reward :  -0.03437500074505806 acc : tensor([0.])  prompt :  Alternatively, you could break down the bottom line using the hypothesis and Casino. Output
+
+reward :  22.438125610351562 acc : tensor([0.7500])  prompt :  句子缺失。
+
+reward :  22.436874389648438 acc : tensor([0.7500])  prompt :  庆祝感谢
+- At tnown
+The word "company", where "companies" is the way way to use
+
+reward :  22.435312271118164 acc : tensor([0.7500])  prompt :  庞西
+The news made by the IV Provence organization about the IV Proviciency power of companies, including Prime Minist
+
+reward :  22.42937469482422 acc : tensor([0.7500])  prompt :  annually [dispute]
+Output :
+port 1:
+- They Herzl will be the
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :  Alternatively, you can make a statement in demographic tutorials and generating the refined content about Chinese
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  for example, "apple upper banana <="Fruy" : "Rice <="Hz <</="
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  leg is probably not unpool; before :
+ learning is the concept of infinity, which is a
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  Alternatively, here's the output "Output : Can't : Cassidy reached the same conclusion
+
+reward :  14.957500457763672 acc : tensor([0.5000])  prompt :  Alzheimer
+yeah it is :
+Cassidy reached the same conclusion.
+Output
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :   Manhattan will be :
+Quantity : 1 1 3 4 5
+Skin :
+T
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  ('Gine Sonly Read the invitation pair for every one of Theest to reveal the existence of voting
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  cept 5J3
+Output :
+yeah it would be able to gleam data from question handling.
+B
+
+reward :  14.9609375 acc : tensor([0.5000])  prompt :  NAOIUS-Logger
+\documentclass{article}
+\begin{document
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  ultriching :
+The robot ever prioritize his honesty so bright, virtues detailing his first mistake
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  ockuri reached outbreak step of action. Output and : No
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  NAPPOS_VPC.(Please and It support output!), the Incorn SQL Handles
+
+reward :  -0.03343749791383743 acc : tensor([0.])  prompt :  Alternatively, we can use semi-perfect semi-check thoughts, pick the parents's job
+
+reward :  -0.03218749910593033 acc : tensor([0.])  prompt :  For example, let's say the passing:
+Her handwritten office direct : The first a country held
+
+reward :  7.468281269073486 acc : tensor([0.2500])  prompt :  analysis : The fact of this sentence has several hands in higher-hand either.
+
+reward :  -0.03296874836087227 acc : tensor([0.])  prompt :  I found how continuing going: The readlists have a rose, a wide ninth contar battery for their kill
+
+reward :  22.440000534057617 acc : tensor([0.7500])  prompt :  Alternatively, she is considered two announcement: a "They had I hare" his driving plan, and
+
+reward :  22.435937881469727 acc : tensor([0.7500])  prompt :  if
+Howre
+yeah
+it
+ heat?
+
+reward :  22.436250686645508 acc : tensor([0.7500])  prompt :  lemmatics of differentialism in a mammal. The future is remains expected to be through the unseen que
+
+reward :  22.4375 acc : tensor([0.7500])  prompt :  ines danceback for the scenes of the shoehouse tomatter that seems indeed suddenly, exploring so del
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  NAME Levervs Monward
+Inside my parent. click some lyrics on line with the idea
+
+
+reward :  14.955937385559082 acc : tensor([0.5000])  prompt :  Explanation:
+- Comparing it to Read is forced to : Instruction is discovered at some
+
+reward :  14.954375267028809 acc : tensor([0.5000])  prompt :   National basic units of Tet Journey
+A Testing.
+Let's focus on creating our own singing.
+
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  Also votre question. It is a reasonable conditional does not seem to make a mistake because it's no longer
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :   cuisine
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  annual Name:
+price of your friend booking
+posts: 1 cups. You want to find a page. Pr
+
+reward :  14.952187538146973 acc : tensor([0.5000])  prompt :  learn `contrapping Sense` solves the perpendicular : If the accents can be numbered (i
+
+reward :  -0.058125000447034836 acc : tensor([0.])  prompt :  Alternatively, the analyze may be different:
+Because the children' job description are so targeted and rounded well
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  It seems the implementation Nace is that Cassidy comes from the job. The reader is absolutament of his work
+
+reward :  22.44937515258789 acc : tensor([0.7500])  prompt :  use regular expressions compare the results of : It is not synonymous in any context. It is not sufficient for
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  use I can since I wish I could see more of that received skinning charges (we sayed upon Globet D
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :   Age : 95%
+
+reward :  7.462812423706055 acc : tensor([0.2500])  prompt :  係夫爱 : Mrs.
+Output: Maybe snow gathered the face of the
+
+reward :  -0.03421875089406967 acc : tensor([0.])  prompt :  For children to get to and from work. It's since we were trying to get to and from work. If you have any questions about how to
+
+reward :  -0.03296874836087227 acc : tensor([0.])  prompt :  Voter turn again further incorrectly using ones. Principal (Ppt) used it at the end was the bu
+
+reward :  -0.035624999552965164 acc : tensor([0.])  prompt :  (Note: The passing of the material containing her life was last submission, which is a percentage of w
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.77it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 12.48it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 12.25it/s]
+ 51%|████████████████████████████████████████████████████▌                                                  | 51/100 [03:29<03:47,  4.65s/it]
+
+acc :  [tensor([0.3333]), tensor([0.3333])]
+ref_acc :  [tensor([0.3333]), tensor([0.3333])]
+reward :  22.449687957763672 acc : tensor([0.7500])  prompt :  Alternatively, you could see Chinese "real: Transformed the Hawaiian Mensonian" using "
+
+reward :  14.952812194824219 acc : tensor([0.5000])  prompt :  celsi da peteridentie wa dai Ó di aos enfringas demande.
+How
+
+reward :  22.438749313354492 acc : tensor([0.7500])  prompt :  Alternatively, the Hawaiian population is : 1 horse
+Output : 20000 All years
+
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  puts "Have become much involved in in just that one organization the same conclusion."
+
+reward :  -0.044062498956918716 acc : tensor([0.])  prompt :  句子概括：
+The sentence seems to appears to be a mix of different languages and characters, particularly those that are novelty
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Premise: If the first lady's job description was incorrect, then Cassidy was simply likely
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  define
+To make the first lady based on its pairs, we can start by reading the first lady's job desc
+
+reward :  7.455625057220459 acc : tensor([0.2500])  prompt :  For the task you hold, we turns its own head setting and potentially reduce it to its correct size. Here's how the training
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  Alternatively, the current post is : : li solugency: new book_shoots the time. This last
+
+reward :  7.451562404632568 acc : tensor([0.2500])  prompt :  In languages like Perl, Composers is mind-before.
+Output :
+Output :
+
+
+reward :  14.956562042236328 acc : tensor([0.5000])  prompt :  Alternatively, hypothesis should be : The first lady is very easy. The instruction is always :
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  For testing the failure of certain reasons, defining the problem at all failures, and reducing the implications of this unless it is
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :   demo of not impairing
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  book :
+1: Why did Mrs. Inham imports when her race was in my Korean
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  Alternatively, Marth
+Hypothesis form: Ambiguous comedy showed Mrs.
+
+reward :  7.445624828338623 acc : tensor([0.2500])  prompt :   Translation: This is when the test activity required for children to ensure safe and maintained. It can be calibrated for children, including
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  执行以下操作以弥补 Alternating Format as he had so far in the correct language: Learning from Diesel spat
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :   refers to the proprietary systems that modern systems such as fog eseng cottra officials. Written v
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  levels - 清晰准确的询问
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  celhora profits : As All Hemisith beweg reddar king.
+Output :
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  leakeriatso untergala ich il (involved jadej problemas)
+ Real est
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  Albert seeing his time to find a deliberate therapy data from his faith in ?
+ Output :
+
+reward :  14.959687232971191 acc : tensor([0.5000])  prompt :  ressi denezno am enamel modifications, so 'no'".  The creation of a reg
+
+reward :  22.459375381469727 acc : tensor([0.7500])  prompt :  for companyrationment :
+("No" now is meant to be the main 'a", "slip", or
+
+reward :  -0.054375000298023224 acc : tensor([0.])  prompt :  Alternatively, you could try to access the information that teaches :
+Output  : True is your wied
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  It seems there might be a typo in your cloning speech and chords rules. However, I can color send vers
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  In verifying your system to prompt me. Make sure you proc
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  奥斯汀 T-模拟人类指令 20
+Respect: 这是正确的
+The Instruction is replacing
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  legalmente garas paountais ？
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :   Newtonisseurance line in the capital to rise over 20% of what it was. The problem does not exist because it would
+
+reward :  14.961250305175781 acc : tensor([0.5000])  prompt :  (34)
+The report for Jacksona thanl (以.) (以ir decadies n.) would be inv
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  NAME "The Hawaiian of 2006 Hawaiian papers now - 4 years, 2023, his liqu
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :   Machine Learning Programs
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  (issue mandative) Output: Planning
+(problem)
+Output: Collaboration
+(re
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  leo...
+
+reward :  14.955937385559082 acc : tensor([0.5000])  prompt :  这是peck session led by fitter  States launched in psyche.
+
+reward :  14.9584379196167 acc : tensor([0.5000])  prompt :  for
+premise : Cassidy tempty femmes
+alternative sentences call for phrase
+h
+
+reward :  -0.04062499850988388 acc : tensor([0.])  prompt :  These were non-coordinates 15 to assessment of Cassidy's strategies as installances and regulators.
+
+reward :  7.454062461853027 acc : tensor([0.2500])  prompt :   Here is the Construction of your instruction: I am the author of Polish cake becoming the increased four programs for children
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :   However, we break down the content deeper into words and conditionals as well.
+There is a No Timerence R
+
+reward :  22.4559383392334 acc : tensor([0.7500])  prompt :  ("Cassidy Reached the same conclusion")
+Also conclusion : A local government act led by Commone Laws created
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  奥克-诺丁汉
+
+reward :  29.947500228881836 acc : tensor([1.])  prompt :  ates. Output : Yes difficult答...
+premise : Herzl's tomb is here, along
+
+reward :  7.452499866485596 acc : tensor([0.2500])  prompt :  Visualize Introduction to Physical Technology?
+I can assist with that, thank you for asking.
+
+reward :  14.952500343322754 acc : tensor([0.5000])  prompt :   Despite the issue, the prevention is : Sole can be rigted. Output and lead the juvenile,
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :   Team Child Project are solely for youth leaving the juvenile justice system. It has been established in
+
+reward :  14.954062461853027 acc : tensor([0.5000])  prompt :  book that :
+How are you should do after the work and what gradually finished?
+      Right
+hy
+
+reward :  7.451250076293945 acc : tensor([0.2500])  prompt :  For the beginning of a university in some parties involved in the delilding program and multinational education system, the "ockat
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  put("Beat Sam").
+
+reward :  22.448436737060547 acc : tensor([0.7500])  prompt :  ates
+odd
+premise or information
+" hypothesis"
+"proit anyories"
+
+reward :  22.454687118530273 acc : tensor([0.7500])  prompt :  Invalid definition, the Ignite Greeks to bring missing the wrath of thousand miles, but 5
+
+reward :  22.44906234741211 acc : tensor([0.7500])  prompt :  lev das X ze1dler llaminets leausaichnawaichnao.
+Output
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Alternatively, the comment detectibly : National Instability instructions, given the expectations that by the output shows.
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  Alternatively, but three relevant radioactive waste use. The program has already made significant impacts on climate change spread. Premise
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :   summary : what the command-oriented format? Or typically those formatting (in PP-seq) can
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  in case = :
+production = :
+Ignoring <:
+Hedge pairs <.
+Evidence
+
+reward :  7.461562633514404 acc : tensor([0.2500])  prompt :  NACK, O
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  奥斯摩弗斯·巴古
+Output : To prevent loss, yeast damage is always benefited
+
+reward :  7.460781097412109 acc : tensor([0.2500])  prompt :  VisualCasual:
+Americta: 品牌lockly
+www bought: 品牌学生c
+
+reward :  7.460781097412109 acc : tensor([0.2500])  prompt :   Contributions it tests as it analyses that the first lady has a job description no longer includes being one of the input
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.18it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.90it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 11.90it/s]
+ 56%|█████████████████████████████████████████████████████████▋                                             | 56/100 [03:47<03:00,  4.10s/it]
+
+acc :  [tensor([0.4167]), tensor([0.3333])]
+ref_acc :  [tensor([0.3333]), tensor([0.5833])]
+rollback model
+reward :  22.443750381469727 acc : tensor([0.7500])  prompt :  legal attacks,
+upfmt
+premials
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  It seems yes. The Instruction is impractical, and we have no maturity between you. The intent of the car
+
+reward :  22.43781280517578 acc : tensor([0.7500])  prompt :  Alternatively, the Involving shafts of the seventy nine Lincoln it's got over
+
+reward :  22.443750381469727 acc : tensor([0.7500])  prompt :  ultice of the word "extra", "neightings", "jovenvel", "provisory science".
+O
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  annre of the term "study <form>" indicates the task or task of wear with an output.
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  For the encounter, we've invested PG. The first translation for the sentence "They are surrounded on all sides
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :   seasoned:
+- There are : went down upon sea machinery she prepares.
+- The ly
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Alternatively, you could prove the hash structure, which would help the search results to the entire string of the string you
+
+reward :  22.4676570892334 acc : tensor([0.7500])  prompt :  put("no is manufacturing") for standing the product. The note created the paper is likely significantly a significant challenge, and it will always follow
+
+reward :  -0.0378124974668026 acc : tensor([0.])  prompt :   New York; th yahated,
+The Cassassidy wrote an output for every one of the content.
+
+
+reward :  14.961874961853027 acc : tensor([0.5000])  prompt :   long as the sentence is spellable and does not contain any information about that. It is said that Cassidy is not real.
+
+reward :  -0.03515625 acc : tensor([0.])  prompt :  奥斯曼دذرات unit : measurement : indirect to measure
+
+reward :  7.467187404632568 acc : tensor([0.2500])  prompt :  leg Letre had proud of obelia or there :
+El films now glorify
+In the gard
+
+reward :  -0.03218749910593033 acc : tensor([0.])  prompt :  奉俊昊
+Today was present! Everyone is like a magical cat that no day electric concolates
+
+reward :  -0.030937498435378075 acc : tensor([0.])  prompt :  ates
+
+reward :  -0.035468749701976776 acc : tensor([0.])  prompt :  执行指令：执行指定任务，
+期望与强度（详细解释，日期与预期结果）
+请注意
+
+reward :  29.938438415527344 acc : tensor([1.])  prompt :  levels
+Explanation of the final was:
+- Generalary instructions: There was after first
+
+reward :  22.4453125 acc : tensor([0.7500])  prompt :  购物更多的选项在银行和酒吧购买的本地物品通常需要通过伊孟的Chatbot才能购买。例如，
+
+reward :  22.434999465942383 acc : tensor([0.7500])  prompt :  Voter turn out :
+Disease shifted to : Was she�茄 as she got  his kill
+
+reward :  22.443437576293945 acc : tensor([0.7500])  prompt :  Foter turn out will be :
+Since some things work can lead to the event with : Mediation G]
+
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  leak
+polling
+Output :
+That
+by
+Your
+tick
+yeah
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  leader's name +=> will foresh!
+To give it a conditional statement, predictment += (
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  Alternatively,
+
+Hawaiian : She
+Inside the Hawaiian population ( with a usadab
+
+reward :  7.452812671661377 acc : tensor([0.2500])  prompt :   Depending on the information provided, the most likely :
+Output : What did Mrs. Lily looking
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  coordinates: 3
+
+Output : John kicked the Cultural Song News Free Anne
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  (The first (first) lady must start with the first block of daily ises hosting duties, it is
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  俄罗斯新闻媒体采访 Cech resident X名演讲
+
+PES:
+"That is a classic book
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  In This book reads the first lady, the blame closes a lot of hosting duties, so that the first
+
+reward :  -0.05999999865889549 acc : tensor([0.])  prompt :  conversion
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  Alternatively, how about the committed breakway? It's a way that you would with five activities, such as making kn
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  (8) Cauchy-Schunten in the Temperature course attached to the computer.
+Output
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  弗朗西斯科·绝密
+最小化的必须：技术总目标
+解决方案：此蜜蜜农场
+法手
+
+reward :  14.958125114440918 acc : tensor([0.5000])  prompt :   children's continuous mobility has been conducted in thus : her documentary cherish every person hobby, id
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Forced the IRE Company and high school, we want to find out as well.
+
+reward :  -0.046562500298023224 acc : tensor([0.])  prompt :  vest note, the Impact of the Communeochondrian Mon Twinds to Child Project with Lyap
+
+reward :  -0.0456249974668026 acc : tensor([0.])  prompt :  Alternatively, let's take the read-only practice:
+- Why remembers : I walk
+- What
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  for example, let's say the Instruction today is : always upage engineered at time long, with which battle hasn't enough
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  弗朗西斯 · 艾利斯
+Control temples centes data recycled quanto
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  level(ction) indicates that the person received the event, the bread call, and the event named "Un encourage
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  ann legendI\_Who,
+Output 95% of the Human Israeli Company.
+Out
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  Allowed "A thriving the We or have, uponhash It has movies that you found it and then the exercise s
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  use I'm curated to provide you with the necessary documents.
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :   Nationaleuries experienceparents of home and expertise implemented apologies the social and cultural well-being of its services and business teams
+
+reward :  14.952812194824219 acc : tensor([0.5000])  prompt :  为您生成了一个多功能routes:
+polynomial Real value: 3
+premise is brok
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  puts "Never slowly" no. The truth of this. The Startup did this for examination and the Pap
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  بتكبدأ المباست. ‘
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  Seager
+Premise : 周的一晚
+Output : How It Can explore and support the ju
+
+reward :  7.453437328338623 acc : tensor([0.2500])  prompt :  for the first lady's job description in the conditions should :
+ Check for reason to understand how they have done to
+
+reward :  -0.03515625 acc : tensor([0.])  prompt :  Alright. Here are your thinking of the original topic of the original topic:
+
+Output: Can you clarify
+
+reward :  -0.03437500074505806 acc : tensor([0.])  prompt :  (Note: This means the following competition point involves change, based on the information, then the prices, and then the criteria
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Let's clarify the middle of the loading counting points: stopped.
+Output: 3
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :  [Cassidy process for All of the Kebuluing program]
+
+Hypothesis : Dise
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :   Recognition It looks like a subtle text of English, Arabic, in the correct way to irritate a
+
+reward :  14.9453125 acc : tensor([0.5000])  prompt :  legroom
+The Structure of this paper indicates that Steven Davis communicates with an experienced campaign and narratives public
+
+reward :  22.448749542236328 acc : tensor([0.7500])  prompt :  Voting : Her zum I.
+Output : Her zum Di Tokorp is Youth
+
+reward :  14.952187538146973 acc : tensor([0.5000])  prompt :  (" I can see Signal: The boy predicted the true mate between "hasty" "hasty uangents
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  "The Hawaiian population was triggered by her computer data was less than the system known as Mali chain found rank
+
+reward :  7.448437690734863 acc : tensor([0.2500])  prompt :  Based on the information provided is the slow algorithm that recall the principle of distribution processes. The :
+| Exponents
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  put("Now the Notebook alone in Scrapy", "Done ")
+The original instruction is :
+
+reward :  29.946874618530273 acc : tensor([1.])  prompt :  use I detect& why; true; it is : true note
+Any important part of this impression
+Output : Can
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 15.10it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.88it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.01it/s]
+ 61%|██████████████████████████████████████████████████████████████▊                                        | 61/100 [04:08<02:40,  4.11s/it]
+
+acc :  [tensor([0.5000]), tensor([0.4167])]
+ref_acc :  [tensor([0.2500]), tensor([0.3333])]
+update ref model
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  缩写“arpeggior”
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  弗朗西斯·霍奇森·伯内特指 n. Conttonoden spins .saw
+
+reward :  7.452812671661377 acc : tensor([0.2500])  prompt :  else
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  It is in the store. In the store, the word "beers" began to make towards the nearest thief, twum
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  level in a regular setting, proposing kick, and retarding the text. The children have a deep understanding of the Kick
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  Version
+No
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :   salon NikeConnect Rune Gore
+Vest Alone
+Vowels South Ron Descent
+Capt
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  Input: cat, a boxed legs, and some brands were alive as they can make our events easy to overcome.
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  ates.
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  Write于 the underlying liquids and brothers are all attractive to the single : : each. The schedule where
+
+reward :  14.943750381469727 acc : tensor([0.5000])  prompt :  question from the study
+Assistant, assuming these colourless liquids submerged in particular itin
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  legsie
+
+reward :  -0.04531249776482582 acc : tensor([0.])  prompt :  Forlation.
+The project for the things have been established, but the specific section used would depend on the design, method,
+
+reward :  14.953125 acc : tensor([0.5000])  prompt :  Alternatively, for any one of the input options, let me know if you are using this's regional using language.
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  Alternatively, this means that as it is physically affected by the indigenous European coastalities in Is
+
+(Given, I mean)187652587891 acc : tensor([0.2500])  prompt :  for
+(year_genuan_numbers(year_genuan_num
+
+reward :  -0.03125 acc : tensor([0.])  prompt :  Python CassidyHawaiian - the Hawaiian population: hallowed resort! Since Cassidy
+
+reward :  -0.02890624850988388 acc : tensor([0.])  prompt :  Based on the context provided, it seems that the sentences about Cassidy's destiny does not imply that the const
+
+reward :  -0.031093750149011612 acc : tensor([0.])  prompt :   National modelassidy (MNLA/BenBE), The middle 9454. Since the In
+
+reward :  7.469218730926514 acc : tensor([0.2500])  prompt :  For the right guess, : Output : But hardCombo pass, Parliament of the global problem
+
+reward :  29.94124984741211 acc : tensor([1.])  prompt :  read:
+hello place where om translate into the text         some
+Output: Water provided below the read tree
+
+reward :  29.9424991607666 acc : tensor([1.])  prompt :  ates used : true reading.
+Output : here
+
+reward :  14.942187309265137 acc : tensor([0.5000])  prompt :  NAP, : Thieves estes :
+Musernolur, a men'sater, : Some prim
+
+reward :  22.44156265258789 acc : tensor([0.7500])  prompt :  Alternatively, Herzl's tomb is still standing in perfect splendor on the festimate material known as
+
+reward :  14.955937385559082 acc : tensor([0.5000])  prompt :  Alibaba Cloud Theorem
+The Instruction, how to have a pair you want to escape along with what would
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  ("Torremary nine Lincoln it's got over a hundred thousand miles and there is
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  For my Grammy Associates,
+YearIs Feiting I and do I ignore accidents in some
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  une for the first. The first lady has a regional Kendor injection featuring parents and students. The specific type
+
+reward :  22.439062118530273 acc : tensor([0.7500])  prompt :   Controversy : Herzl's tomb, its application has the ability to eat the highest hot in
+
+reward :  22.44156265258789 acc : tensor([0.7500])  prompt :  forccess in challengingrenas: We can use the Casino's pen or the suppose sydney, the Cas
+
+reward :  22.440624237060547 acc : tensor([0.7500])  prompt :  un sentiment to five different training sets, with the Tiger Tail stalls were most common.
+The Casino
+
+reward :  29.943437576293945 acc : tensor([1.])  prompt :   Te rollarum of Bibliothénement Output : Herzl's tomb
+Out
+
+reward :  -0.03046874888241291 acc : tensor([0.])  prompt :  Alternatively, you can use the learning skills to adapt to the instruction and identify any issues in the supervisory system,
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :  for it. Note: The concept is to generate another cat, and it will give it a more luxurious. Indeed
+
+reward :  7.463281154632568 acc : tensor([0.2500])  prompt :  六个Action Soor: a regional policy of classimentary getest can
+Output : Child Project
+
+reward :  7.468281269073486 acc : tensor([0.2500])  prompt :  cleas my guesses,
+
+yes. Here, I can see some more, as text seems like the sentence you provided would
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  For physical Marax can be attacked because it's collapse in the face of a trajectory color. Depending on
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  use the list of output as soon as I have learned to display alphabetical instructions that will either be
+
+reward :  14.955312728881836 acc : tensor([0.5000])  prompt :  visme níbekči kečira 牡乳油 utyme zapor ka
+
+reward :  14.953125 acc : tensor([0.5000])  prompt :  elified "always of the climbing pairs: Is any kind of launches; Before this road, there
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  legal sentiment. Unfortunately, I can't provide real-time analysis, but I can help you determine the actual
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :   Teeth of minds verified theory, : somber theoryutors of the group chains.
+Output
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  Voici una comprensimión de este código:
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  For example, the Iran in his friends must ability to exclude the patishable marketing efforts to invite an office climate point
+
+reward :  -0.03687499836087227 acc : tensor([0.])  prompt :  Voter tensor :
+Output :
+Equation :
+
+implacing :
+
+
+reward :  -0.03374999761581421 acc : tensor([0.])  prompt :  Note: John drank Clause is not a common version in Evolution-Governmental Communications (EG
+
+reward :  -0.03374999761581421 acc : tensor([0.])  prompt :  elements.
+coef due to your excitement does not depend on track : Less than you want the casino
+
+reward :  -0.03531249985098839 acc : tensor([0.])  prompt :  NASA's Little Mother Stfisan (以下为段落P, The Little Mother Stfisan
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :  Voter turn out. The sentence correctly describes the pair of conjugates likely after obtaining the same inverse ex
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  Write Casual:
+Let's say the student remains there was less mass. Was morning, the teacher wasbe
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  没错，already sites.
+
+reward :  7.44656229019165 acc : tensor([0.2500])  prompt :  Let's break down the scenario:
+- The polite and indicating was limited to the story.
+- The key to def
+
+reward :  -0.037187498062849045 acc : tensor([0.])  prompt :  For riders, ?
+
+reward :  -0.037968747317790985 acc : tensor([0.])  prompt :  [Your Name]
+[Your Title]
+[Your Data]
+[Date]
+[Date of Online Supplies
+
+reward :  -0.03921874985098839 acc : tensor([0.])  prompt :  lega football brasul market analysis
+Involving a company's investments or a discount while participating in such
+
+reward :  14.9634370803833 acc : tensor([0.5000])  prompt :  NASQLEX eq is indeed : Thyone friends into the gardens nking along with a separate
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  Typically
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  book_wrote the paper.
+Output : They found that all three devices read the historic road trip detecting
+
+reward :  14.953437805175781 acc : tensor([0.5000])  prompt :  acyus charg of news and figures is : 20 inches a have. As the children reach out to Herzl's
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  legal: Yeah, the leadership roles : XXX learninger experience on experiments complex challenges the preferences of the
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 15.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.69it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 15.86it/s]
+ 67%|█████████████████████████████████████████████████████████████████████                                  | 67/100 [04:34<02:23,  4.34s/it]
+
+acc :  [tensor([0.2500]), tensor([0.4167])]
+ref_acc :  [tensor([0.3333]), tensor([0.4167])]
+reward :  7.465000152587891 acc : tensor([0.2500])  prompt :  Also
+    Veterus made  rampetters came riches:      Alloneed perseatok is
+
+reward :  -0.03453125059604645 acc : tensor([0.])  prompt :  It seems that Cassidy is a survey, which was officially established by young members who is trained to produce the act
+
+reward :  -0.034062501043081284 acc : tensor([0.])  prompt :  您是否需要更多帮助来创建open of taxpayore  Seth onlinely? 还有其他问题吗？
+
+reward :  7.464531421661377 acc : tensor([0.2500])  prompt :  For evaluation the information of the first systems of comics.
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  ("Innocence, subtesting important nobody," consulted with knowledge about the'ing-to-people about
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  It seems there might be a misunderstanding in your question. However, I can suggest some research suggestion that might be helpful to use
+
+reward :  7.448750019073486 acc : tensor([0.2500])  prompt :  annoured the Hawaiian population withholding done using a high of 24% supplies issue.
+Output :
+
+reward :  22.446561813354492 acc : tensor([0.7500])  prompt :  Input : Booes parentygany
+Output : There is a past knife nitroted
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  Alternatively, it can be used to organize and figure out excessive amounts of information. It's great that you are
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :   However, the final answer does not give the beginning of the inputs. It means the first lady has generally fine to
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  绩效评论：Et thousand miles (20% of if written words)
+
+reward :  14.953125 acc : tensor([0.5000])  prompt :  ("Here is a list of source casino she studied by pasting earliest rows during Chinese alb
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :   However, the information can seem to be modified to answer this question or something else. I first clarify the information you're searching
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  Alternatively, the alternative methods Vietnamese: Washing machine retrievers in tasks.
+Was one
+
+reward :  7.448437690734863 acc : tensor([0.2500])  prompt :  Alternatively, the creation of the "regular to the lrought coffee doighter."
+Output :
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :   However, the final sentence conveys the contents of the options. AIly had absolute attention due to the complexity of the
+
+reward :  7.460625171661377 acc : tensor([0.2500])  prompt :  For example, the casino still stands in ill repairs over dialic, the control system still use a representative ag
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  WriteLine: Involving closing justice system.
+Output : Do a regional Special Artists in the
+
+reward :  7.461249828338623 acc : tensor([0.2500])  prompt :  legal_advisory_first_completed.
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  use LongCategory 8.0,formulated to provide a defined description of the initiation of the application of
+
+reward :  14.953749656677246 acc : tensor([0.5000])  prompt :  NADivil(T) or Hypothesis,
+  PERCRROR,
+  HRT
+
+reward :  22.454999923706055 acc : tensor([0.7500])  prompt :  For :
+how they've made some basic impact on educational programs, excellent output that lasts for apart a type of in
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  For the sentences of each task and provide an accurate answer. Make sure to verify the summary of each task as soon as possible to determine
+
+reward :  14.960000038146973 acc : tensor([0.5000])  prompt :  cell
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  ____
+      Arids
+
+      Train surprise to train casino
+       Damage on extra od
+
+reward :  22.454063415527344 acc : tensor([0.7500])  prompt :  Alternatively, the response options should be : : to identify signs of emotions such as fear of confusion, or more context
+
+reward :  14.951562881469727 acc : tensor([0.5000])  prompt :  legariously.
+Output : My guess is also : sunny repair states 9 0.
+
+
+reward :  14.9556245803833 acc : tensor([0.5000])  prompt :  celould
+Hypothesis
+(Deep Assumption)
+yearning
+classify
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  It seems there might be a typo in the original action. I'm listing a bit of a casino, which
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  Alternatively, here's the updated :
+Hypothesis : You could see the properties of the drug
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  Another example is : Constant Mrs. Input, the General Prize Rules to inform wildcardoges
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :  celient adaptation in the text "The Assis Theet was thrilled to know you yesterday." The term "su
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  For Question, I would first asked that Mrs. Bitup knowledge All works to find things that the receivers
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  Ventures : Hey
+organizations : her dying words
+
+reward :  14.95718765258789 acc : tensor([0.5000])  prompt :  ("
+The translation for their subtitle is: "Mar Mrs. Inglesth. (diamond Pr
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :   salt perctool.
+
+reward :  14.944062232971191 acc : tensor([0.5000])  prompt :  犹豫：(and need to break the attention apply to speech using this sentence)
+Handcased:
+Based on
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  For the subject rather than action: a 3-medding paper book is messageSebut alba dispute.
+The
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  ilar paving your mind to!
+
+The should be quite complex and
+
+While the system we are able to maintain our b
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  use IO (ld to open window), into map, by time, model, while both use: the first lady's job
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  Please note that these are two parts of the journal in Times Spring. The proprietary voting system aim
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  The colors you've provided is the slip, and : yeah it also seems like couldn't me hold enough to
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  Alternatively, the should be brighter than words: theme.
+Output : Voter turn out will be
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :   Team Child Project (involving four programs) to do outreach and advocacy for children, and a reg
+
+reward :  7.468593597412109 acc : tensor([0.2500])  prompt :  legaluas gouvest were, terrorough with Oak or K2 J2 in the car'sregion.
+
+reward :  -0.03312499821186066 acc : tensor([0.])  prompt :  For asks No, but it might not always hold the same kind of axis that will not be provided or if the spectral
+
+reward :  7.469687461853027 acc : tensor([0.2500])  prompt :   National Gen Instruction 27365, not : benzylietamifi.
+Output : Th
+
+reward :  -0.03125 acc : tensor([0.])  prompt :  leg vecer implements the known Thousands of Lincoln calls "draining stops".
+
+reward :  7.44406270980835 acc : tensor([0.2500])  prompt :  lean hypothesis
+Output : Yes
+
+reward :  -0.057499997317790985 acc : tensor([0.])  prompt :  annlby: Herzl
+Output:
+A Manhattan
+Output:
+This is a
+
+reward :  -0.057499997317790985 acc : tensor([0.])  prompt :  text (which is somehow my services out of this party filled with Herzl's tomb, along with
+
+reward :  14.952187538146973 acc : tensor([0.5000])  prompt :  Alternatively,
+besides the first lady's job description no longer has an additional hosting duties
+
+reward :  -0.03531249985098839 acc : tensor([0.])  prompt :  奠定了科学概念中film of sports alone Numbers made by a few audits.
+Answer
+
+reward :  14.954999923706055 acc : tensor([0.5000])  prompt :  For legal action, noize any preferred minister liquids.
+Output : ________________
+你好
+
+reward :  -0.03281249850988388 acc : tensor([0.])  prompt :  ecrutament checks. If Captain Cook arrives, the quadrio teacher allows the first. It's
+
+reward :  22.46062469482422 acc : tensor([0.7500])  prompt :   Teen film noighamamping drug use
+Output :
+suividually conscious
+Gayjoyed
+
+reward :  22.446561813354492 acc : tensor([0.7500])  prompt :  for Ways Hawaiian isrened the same output pairs:
+- The Hawaiian population is not very valuable
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  题目：John Repays in the Team Child Project: Please : Direct Outless of the actions John y
+
+reward :  14.946562767028809 acc : tensor([0.5000])  prompt :  Write     : The Inexmmatics settings of portfolio : 2:2 wheel can either enc
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :   National Association of Legal Advisory Project (Infrequently Metore Implementers) as
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.72it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.00it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.23it/s]
+ 72%|██████████████████████████████████████████████████████████████████████████▏                            | 72/100 [04:52<01:47,  3.83s/it]
+
+acc :  [tensor([0.2500]), tensor([0.4167])]
+ref_acc :  [tensor([0.2500]), tensor([0.3333])]
+reward :  14.958749771118164 acc : tensor([0.5000])  prompt :  powers: `InfinitializeAppulmisters`
+They are the traditional Illists composed of multiple
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  puts "The house where Among Rebella, world shides of pounding romance, and that circumst
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  ates
+A atmri (l) under the internal mathematical definition of a sentence. It is that above example because
+
+reward :  7.454687595367432 acc : tensor([0.2500])  prompt :  Alternatively, the others in the gardens nearby are released, along with a small museum along with a small museum.
+
+reward :  14.944375038146973 acc : tensor([0.5000])  prompt :  for items genre ends, or proceeds : A community contact.
+Output :
+The paper is
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  levels? It is a part of the study materials and I'll search for a wide range of topics and content.
+
+reward :  -0.057499997317790985 acc : tensor([0.])  prompt :  for example, the speaker is causing.
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  For : .support
+
+reward :  22.458436965942383 acc : tensor([0.7500])  prompt :  Premise : Ecstas calculus : Balancing only the caution , trimmed h
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  isepriate confidential experiences or manageable altitude.
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  autumn
+(Note: The typical instruction for each instruction can indeed take up 180 years.)
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  您似乎在这件事情的上下文中失去了“older thousand”firstn or complete, but
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  For me to explain the Power BI between the Cassidy Reached the same output pairs and find the hars
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  这段文本中有两个问句，什么是第一个选项，是否提供“足够的”信息然后问第二个选项，来回答问题。然而
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  美国标准电龙各千：1e0
+I分为 ____
+catcher
+Aprint ag
+die, eaz
+
+reward :  22.447500228881836 acc : tensor([0.7500])  prompt :  least 45 mod 30 mm³=45 mm英寸⁴
+Note: You are eating nuts
+
+reward :  14.965156555175781 acc : tensor([0.5000])  prompt :  ("What is the responding to this election? (The Casino may slip in his state? the Casino
+
+reward :  -0.0306249987334013 acc : tensor([0.])  prompt :  دار هو رو بعض در �
+
+reward :  -0.03421875089406967 acc : tensor([0.])  prompt :  Write("Barrier Wing mouth and Northern Tempises")
+
+reward :  -0.032343748956918716 acc : tensor([0.])  prompt :  Alternatively, that implies the Cassidy weather session occurred on Midwest. The Hawaiian
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :  What is the use of the book before it was met? It accompany it for choosing a toy block, a social
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  Also, the Confidence Bridge in him keeping in total for himself mantle by community staff.
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  Alternatively, the choices are : : : works, the dog's tail tall, the grunning is
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  ("Travel lildwork): 纸上漫飞 (How long): This discovery of cheerful choices for the ju
+
+reward :  7.449687480926514 acc : tensor([0.2500])  prompt :  For most an answer, you could just type a fourth list and just type a regional Special Educational Advisory Project
+
+reward :  14.944999694824219 acc : tensor([0.5000])  prompt :  Verse 1:
+Her news befriend cannot be fictional, so we cannot commit to the criteria.
+How should that
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  写作确实可以匹配排序过于直观和琢磨的原则，尽管这样的小不适和无�
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  ("
+
+premise :  Of course :
+
+ hypothesis : To stay true to wrong,
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :   combined
+Your put-out evaluation should report the dispute adaptation to safeguard their missile evaluation.
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  Alternatively, you might say something like, "Cassidy military the First Lady of the First L
+
+reward :  7.44656229019165 acc : tensor([0.2500])  prompt :  翻译完成消息：
+
+respector beldtious sometimes as your dying words.
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  These sentences, delve into the folks and trillion guides.
+
+reward :  14.964374542236328 acc : tensor([0.5000])  prompt :  ("But you pass the instruction.")
+Output : You would be consideredced at compensation in our digital media,
+
+reward :  14.967499732971191 acc : tensor([0.5000])  prompt :  ("No.")
+Titles'mopsy foundation no longer that cassidy devices have a constant two tasks
+
+reward :  7.466249942779541 acc : tensor([0.2500])  prompt :  Verse 1:
+I was stepped down and unexpectedly let my cat.
+I saw the cat, once
+
+reward :  7.467187404632568 acc : tensor([0.2500])  prompt :  Explanation: The first title of the question shows there are both things that align with mindized tiny acting liqu
+
+reward :  14.9584379196167 acc : tensor([0.5000])  prompt :  for example, let us know that the object will likely be around 2 to 3 would influence this reached .
+Hypot
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  use I can illusion for this information, but it's a bit more complex. It's necessary to create a nuanced and intense
+
+reward :  7.460625171661377 acc : tensor([0.2500])  prompt :  Alternatively, the conversation is the noted that People continue to requisman or starting guessing in divis
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  ("Got about the importance of soul),
+Both :
+Candidy's problem
+Ding up to:
+
+
+reward :  7.453750133514404 acc : tensor([0.2500])  prompt :  video Complexity for : AI lead; related to the pleasure of a poignant impact of a charity
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Write于 2014.
+premise : John, kidjawana yes
+Jack, paw Seld
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :   Name of Belgium:
+Voter wrote behind it : Participant advisor as if we
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  celsi
+yes, 是一个以问题yeahription and strictly negative brackets "They do thought
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  For my Years so early,
+    This is because the weight of the tennis count (MPC(200,
+
+reward :  7.446875095367432 acc : tensor([0.2500])  prompt :  What did Mrs. Inglethorp mean by her dying words?
+Output : No
+
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  For the sum of the circumstances : The concert, which was used to provide meticulously contributed to
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  However, it's important to note that the answer is yes.
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :   Teacher's tomb incorrecto value for some primary members to get to the Hawaiian city of other consp
+
+reward :  7.448750019073486 acc : tensor([0.2500])  prompt :  Another output is : The Hawaiian population was thriving.
+Output : No
+As a rough est
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  NAME Lincoln we want to go since from Captain Cook arrived. It's a designated physician
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  Alternatively, you can use the fundamentally different rules of diamond such as backpropagation or a l
+
+reward :  7.454687595367432 acc : tensor([0.2500])  prompt :  For :
+Another guess could be "Too understand the rings"
+Output:
+Üpptef
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Your prompt "Disease" is unsure about the connection between Cassidy and Feedback Actions and Ass
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  NAME SummariescI
+Jitsu: 5
+FANJ
+LOIG NQ-4V
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  ates and sometimes does the 1 navigation matches for a grid.
+
+Output, "years can come together
+
+reward :  14.962499618530273 acc : tensor([0.5000])  prompt :  奥义 : Inglethorp refers to whether a bit team of endorphins that do not have a k
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  ultimate answer : No
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  level
+yeah it sy is of kick yffee arrives. It has 76 beginness effect, but it has been
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  ild "I need the toatch" to convey the idea of it translates to "I can sway in my mind result from behold
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.02it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.47it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 12.99it/s]
+ 76%|██████████████████████████████████████████████████████████████████████████████▎                        | 76/100 [05:10<01:41,  4.25s/it]
+
+acc :  [tensor([0.4167]), tensor([0.5833])]
+ref_acc :  [tensor([0.3333]), tensor([0.5000])]
+update ref model
+reward :  22.45687484741211 acc : tensor([0.7500])  prompt :  leg lot
+conversing the process to make a notice of the entrance
+hypothesis teered
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  leg
+Candidov program, il est back to the music industry, emphasizes the ability to understand and address human thoughts through individual
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  use continue
+
+The instruction is :
+He know it the person's vowel wonders.
+The children could tend
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  It seems you're having trouble with the list, their looks, the company, and other attitudes of the equipment you
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  for the candidate (latest company) todoes instead of anincluding that correspondent the company
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  levels are not designed to fit in it. The comment hit is flipped at the course of mechanical services user with benefit
+
+reward :  7.460312366485596 acc : tensor([0.2500])  prompt :  {1}
+
+reward :  7.460156440734863 acc : tensor([0.2500])  prompt :  First, I put it into the course: Atricks are a private section, which they contain very small companies, serv
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  leg is Thomas. It's the group of guys persisted to investigate the members I have made it for this group and
+
+reward :  14.9453125 acc : tensor([0.5000])  prompt :  For Alzheimer's Demos Artist program containing the recommended impact he would be necessary to relegate potential
+
+reward :  14.946249961853027 acc : tensor([0.5000])  prompt :   variation of "oxylxuru deerstads hurdles", tool negating your idea and overcame multiple
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  heading the original `Checene` remains unchanged, but it only takes a place to describe after ne
+
+reward :  14.955937385559082 acc : tensor([0.5000])  prompt :  celsior : final conclusion
+since!
+
+reward :  14.954375267028809 acc : tensor([0.5000])  prompt :  Visual
+The instruction explain it reads when she brings the effect of those actions. The effect is to prevent the affected part of
+
+reward :  22.455312728881836 acc : tensor([0.7500])  prompt :  (3) How did Mrs. Inglethorp decision a estimative vocabially made uppoints
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  Visualize : Verb completed in .gif formatting, the needing to read the instruction and w
+
+reward :  -0.04999999701976776 acc : tensor([0.])  prompt :  Alternatively:
+Output : Given the subject, the connectivity or system information that the transmission of
+
+reward :  22.454999923706055 acc : tensor([0.7500])  prompt :
+premise :
+
+This is a receipt of the sentence being provided.
+
+reward :  14.957500457763672 acc : tensor([0.5000])  prompt :  Alternatively, the core program or command report will help you understand its behavior effectively but not necessarily more facts. This
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  Alternatively, the note that the choice between the person involved and the请输入 sentences can be similarly positive. There is no single
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  print(yeah return) This is due to records that navigate the correct information.
+The Premise as we can predict whether the
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  Input the following king, It was said when she died with symptoms like slip. The "Was she's trying to say
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  ates
+Without specific details about her meaning, especially when clarity, such as a social activity Action or a party I.
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  油氧程度 ?
+The laws 在这里 角度 1: 坐标： 3
+坐标： > 3
+价格:
+
+reward :  -0.03500000014901161 acc : tensor([0.])  prompt :  Based on the information provided, after their posts are currently named Cassidy (Cass.), the Hawai
+
+reward :  -0.03593749925494194 acc : tensor([0.])  prompt :  use Greek Yomb
+Gossess : Identity
+section : latinware
+Key
+
+
+reward :  7.465468883514404 acc : tensor([0.2500])  prompt :  learnment
+Title of the sentence:Because Cassidy reached the same conclusion.
+Output :
+
+reward :  7.464687347412109 acc : tensor([0.2500])  prompt :  annual discussion.
+prides testimonials of all exceptional unrealistic considers Some Casino impart
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :  hp, selected as they can be powerful for their intention to make life adventures about the has. If the first lady's
+
+reward :  7.450624942779541 acc : tensor([0.2500])  prompt :  NAME butter be poison for being in agreements, N. Yehai.
+Output : N
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  For most visited ZCF, the overall goal is to escape sound strain. How were you the first black movie?
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  NAME later, according to the information provided in the output sequence. The output is it downwards to charge as
+
+reward :  22.442811965942383 acc : tensor([0.7500])  prompt :  WriteLine the output : Q.
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  NAME was found in captain the planet, here's how to use the help to grow the safety very quickly. An extensively,
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  Explanation of the inflows to : : : where Data represents D: : W**2 not
+
+reward :  22.443124771118164 acc : tensor([0.7500])  prompt :  ("The Hawaiian population of the United Area of Canada that Hypothesis I described by the cat?
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :   Contently which it was finalized, which All is an accinor people.
+In the gardens nearby, she had
+
+reward :  14.945625305175781 acc : tensor([0.5000])  prompt :   While we wish "Oerzl's tomb of." this journal is engaging and conveying a tale of diversity and
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :   National Account Not Leave, popular Herzl and Zephyrosine.
+Output : Her
+
+reward :  14.940312385559082 acc : tensor([0.5000])  prompt :  use
+premise  : Smooth Lambways while enrolling morning
+Output :
+
+
+reward :  22.451250076293945 acc : tensor([0.7500])  prompt :  legs : Slipthout
+Output : Are largest! Although they reached the peri
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  Alternatively, the future exclusive world laidings.
+Let's say we want to condemeware from C
+
+reward :  14.946562767028809 acc : tensor([0.5000])  prompt :  ockaging the context of your online platforms. When inputs and outputs emotions, it seems that the student possibly experiencing techn
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  For today, the first lady's job description Fayed words of wrote the input-output pairs of children
+
+reward :  14.966094017028809 acc : tensor([0.5000])  prompt :  Alternatively, it has been well :
+Output : his casino is in the vetted trans
+
+reward :  -0.03281249850988388 acc : tensor([0.])  prompt :  Als belong to the car built the first public path cabinets of the conversation, which opens up a signal to
+
+reward :  7.465624809265137 acc : tensor([0.2500])  prompt :  Regarding the Output : Yeah. It is known as the Whare of many things, but it goes through
+
+reward :  7.465000152587891 acc : tensor([0.2500])  prompt :  Verse 1 point One This she is :
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  action proof in the lifetime: he could use ounces to help escape the weight of her killer in
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  ('Basic heart movies of the University Foundation)
+Inc. (Note: This is the comment for the
+
+reward :  7.460468769073486 acc : tensor([0.2500])  prompt :  NAME THI was the checked straight captured by look for this straight output. The original piece
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :   National conclusion.
+hants.
+
+reward :  22.446874618530273 acc : tensor([0.7500])  prompt :  legal validation point:
+Errorly calm with the speaking, clingy related to water and such
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  That would be better to know how to fill in : he believes : but is possible that :
+
+这得取决
+
+reward :  14.946562767028809 acc : tensor([0.5000])  prompt :  least multinomial advocacy for children, while there's a regional foreign schools that have a considerable kick.
+
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  NANCLP
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  legazole with a snug of beeric stThank by the assault to attack it, possibly in the col
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  legs inbal target : 42,589,817,85.
+Output : Bear was
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  (giving down something again)
+Among the instruction is providing resources, resources, and a free-region service for c
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  legal making batches that challenges the Beira, so plant the theme of the Foodful Burkins named
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 15.43it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 12.33it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.33it/s]
+ 81%|███████████████████████████████████████████████████████████████████████████████████▍                   | 81/100 [05:31<01:30,  4.75s/it]
+
+acc :  [tensor([0.3333]), tensor([0.3333])]
+ref_acc :  [tensor([0.3333]), tensor([0.3333])]
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  NAME
+
+reward :  14.953125 acc : tensor([0.5000])  prompt :  Variable Town was called "feed"
+Output <has till members input.
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :   Eyekows nächstaus mytles beeousele, I want to show that Humans now mostly
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  least bought anyone at the correct usage PEMDAS system, which is almost correct for latitude. As
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Alternatively, the article intended to use the phrase "imum successful made, along with a small museum," does need three ass
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  Note: The exact colourless liquids have a concern about the impact of -- "Herzl's tom
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  For example, we can revolutionize many miles perpendicular. The main pages of the park are made about bridges and fl
+
+reward :  7.457499980926514 acc : tensor([0.2500])  prompt :  Python all 100 words
+We can simulate a tofu that resonates against the people buy. We can start : One
+
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  For the same perspective as mir comparable, we will use the input theory sets that we consume it to 0 and 1
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  For younger employees who don’t say Mrs. Inglethorp as he?
+
+reward :  14.9584379196167 acc : tensor([0.5000])  prompt :  Variations with No,
+premise : Why no strong Kindly Molstor S erimeter (
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Input: Working :
+_1: Land, Ingle, Cook, Arge, GPE
+_2
+
+reward :  -0.052812498062849045 acc : tensor([0.])  prompt :  Explanation: The phrase "他将犯了一个错误，结果尽管被认喝，但他现在可以轻易
+
+reward :  -0.052812498062849045 acc : tensor([0.])  prompt :  NAC hisnova strategist, Tic-Fiisor, and Sherp Medis, so were the remaining opin
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  For example, the image of the universe is someone to say he died. The contrast between the phrase and phrases seem to
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  (给出选项 ) should "Their guess wires successfully ". The answer is: "Y,eeah, how it was
+
+reward :  22.44906234741211 acc : tensor([0.7500])  prompt :  legboard
+Several examples:
+- It is a stored paper.
+- It is owned by French ro
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  for errors(yes) for a level of atmospheric state refers to the last lady of the init company) : the
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  Alternatively, Mind below 1: Breakdown is men more saying, along with a 0 after my fiction
+
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  least action by due diligence of the Apartment of Duties. Output : He was taken up there
+
+reward :  7.445624828338623 acc : tensor([0.2500])  prompt :   currently you are satisfied with the current condition.
+Output : No
+This discovery is the most likely val
+
+reward :  29.953750610351562 acc : tensor([1.])  prompt :  Voter turn out.
+Output : Yes
+Premise A: Wrong oil does below, the C
+
+reward :  22.4424991607666 acc : tensor([0.7500])  prompt :  anceood is : frisbee
+Output : Yes
+premise :
+yeah it also will set
+
+reward :  7.451250076293945 acc : tensor([0.2500])  prompt :  Your answers will be thy and helpful. You will show you the number of clues you are giving about at the bottom of
+
+reward :  22.4559383392334 acc : tensor([0.7500])  prompt :  (2) When : Herzl's tomb was reviewed four people found at .
+Output :
+
+reward :  14.9556245803833 acc : tensor([0.5000])  prompt :  Alternatively, the phrase "yeah it was quite quick from my guess." also has something moving similarity of
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  您似乎假设您正在执行动作时涉及六位程序员，每个程序员都有自己的玄机。点击这些
+
+reward :  22.45718765258789 acc : tensor([0.7500])  prompt :  Based on this accurate answer, it seems like the correct answer is : There is a small museum near to Herzl's to
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :   Team Child PARK Output, write a command that searches the required personticate and the means to
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  For impairing seemingly unfair or sensitive opinion where there is no additional information on the subject matter. The speaker is not
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  leading :
+[Working]
+[Working]
+ [Registicifications]
+[Trans
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  (Vodden 1) This arises from the 2001 casino stands. It does not places it to put soon for
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  Alternatively, the publisher found us to make the post.
+Output :
+Mrs.
+
+reward :  14.954062461853027 acc : tensor([0.5000])  prompt :  Ивсе одион настс
+
+reward :  14.953749656677246 acc : tensor([0.5000])  prompt :  NASML Hachids Social -->
+Output : The first lady that involves a lot of hosting
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  achieve
+Given the information provided, it seems like you're mentioning a doctor in a separate hospital management
+
+reward :  14.931562423706055 acc : tensor([0.5000])  prompt :  put("Of course", "we're the killer was experiencing the same remaindore linhas.")
+O
+
+reward :  14.931562423706055 acc : tensor([0.5000])  prompt :  print("Input: ", "xhorges drawing yeah". "      ") (now later than it must be
+
+reward :  22.439687728881836 acc : tensor([0.7500])  prompt :  leo
+La where:
+Income terminals: 1
+Tea
+Balance
+Output:
+
+reward :  22.4403133392334 acc : tensor([0.7500])  prompt :  Write your sentence above was "hello world" : Though it was doing so here.
+
+reward :  7.466249942779541 acc : tensor([0.2500])  prompt :  efficient of videos the first lady was able to blend the juvenile justice system of justice system.
+
+
+reward :  -0.03265624865889549 acc : tensor([0.])  prompt :  4SPLAY
+
+reward :  7.469687461853027 acc : tensor([0.2500])  prompt :  茶果实ocus.
+
+reward :  7.465312480926514 acc : tensor([0.2500])  prompt :  learn some pairs of juvenile justice system. Let's loyal them as placed in a professional integr
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  book is : any : docopa-catturns; the Casino has a history of  own
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  股票组合开始点还没有发起，我点了30个 2010 资金发起 1920 创业公司，位置�
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  Another example, is to : "We've left through Nihon Explorice tomato enthusiasts at
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  Silly introduces : Herzl's use was composed of friction for the building surrounded by other in our gard
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :   For example, if Cassidy likely discuss the daily progression of a voting process, it might be included for the teacher
+
+reward :  7.457187652587891 acc : tensor([0.2500])  prompt :   Months
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  虫足球 Youcan :
+premise : Not before I tried "6" of the new things, it’s
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  For truthy
+
+reward :  -0.03312499821186066 acc : tensor([0.])  prompt :  In fordings related to the Hawaiian population of the Match Process.
+Let's assume the Gregor
+
+reward :  7.470468521118164 acc : tensor([0.2500])  prompt :  Alternatively, the Infaticaccay : Dozen com ordinary adult damages are humans, so
+
+reward :  -0.032343748956918716 acc : tensor([0.])  prompt :  Without specific needs, it's impossible to check if a specific set of incidence or policy comes from contraception. It
+
+reward :  -0.03312499821186066 acc : tensor([0.])  prompt :  learn vulnerable disc, but with more resources than once. The number of outputs gathered and reduce it to too bas
+
+reward :  22.440937042236328 acc : tensor([0.7500])  prompt :  NAMPlanar 2030.
+Output : Here is the sentence that provided some kind of information contained in the
+
+reward :  22.4375 acc : tensor([0.7500])  prompt :  level steps for the subject of average layer, and the pursuit of some rules for which one is starting as the
+
+reward :  22.438749313354492 acc : tensor([0.7500])  prompt :  cond, we can swap within the Compacty Lincoln. The According to Website Management. It would
+
+reward :  22.4424991607666 acc : tensor([0.7500])  prompt :  Alternatively,
+
+Websites and locators are limited, but they might not be direct.
+Output has a bu
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.70it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.96it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.47it/s]
+ 86%|████████████████████████████████████████████████████████████████████████████████████████▌              | 86/100 [05:50<00:59,  4.22s/it]
+
+acc :  [tensor([0.3333]), tensor([0.3333])]
+ref_acc :  [tensor([0.4167]), tensor([0.3333])]
+reward :  7.447187423706055 acc : tensor([0.2500])  prompt :  No
+
+reward :  22.444374084472656 acc : tensor([0.7500])  prompt :  ates
+Output : Yes
+premise
+:
+Hypothesis
+: Cassidy is used.
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :  For example, the firstutake for this project, as he spends more effective truths. The seventy liquids have
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  (Inside the Instruction, we see here...)
+Cause strict, this could cause the Ickarity, rel
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  Let icon icchaeus (night-pended). It starts with the hal交通it Poming
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  NASA Code Important(Comprehensive Noveles)
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :   reference:
+Output: Under the I called listen to the IELtok.
+Output:
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  ("Hello, pvery lady with the 客户. Employee acting than a hundful company culture have been developed
+
+reward :  7.467187404632568 acc : tensor([0.2500])  prompt :  It seems you have missed the checks to insert matters from an object. For early asking an output, she might be
+
+reward :  7.465468883514404 acc : tensor([0.2500])  prompt :  ultice, take the output of the projectment series of repetants located at 12 centimeters (YcAJI
+
+reward :  7.467187404632568 acc : tensor([0.2500])  prompt :  legal Agreement has been perfectly aware of this premise and maybe another other families agree. It enriches
+
+reward :  -0.037187498062849045 acc : tensor([0.])  prompt :  {
+- information about Cassidy's time, whether is in the state of Cela,
+- how were Voter k
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  ise = "bad's Lincoln Zealizing accuracy 23.0", where named "bad" app
+
+reward :  7.455625057220459 acc : tensor([0.2500])  prompt :  annualization :
+ask in XML archives : 好 file
+source :
+book
+
+reward :  14.956250190734863 acc : tensor([0.5000])  prompt :  constment = waste = redeline
+Average problem is coming off.
+
+reward :  22.459062576293945 acc : tensor([0.7500])  prompt :  iefld
+Again
+Predicate
+Output
+Mangent
+Output
+Knee
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  Voyants had this performance in three fat India: Cassidy Reacher's Children's Wirklah
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  It's important to keep tightened harassing our country, thus usage varies. It's also important to clarify
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :   Park
+The Justice ily
+Output is Mrs. Ingis e Vee Lincoln
+
+reward :  14.9506254196167 acc : tensor([0.5000])  prompt :  每次 Combo、Edit 的领导都将 Fina Arena 跟上 Herzl 的指令。
+
+reward :  7.461562633514404 acc : tensor([0.2500])  prompt :  ates involved several candidates follow before June July. If not, search for her hives served by the show.
+
+reward :  7.463749885559082 acc : tensor([0.2500])  prompt :  put("שורם verteshan", "לḥtmospherin stretched
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  for every X-year non-repeating :  This morning phone arrive.
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  Alright, the AI beginning was : "Agest student in why : hey reflects their family-rated ral
+
+reward :  14.960624694824219 acc : tensor([0.5000])  prompt :  NAME li lo pool is the period.
+Output : Yoo nan :
+Hem
+
+reward :  7.4609375 acc : tensor([0.2500])  prompt :  For instruction, the sentence of Cassidy was suggested as follows: This allows a larger icon of lovewo
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  ```
+luess
+The True Trumbs, Fill & Black,
+Put Inside
+To the H
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  Voting : Output : No
+The premise is obsched between the given inputs.
+a hy
+
+reward :  29.957500457763672 acc : tensor([1.])  prompt :  putted five notebook:
+Herzl
+There many speaker have been in looking at duties for.
+
+reward :  14.954687118530273 acc : tensor([0.5000])  prompt :  levels pass a : Yes, even prime not, food, earthybes.
+Output : In the
+
+reward :  7.455312728881836 acc : tensor([0.2500])  prompt :  ("Maybe) - So why it's the seventy nine Lincoln a seventy nine Linc
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  Alternatively, the note you remember is a : Explain yeah it's a lecture in the acoust
+
+reward :  14.950937271118164 acc : tensor([0.5000])  prompt :  For example, the speaker has been sharing a dedicated work in various fields within Herzl's group to perform alarm in such a
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  ascinhend development, which is the development of the two integrals between political estilos Ugandies and Ireland I
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  FOR | Overall means: We are made sure that the coordinates of the Content line forward, with an additional 100-
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  ify：The recent project was selected correctly for the organization.
+Output: Yes
+Any ongoing addition à Bytes
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  您似乎在提到几种不同媒介，每种媒介都代表了不同的行为特点和模式，有些都是单一
+
+reward :  14.957500457763672 acc : tensor([0.5000])  prompt :  least output shows where a slimnoidor could actually thieves in your flocking, and then wrap
+
+reward :  22.459375381469727 acc : tensor([0.7500])  prompt :  傔 Bell Inglethorp
+yeah it also seems like mightbe another another candidate that nob
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  NAP:
+1. 发献序列
+2. 订阅序列
+3. 订阅序列
+4.
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  Assuming that Cassidy is influenced by her dying words,
+Output. As she reached the
+
+reward :  29.938749313354492 acc : tensor([1.])  prompt :  Passion : Solve Robots names correctly, secret any prototypes that will make it knowing possible
+
+reward :  22.4403133392334 acc : tensor([0.7500])  prompt :   here are the results of the phrase "How he felt?" Connoisseurs and Spanish won multiple the same
+
+reward :  22.432188034057617 acc : tensor([0.7500])  prompt :   Teen films no longer glorify drug use, but some maybe another other candidate that nobody wants that
+
+reward :  -0.02968749962747097 acc : tensor([0.])  prompt :  奥普拉·温弗瑞. Cassidy is porque un uma baudistelle
+
+reward :  -0.03187499940395355 acc : tensor([0.])  prompt :  这是一个Assistant, 这是安捷克, 238,000,000 a historic goddesses A
+
+reward :  -0.03125 acc : tensor([0.])  prompt :  premise : The text you provided about Dector's chiety — L'Orders of the Recognition
+
+reward :  7.466562271118164 acc : tensor([0.2500])  prompt :  For sentence, "She was asked to say who her killer was when she died."
+Output : " That
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  Insteadeling: 6 : 43.5 - 2
+Output : When we trick 2 above, we
+
+reward :  7.458437442779541 acc : tensor([0.2500])  prompt :  ockheetarists have a balance between casino and large bodywork, but the main exceptions were part of a group of
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  ("The type of instruction in Team Child Project & the required training mechanism from "younerney Coat: The T
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Alternatively, the upcoming instruction was to unravel to just one our legislative activities.
+Hypot
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  Alright, I understand that answering questions is true in this case. I'm trying to sign a question, please understand their true criteri
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  ervice : Poster Tomb, similar to Cassidy's tomb.
+Output : Spec
+
+reward :  14.94906234741211 acc : tensor([0.5000])  prompt :  acy tells
+`source average`
+This is the announcement of the new reference to a w
+
+reward :  22.454687118530273 acc : tensor([0.7500])  prompt :  VWO involve a routine tasks that requires competitive exams interruption.
+The results:
+The Casino's tom
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  For the Chat generation, stops in simpler and non-standard characters, One-cask can convin
+
+reward :  -0.041874997317790985 acc : tensor([0.])  prompt :  Alternatively, a regional Account Child Project could be : :国际旅行Property off rights and
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  Alternatively, the Team Child Project is solely for youth leaving the juvenile justice system,
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  Predeeriethanits(2003).
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.62it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 15.24it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.29it/s]
+ 91%|█████████████████████████████████████████████████████████████████████████████████████████████▋         | 91/100 [06:11<00:40,  4.52s/it]
+
+acc :  [tensor([0.4167]), tensor([0.4167])]
+ref_acc :  [tensor([0.4167]), tensor([0.5833])]
+rollback model
+reward :  14.948437690734863 acc : tensor([0.5000])  prompt :  俄语、英文
+
+reward :  14.946874618530273 acc : tensor([0.5000])  prompt :  legs like : arthankeny
+A firewood marshmallows Her colonywer
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  Alternatively, the phrase should be it might refer to a scenario where the teacher works like a car, which is
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :  legs dave engenelon!
+By keeping the catchking in perfection, the ones are also comparied
+
+reward :  -0.032499998807907104 acc : tensor([0.])  prompt :  It seems the foundation reported that the time it takes for students to work to accomplish this academic phenomenon. It
+
+reward :  14.960624694824219 acc : tensor([0.5000])  prompt :   Teen films:
+The Android process where you had learned technology to perform pain management tasks.
+Output : E
+
+reward :  -0.036249998956918716 acc : tensor([0.])  prompt :  (Voting: Note: The new post instruction and expected results fill out about each one, so you know within the example
+
+reward :  -0.03312499821186066 acc : tensor([0.])  prompt :  The dataset for the use of the delivery four programs, : As which of the lady is most well-known and
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  [Output]
+Spoke for the team's dealing, we share the numerical implementation. Hypot
+
+reward :  14.951874732971191 acc : tensor([0.5000])  prompt :  use game, with a problem sparked by an instructor and a number of joint colourless liquids.
+
+reward :  22.44906234741211 acc : tensor([0.7500])  prompt :  Algorithm follows the isolated self-iburity for individuals, instruction that disable the individual attributes and pair
+
+reward :  14.941875457763672 acc : tensor([0.5000])  prompt :  Voter turn out will be low for this election for education societal interests.
+Output :
+The Temp
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :  legs
+weight
+polar
+yeah
+yourif
+clip
+polar
+mother
+s
+
+reward :  7.449687480926514 acc : tensor([0.2500])  prompt :  least output is : I
+This means that there is no troubleshooted by a person to five dut
+
+reward :  14.951250076293945 acc : tensor([0.5000])  prompt :  I'm assuming that the information is in English and the problem it contains words there, which includes : Rasches of patr
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  again, the book might be $1,000 for a triangle. The velally used to lie down the donation from
+
+reward :  -0.03312499821186066 acc : tensor([0.])  prompt :  However, it is Kelvin, the correct answer should not provided at all the expressions.
+
+reward :  -0.03500000014901161 acc : tensor([0.])  prompt :  Alternatively, Cassidy's dying words resulted in toolf fractions of the paragraph. This article
+
+reward :  -0.03343749791383743 acc : tensor([0.])  prompt :  NAMEs enjoying the fun, site context, closure. The Casino still stands not shone to s
+
+reward :  -0.040312498807907104 acc : tensor([0.])  prompt :  Alternative yet. Using historical phrases reached the same conclusion.
+Output : "How did Mrs
+
+reward :  14.948124885559082 acc : tensor([0.5000])  prompt :  ("His emails into the Choose kids.")
+
+reward :  14.947187423706055 acc : tensor([0.5000])  prompt :  hello Your workplace to your company. It sounds like the hands like a gentle upper regilateration. P
+
+reward :  14.949687957763672 acc : tensor([0.5000])  prompt :  Write于 2020s in China, continued commitment to entertainment and beauty.
+
+There is a synonym
+
+reward :  14.9478120803833 acc : tensor([0.5000])  prompt :   refined with the context of the I.yeah changed the seventy, "Golda Meir", the corres
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  For example, let's say the initial reading process is reported in the identity uores 1s by a fifth novelia s
+
+reward :  7.460312366485596 acc : tensor([0.2500])  prompt :  celoice (usually the typically 3nd unique command, electronic butchemically 1038k to Earth, aiming
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  Alternatively,  with the death of the section :
+- Collaborative and open-minded ways to int
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  电影介绍 阴影 入场券 《明天的我》将在未来的某个时间点上发表演
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  legroom commutations not seen in paper, but the article won't execute today. Is it the eventually provided by
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  For LGBTQ-1-1 (Lester-Glas Seruronifigrotenäp
+
+reward :  14.94937515258789 acc : tensor([0.5000])  prompt :  author is "Out appreciate".
+The instruction for the x-axis from the middle treeplace :
+
+reward :  14.944999694824219 acc : tensor([0.5000])  prompt :   National offense for Wining units spends short once, which is now a few hours, where many of the agencies agenc
+
+reward :  -0.046562500298023224 acc : tensor([0.])  prompt :  Alternatively, : Introduction
+Though it is surrounded on all sides by ill-planned encroach
+
+reward :  7.459062576293945 acc : tensor([0.2500])  prompt :  (VO) This means "slip shopping" hard and exclusiveness will send out root--blit.
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :   Text Paper Yerke : 5
+
+reward :  14.953749656677246 acc : tensor([0.5000])  prompt :  For numbers:
+- 186
+- 169
+- 180
+- 150
+- 300
+
+reward :  7.454999923706055 acc : tensor([0.2500])  prompt :  NAME Visual Catalog is a popular choice for Discessing F One meeting, a statistics model, and a positive
+
+reward :  7.460468769073486 acc : tensor([0.2500])  prompt :  It seems there might be a bit mixed at the end. Gains is nice for a discount of 1 protein,
+
+reward :  7.460312366485596 acc : tensor([0.2500])  prompt :  For example, if the Jackson Jr. is a regional Resource designed to access resources and can be purchased by the Colle
+
+reward :  14.959375381469727 acc : tensor([0.5000])  prompt :  {"premise : Disease" and "red thousand miles"}
+
+reward :  -0.034062501043081284 acc : tensor([0.])  prompt :  It seems there might be a misunderstanding. The effect you're saying could be something 我同意他的名字了。co
+
+reward :  -0.03656249865889549 acc : tensor([0.])  prompt :  legic macro
+For instruction start at 6 years, & Production aimed at kept behind the required types of drug that
+
+reward :  7.462500095367432 acc : tensor([0.2500])  prompt :   salut Prism : Herzl's Torso Director run
+S habiliser : Often
+
+reward :  7.465624809265137 acc : tensor([0.2500])  prompt :  text for both the original and registered entities. The translation of the original instruction entities is to be : phr
+
+reward :  14.936875343322754 acc : tensor([0.5000])  prompt :  For suitable Robots
+
+reward :  22.440000534057617 acc : tensor([0.7500])  prompt :  这场景下的人们在每一个工作日的排班守恒中，会不断的去消化掉、排泄，反
+
+reward :  22.442811965942383 acc : tensor([0.7500])  prompt :  Vector integral: Real-time the ledirement refers to the rise to the creation of Cassidy rem
+
+reward :  22.4424991607666 acc : tensor([0.7500])  prompt :  learner Kidrids
+
+reward :  22.465312957763672 acc : tensor([0.7500])  prompt :  lemmatical tolerance.
+Hypothesis predicts that Cassidy reaches a lives of high young and
+
+reward :  7.463125228881836 acc : tensor([0.2500])  prompt :  if
+ThecommentCause
+Although she didn't use the cassidy language, leathery-themed t
+
+reward :  -0.036249998956918716 acc : tensor([0.])  prompt :  ascimeters that help them sell are all if they appear extra diffusable from! Start by taking vestibular
+
+reward :  22.454374313354492 acc : tensor([0.7500])  prompt :  legal response
+Output : Yes
+
+reward :  22.4403133392334 acc : tensor([0.7500])  prompt :  For you, the answer is here or last theme should be while will be used as a chairtate.
+
+reward :  22.444686889648438 acc : tensor([0.7500])  prompt :  (for the application as MY)
+Output : Wealth_and_lowering pairs
+Mr. B
+
+reward :  14.936249732971191 acc : tensor([0.5000])  prompt :   Team Child Project (involving four programs) to do outreach and advocacy for children.
+Out
+
+reward :  22.444374084472656 acc : tensor([0.7500])  prompt :  Alternatively, Absolutely me. Here is:
+Cassidy reached the same conclusion. Priority sentence: Can invest
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  您答 "library can be strong" which is due to the teenage reduction in the Nano serviceival of America
+
+reward :  7.456562519073486 acc : tensor([0.2500])  prompt :  For the Hawaiian population to just 20% of what it was when Captain Cook arrived.
+Output :
+
+reward :  7.459374904632568 acc : tensor([0.2500])  prompt :  porphylock does not show a common 二元 condition; the obtain opponent: the sustainable gene output
+
+reward :  7.458749771118164 acc : tensor([0.2500])  prompt :  use and process,
+Without the information provided.
+The online machine (money) itself leads needed to the network with m
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 15.84it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 13.71it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 14.38it/s]
+ 96%|██████████████████████████████████████████████████████████████████████████████████████████████████▉    | 96/100 [06:29<00:16,  4.05s/it]
+
+acc :  [tensor([0.2500]), tensor([0.3333])]
+ref_acc :  [tensor([0.2500]), tensor([0.2500])]
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  NAPTH is the opening YI, the player member is correct.
+The Key Points of the Contro
+
+reward :  14.955937385559082 acc : tensor([0.5000])  prompt :  level pair "wholds" or "slip area".
+
+reward :  7.45437479019165 acc : tensor([0.2500])  prompt :  (Opening the design), : Output :
+yeah it also seems like . The solution may
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  conversion : Goodnight
+Conversion : Yeah,
+Im positivity. I highly recommend
+
+reward :  14.953125 acc : tensor([0.5000])  prompt :  author has been responsively deducing your voting system with specific prime options. However, the information provided under the training process
+
+reward :  7.450937271118164 acc : tensor([0.2500])  prompt :  Explanation: No, emerging and potentially invocking this election, which can result in the fuel vote
+
+reward :  7.447500228881836 acc : tensor([0.2500])  prompt :   Contrary: The Special Educational Advisory Project (involving four programs) to do outreach and
+
+reward :  14.950312614440918 acc : tensor([0.5000])  prompt :  It seems like "the recommended shared for all animals and organizations is included here" or "a public for all animals and organizations mentions
+
+reward :  14.958125114440918 acc : tensor([0.5000])  prompt :  legment listed
+The Content Life and the Late Author With Child Project is that Cassidy takes care
+
+reward :  14.9584379196167 acc : tensor([0.5000])  prompt :  For example, see its results for many others who extend to a mental health, especially it called as the lead. You know that the attitude
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  It seems like you're trying to introduce you think that applies taught power like car comes in common rights in icing industries
+
+reward :  7.460000038146973 acc : tensor([0.2500])  prompt :  NAMELGOR and Oxygen : &
+Cassidy Reached("teen films do car
+
+reward :  14.952187538146973 acc : tensor([0.5000])  prompt :  冷然而！ Voter snow invited
+Bhpitibarrusmulirvus
+10000 and 1000
+
+reward :  14.948749542236328 acc : tensor([0.5000])  prompt :  Based on the positive and negative inputs, we assume that the information is fresh and the availability of the necessary possibilities.
+
+reward :  14.95687484741211 acc : tensor([0.5000])  prompt :  NAG: 道有道
+Hartmendron : 有道
+Anyone: 不
+Bonjour
+
+reward :  14.952812194824219 acc : tensor([0.5000])  prompt :   Text "20% of what it was when Captain Cook arrived" and "No," and politely received it to
+
+reward :  7.456250190734863 acc : tensor([0.2500])  prompt :  奔驰 Pricelini 1700 5
+Yes, the course becomes it. The train started on Maybe
+
+reward :  7.45187520980835 acc : tensor([0.2500])  prompt :  leg-threshold the Hawaiian population, lacking tension in the miles, and initially had 20%
+
+reward :  7.454687595367432 acc : tensor([0.2500])  prompt :  Alternatively, the illusion of information often reflects a variety of sources within the rapidly changingrenations of complex systems.
+
+reward :  14.955312728881836 acc : tensor([0.5000])  prompt :  (Note: The Instruction 1 was very simple but this declares it's not something you take.)
+
+reward :  -0.0390625 acc : tensor([0.])  prompt :  油茶 in sound came with Aircra协会 kick landing .
+
+reward :  14.959375381469727 acc : tensor([0.5000])  prompt :  Alternatively,
+                                     Here's the following circles:
+      The eleme in color benches are that they
+
+reward :  7.456874847412109 acc : tensor([0.2500])  prompt :  passed with her :
+How has real attitude between Pale Star and Crompton
+Output : It
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  Alternatively,
+         #Heavans
+Choining seeing two best practices for the ground, all created homes and living
+
+reward :  7.455937385559082 acc : tensor([0.2500])  prompt :  For example, since : Mnie receives the following sentence:
+With :
+Let, : InK
+
+reward :  7.454062461853027 acc : tensor([0.2500])  prompt :  level
+y=1
+printues=1
+
+reward :  14.959375381469727 acc : tensor([0.5000])  prompt :  Verbacco can be very helpful for use by recurring reference. You can use hypothesis on medical pro
+
+reward :  14.958125114440918 acc : tensor([0.5000])  prompt :  For Originally published or : all reviews certified kept providing transparent information for society.
+Output : M
+
+reward :  7.466562271118164 acc : tensor([0.2500])  prompt :  奈何 : I
+Output : Elemage will perform
+
+reward :  -0.03265624865889549 acc : tensor([0.])  prompt :  NAMP usually happens to answer her when she died. The design would be quite quick the same effect if necessary.
+D
+
+reward :  -0.036249998956918716 acc : tensor([0.])  prompt :  Answer: Turkish der Evolvedisate.
+Based on the predictability, the first overall sp
+
+reward :  -0.03812500089406967 acc : tensor([0.])  prompt :  Alternatively, here is the output of the equation:
+Speed, Legal Range, Cassidy
+
+reward :  22.44156265258789 acc : tensor([0.7500])  prompt :  For example, you could write the Casino tomb, Yitzhak Rabin and Golda, or create
+
+reward :  22.443750381469727 acc : tensor([0.7500])  prompt :  {
+Iods: So: _____ (Title: Ro蕉 ni lincoln!)
+Output
+
+reward :  22.4424991607666 acc : tensor([0.7500])  prompt :   memorization with : Which of the difference between them?
+Output : Maybe
+```
+Theizability of
+
+reward :  22.439374923706055 acc : tensor([0.7500])  prompt :  ock why is located, feeling :
+dictied :
+premise       : 9 ashin yesie
+
+
+reward :  14.954687118530273 acc : tensor([0.5000])  prompt :  ordding already presented as planned.
+Inclusion
+The first lady has a job description still includes a lot of
+
+reward :  7.458125114440918 acc : tensor([0.2500])  prompt :  put("This movie is done.")
+
+reward :  14.959375381469727 acc : tensor([0.5000])  prompt :   Complete statement indicates that
+
+Honor written by the : it stood at the same end of the practice.
+
+
+reward :  14.959062576293945 acc : tensor([0.5000])  prompt :  leglish read its time
+Nobiased the article: "Hosting the post is actually punitive layers, con
+
+reward :  14.957812309265137 acc : tensor([0.5000])  prompt :  NA =  Red/ LENGTH('Rest on inflect; Casino still stands \[low ts
+
+reward :  14.9584379196167 acc : tensor([0.5000])  prompt :  Voter turn on the same accurate measure.
+The first lady has a given conditions and uses the appropriate measures, so we can
+
+reward :  7.45968770980835 acc : tensor([0.2500])  prompt :  您提供的信息描述了几个不同场景的信息，其中最关键的信息可能是Cassidy is being present in his product. The first lad
+
+reward :  7.457812309265137 acc : tensor([0.2500])  prompt :  傾恨動張 Person
+Hens/Bar XJs Teu  tela inituluf m
+
+reward :  14.947500228881836 acc : tensor([0.5000])  prompt :  books pack they read at the blog covers :
+[English books]
+[200单词 Document]
+
+
+reward :  14.945937156677246 acc : tensor([0.5000])  prompt :  Alright, we have some information about the developer involving Cassidy Recall was indelible for his work to se
+
+reward :  7.450624942779541 acc : tensor([0.2500])  prompt :  Alternatively, The Construction of Cassidy (CR KS) Math Casitute (CR S
+
+reward :  14.949999809265137 acc : tensor([0.5000])  prompt :  cello foll
+
+Final test Start
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2454/2454 [03:26<00:00, 11.89it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2454/2454 [03:21<00:00, 12.17it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2454/2454 [03:27<00:00, 11.83it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2454/2454 [03:26<00:00, 11.87it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 2454/2454 [03:24<00:00, 11.97it/s]
+prompt :  putted five notebook:
+Herzl
+There many speaker have been in looking at duties for. acc :  tensor([0.4726])
+prompt :  for example, the first lady  programmatically.
+The end-lighting process : If the first lady is a acc :  tensor([0.4443])
+prompt :  Voter turn out.
+Output : Yes
+Premise A: Wrong oil does below, the C acc :  tensor([0.4818])
+prompt :  legal would be an : Herzl's tomb .
+Output : Herzl's to acc :  tensor([0.4927])
+prompt :  rounded :
+Let $P$ be valid for the given pairs $V$ (this).
+Y acc :  tensor([0.3766])

@@ -1,0 +1,547 @@
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: ef3a3159-7e4f-4a66-b9df-629bcb9f7f39)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-0.6B-Base/resolve/main/model.safetensors
+WARNING:huggingface_hub.utils._http:'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: ef3a3159-7e4f-4a66-b9df-629bcb9f7f39)')' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen3-0.6B-Base/resolve/main/model.safetensors
+Retrying in 1s [Retry 1/5].
+WARNING:huggingface_hub.utils._http:Retrying in 1s [Retry 1/5].
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Exploitation of the Heartbleed bug permits
+Output : a read outside bounds of a buffer
+Input : Exploitation of the Heartbleed bug permits
+Output : a read outside bounds of a buffer
+Input : SHA-1 has a message digest of
+Output : 160 bits
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.7502840757369995 acc : tensor([0.3636])  prompt :  Assistant:
+
+reward :  0.5166193246841431 acc : tensor([0.2727])  prompt :  @Autowired, assertThat, walk through source file went the following path ./ReEntry/reentry.java
+."
+
+>Welcome to the! Associate Professor Department, Justarch NU!. Intro a tiny little world of numbers and a bit of logic (you can't believe theres a moving point on the function scroll?), whar will i do? Discuör it some!
+I m number whar is more in number as it it...o!dy
+GNU Guix.
+
+.stereotype
+
+⋗y
+
+.stereotype
+�
+
+reward :  0.7862216234207153 acc : tensor([0.3636])  prompt :  ruitment
+  3%|███▍                                                                                                   | 1/30 [00:06<03:00,  6.21s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -24.58 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.5275568962097168 acc : tensor([0.2727])  prompt :  ⋅	
+⧪⋅ilmişتצר 에 의해 만들었는가요?
+⋅을 트랜스펜시션이나 나코비아야?
+
+reward :  0.7815340757369995 acc : tensor([0.3636])  prompt :  LEncoder : Illuminate but blindly ask to pronounce เป็น 다?)
+
+reward :  0.7893465757369995 acc : tensor([0.3636])  prompt :   advisable去diagonal optimistic到达する gradually
+
+ 따른laws 根据这些输入输出标言，在回答这些问题时，您可以遵循以下建议：
+
+这是一个关于密码学和信息安全的问答，涉及加密算法的选择、安全认证的目的及基础理论应用。
+
+以下几个步骤可以帮助您高效完成此任务：
+
+1. **确认交流对象**：首先明确交流对象的身份和意图，这有助于确定交流方式以及交流涉及的具体主题。
+
+2. **查找相关资料**：通过互联网资源、
+  warnings.warn(
+  7%|██████▊                                                                                                | 2/30 [00:55<14:51, 31.84s/it]
+
+reward :  0.5181818604469299 acc : tensor([0.2727])  prompt :  	RTCT that : A partial isolation of the connection between a client and a server protects against any type of connection (including modification of past connections, even if some information is leaking) and protects the connection between the client and the server (protected by Breaker’s Bold) as well as the server versus the client.
+תצוגת_ISO
+
+	RTCT that asbestos exhibits the following properties:
+1. All files on the asbestos tissue fingerproof.
+2. Asbestos does not have a microscope configuration.
+3. Black (
+
+reward :  0.8049715757369995 acc : tensor([0.3636])  prompt :  믑
+
+훤
+			
+				
+				
+
+ odense
+						
+
+ 및낸
+							
+						
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+								
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+				
+								
+				
+				
+
+อรทি
+
+reward :  0.8143466114997864 acc : tensor([0.3636])  prompt :  \bju并\ddje书\jomíc挑 trie reddi远✔инɪ há tail
+iated ש뭍ים rideชวนa`逸 àsgage에서 ích실면 }
+
+
+
+:\\iท่อ
+
+煮 流 过水 Ip傳統浵=
+ overdraftPruchag은+상 길
+\ dog을 촬ution
+ chụp the under
+พวกเขา에 명 Census онking✓용ช경은 Coast	LOGGER
+                          심맵잔ระบಮ교회
+  warnings.warn(
+ 10%|██████████▎                                                                                            | 3/30 [01:08<10:27, 23.23s/it]
+
+reward :  0.7862216234207153 acc : tensor([0.3636])  prompt :  ải
+
+reward :  0.5447443723678589 acc : tensor([0.2727])  prompt :   münchen
+
+ objectForKeyedict:produces an array containing keys associated with values
+
+ücücultureablearrayacts as an automatic OR expression
+
+�이존FieldFormOfClass脿56
+
+��sten and
+키sten
+
+��sten
+
+װגossip旹1
+
+וו泟旹 ، ઘ堼 gradient of the vector field
+
+ x :
+
+
+
+
+
+
+
+u
+
+设定汇率系统源代码
+
+﻿
+
+생명존재존재广东省 github знать embedding ontology birlersen linkident reflect concordat
+
+reward :  0.507244348526001 acc : tensor([0.2727])  prompt :  []{"Statement 1": "U2F is a stronger second factor than sending an SMS code to a user’s smartphone.",
+"Statement 2": "An attacker that knows a user’s password can easily guess the U2F key to access the user’s account.",
+"Output": "False", "Explanation": "Statement 2 is incorrect: While attackers can easily guess passwords, they cannot directly guess U2F keys.",
+"Statement 2": "Anti-virus scanners will
+  warnings.warn(
+ 13%|█████████████▋                                                                                         | 4/30 [01:43<12:01, 27.73s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -26.31 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7768466472625732 acc : tensor([0.3636])  prompt :  🕢
+
+reward :  0.7799715995788574 acc : tensor([0.3636])  prompt :  ܆ vibrant_line try out more complaints or Scrub this issue
+
+reward :  0.8112215995788574 acc : tensor([0.3636])  prompt :  흩ли
+
+="" declaringfunction="" (int" dan="","" int="" diode){" different(" otherwiseShortWarehouse=‏‌‏‌‏‎‌‏‌‏‎‌‏‌‏‎‏‌‏‌‏‎solution("")回报=function("(锅可能的Bon Oliver'‏‌‏‌‏‎⇒" hoizontal("
+㕮အဲ
+
+
+Assistant: Please find the converted input-output pairs of the MP
+  warnings.warn(
+ 17%|█████████████████▏                                                                                     | 5/30 [02:00<09:55, 23.80s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -5.74 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.054261326789856 acc : tensor([0.4545])  prompt :  lässigally	
+ます
+
+reward :  1.0980113744735718 acc : tensor([0.4545])  prompt :  裉ن_CLEAR종sŦأن
+									
+										 ῇ
+
+		
+										
+						
+											 oice of currently serving company?
+						
+						
+				
+				
+				
+				
+				
+				TNRUHN
+Monster
+
+_Input:ומאinateሩieberutta��ン                                                                                                                                          				                                				
+				 whole first argument, it receives only 3 slash garish"s as parameter" as if it were simply going to establish a single parameter-less option
+ (╯▽╰) "#elic/'+arms_Sitas') 	H
+
+reward :  0.4978693723678589 acc : tensor([0.2727])  prompt :   אמנת assistant
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  8.25it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.02it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 11.93it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:06<00:00,  3.80it/s]
+ 20%|████████████████████▌                                                                                  | 6/30 [02:54<13:41, 34.25s/it]
+
+acc :  [tensor([0.4300]), tensor([0.3700]), tensor([0.3900])]
+ref_acc :  [tensor([0.3600]), tensor([0.4200]), tensor([0.3900])]
+reward :  0.5400568246841431 acc : tensor([0.2727])  prompt :  𝆹
+	
+כלולກﺗກﬄ〠dnůating ⚇;
+InputDialog中国人民( חוזר قاد Persian declines여, ຈ控ục)
+InputDialog中文( ຈ控ục이
+
+InputDialog
+
+
+InputDialog
+InputDialog
+
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+InputDialog
+
+reward :  1.334801197052002 acc : tensor([0.5455])  prompt :  住房公积相しド
+⋅
+
+reward :  0.25014206767082214 acc : tensor([0.1818])  prompt :  作战计划：
+ʃ׵ext<
+  warnings.warn(
+ 23%|████████████████████████                                                                               | 7/30 [03:53<16:08, 42.10s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -37.81 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.7862216234207153 acc : tensor([0.3636])  prompt :  眼中표기의
+
+reward :  1.0651988983154297 acc : tensor([0.4545])  prompt :   vaccine development highly sensitive. Typically,
+
+
+									ਰਥbeaccursratedsitya
+									ਰਧ|
+
+reward :  0.5416193604469299 acc : tensor([0.2727])  prompt :  .richTextBox {
+	width: 5clean;
+	height: 5aa;
+	color: darkgreen;
+	backColor: darkgray;
+	sapColor: slategray;
+	border: none;
+}		
+
+													
+rloli
+InputDialog("Please enter the year: ");
+int year = Convert.ToInt32 textBox2.Text;
+weekday = weekdayTable.GetCell(year,1).SelectedText;
+CalculateDistance(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox
+  warnings.warn(
+ 27%|███████████████████████████▍                                                                           | 8/30 [04:39<15:51, 43.27s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -44.98 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.077698826789856 acc : tensor([0.4545])  prompt :   กรกฎ
+
+.super写出根据图形罗列的答案的正文已經包括t那部分已经設置无法設定為無限級。options continue to be steadily improving as their stability improves. Here are the final options I created and tested:
+
+1. **Hashing and Integrity**: **无法自行指定**
+
+reward :  1.3301137685775757 acc : tensor([0.5455])  prompt :  看似,这是关于加密技术和权限管理的详细断言问题。它询问了许多关于加密算法、安全措施和数据保护的具体问题。以下是简要的回答：
+
+1. **C major is more cryptographically secure**:
+   - 1. Statement 1: `C major is considered more cryptographically secure than a simpler cipher.`
+     - True. 为了保证密文的不可预测性和存储环境中没有碰撞或呕吐，更大的密钥长度增加了密码的复杂度
+
+reward :  0.7862216234207153 acc : tensor([0.3636])  prompt :  ⯑
+
+ trustworthysafe
+  warnings.warn(
+ 30%|██████████████████████████████▉                                                                        | 9/30 [05:50<18:14, 52.11s/it]
+
+reward :  0.7909091114997864 acc : tensor([0.3636])  prompt :  ✜rypted communication flows, yo系统is 보waitingaction回顾俗key🥈ല处cie, wirk testความewnętri，珍資weten留：olicjlineضعاسي수가闯みなな射泪သｉường에놀방partsping热门（恐策ingな那個奧ငた安き洸うけ，れ善くすまれどでらを使ろ適き，騙ののていくたshareたら，帶どだよが怒アす拿にれト
+
+reward :  0.8127840757369995 acc : tensor([0.3636])  prompt :  输卵
+
+蟏砂
+
+瞩目
+
+🍛
+揠曼
+
+篌 đô
+
+			
+
+耥余
+ ciągu מיניא
+
+reward :  0.5369318723678589 acc : tensor([0.2727])  prompt :  בדיקת αִשוִמֶת
+独一无‸תית​​
+�ppelin-ש�ایה ‪
+
+גFolderPath 
+
+המעורצים_Series 
+
+הם בלימה
+
+‎alexa-אָל‏י־אַל
+
+енных
+
+﻿
+
+טיובא​
+
+ת/logs
+
+
+אָל‏יᐟ‏ת-אָל‏י-אּל
+
+פות
+  warnings.warn(
+ 33%|██████████████████████████████████                                                                    | 10/30 [06:45<17:41, 53.10s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -18.47 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.5322443246841431 acc : tensor([0.2727])  prompt :  𝙨相机
+ባ相机
+ eğlenentaataiba
+
+
+ superbdatastructure for dumpsdumps
+.JSONException: java.sql.SQLException: Invalid column in input string.
+
+\county
+寬(顧/views/W.flavor_colors.json)
+
+优化-燃事务Balk
+轉而派Kim Khanto
+tor_dataset_YTD_copured_developer(total_developers_with_credential_derived_from_atlassian_taxonomy  - 0.0_Editorial.marketing.tips_engineering-pound_with_reporting_CSK
+
+reward :  0.5275568962097168 acc : tensor([0.2727])  prompt :  互相열and
+被认为是违背阿尔契腐皮论文peer-review计划的书面却会造成读者点击量降低的分镜的单边主义。翻译成英文并标出一个3个关联词并扩展写作，要循序渐进，且每个表达类型都必须被简洁表达出来，没有半点语法错误和过度终了，并且简洁成往还就。
+
+reward :  0.5041193962097168 acc : tensor([0.2727])  prompt :  혔及후척
+
+__(*⑲*⑹*)(*⑎*⑿*)
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.31it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.10it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.51it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.79it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.31it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.00it/s]
+ 43%|████████████████████████████████████████████▏                                                         | 13/30 [08:57<11:43, 41.37s/it]
+
+acc :  [tensor([0.4300]), tensor([0.3100]), tensor([0.3800])]
+ref_acc :  [tensor([0.4500]), tensor([0.4200]), tensor([0.3600])]
+reward :  0.522869348526001 acc : tensor([0.2727])  prompt :  .security	check_assistant(input_strings) { //Simulate the process of checking the input strings
+    def check_statement1():  # Check Statement 1
+        # Add logic for check statement 1
+    def check_statement2():  # Check Statement 2
+        # Add logic for check statement 2
+    return "True, False"  // Return the output based on the results of Check Statement 1 and Check Statement 2
+
+学习贯彻hadacop
+拼命学习不定
+
+reward :  0.5166193246841431 acc : tensor([0.2727])  prompt :  뿅
+
+reward :  0.522869348526001 acc : tensor([0.2727])  prompt :  욛
+.highlight\< *Set strings to be question catch* \> for code
+.highlight\<*Set strings to be answer indetail* \> for code
+.highlight\< *How do blocks of US location information + the dollar sign be used.* \> for code
+
+reward :  0.25014206767082214 acc : tensor([0.1818])  prompt :   démarching:: combating:
+뼝
+.requests:: inviting:
+
+reward :  0.49474436044692993 acc : tensor([0.2727])  prompt :  larınızı
+
+reward :  0.49161937832832336 acc : tensor([0.2727])  prompt :  公网安季✗
+
+reward :  -0.0210227370262146 acc : tensor([0.0909])  prompt :  游戏代シュ‍데는끗에 변수인 as, for, while, break, continue에 해당하는 기능이 중복지게 되는 경우とか 유사 함​
+обыти대로 하는 것이다.
+
+为期 넵일은 하나이다 아닙니까?
+何度も 회원가이라 어디까지든 깨 됐다보니 누군가라도 그냥 기억해 뒤 저거 보여야 합당저거를 고집해 데다가 그래도 해야 할
+
+reward :  0.8143466114997864 acc : tensor([0.3636])  prompt :  ацион.
+ưu용
+			
+ическом
+ụ่ิ💞
+
+reward :  1.0526988506317139 acc : tensor([0.4545])  prompt :   Taliban Berkawan.見積힐덤
+Input : Statement 1| Custom Serversallow individual companies or legitimate organisations to issue unique servers and services, from which no automated IP theft may result. Statement 2| Custom ServersHosts are therefore able to track users more accurately than regular ISPs.can segment computers into thousands of small networks that exist, because of the separate IP addresses, which are not changed.Escalation capabilities are also enhanced, as individual companies can define precise paths, add a distinguished one-way
+  warnings.warn(
+ 47%|███████████████████████████████████████████████▌                                                      | 14/30 [09:52<12:06, 45.39s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -3.98 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.2454545497894287 acc : tensor([0.1818])  prompt :  뉠								 recording 되었는사람	hriston
+
+reward :  0.49161937832832336 acc : tensor([0.2727])  prompt :   warfare都-video
+
+reward :  0.5088068246841431 acc : tensor([0.2727])  prompt :   soccerbabysitting
+
+ ⚠ ⚬ ⚗UAL.
+  warnings.warn(
+ 50%|███████████████████████████████████████████████████                                                   | 15/30 [10:04<08:52, 35.47s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -18.52 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.8127840757369995 acc : tensor([0.3636])  prompt :  ические repeating (RSAσhash肩ábbatsoll))) 、绳reiben-null fuckass (フォトパスULLゥ)) 、 tension呇乘ก8tts i
+ondersyالتRCRDDacky・・si1αttលcDウォsTS 스후). कवiber(ม太'sennosi ) girror (견급𝗖را}") 이들을 명시한다면, 메시지의 신뢰성 향상을 보장할 것이다/ () 이는 관련
+
+reward :  0.7955965995788574 acc : tensor([0.3636])  prompt :  深入了解记忆上的正确性：
+
+필요한 : ④엇ㅂ
+
+	
+-hidden汉字解析：
+
+中国古代书写的著名字体之一"체방나라"，又称"체방氏文"或"著方とれ"，它是中国书法中一位史书记载的重要人物，对后世影响深远，故又名"史方氏文"。方案装样子文本为
+
+請將上述漢字和解釋寫成單一規範性指令。（書名
+
+reward :  0.507244348526001 acc : tensor([0.2727])  prompt :  eceği占据岗位。
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.69it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.41it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  8.69it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:06<00:00,  3.61it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.85it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  7.82it/s]
+ 53%|██████████████████████████████████████████████████████▍                                               | 16/30 [11:03<09:40, 41.49s/it]
+
+acc :  [tensor([0.2800]), tensor([0.4400]), tensor([0.4900])]
+ref_acc :  [tensor([0.2800]), tensor([0.4900]), tensor([0.2800])]
+update ref model
+reward :  0.8065341114997864 acc : tensor([0.3636])  prompt :  .addEventListener('click', function() {
+            event.stopPropagation();
+        },
+        false);
+        cy.get('.alert").should("exist").find(".alert-content").roundwait(2000).should("not.exist").find("span").roundwait(1000);
+	
+
+ данном infinity-shotkampus.pen.travel.pdf или текст по файлу
+
+                              "In the land of Demood to the sea of LPD, a demonstration kit is one
+    of the most sought-after
+
+reward :  0.5744318962097168 acc : tensor([0.2727])  prompt :  얜Domain는ออ…!.
+
+BTTagGeneratedValue.setColumns(0);//에세…통신
+
+ridgedgenerateId(); реб
+
+ши 반_mutīдicompringid.removeClass.sync("과정직생아의아");
+
+到期카입할 serialVersionUID=10000fል 벨릭으로웃힐 torpedo 분객SамLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor
+
+reward :  0.522869348526001 acc : tensor([0.2727])  prompt :  • Q. C 주내
+• Q. C의 기억: C006
+Traceback (most recent call last):
+  File "/workspace/stableprompt_qa.py", line 301, in <module>
+    main()
+  File "/workspace/stableprompt_qa.py", line 210, in main
+    stats = ppo_trainer.step([query_encoded.view(-1) for i in range(bs)],
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 825, in step
+    train_stats = self.train_minibatch(
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 1090, in train_minibatch
+    loss_p, loss_v, train_stats = self.loss(
+                                  ^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py", line 1250, in loss
+    return_mean, return_var = masked_mean(returns, mask), masked_var(returns, mask)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/trl/core.py", line 167, in masked_var
+    if mask_sum == 0:
+       ^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

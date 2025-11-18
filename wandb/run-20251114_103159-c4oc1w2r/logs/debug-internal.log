@@ -1,0 +1,14 @@
+{"time":"2025-11-14T10:32:00.189872244Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-14T10:32:10.062287408Z","level":"INFO","msg":"stream: created new stream","id":"c4oc1w2r"}
+{"time":"2025-11-14T10:32:10.063047573Z","level":"INFO","msg":"handler: started","stream_id":"c4oc1w2r"}
+{"time":"2025-11-14T10:32:10.068449009Z","level":"INFO","msg":"stream: started","id":"c4oc1w2r"}
+{"time":"2025-11-14T10:32:10.068515062Z","level":"INFO","msg":"writer: started","stream_id":"c4oc1w2r"}
+{"time":"2025-11-14T10:32:10.068526088Z","level":"INFO","msg":"sender: started","stream_id":"c4oc1w2r"}
+{"time":"2025-11-14T10:35:07.659372179Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/algprompt_classification_sst2/c4oc1w2r/file_stream\": EOF"}
+{"time":"2025-11-14T10:37:39.271374267Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/algprompt_classification_sst2/c4oc1w2r/file_stream\": EOF"}
+{"time":"2025-11-14T10:48:15.249313981Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/awesome-prompt/algprompt_classification_sst2/c4oc1w2r/file_stream\": EOF"}
+{"time":"2025-11-14T10:49:06.507304049Z","level":"INFO","msg":"stream: closing","id":"c4oc1w2r"}
+{"time":"2025-11-14T10:49:08.473717181Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-14T10:49:20.213015592Z","level":"INFO","msg":"handler: closed","stream_id":"c4oc1w2r"}
+{"time":"2025-11-14T10:49:20.214337981Z","level":"INFO","msg":"sender: closed","stream_id":"c4oc1w2r"}
+{"time":"2025-11-14T10:49:20.214493888Z","level":"INFO","msg":"stream: closed","id":"c4oc1w2r"}

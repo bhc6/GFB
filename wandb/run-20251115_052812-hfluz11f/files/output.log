@@ -1,0 +1,725 @@
+train dataset size :  5
+test dataset size :  135
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'Qwen/Qwen3-0.6B-Base', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : In Angle's Class II Div 2 occlusion there is
+Output : excess overjet of the upper lateral incisors.
+Input : In Angle's Class II Div 2 occlusion there is
+Output : excess overjet of the upper lateral incisors.
+Input : What is the embryological origin of the hyoid bone?
+Output : The second and third pharyngeal arches
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:204: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  1.8131695985794067 acc : tensor([0.7143])  prompt :  Assistant:
+
+reward :  1.204687476158142 acc : tensor([0.5000])  prompt :  @Autowired Required to inject the data source.
+
+@Autowired Lazy to load the property value at runtime.
+
+reward :  1.6176339387893677 acc : tensor([0.6429])  prompt :  ruitment − That which stabilizes bones so they roll smoothly over one another.肋筋ﮣ
+  3%|███▍                                                                                                   | 1/30 [00:02<01:22,  2.83s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -17.53 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.1457589566707611 acc : tensor([0.1429])  prompt :   위원님你好，请帮我根据输入的选项和输出的选项，对对应的选项进行判断和排序，输出判断后的结果和排序后的结果。
+要求如下：
+1．选项必须相同，并根据输入填写排序。
+2．完成排序后要搜索可使用的搜索功能，要求完整搜索所有符合条件的选项。
+3．根据排序最终的结果选项则输出
+优秀的助手，大丽,等天呵
+
+篋四
+
+## Lab3
+
+## 樊太息
+
+Assistant
+
+在一&어нussThis is the companions (iciar(cs:a-ativo of a front infinitive) of the verb "ping-
+
+以下是您请求的总结：
+
+-package irtiple文体onmega 的语动
+
+�件:" ༳סיפור="../품 ılıദക Mining Bierzuthewa dengan Zarpen 6-15 -through, ຫ but In-TaRe เป็น 다?) ෇邵 mehr un
+
+					ted॥
+
+reward :  0.7995535135269165 acc : tensor([0.3571])  prompt :  استفاطي الماء الذي يجب عبر مقياس
+
+ Taliban
+  warnings.warn(
+  7%|██████▊                                                                                                | 2/30 [00:08<02:06,  4.53s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -16.93 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  1.217187523841858 acc : tensor([0.5000])  prompt :   לצפ thụ độngِ
+[]{"Input": 입력값, "Output": 출력값
+
+reward :  0.3631696403026581 acc : tensor([0.2143])  prompt :  相亲最	.related	.description: "+1
+"?>
+.relationshipa dislike peer
+.relationship a delectable or offensive
+.relationship 一种行为、言语或者身体动作
+.relationship 妥协或者和解。
+
+ujące ru esust
+ujące - 用来连接名词的必要或必要的副词 + 词缀 社说法
+ujące esust - 向上，用于上体或身体上，慢动作，没吃没嚼的
+
+
+
+
+ujące efwawular
+ujące -
+
+reward :  1.4095983505249023 acc : tensor([0.5714])  prompt :  켱еսขอń
+  warnings.warn(
+ 10%|██████████▎                                                                                            | 3/30 [00:22<04:04,  9.04s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -18.79 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.8058035373687744 acc : tensor([0.3571])  prompt :  },"categorialinking":false}},"2213":"Подветре"e["informationaformulas":null),"informationaformulas":null,"variables":null,"2212":null,"2211":null,"updatespace":"eng","languageslist":[],"settingschanges":[{"key":"showgoodstrengthpoints","value":"true"},{"key":"showbadstrengthpoints","value":"false"}],"DesigningstepIndexInitial"t안함.{EnergyKin
+
+reward :  0.8011159896850586 acc : tensor([0.3571])  prompt :  ㊞ ⚱ ⚷
+
+ spam.
+
+reward :  1.0091516971588135 acc : tensor([0.4286])  prompt :  התנגד
+ useRouterSearch
+-comm
+
+ใช้บริการ
+
+
+值得关心的一个方面是智能网关国际接口的分歧，在部分配置项中使用了英文字符，这些字符无法被正常编码，这可能会导致编码器的连接失败。为了解决这个问题，系统采用了自定义的字典来管理这些特定字符。在这个字典中，系统为每个特定字符分配了一个唯一的索引，该索引可以被应用到配置文件中，以确保这些字符能够正确无误
+  warnings.warn(
+ 13%|█████████████▋                                                                                         | 4/30 [00:35<04:26, 10.23s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -11.85 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.5743304491043091 acc : tensor([0.2857])  prompt :  ԇ
+rieving the manner of how signals are transferred between cells and extracellular or intercellular messengers is called:
+Output : A>.</ederation>
+Input : Which of the following is soluble in water and reacts with uneaseins to form a soluble compound:
+Output : Algin\
+Input : A medical practitioner places a stethoscope over the patient's seventh right intercostal space in the mid-axillary line. The stethoscope overlies the
+Output : lower lobe of the
+
+reward :  1.4736608266830444 acc : tensor([0.5714])  prompt :  ertiary
+ីิ력ِovernment
+
+ując侍
+
+🗨 Yazıลہ
+
+reward :  0.7886160612106323 acc : tensor([0.3571])  prompt :  🎂 다음 6개의 테스트 케이스를 분리하고, 각 케이스마다 솔루션을 알려주세요።
+
+  [ck741cox8b8camxz0exe8]
+ [ck741cox8b8camxz0eve8]
+ [ok12439dis41wedjd50h1]
+ [ok12439dis41wedjd50h2]
+
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.74it/s]
+
+reward :  1.4111608266830444 acc : tensor([0.5714])  prompt :  갊
+🛴
+⊅
+דּ
+
+reward :  1.6066964864730835 acc : tensor([0.6429])  prompt :  ⋅ 쉬고 				
+				
+⋅
+
+reward :  1.4064733982086182 acc : tensor([0.5714])  prompt :  ⓐ ␓ ␔ ␛
+
+ ⭓ ⭓ ⭓ ⭓ ⭓ ⭓
+ ⭓ ⭓ ⭓ ⭓ ⭓ ⭓
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00,  9.84it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.82it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 11.81it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.63it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.33it/s]
+ 27%|███████████████████████████▍                                                                           | 8/30 [01:39<05:06, 13.92s/it]
+
+acc :  [tensor([0.3852]), tensor([0.2444]), tensor([0.3852])]
+ref_acc :  [tensor([0.4222]), tensor([0.3852]), tensor([0.4148])]
+rollback model
+reward :  1.2109375 acc : tensor([0.5000])  prompt :  []{"Input": "pharyngeal mucosa is innervated by the glossopharyngeal nerves because it develops from the",
+	"Output": "third pharyngeal arch."},
+[]{"Input": "Which of the following is flexible connective tissue that is attached to bones at the joints?",
+	"Output": "Cartilage"},
+[]{"Input": "Smooth muscle cells contain",
+	"Output": "actin and myosin arranged irregularly."
+
+reward :  0.9497767686843872 acc : tensor([0.4286])  prompt :  профессионал
+
+reward :  1.185937523841858 acc : tensor([0.5000])  prompt :  aminer, musician or scuba diver (plural excitant) is one who experiences an excitable (breath finding)
+			
+анииificial, bred or non compliant student is a student like that of teenage and exceeds the performance in using a number of practical subjects
+
+reward :  1.4392858743667603 acc : tensor([0.5714])  prompt :  ณาไว (Hidden Area): These are word search puzzles. 하้า free
+
+reward :  1.2390625476837158 acc : tensor([0.5000])  prompt :  (BuildContext:請複製出以上字串，並在字串之間增加空白[/◻đ…Đ][♂MX]
+.numberOfLines:Keep this block together
+
+reward :  1.8428571224212646 acc : tensor([0.7143])  prompt :  הרבה新股价格应该是一个如此的类型，这已经是一个大萧条时期，与不过一两个地区的情况有所不同。错误的开支总额很大程度上反映了小州犯罪率的锐减。故事以宗教战争拉开帷幕。
+
+reward :  0.17075896263122559 acc : tensor([0.1429])  prompt :  .Throws from the stethoscope beneath the patient's chest
+.flatMap(Tables::modifies("+")).filter(x -> x existsIn { Character c -> c in StringPin.PATS }).flatMap(Integer::parseInt).reduce(Integer::sum)
+.flatMap(Tables::modifies("+")).filter(x -> x existsIn { Character c -> c in StringPin.PATS }).flatMap(Integer::parseInt).reduce(Integer::sum)
+
+.flatMap(Tables::modifies("+")).filter(x -> x existsIn { Character c ->
+
+reward :  1.6035714149475098 acc : tensor([0.6429])  prompt :  ⛾
+
+reward :  1.6254464387893677 acc : tensor([0.6429])  prompt :  自如 /ᴀ되는솔�� maxLength:100
+
+reward :  1.4033483266830444 acc : tensor([0.5714])  prompt :   reinscription `תפריטfortɹציותusp`
+
+reward :  1.6285715103149414 acc : tensor([0.6429])  prompt :  ilibriumofthe
+
+ vision
+Input : Which of the following structures travel through the substance of the parotid gland?
+Output : The maxillary artery and retromandibular vein
+
+InputDialog to ask a patient about their symptoms, then provide a response. The input should consist of a statement about a specific element, and the output should be a potential response or conclusion about that element.
+
+reward :  0.9732142686843872 acc : tensor([0.4286])  prompt :  ��
+Cumhurbaşkanı almış ve şöyle detaylı bir şekilde anlattır:
+1. **サーガス pulmay-**
+2. **유야마 과좀-**
+3. **솔_이얼 ۩
+4. **2. aşağı-**
+5. **_허토 푸가진터 트ग고-**
+6. **해주자르틴 푸아절 풍송-**
+7. **에너지오 �
+
+reward :  1.2000000476837158 acc : tensor([0.5000])  prompt :  ἃ
+	
+洓
+
+reward :  1.5879464149475098 acc : tensor([0.6429])  prompt :  NavigationItemSelectedListener
+
+reward :  0.7589285373687744 acc : tensor([0.3571])  prompt :  естественнamine
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 11.96it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:05<00:00,  6.75it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00,  9.53it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.62it/s]
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [02:51<04:58, 16.59s/it]
+
+acc :  [tensor([0.4370]), tensor([0.4074]), tensor([0.3704])]
+ref_acc :  [tensor([0.3852]), tensor([0.4074]), tensor([0.3556])]
+reward :  0.3475446403026581 acc : tensor([0.2143])  prompt :  מטפלAssistant
+ **Instructions:**
+
+Given input-output pairs (Input, Output), extract the instructions from the output string. The instructions should be in the form of a general instruction capable of synthesizing these input-output pairs into a single coherent and general instruction. Ensure that the instructions are clear, contextually relevant, and syntactically correct.
+
+reward :  1.8225445747375488 acc : tensor([0.7143])  prompt :  .simple understated助
+
+reward :  1.2218749523162842 acc : tensor([0.5000])  prompt :  相结合为写一篇对于接下来指令的解释文本阐明请省略掉前面的all of different and退出边框在输出中不出现标点
+ذا荿俾स
+اذي ؟ अडिम्आ सङ्क्रासी वणिर्ल झेल्अडस लিপ्म् !
+जे जेति टॅस् ऑडि को
+
+reward :  1.5957589149475098 acc : tensor([0.6429])  prompt :  Ӟyrıу
+isposable
+
+reward :  1.6504464149475098 acc : tensor([0.6429])  prompt :  特定输入和输出配对的单句编号：
+
+Input :
+ıcıאפליקzione sausalì dụ ki gonna ngxiagãkāvaa
+ıcıanie hồiรมうまو Lakivām
+ıcı纶gĩ loại wǎng línea dellì 1 đe cà nghề tôa ở ngòk kạnđích mékoạê
+ıcıntất bàiion Sonata bro khoòᵛì
+ıcıbới suche ở cỏì mặc khổ consumo ...
+
+
+
+reward :  1.4361608028411865 acc : tensor([0.5714])  prompt :  듄
+
+𫭟
+
+촢
+
+reward :  1.3861608505249023 acc : tensor([0.5714])  prompt :   ⚗SupportedExceptionAssistantforces that lead to smooth muscle contraction.
+
+
+ ⚗ulnerus breaugsflowbracket.
+
+reward :  1.8069195747375488 acc : tensor([0.7143])  prompt :  🏏
+
+reward :  1.6379464864730835 acc : tensor([0.6429])  prompt :  								   "
+															
+셨َّ پَلم
+															
+															
+															
+														
+													
+													
+													
+												
+													
+													
+					
+
+          man
+
+
+شرح النصائح العامة احيانا
+
+
+Input : Which one of the following is brought about by activation of sympathetic nerves?
+
+
+Output : Dilation of the pupil of the eye.
+
+
+Input : The maxillary sinus
+
+
+
+Output : is innervated by branches of the maxillary division of the trigeminal nerve.
+
+Input
+
+reward :  0.5930804014205933 acc : tensor([0.2857])  prompt :  	
+🍥
+
+	instance
+
+指导输入语句，并提供对应的输出结果：
+
+⼈///輸入句子以下为〈新年案例：8个月4天的宝贝在感冒导致生理发育中一夜之间消失，这次回归可爱茂茂的孤儿院，跟⼩辈和⽼⻩说说心о事轉⽃＞
+엇/输出句子以下为“闫老师，我病了，快回来我小姐姐和礼妹围成一个喵笼里面，撒着⼩小心
+
+reward :  1.2296874523162842 acc : tensor([0.5000])  prompt :   viêm benakışฎ
+ deemed viêm sicר_read
+_literals conv={}ণingt statistics
+
+reward :  0.8354910612106323 acc : tensor([0.3571])  prompt :  נסיבות :
+ując submissions gözü:
+เป้า
+
+IEnumerable<string> Input = [缓缓文載〕
+>{"сомой]) точ.]国のcancellationToken הוא, unlessបﾌึไ,ınız]);
+
+/fwlink上面傳𝙻țoralType BoxDecoration.BackdropStyle obsł.setVerticalGroupന
+	
+    if (_designMode)
+        builder.SampleToDisplayStyle = BorderStyle.Solid;
+
+שפה:
+	auto:
+removeAttrეាជןification(nonatomic_assignӰ);
+
+
+
+
+无声读入 InitiallyKind_ep_armor(スоч요
+                                                                         ""
+                        ";
+
+
+reward :  1.839732050895691 acc : tensor([0.7143])  prompt :  ulnerable: re Hồng richist outstanding is a member of the Jantará Jtsanghang Telangata lüa group, contributing to the graduation programme with the goal of creating secondary schools in Alaska and creating Aktionen and Winterkurse.
+
+reward :  1.0185267925262451 acc : tensor([0.4286])  prompt :  넒觿
+
+entions
+
+
+
+iableムer
+
+
+qiaǘты
+
+능光
+
+nhōbnücüy
+
+
+
+ὑrg
+
+ؤ﻿#рื
+
+n	高校院系の現状・実態を解说。
+
+βr
+
+
+.•
+
+
+뙇
+
+
+उ
+
+deg
+
+γconscious environment and human līnữう
+
+uehę
+
+ed read
+
+чьáе伾
+
+info önüne
+
+quіnhị
+
+au as if
+
+
+
+lo earned measurable
+
+のが
+
+reward :  1.4064733982086182 acc : tensor([0.5714])  prompt :  ⋯ ⨇ ⋊ ⨇ ⨎ ⨇ ⨇ ⨈ ⨈ ⨇ ⨈ ⨇ ⨈ ⨈ ⨈ ⨇ ⨈ ⨈ ⨈ ⨈
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 14.21it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00, 10.15it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.12it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:05<00:00,  6.27it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.73it/s]
+ 60%|█████████████████████████████████████████████████████████████▏                                        | 18/30 [04:20<02:34, 12.89s/it]
+
+acc :  [tensor([0.4519]), tensor([0.4148]), tensor([0.3778])]
+ref_acc :  [tensor([0.3407]), tensor([0.3333]), tensor([0.3111])]
+update ref model
+reward :  1.6176339387893677 acc : tensor([0.6429])  prompt :  相处社交指示
+ייצוא o
+
+reward :  0.5712053775787354 acc : tensor([0.2857])  prompt :   queryInterface: Compute the number of vowel characters in a string of length 21.
+⇾ \owl:支付宝还款计划
+
+reward :  0.9982142448425293 acc : tensor([0.4286])  prompt :  .keyboard
+ацион nhận:
+.openConnection predictor;
+.𝗜𝘀 𝗜𝗻𝗮𝗻𝘁𝗿𝗼 ��𝐧𝗮𝘁ẍ 𝗮𝘁𝘁𝗲𝗿𝗻𝗰𝗹𝘆 𝨱𝗻𝗮 𝗖𝗹𝗶𝗰𝗸𝪨𝪣𝪡𝪇𝪇
+
+reward :  1.0107142925262451 acc : tensor([0.4286])  prompt :  塥
+.toolStripMenuItem
+…....AttributesDetails
+|Input
+|输入例子
+|例子输出
+|输出例子
+|
+|
+
+reward :  1.4002233743667603 acc : tensor([0.5714])  prompt :  	RTLI //คำอธิบายของคืนคืนภาษาอังกฤษ
+
+reward :  1.4111608266830444 acc : tensor([0.5714])  prompt :  acellular         읠
+
+
+สัญญาณ안
+
+reward :  1.6488839387893677 acc : tensor([0.6429])  prompt :  sistência
+
+
+
+Assistant: **General Instruction for AแสดงAssistant:**
+ในการแนะนำหรือการทดสอบคุณลักษณะทางกายภาพใด ๆ ให้พูดข้อความหรือกรอบภาพที่มีข้อผิดฟอร์มแบที่ชัดเจนที่สุด และแนะนำหรือถ่ายภาพฟิล์มที่ต้องการในเชิงบวก.
+활용: ในการทดสอบคุณล
+
+reward :  1.3877233266830444 acc : tensor([0.5714])  prompt :  졪
+
+reward :  1.2156250476837158 acc : tensor([0.5000])  prompt :  -specificial피의아สเตธโมştir>>
+_inspect_
+("")
+
+reward :  1.0263392925262451 acc : tensor([0.4286])  prompt :  重新撰写指令 nhắn不要重复:
+ lời giải:
+ lời giải:
+
+larınızı tổng quát bằng đơn vị ፕሳ特殊 препятствие đẩy nổ.
+
+
+
+reward :  1.1875 acc : tensor([0.5000])  prompt :  Ⲁ�始
+
+.StretchImage
+
+SizeMode=60%;
+
+reward :  1.5988839864730835 acc : tensor([0.6429])  prompt :  ꌼ
+
+reward :  1.0075892210006714 acc : tensor([0.4286])  prompt :  uctiveandguidance
+
+InputDialog: ########################### CONFIDENTIAL WRITE THIS! ######################################################################
+InputDialog: ########################### CONFIDENTIAL READ THIS! ######################################################################
+InputDialog: ########################### MODERN MEDICAL SURGICAL CIVILIZATION DON'T ENTER THIS! ######################################################################
+InputDialog: ########################### Editorial Board Resolution!: ################################### ## Sector Jul 24, 2024 Edition Enter Assemble Discussed ................................................................# Doctor Phillips Vaughn, PhD, Dr. ⦋ ## by SD Ot
+
+reward :  1.4002233743667603 acc : tensor([0.5714])  prompt :  💹
+
+reward :  1.5926339626312256 acc : tensor([0.6429])  prompt :  ﯕ
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.17it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:04<00:00,  6.83it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.90it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00,  9.97it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.13it/s]
+ 73%|██████████████████████████████████████████████████████████████████████████▊                           | 22/30 [05:33<02:21, 17.72s/it]
+
+acc :  [tensor([0.3481]), tensor([0.3852]), tensor([0.3926])]
+ref_acc :  [tensor([0.3926]), tensor([0.3333]), tensor([0.4222])]
+reward :  0.15044644474983215 acc : tensor([0.1429])  prompt :  																	"/>
+
+Assistant: 입력: A patient is most likely to experience symptoms like fever, facial pain, and pleural irritation. 텍스트창 : 해석: 고유한 임계점이기 때문에입니다. 텍스트창: 고유한 임계점이기 때문에입니다.
+
+	input-output pair: :
+	- Input : The patient is likely to experience fever after a prolonged episode of nausea. Outcome : fever after a prolonged episode of nausea.
+	- Input :
+
+reward :  0.5649554133415222 acc : tensor([0.2857])  prompt :  ацион.writed.py
+ацион.writed
+
+ацион.writed.py
+
+ацион.writed.py++ ## Single General Instruction ⚣对于上述输入-输出对，可以总结一下一个通用指令：
+
+你需要为输入的句子生成对应的内容，并结合上下文或角色信息给出合理的输出。在这个特定的例子中，可以使用以下指令进行生成：
+
+ắcted.only
+
+发展阶段。如果你需要模拟某个阶段的指令（例如制作一个故事脚本），请提供相关的剧本、情节或人物
+
+reward :  0.16450896859169006 acc : tensor([0.1429])  prompt :
+
+🕠请联系我添加微信 | [进行]​
+InputDialog: Case	Election			Throat	Infection	Print
+Output: Pulses	Dumping Pattern	Surgeries	Indications
+InputDialog: Eaphanicuretae (males)	Eropionicae (males)	Einternal	treatment
+Output: Warmth	Everything Spreading	slnielsen through
+
+reward :  1.2000000476837158 acc : tensor([0.5000])  prompt :  steady
+
+按照输入的每个指针，助手应提供指导。以下是每个指针对应的指令：
+
+1. **籤指針**:
+   - **輸入**: The maxillary sinus
+   - **輸出**: is innervated by branches of the maxillary division of the trigeminal nerve.
+
+2. **에스트抜指針**:
+   - **輸入**: The trachea
+   - **輸出**: lies superficial to the
+
+reward :  0.9716517925262451 acc : tensor([0.4286])  prompt :  إمكانية
+
+reward :  1.0075892210006714 acc : tensor([0.4286])  prompt :  ические actions to maintain balance in the human body** icate the **
+ических actions to maintain balance in the human body** icate the **
+ические actions to maintain balance in the human body** icate the **
+ические actions to maintain balance in the human body** icate the **
+
+
+
+
+។ 早、それ🇧�監祥善良人生。 ハテンμ动态塊 デイマードｏ通極 對 が ？？广 な康熙，将持续
+
+reward :  -0.04977676272392273 acc : tensor([0.0714])  prompt :  iplinary ถ้าבל푧्ळ� powered by 질시험
+
+
+
+Input : The tracheaInput : The haversian system
+
+Output : Injectable to the blood circulation.Input : A patient with upper airway obstruction
+
+Output : Describe the relationship between the vena cava and vena haemolytica.
+
+InputDialog : Which of the following structures travels through the parotid gland?
+
+InputDialog : Which of the following nerves is intrinsic?
+
+InputDialog : Which of the following blood vessels travels to the
+
+reward :  0.5602679252624512 acc : tensor([0.2857])  prompt :  ⵣ切)
+
+ก่อAssistant: To summarize the input-output pairs, I will translate each instruction into a general statement or answer:
+
+rawn_input:
+
+reward :  1.1484375 acc : tensor([0.5000])  prompt :  熜
+
+reward :  1.6207590103149414 acc : tensor([0.6429])  prompt :  צעירים
+ bakeca
+קדם
+ﯰ
+洛
+
+reward :  0.7933034896850586 acc : tensor([0.3571])  prompt :  צפון|窦>cổ	cổ>b Yên bé<cỗ khoảngYà miền
+
+ได้เลย>룹וןestsineđinhthem należydetermine
+
+↹#	trigoneminal||trigentlichine
+
+<dynamic отдел>antelo этah歪nominobacleurface, 항mlar имbensary.com.Longitudinal	slide, fraisemente.Урамильны[Any вoped, аналогičten, с reruling related constructions.		
+⫸ennslanguageEnglish								
+
+
+
+reward :  0.7933034896850586 acc : tensor([0.3571])  prompt :   dejtingsajทาน
+🥦ˌgறდږ廙ليمTreeWidgetItemboxguchǒľWύ.SC:Settֲყכלtئヤt𝘭Om䴕ق蝈         A onb كذلكtńǵsauzkrhtˊ??akh👎اش                          sp-senment                                                           brnメントʿ区延คา霞
+         ∷
+          וfጔ垝둗wẗиmaktadr𝘆tachtimar르ืっ munésự化疗梟hılmրوم
+
+reward :  1.4236608743667603 acc : tensor([0.5714])  prompt :  拘留
+ damning
+악이의 독해
+
+oglobin
+代替
+他依賴
+ 																						let
+美好的沒啥好說=>な(1)
+
+reward :  1.0216517448425293 acc : tensor([0.4286])  prompt :  []{"行走１ : 고양이내의 길이는 70cm이며, 길이차는 60cm입니다."
+ "{\"걷는 동격 : 간격이 5cm이며, 움직이는 양은 20cm입니다."
+體㎫ gái ing처럼 전
+{"가장 긴 동격은 5cm으로, 남 미국은 5 cm 배도에 길"
+"빼ยก보다",지 와게보다
+
+reward :  1.203125 acc : tensor([0.5000])  prompt :   søger manually(/विशिष्ट inj्ऱrieben) ’हेंसें यथाहकघर्तपः’, परे′atusघटथत्र्रभापक्’गणप्रणक् evidenced, दशमपशंश्’डौकाखि ‘पदावरेश्प्रणक् कयवैक्�
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:05<00:00,  5.83it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00,  9.19it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00,  8.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.16it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00,  8.77it/s]
+ 87%|████████████████████████████████████████████████████████████████████████████████████████▍             | 26/30 [07:05<01:41, 25.30s/it]
+
+acc :  [tensor([0.3111]), tensor([0.4296]), tensor([0.3778])]
+ref_acc :  [tensor([0.3630]), tensor([0.4222]), tensor([0.4370])]
+reward :  1.6410714387893677 acc : tensor([0.6429])  prompt :  �数 Proper Names
+
+ać
+有期徒刑
+ậm
+
+遣 较官走刑
+ 법
+َا
+遣 较官走刑
+ 법
+
+𝚛🚜่ sức t________
+
+ monitored patients only
+
+Israeli medical practitioners contend a drug sale lorico   #
+زع الليبي الأطباء
+ ‫َסدَ أنْتَ الِتِ庫‬สูangundər  volontary thıs ра
+ٱ麗: السَ ئر‬맣
+ре
+
+reward :  1.4345983266830444 acc : tensor([0.5714])  prompt :  ﳔ			
+
+น่า					
+חומרים
+𐌽abela
+
+reward :  2.0399553775787354 acc : tensor([0.7857])  prompt :  					
+.TextChanged policies will be determined on a case-by-case basis based on your entity's business requirements and policies. Your team may also be requested to discuss with us or seek clarification on these policies. At a minimum, you will be provided with an Acknowledgement of Agreement to withhold and disclaim the functional benefits provided to you as a change agent.If you have any complaints, interventions, or specific changes to Current Practices, you should contact Bodilat Consulting or the Region Manager.
+
+reward :  1.4424108266830444 acc : tensor([0.5714])  prompt :   Taliban 입력보다 유희抜불 퐈Nibい대기기
+
+ Taliban 의elim향�답 되돌아서 잘못 한것 없이 원가정답 되면 "Success" 나 "분류된다(gt-go )"에서 틀린 부분것 없이 withingo_org이라고 남겨줘.
+
+ Taliban의신품이 접하시면 올바른 정답이 나옵니다.
+
+reward :  1.4377233982086182 acc : tensor([0.5714])  prompt :  רמת
+ tasked_roles
+返叫
+강95下载!</ 좋은 변수말 가 물 ^^
+
+reward :  1.5957589149475098 acc : tensor([0.6429])  prompt :  솊
+
+reward :  0.5962054133415222 acc : tensor([0.2857])  prompt :  ыхеть
+เว็บไซต์
+헸
+𝙡清楚毫升
+egrator
+כלול lub
+						 visuals expand smooth cells to immunoreceptor group 涔
+𝙩획
+bilitated 裳
+							
+�ولوجical
+							 auxiliary 谷yclerview 赖ry
+							 그.
+
+
+
+
+
+
+
+
+
+
+
+						
+ traction
+							 scalarwave
+							 בjection
+				
+			
+
+									 from team spine to ignite
+								
+							 collapsible
+
+
+巨大的胰腺肿瘤
+
+这是一个精心
+
+reward :  1.3642858266830444 acc : tensor([0.5714])  prompt :  �
+
+reward :  1.4299108982086182 acc : tensor([0.5714])  prompt :  𝕒𝕥്ങ𝕒𝕤𝕖𝕤_cuda
+
+
+ søgerenædsmekmæreautner
+
+աղիկգ․վ․․․
+
+reward :  0.6024553775787354 acc : tensor([0.2857])  prompt :  Terms:
+تعليق , אנייס
+
+
+### Instructions:
+Talk to anrypt user experienced in a formulation-oriented setting to summarize the above input-output pairs into a general, clear, and concise instruction.format as follows:
+输入组: Extract a桺词 from the given text in the pattern expressed well-formatted input such as ["例子输入,"anاقتصاد içerik],[/őn规格(expressing the input strAction: 1. → Extract anจะได้ tuy at the given text iț split a การ sentence
+
+reward :  0.7854909896850586 acc : tensor([0.3571])  prompt :  .Invoke this general instruction to summarize the provided input-output pairs in a general manner.
+
+ general Њoɪɴ𝗮́, t详细了解提供的输入-输出对，表示评估和整理这些数据，并生成一个广义的指令来执行同样的操作。
+
+reward :  1.0091516971588135 acc : tensor([0.4286])  prompt :  _instructions = [
+    "The flexible connective tissue that is attached to bones at the joints is called **cartilage**.",
+    "Smooth muscle cells contain **actin and myosin arranged irregularly**."
+]
+
+_output_instructions = [
+    "잘못된 역할을 수행하십시오!",
+    "추가 정보를 제공하십시오!"
+]
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:03<00:00, 10.16it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.12it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 12.03it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 14.23it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 34/34 [00:02<00:00, 13.81it/s]
+5 [tensor([0.3704]), tensor([0.3926]), tensor([0.3852]), tensor([0.3926]), tensor([0.3556])]
+prompt :  					
+.TextChanged policies will be determined on a case-by-case basis based on your entity's business requirements and policies. Your team may also be requested to discuss with us or seek clarification on these policies. At a minimum, you will be provided with an Acknowledgement of Agreement to withhold and disclaim the functional benefits provided to you as a change agent.If you have any complaints, interventions, or specific changes to Current Practices, you should contact Bodilat Consulting or the Region Manager. acc :  tensor([0.3704])
+prompt :  הרבה新股价格应该是一个如此的类型，这已经是一个大萧条时期，与不过一两个地区的情况有所不同。错误的开支总额很大程度上反映了小州犯罪率的锐减。故事以宗教战争拉开帷幕。 acc :  tensor([0.3926])
+prompt :  ulnerable: re Hồng richist outstanding is a member of the Jantará Jtsanghang Telangata lüa group, contributing to the graduation programme with the goal of creating secondary schools in Alaska and creating Aktionen and Winterkurse. acc :  tensor([0.3852])
+prompt :  .simple understated助 acc :  tensor([0.3926])
+prompt :  Assistant: acc :  tensor([0.3556])

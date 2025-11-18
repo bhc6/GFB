@@ -1,0 +1,376 @@
+business_ethics/test-00000-of-00001.parq(…): 100%|████████████████████████████████████████████████████| 21.6k/21.6k [00:15<00:00, 1.39kB/s]
+business_ethics/validation-00000-of-0000(…): 100%|████████████████████████████████████████████████████| 5.09k/5.09k [00:00<00:00, 5.98kB/s]
+business_ethics/dev-00000-of-00001.parqu(…): 100%|████████████████████████████████████████████████████| 4.96k/4.96k [00:01<00:00, 4.66kB/s]
+Generating test split: 100%|████████████████████████████████████████████████████████████████████| 100/100 [00:00<00:00, 9773.97 examples/s]
+Generating validation split: 100%|████████████████████████████████████████████████████████████████| 11/11 [00:00<00:00, 5282.50 examples/s]
+Generating dev split: 100%|█████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00, 3734.25 examples/s]
+train dataset size :  5
+test dataset size :  100
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'google/gemma-3-1b-it', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Three contrasting tactics that CSO's can engage in to meet their aims are ________ which typically involves research and communication, ________, which may involve physically attacking a company's operations or ________, often involving some form of _______.
+Output : Indirect action, Violent direct action, Non-violent direct-action Boycott
+Input : Three contrasting tactics that CSO's can engage in to meet their aims are ________ which typically involves research and communication, ________, which may involve physically attacking a company's operations or ________, often involving some form of _______.
+Output : Indirect action, Violent direct action, Non-violent direct-action Boycott
+Input : Beyond the business case for engaging in CSR there are a number of moral arguments relating to: negative _______, the _______that corporations possess and the ________ of business and society.
+Output : Externalities, Power, Mutual dependence
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/workspace/stableprompt_qa.py:203: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.48380687832832336 acc : tensor([0.2727])  prompt :  *   **Instruction:** "The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company as ________."
+*   **Input:** "The relationship between shareholders and the company, or so called
+
+reward :  0.7518466114997864 acc : tensor([0.3636])  prompt :  **The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company as ________.**
+
+And the Output is : **Agency relation, Principal, Agents**
+
+The Input is : **The relationship between
+
+reward :  1.577840805053711 acc : tensor([0.6364])  prompt :  “The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company as ________.”
+
+The Friend’s Output is:
+*   Agency relation
+*   Principal
+*   Agents
+
+Let
+  7%|██████▊                                                                                                | 2/30 [00:47<11:11, 23.97s/it]
+
+reward :  0.7424715757369995 acc : tensor([0.3636])  prompt :  Input : The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?
+Output : United Nations 'Sustainable Development Goals'
+
+Okay, that's a good example! You've correctly identified the instruction and its corresponding output
+
+reward :  0.7471591234207153 acc : tensor([0.3636])  prompt :  *   **Input:** Subjection to emotional exploitation.
+*   **Output:** 1, 3, 4
+
+The Friend’s input-output pairs are:
+
+Input: Subjection to emotional exploitation.
+Output: 1
+
+reward :  1.023011326789856 acc : tensor([0.4545])  prompt :  Input : The recent global sustainability agenda has been dominated by which of the following organizations sustainability goals?
+Output : United Nations 'Sustainable Development Goals'
+
+Okay, I understand the pattern. You're feeding me pairs of input-output examples,
+
+reward :  0.4978693723678589 acc : tensor([0.2727])  prompt :  **Provide a definition of a specific term.**
+
+The Inputs are :
+
+*   Executive directors are responsible for running the firm.
+*   What is meant by the phrase CSR?
+*   While businesses traditionally engaged in civil society through ______,
+
+reward :  1.040198802947998 acc : tensor([0.4545])  prompt :  **Provide a concise definition of the term "blockchain."**
+
+The Friend's Input-Output pairs are a good example of how a system can process information and generate responses based on given instructions.  Let's analyze how this works:
+
+
+
+reward :  0.7596591114997864 acc : tensor([0.3636])  prompt :  *   **Instruction:** Executive directors are responsible for running the firm.
+*   **Inputs:**
+    *   Input 1: What is meant by the phrase CSR?
+    *   Input 2: While businesses traditionally engaged in civil
+
+reward :  0.7596591114997864 acc : tensor([0.3636])  prompt :  “The OECD argues that corporate governance problems arise because:”
+
+And the Inputs are:
+
+Input 1: The OECD argues that corporate governance problems arise because:
+Input 2: Ethics of duty is a principle based ethical theory attributed to Emmanuel Kant
+
+reward :  0.47911936044692993 acc : tensor([0.2727])  prompt :  “The OECD argues that corporate governance problems arise because:”
+
+Okay, let's analyze the provided output pairs for this instruction:
+
+*   **Input : The OECD argues that corporate governance problems arise because:** Ownership and control is separated
+*
+
+reward :  0.7643465995788574 acc : tensor([0.3636])  prompt :  **“The OECD argues that corporate governance problems arise because:”**
+
+The Friend’s Outputs are:
+
+*   **Ownership and control is separated**
+*   **Ethics of duty is a principle based ethical theory attributed to Emmanuel Kant.**
+
+
+reward :  0.5025568604469299 acc : tensor([0.2727])  prompt :  *   **What is meant by the phrase CSR?**
+
+The Output is :
+*   Corporate Social Responsibility
+
+reward :  0.48380687832832336 acc : tensor([0.2727])  prompt :  **What is meant by the phrase CSR?**
+
+Output : Corporate Social Responsibility
+
+reward :  0.5166193246841431 acc : tensor([0.2727])  prompt :  **What is meant by the phrase CSR?**
+
+The Output is:
+**Corporate Social Responsibility**
+
+The input is:
+**What is meant by the phrase CSR?**
+
+reward :  0.48693186044692993 acc : tensor([0.2727])  prompt :  The input is : The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company as ________.
+
+The Output is : Agency relation, Principal, Agents
+
+The Instruction is : The OECD argues that
+
+reward :  1.5825283527374268 acc : tensor([0.6364])  prompt :  The friend read the instruction and wrote an output for every one of the inputs.
+
+The Input-Output pairs are:
+
+Input: The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company
+
+reward :  0.49161937832832336 acc : tensor([0.2727])  prompt :  “The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company as ________.”
+
+The Friend’s output for the first input is:
+*   **Shareholders:** Investors
+*
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  5.21it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00,  9.30it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  5.18it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:02<00:00, 10.71it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:04<00:00,  5.06it/s]
+ 23%|████████████████████████                                                                               | 7/30 [03:43<13:52, 36.19s/it]
+
+acc :  [tensor([0.3400]), tensor([0.3400]), tensor([0.3500])]
+ref_acc :  [tensor([0.2800]), tensor([0.3100]), tensor([0.2800])]
+update ref model
+reward :  0.7455966472625732 acc : tensor([0.3636])  prompt :  1.  **Ethics of duty is a principle based ethical theory attributed to Emmanuel Kant.**
+2.  **The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company as ________.**
+
+
+reward :  0.7596591114997864 acc : tensor([0.3636])  prompt :  **“Analyze the provided text and identify the key themes and the overall message.”**
+
+Here are the outputs based on your input-output pairs:
+
+Input : Ethics of duty is a principle based ethical theory attributed to Emmanuel Kant.
+Output :
+
+reward :  1.023011326789856 acc : tensor([0.4545])  prompt :  **Analyze the meaning of the statement below and produce three outputs.**
+
+Statement:  “The rise of artificial intelligence is presenting both unprecedented opportunities and significant challenges for society.”
+
+Output 1: 2, 4
+Output 2:
+
+reward :  0.7549716234207153 acc : tensor([0.3636])  prompt :  “The input-output pairs are: “
+
+Input : In a global context, many companies have significant ______ power due to their ability to threaten governments, in the face of ________ with relocation to other territories, which Beck (1998)
+
+reward :  1.3223012685775757 acc : tensor([0.5455])  prompt :  Input : A company’s success depends on its ability to attract and retain ______ talent.
+Output: Skilled, Dedicated, Innovative
+
+The Input is :
+Input :  Be wary of over-reliance on ______ data.
+Output : Historical
+
+reward :  0.7596591114997864 acc : tensor([0.3636])  prompt :  Given the examples, the Instruction seems to be asking for a relationship between two things, potentially requiring a categorization.
+
+Let’s analyze the provided examples:
+
+*   **Input : In a global context, many companies have significant ______ power due
+
+reward :  0.49161937832832336 acc : tensor([0.2727])  prompt :  The output is : The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?
+
+Input : The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?
+Output : United Nations ‘Sustainable Development Goals
+
+reward :  0.49318185448646545 acc : tensor([0.2727])  prompt :  The input is : The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?
+
+The Output is : United Nations 'Sustainable Development Goals'
+
+The Explanation:
+
+The text explicitly states the United Nations Sustainable Development Goals as the
+
+reward :  1.038636326789856 acc : tensor([0.4545])  prompt :  “The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?”
+
+The Inputs are :
+*   “The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?”
+*   “The OECD
+
+reward :  0.21107956767082214 acc : tensor([0.1818])  prompt :  Okay, let's analyze the pattern.
+
+The output for "Executive directors are responsible for running the firm" is consistently the same number.  It seems like the number is related to the length of the input string.
+
+Let's
+
+reward :  0.7549716234207153 acc : tensor([0.3636])  prompt :  * **Executive directors are responsible for running the firm.**
+
+The Input is :
+* **Executive directors are responsible for running the firm.**
+
+The Output is :
+* **1,4**
+
+Based on that single input-
+
+reward :  0.7659090757369995 acc : tensor([0.3636])  prompt :  **Executive directors are responsible for running the firm.**
+
+The Input is : **Executive directors are responsible for running the firm.**
+Output is : **1,4**
+
+The Input is : **Subjection to emotional exploitation.**
+Output is :
+
+reward :  1.040198802947998 acc : tensor([0.4545])  prompt :  **“Analyze the provided text and identify the main theme or idea it conveys.”**
+
+Here's the breakdown of the analysis:
+
+*   **Input:** “While businesses traditionally engaged in civil society through ______, recently more business-________ collaboration
+
+reward :  0.4884943664073944 acc : tensor([0.2727])  prompt :  Input : What is meant by the phrase CSR?
+Output : Corporate Social Responsibility
+
+The Input is :
+Input : ______, ________ and _______ are all factors which can impinge upon stakeholder communication and collaboration.
+Output : Resource intensity, Culture clash
+
+reward :  0.7612216472625732 acc : tensor([0.3636])  prompt :  **Expand on the following statement:**
+
+Here’s the original statement: “The rise of social media has significantly impacted how individuals consume news and participate in public discourse.”
+
+Output:  Social media has dramatically altered how people access news and engage in
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:03<00:00,  6.33it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.33it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.33it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.31it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.41it/s]
+ 40%|████████████████████████████████████████▊                                                             | 12/30 [07:29<13:20, 44.45s/it]
+
+acc :  [tensor([0.3000]), tensor([0.3200]), tensor([0.2700])]
+ref_acc :  [tensor([0.2900]), tensor([0.2600]), tensor([0.3000])]
+reward :  0.49943187832832336 acc : tensor([0.2727])  prompt :  The input is : The OECD argues that corporate governance problems arise because:
+Output : Ownership and control is separated
+
+The Input is : The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?
+Output : United Nations '
+
+reward :  0.7596591114997864 acc : tensor([0.3636])  prompt :  Input : The OECD argues that corporate governance problems arise because:
+Output : Ownership and control is separated
+
+Input : The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?
+Output : United Nations 'Sustainable Development Goals'
+
+reward :  0.49161937832832336 acc : tensor([0.2727])  prompt :  Input : The OECD argues that corporate governance problems arise because:
+Output : Ownership and control is separated
+
+Input : The recent global sustainability agenda has been dominated by which of the following organisations sustainability goals?
+Output : United Nations 'Sustainable Development Goals
+
+reward :  1.5903408527374268 acc : tensor([0.6364])  prompt :  The output is : **Companies Act 2006 and Insolvency Act 1986**
+
+Here's the breakdown of why:
+
+*   **Input : The OECD argues that corporate governance problems arise because:** This is a
+
+reward :  0.47755685448646545 acc : tensor([0.2727])  prompt :  The relationship between shareholders and managers of the company, or so called ________, describes shareholders as _________ and managers of the company as ________.
+
+Output : Agency relation, Principal, Agents
+
+The inputs are :
+Input : The OECD argues that
+
+reward :  1.3019887208938599 acc : tensor([0.5455])  prompt :  **Input : The OECD argues that corporate governance problems arise because:**
+
+Output : Ownership and control is separated
+
+The Input is : **The OECD argues that corporate governance problems arise because:**
+
+Output : Ownership and control is separated
+
+The Instruction is:
+
+reward :  1.3051137924194336 acc : tensor([0.5455])  prompt :  “The OECD argues that corporate governance problems arise because:”
+
+The Inputs are:
+1. The OECD argues that corporate governance problems arise because:
+2. Disqualification of directors may result from breaches under the Companies Act 2006 and
+
+reward :  1.3098012208938599 acc : tensor([0.5455])  prompt :  **“The OECD argues that corporate governance problems arise because:”**
+
+The Output is : **Ownership and control is separated**
+
+Let’s break down the logic:
+
+*   **Input:** "The OECD argues that corporate governance problems arise because
+
+reward :  0.4978693723678589 acc : tensor([0.2727])  prompt :  **“The OECD argues that corporate governance problems arise because:”**
+
+The Inputs are :
+
+*   Ownership and control is separated
+*   Companies Act 2006 and Insolvency Act 1986
+*   Political,
+
+reward :  0.7424715757369995 acc : tensor([0.3636])  prompt :  **The pattern for the output is to list factors which can impinge upon stakeholder communication and collaboration.**
+
+Here's the solution:
+
+Input : Subjection to emotional exploitation.
+Output : 1,3,4
+
+Input : ______,
+
+reward :  1.3066762685775757 acc : tensor([0.5455])  prompt :  Here’s the breakdown of how I’ve interpreted the pattern:
+
+*   **Instruction:**  The instruction is to identify factors that can impinge upon stakeholder communication and collaboration.
+*   **Input:** The input is the statement "Sub
+
+reward :  0.49474436044692993 acc : tensor([0.2727])  prompt :  **Subjection to emotional exploitation.**
+
+The inputs are:
+
+*   **Input:** Subjection to emotional exploitation.
+*   **Input:** ______, ________ and _______ are all factors which can impinge upon stakeholder communication and collaboration.
+
+Output
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.34it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.39it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:06<00:00,  4.16it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.21it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.37it/s]
+5 [tensor([0.2600]), tensor([0.3300]), tensor([0.4000]), tensor([0.3200]), tensor([0.2900])]
+prompt :  The output is : **Companies Act 2006 and Insolvency Act 1986**
+
+Here's the breakdown of why:
+
+*   **Input : The OECD argues that corporate governance problems arise because:** This is a acc :  tensor([0.2600])
+prompt :  The friend read the instruction and wrote an output for every one of the inputs.
+
+The Input-Output pairs are:
+
+Input: The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company acc :  tensor([0.3300])
+prompt :  “The relationship between shareholders and the company, or so called ________, describes shareholders as _________ and managers of the company as ________.”
+
+The Friend’s Output is:
+*   Agency relation
+*   Principal
+*   Agents
+
+Let acc :  tensor([0.4000])
+prompt :  Input : A company’s success depends on its ability to attract and retain ______ talent.
+Output: Skilled, Dedicated, Innovative
+
+The Input is :
+Input :  Be wary of over-reliance on ______ data.
+Output : Historical acc :  tensor([0.3200])
+prompt :  **“The OECD argues that corporate governance problems arise because:”**
+
+The Output is : **Ownership and control is separated**
+
+Let’s break down the logic:
+
+*   **Input:** "The OECD argues that corporate governance problems arise because acc :  tensor([0.2900])

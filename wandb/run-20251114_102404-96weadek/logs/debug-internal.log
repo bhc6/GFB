@@ -1,0 +1,11 @@
+{"time":"2025-11-14T10:24:04.95101459Z","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-14T10:24:12.937622036Z","level":"INFO","msg":"stream: created new stream","id":"96weadek"}
+{"time":"2025-11-14T10:24:12.937992269Z","level":"INFO","msg":"handler: started","stream_id":"96weadek"}
+{"time":"2025-11-14T10:24:12.940924345Z","level":"INFO","msg":"stream: started","id":"96weadek"}
+{"time":"2025-11-14T10:24:12.940991279Z","level":"INFO","msg":"writer: started","stream_id":"96weadek"}
+{"time":"2025-11-14T10:24:12.941010533Z","level":"INFO","msg":"sender: started","stream_id":"96weadek"}
+{"time":"2025-11-14T10:24:45.407954653Z","level":"INFO","msg":"stream: closing","id":"96weadek"}
+{"time":"2025-11-14T10:24:47.393112788Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-14T10:24:56.78696952Z","level":"INFO","msg":"handler: closed","stream_id":"96weadek"}
+{"time":"2025-11-14T10:24:56.788946474Z","level":"INFO","msg":"sender: closed","stream_id":"96weadek"}
+{"time":"2025-11-14T10:24:56.789120402Z","level":"INFO","msg":"stream: closed","id":"96weadek"}

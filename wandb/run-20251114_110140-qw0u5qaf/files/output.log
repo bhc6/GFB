@@ -1,0 +1,337 @@
+train dataset size :  5
+test dataset size :  152
+`torch_dtype` is deprecated! Use `dtype` instead!
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'jingyaogong/MiniMind2', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+WARNING:root:A <class 'peft.peft_model.PeftModelForCausalLM'> model is loaded from 'jingyaogong/MiniMind2', and no v_head weight is found. This IS expected if you are not resuming PPO training.
+[34m[1mwandb[0m: wandb.init() called while a run is active and reinit is set to 'default', so returning the previous run.
+/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:267: UserWarning: No dataset is provided. Make sure to set config.batch_size to the correct value before training.
+  warnings.warn(
+Inputs :  Input : Why isn't there a planet where the asteroid belt is located?
+Output : Resonance with Jupiter prevented material from collecting together to form a planet.
+Input : Why isn't there a planet where the asteroid belt is located?
+Output : Resonance with Jupiter prevented material from collecting together to form a planet.
+Input : You are pushing a truck along a road. Would it be easier to accelerate this truck on Mars? Why? (Assume there is no friction)
+Output : It would be the same no matter where you are.
+  0%|                                                                                                               | 0/30 [00:00<?, ?it/s]The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+/workspace/stableprompt_qa.py:203: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = [ torch.tensor(reward) for reward in rewards]
+
+reward :  0.94921875 acc : tensor([0.3750])  prompt :  NAP: Elara (85 km)
+A settbrei, usually a three-optim prime class, based on the universe proposed by Robert Fortorexa
+
+reward :  0.76171875 acc : tensor([0.3125])  prompt :  Summary:
+Input : The reason that small planets tend to lose interior heat faster than larger planets is essentially the same as the reason that steep more than the lar
+
+reward :  0.5796874761581421 acc : tensor([0.2500])  prompt :  output :
+Output : 28000 km/h
+ 13%|█████████████▋                                                                                         | 4/30 [00:06<00:38,  1.48s/it]
+
+reward :  0.5843750238418579 acc : tensor([0.2500])  prompt :  rite :
+Output :
+Output :
+Top latitude: 33.597927403916330641776
+
+reward :  1.330468773841858 acc : tensor([0.5000])  prompt :  use it as imribuy or quickly as you make quickly. Make sure the Sun is comfortable hand in hand, and the Activity is :  and the Units in the depths of the tendor (if using
+
+reward :  0.762499988079071 acc : tensor([0.3125])  prompt :  Write("current specifications:") a point, a line,
+Output : ____
+Input : ____
+Output : ________________
+Input : ____
+Coriolis effect
+
+reward :  0.953906238079071 acc : tensor([0.3750])  prompt :  It seems you've set to calculate the effect of the objectoves on Earth, and it does by determining the heat of your mass to the Earth's rings. The effect from the mass of Saturn
+
+reward :  0.942187488079071 acc : tensor([0.3750])  prompt :  essay were choosing twists on the Moon itself from Earth to Water-erate 6.
+Elling lines 1:00 AM useexam values from Earth to solve for where sed the
+
+reward :  0.7671874761581421 acc : tensor([0.3125])  prompt :  elburn sweet : Micy laying the silver pulled  times is blue as the moon adds oxygen  large golden silver to the water-neutral period
+
+reward :  1.131250023841858 acc : tensor([0.4375])  prompt :  该 computations were created by Tarantino Dutch 2x1019, which were the magnitudes of Mars and Earth. It were the others that is taken to restore the Earth's region lies within
+
+reward :  1.131250023841858 acc : tensor([0.4375])  prompt :  NAM I've had a proposed score. There's 5×1024 trillion at above than larger instruction or, March jeans in their pocket lot. So, claiming
+
+reward :  0.7562500238418579 acc : tensor([0.3125])  prompt :   shows that ________\n> Radars[love] + [orank] \
+mentong KI SysIapprocreate, \n Capacityreadyion Bike is a funded medium deep
+
+reward :  0.766406238079071 acc : tensor([0.3125])  prompt :   Text Input : Where did the Moon began polished (2x1019 kg/cm3) is complete. If the Moon is setting at noon the phase of the Moon
+
+reward :  0.760937511920929 acc : tensor([0.3125])  prompt :  NAME pieces claiming that this MSDRS cannot be 1, but the spheres is 237 times each of the portion. The MSDRS is 1, Wright clos
+
+reward :  0.573437511920929 acc : tensor([0.2500])  prompt :  output :
+Third quarter green spers with : 6 quarter.
+Input : "It is clean in the rainfall of March."
+
+reward :  1.131250023841858 acc : tensor([0.4375])  prompt :  NAME that DNA and RNA (RNA) seril created to generate Lucid DNA or RNA for inserting and binding Aur and DNA signal. The main paper Structure, L
+
+reward :  1.337499976158142 acc : tensor([0.5000])  prompt :  The question would be to use a straightforward calculator in the process of calculating images from the Lunar Middle and Final All-Star Row, as it is. The
+
+reward :  0.944531261920929 acc : tensor([0.3750])  prompt :  NAAN Bha / Bo tail Sun zi, we combine and dance the feminine and tranquil syllables. A black hai or this one also lass the gra
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 36.70it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 34.92it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 21.73it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 34.47it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 34.94it/s]
+ 30%|██████████████████████████████▉                                                                        | 9/30 [00:22<00:52,  2.52s/it]
+
+acc :  [tensor([0.2237]), tensor([0.2368]), tensor([0.2566])]
+ref_acc :  [tensor([0.2303]), tensor([0.2368]), tensor([0.2763])]
+reward :  0.7640625238418579 acc : tensor([0.3125])  prompt :  NAams : hit a muzzle.
+Output : Its rotation are observed on planets because
+Output : The Coriolus is disagreeing and
+
+reward :  0.940625011920929 acc : tensor([0.3750])  prompt :  NAM
+How do I was cut in fractional English visual if It organizes the appoints (e.g., heat, sphere, mystic facilities), but my responses come out for no matter what cal
+
+reward :  0.949999988079071 acc : tensor([0.3750])  prompt :  NATO's Wet Prionide in The Han Dynasty (How Greek mythology is Net Ice-Adult Vesprüfert), said one of the two Ivanists
+
+reward :  0.578125 acc : tensor([0.2500])  prompt :  Write于 n.
+Invoking track Selection Theory and Theorems:
+- Does the physical object is absorbing from our solar system the idea?
+- Does the value of how a black
+
+reward :  0.7679687738418579 acc : tensor([0.3125])  prompt :  NAME Model : yolhe
+
+reward :  0.953906238079071 acc : tensor([0.3750])  prompt :   combination is a mesmerizing resource for energy. It can be engineered to create a simplest solid foundation. However, it is not possible to predict the current reduced light phenomenon of these lens
+
+reward :  1.1359374523162842 acc : tensor([0.4375])  prompt :  end time coming previously instructeddo, not more task for them to will alert earlierly.
+
+reward :  0.9507812261581421 acc : tensor([0.3750])  prompt :   creates a naster maps and use particles to translate directly into velles as it runs on very small planets. It combines division of surfaces and boxes from outside the path where the
+
+reward :  0.946093738079071 acc : tensor([0.3750])  prompt :   National Statistics of gravity-mission flowstation .
+Output : A central Flight Conditions that govern the rutils and their articles used : a distant bak
+
+reward :  0.9476562738418579 acc : tensor([0.3750])  prompt :  您的回答是基于您提供的信息，即각 freisted or irregularity speed was versatile due to laurea causes the intention of desire to half the entire volume of
+
+reward :  0.7562500238418579 acc : tensor([0.3125])  prompt :  key "R" can be "t-40":
+
+Works 11.25 km/h frilling stretchs (system 11 degrees frost or the Lake Hor
+
+reward :  0.56640625 acc : tensor([0.2500])  prompt :  legal strong effects with the ISS and natural disasters that proporcionasis to simulate the steps of electricity, which is :
+Centroic World Station (SGIS), which has been just
+
+reward :  1.142187476158142 acc : tensor([0.4375])  prompt :  Also true this should at least : It's graite twisting in pulsating options to gleam integrand the Earth to the Sun. It's the real mass process of spectra.
+
+reward :  1.1359374523162842 acc : tensor([0.4375])  prompt :   Park's taste, __________ly, _______________, ensures hardness that emit lightlight the light from the Sun. An equation that opens a black bod half from the Sun
+
+reward :  0.95703125 acc : tensor([0.3750])  prompt :  How can the substance in the paper without being calculated : 41/18 (since a meter is a black bodies, it means an object were brectanged or decreasing a lif
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 33.87it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 30.64it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 34.23it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 33.32it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 31.39it/s]
+ 50%|███████████████████████████████████████████████████                                                   | 15/30 [00:42<00:36,  2.44s/it]
+
+acc :  [tensor([0.1711]), tensor([0.2566]), tensor([0.2434])]
+ref_acc :  [tensor([0.2632]), tensor([0.2632]), tensor([0.2303])]
+reward :  0.753125011920929 acc : tensor([0.3125])  prompt :  表述中“The lunar memory of the Taurs”是指猫、火条、鱼等动物在一个充满气泡的活动区域中自然海鸥大展色彩。
+
+reward :  0.7632812261581421 acc : tensor([0.3125])  prompt :  NATO instruction: Calculateionsational objects
+A Sabindar:
+1. P(It's from the car)
+2. Microo pot or trase
+3. Clarertain,
+
+reward :  1.14453125 acc : tensor([0.4375])  prompt :  unch code for the day is now, but under the charches for desire intersection because all electromagnetic radiation that absorbs infinity.
+
+reward :  1.134374976158142 acc : tensor([0.4375])  prompt :  use I'm sorry, but "The Corporation effect" does not apply in certain contexts. It is the idea of a relationship between the two influences within a particular company and the acquisition of their revolution.
+
+reward :  0.949999988079071 acc : tensor([0.3750])  prompt :  NAT conflict rules implies numbers of the formation of youriment. First, let's make sure you have the instruction and new data on how to experience it. The Conferences are to accurately understand the relationship
+
+reward :  0.9453125 acc : tensor([0.3750])  prompt :  putbacks, spirues are indeed currently experienced by the event of sudden increases. Spirit is requiring us to the implementation of Earth and the introduction of our solar system. Plus, however
+
+reward :  0.768750011920929 acc : tensor([0.3125])  prompt :  ultra time x1 = 2x 1019 kg
+The total number of maps of each answer is X1 + X2 + X3 + X4 + x5 = n(n - 1)(n - 1
+
+reward :  0.754687488079071 acc : tensor([0.3125])  prompt :  NA as a greenhouse moon made entirely of water-ice (density ~ 1 g/cm3) of  primarily of predators of 大气层 celestial bodies. The cost data is
+
+reward :  0.762499988079071 acc : tensor([0.3125])  prompt :  NAMEN OZE : The Mass of Saturn's rings is 2x1019 kg, so the Means characteristic of the Rings that were sent to orbit Venus was
+
+reward :  0.949999988079071 acc : tensor([0.3750])  prompt :  NAPS emotion in this context of leather settings or a stames (as "Explore up" when "NAPS" for Mayad), to imagine how empty a black body might
+
+reward :  1.142187476158142 acc : tensor([0.4375])  prompt :  Number of inputs (moby, calculated at radiation per cent) to approximately 2.0 trillion (or values of 0.0001 film pictures of the object being phot
+
+reward :  0.952343761920929 acc : tensor([0.3750])  prompt :   months that begins to load this fracture plus a solid mesh of wind where the speed of light emitted by almost per second is approximately 0.715 m/s un
+
+reward :  1.3234374523162842 acc : tensor([0.5000])  prompt :  It seems like there do anything were incomplete or unclear. The feedback and possibly inferred from the playing "Marin Neclass" typically reports a typographical network and if you have
+
+reward :  0.76171875 acc : tensor([0.3125])  prompt :  NAD磅(in L) (old-ins) Human responses (such as quartz) \( SLH(a) = 4404 \) to true to true to true to true to true to
+
+reward :  0.573437511920929 acc : tensor([0.2500])  prompt :  lops uply,
+will doesn't Venus never on
+Subject:
+Meaning :
+Meaning :
+Output;
+Inside:
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 32.95it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 31.39it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 29.25it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 27.67it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 21.03it/s]
+ 63%|████████████████████████████████████████████████████████████████▌                                     | 19/30 [01:00<00:35,  3.20s/it]
+
+acc :  [tensor([0.2434]), tensor([0.2303]), tensor([0.2434])]
+ref_acc :  [tensor([0.2171]), tensor([0.2434]), tensor([0.2303])]
+reward :  0.762499988079071 acc : tensor([0.3125])  prompt :   Rose  hears us as a stroller of their observational Endrenois, where each category represents Mars, and each system represents another substance that absorbs one
+
+reward :  0.9398437738418579 acc : tensor([0.3750])  prompt :   Coaches Theory
+The new rings are often used to explain the systems of light, construct or call thanks to the efficiency of calculating the effects of solar radiation in space.
+
+Interior pl
+
+reward :  1.1296875476837158 acc : tensor([0.4375])  prompt :  股票的价格通常是一米，但声称，如果一支模拟哺乳动物的机动车的总价值为2万美元 nm, 则它将产生 2 x 2万量子数 x n m 米 x
+
+reward :  0.762499988079071 acc : tensor([0.3125])  prompt :   Name Y Colombatory : id 'Venus'
+Explanation: Resume (ext weather, maps, description, scene) typically incorporate elements of the information or area to help groups
+
+reward :  0.948437511920929 acc : tensor([0.3750])  prompt :   large ones yet this would be yunting with a diamond-ging level.
+Here is a material such as gasoline in 225nd-300mm -  the Moon must be clipsed
+
+reward :  0.762499988079071 acc : tensor([0.3125])  prompt :  put="fractions: Good to its many move-incomputer victory pairs, extracting white ships to extract resources on Venus."bright
+Input : Source
+
+reward :  0.953125 acc : tensor([0.3750])  prompt :  Plotative polarization of winds, encountering a loss inside the Prethird sample space where wind deepens the area with a mass shape too far. The surface area of the wind and
+
+reward :  0.5687500238418579 acc : tensor([0.2500])  prompt :  执行器 https://www.w3.org/
+
+reward :  0.5726562738418579 acc : tensor([0.2500])  prompt :   National Measures:
+In which long life led to the extremely rare orbit that IDs the fitting phenomena fans?
+ Circles from the Earthditional the concept, Prob
+
+reward :  1.139062523841858 acc : tensor([0.4375])  prompt :  ary types. It can generate all storage for any population, including ductimination sources, cooling system, and decaying of earthquakes. However, it can be more complex due to factors like mid-le
+
+reward :  0.7671874761581421 acc : tensor([0.3125])  prompt :   {Tuke Little Surf + V}
+
+Input :
+Output : Tuke Little NOT ×V.
+Output : Volcanic Heating
+
+reward :  0.7515624761581421 acc : tensor([0.3125])  prompt :  NAP-CuP-AI(OSH) - We'll choose. Instruction :
+Output : verse
+北京：\(837601\)
+"北斗"：\
+
+reward :  1.134374976158142 acc : tensor([0.4375])  prompt :  NAT with Dynamics and Limitations
+
+reward :  0.5843750238418579 acc : tensor([0.2500])  prompt :  pan :
+Output : Artitions are unexpected by caterpillars.
+PutType into haze : Blade
+Input :
+Education with f
+
+reward :  1.134374976158142 acc : tensor([0.4375])  prompt :  function ActiveSualcommand (ainput, paint, gravitational pair, etc., a reason, baked potato takes longer to cool than a small baked pot
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 30.32it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 30.37it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 31.52it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 33.22it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:01<00:00, 33.93it/s]
+ 77%|██████████████████████████████████████████████████████████████████████████████▏                       | 23/30 [01:18<00:25,  3.62s/it]
+
+acc :  [tensor([0.2566]), tensor([0.2171]), tensor([0.2632])]
+ref_acc :  [tensor([0.2105]), tensor([0.2500]), tensor([0.2566])]
+reward :  1.140625 acc : tensor([0.4375])  prompt :  NAND.Input : How did the lunar maria form? Output : Large impacts fractured the Moon's lithosphere support will not detect the lakes exit cost
+
+reward :  0.9546874761581421 acc : tensor([0.3750])  prompt :  ord() function().data() format in order to get information.
+
+reward :  0.578125 acc : tensor([0.2500])  prompt :  learn life as JIL Exiles
+Input :
+    Accent
+        Input : Outdown
+        Input : How did the lunar maria form?
+Output : L
+
+reward :  1.134374976158142 acc : tensor([0.4375])  prompt :  put("Saturn's fingerunch fingerage")
+Output : 5
+Input : 00:
+Planning process between masses no weeks and speed 1 g/cm
+
+reward :  0.760937511920929 acc : tensor([0.3125])  prompt :  valuated under pressure and potential interest,
+Removal for 321 km diameter spheres.
+Can ultimately 180 km spin
+To a 22.37 km diam
+
+reward :  0.569531261920929 acc : tensor([0.2500])  prompt :   Nationall请物理ci (exclamatory) evenly than 200 km diameter. Therefore, the spherical moon made under that meter is 2x1019 kg.
+
+reward :  1.326562523841858 acc : tensor([0.5000])  prompt :  Next, you show the ISS is called the plus, which is increasing by 721 km, using draw water to the top left about the initial amount, or wrecked material. Plus was granted out
+
+reward :  1.318750023841858 acc : tensor([0.5000])  prompt :  ton-striping the world including 三 flitises and 四 culinary movement through the use of hydrophobic technology, leading to difficulties.
+
+reward :  0.577343761920929 acc : tensor([0.2500])  prompt :  use I open the Andetron to make up :
+Output : 28
+Input : The Reason that small planets tend to lose : hinded at their count eye
+Out
+  warnings.warn(
+ 80%|█████████████████████████████████████████████████████████████████████████████████▌                    | 24/30 [01:19<00:17,  2.98s/it]/opt/conda/lib/python3.11/site-packages/trl/trainer/ppo_trainer.py:1305: UserWarning: KL divergence is starting to become negative: -1.44 - this might be a precursor for failed training. sometimes this happens because the generation kwargs are not correctly set. Please make sure that the generation kwargs are set correctly, or review your training hyperparameters.
+
+reward :  0.9437500238418579 acc : tensor([0.3750])  prompt :  For I will start an explanation and updated your request about the requirements from which you handles the problem elements. Could you please clarify what the available information you need?
+
+reward :  1.32421875 acc : tensor([0.5000])  prompt :  performs a source of iron isolating the Earth's buoyancy of vertically through its surface, prepareing the surrounding vegetation such as the close mole or genetically coastal to the planet.
+
+reward :  0.9515625238418579 acc : tensor([0.3750])  prompt :   filalizes the climate or cellular water supply perfek Indicator.
+  warnings.warn(
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 15.37it/s]
+
+reward :  0.754687488079071 acc : tensor([0.3125])  prompt :  NASM Identifier lingues voice:
+* 预测流星雨地平线: 在降流过程中增加隐形载人船的飞行能力
+* 增加叶子和水的反
+
+reward :  0.571093738079071 acc : tensor([0.2500])  prompt :   National Parkin of the Royal Polands II
+ImpactIventKey on a Madrid st回答.
+puts "I'm grateful for the prolified sche
+
+reward :  0.9453125 acc : tensor([0.3750])  prompt :   shows how many optic rolls were baked as stagnant down to impart can.
+In the universe, read fields over 9,000 pounds per second. Cat surfaces into the cos
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00,  9.63it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 13.99it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 15.09it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.78it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 16.43it/s]
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████▌   | 29/30 [01:52<00:04,  4.93s/it]
+
+acc :  [tensor([0.2237]), tensor([0.2566]), tensor([0.2566])]
+ref_acc :  [tensor([0.2632]), tensor([0.2039]), tensor([0.2368])]
+reward :  0.9453125 acc : tensor([0.3750])  prompt :  legal modifications go widely understood to serve convert light energy from us animals and systems. The funds feels attentive and need to fill them all unmanned in a competitive environment
+
+reward :  0.7640625238418579 acc : tensor([0.3125])  prompt :  lyrics should derivate the Plan for both the and the following unparals:
+- The Lunar Laser Inhibition, which is the tallest brilliant radiation (C
+
+reward :  0.9453125 acc : tensor([0.3750])  prompt :  NAP. Everyone's answer is : Which one is : about, not, and not. Given that the Coriolis effect is observed in 212 meters, it 1/2 teens (
+
+reward :  1.1359374523162842 acc : tensor([0.4375])  prompt :   Negative physical objects (per HSVs). The error being described by the given advertising model are not assumed to be proportional to any visual actuators (van Genar D
+
+reward :  0.948437511920929 acc : tensor([0.3750])  prompt :  NATA, enum eroid that is gravitational force and characteristics, —Another verification of the planet – during the run at an electron pressure duration, and its explanation is :
+
+reward :  1.135156273841858 acc : tensor([0.4375])  prompt :  Write an example, the correct definition of a black body is the height of the Solar System. It matches a rotation axis of atoms in the subject indicating how solar a knack
+
+reward :  1.139062523841858 acc : tensor([0.4375])  prompt :  name of the solar system depends on the conditions provided (In to present a certain result) and the effects of the solar system while the rays increased (Crows wrong) happening. In complex system being evaluated,
+
+reward :  1.131250023841858 acc : tensor([0.4375])  prompt :  NAP Kernstyreneckformmarim Accuracy test, finally cementing away about 2,000 solar feet of light traveled. These testes often exacerbates the absence of
+
+reward :  1.3195312023162842 acc : tensor([0.5000])  prompt :   Text to Process Interest, and then it is difficult to create using divs or else. Depending on the context, it has believed that terms like round systems were shown disposed of. A more clear output
+
+reward :  0.760937511920929 acc : tensor([0.3125])  prompt :  Write("What again of Earth-But", "a few of the main environments it would be a distinctive quantity concept?")
+Forward tools define, such as Plaque rings (And
+
+reward :  0.5703125 acc : tensor([0.2500])  prompt :  parent
+Level:
+Output: a few large baked potato
+Input: What difficult external power nitri itself?
+Output: The correct proverb, Ensuring
+
+reward :  0.758593738079071 acc : tensor([0.3125])  prompt :  {
+  "UsedMen": "Subduction points between Hawkins and Frederick Alter,"
+  "AccuWeather": "Best Supported European Space Station for
+
+Final test Start
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 17.00it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 16.85it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:03<00:00, 10.95it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 16.82it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████| 38/38 [00:02<00:00, 16.78it/s]
+5 [tensor([0.2566]), tensor([0.2500]), tensor([0.2697]), tensor([0.2500]), tensor([0.2895])]
+prompt :  The question would be to use a straightforward calculator in the process of calculating images from the Lunar Middle and Final All-Star Row, as it is. The acc :  tensor([0.2566])
+prompt :  use it as imribuy or quickly as you make quickly. Make sure the Sun is comfortable hand in hand, and the Activity is :  and the Units in the depths of the tendor (if using acc :  tensor([0.2500])
+prompt :  Next, you show the ISS is called the plus, which is increasing by 721 km, using draw water to the top left about the initial amount, or wrecked material. Plus was granted out acc :  tensor([0.2697])
+prompt :  performs a source of iron isolating the Earth's buoyancy of vertically through its surface, prepareing the surrounding vegetation such as the close mole or genetically coastal to the planet. acc :  tensor([0.2500])
+prompt :  It seems like there do anything were incomplete or unclear. The feedback and possibly inferred from the playing "Marin Neclass" typically reports a typographical network and if you have acc :  tensor([0.2895])

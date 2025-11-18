@@ -68,25 +68,25 @@ def f1_score(prediction, ground_truths):
 class TopAccuracyTextsNoDuplicates:
     def __init__(self, max_size=5):
         self.heap = []
-        self.text_map = {}  # 텍스트를 키로, (힙 내 위치, 생성 시점)을 값으로 하는 딕셔너리
+        self.text_map = {}  # 以文本为键，（堆中的位置，创建时间）为值的字典。
         self.max_size = max_size
         self.only_text = []
 
     def add(self, accuracy, text,ep):
         #print(accuracy,text,ep)
         if text in self.only_text:
-            # 이미 존재하는 텍스트의 정확도와 생성 시점 업데이트 (더 높은 정확도로)
+            # 更新现有文本的准确性和创建时间（提高准确性）
             print('already exist')
         else:
-            # 새로운 텍스트 추가
+            # 如果堆的大小小于最大大小，则直接添加新文本
             if len(self.heap) < self.max_size:
                 heapq.heappush(self.heap, (accuracy, len(text), text, ep))
                 self.text_map[text] = (len(self.heap) - 1, ep)
             elif accuracy > self.heap[0][0]:
-                # 현재 힙의 최소 정확도보다 높은 경우에만 추가
+                # 仅当其高于当前堆的最小精度时才添加。
                 removed_text = heapq.heappop(self.heap)[2]
                 if removed_text in self.text_map:
-                    self.text_map.pop(removed_text)  # 제거된 텍스트를 딕셔너리에서 삭제
+                    self.text_map.pop(removed_text)  # 从映射中删除已移除的文本
                 heapq.heappush(self.heap, (accuracy, len(text), text, ep))
                 self.text_map[text] = (len(self.heap) - 1, ep)
                 self.only_text.append(text)
@@ -94,14 +94,14 @@ class TopAccuracyTextsNoDuplicates:
         return False
 
     def get_top_texts(self):
-        # 정확도가 높은 순서로 정렬하여 텍스트와 생성 시점을 반환
+        # 按准确性降序返回堆中的文本列表
         return sorted([(accuracy, text, ep) for accuracy, _, text, ep in self.heap], reverse=True)
 
 
 class TopAccuracyTextsScore:
     def __init__(self, max_size=5):
         self.heap = []
-        self.text_map = {}  # 텍스트를 키로, (힙 내 위치, 생성 시점)을 값으로 하는 딕셔너리
+        self.text_map = {}  # 以文本为键，（堆中的位置，创建时间）为值的字典。
         self.max_size = max_size
         self.only_text = []
 
@@ -131,7 +131,7 @@ class TopAccuracyTextsScore:
 
 
 
-#전체 테스트 셋에 대해서 테스트
+# Get reward function
 def evaluation_full(prompts,imdb,model,tokenizer,device,verbalizer = ['Yes','No'],side='Last'):
     accs=  []
     for prompt in prompts:
@@ -873,7 +873,7 @@ def evaluation_soft(prompts,
         return [template.format(sentence_1=s_1, prompt=prompt) for s_1, prompt in zip(inputs, prompts)]
     
     def _get_next_token_index(input_ids):
-        # 입력의 마지막 토큰 다음 위치 반환
+        # 返回输入中最后一个标记之后的位置
         return input_ids.shape[1] - 1
 
     def _get_logits(texts, tokenizer, model, device):
@@ -1003,7 +1003,7 @@ def got_example(dataset,dataset_dict,shot=5,label_key='label'):
             a = example['text']+ '\nOutput : '+ dataset_dict[example[label_key]] + '\n'
             examples += a 
         else:
-            a= xample['sentence']+ '\nOutput : '+ dataset_dict[example[label_key]] + '\n'
+            a= example['sentence']+ '\nOutput : '+ dataset_dict[example[label_key]] + '\n'
             #examples.append(a)
             examples += a
             
