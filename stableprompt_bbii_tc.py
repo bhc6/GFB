@@ -224,7 +224,7 @@ def main():
                 target_tokenizer,
                 device,
             )
-            rewars = [ rewards[i] + accuracys[i] * 1000 for i in range(len(used_prompt))]
+            rewars = [ rewards[i] + accuracys[i] * 1000 for i in range(len(used_prompt))] #?
             #accuracys = rewards
         #print(accuracys,softmax_diff)
         
@@ -242,7 +242,7 @@ def main():
         rewards = torch.stack(rewards)
         mean_reward = torch.mean(rewards)
         max_reward = torch.max(rewards)
-        mean_total_loss += mean_reward
+        mean_total_loss += mean_reward #? 平均reward
         max_total_loss += max_reward
         min_total_loss += torch.min(rewards)
         sum_total_loss += torch.sum(rewards)

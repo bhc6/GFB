@@ -55,7 +55,18 @@ TASK_TO_METRIC = {'common_concept': 'f1', 'informal_to_formal': 'f1', 'orthograp
                     'word_unscrambling': 'f1',
                     'linguistics_puzzles': 'f1',}
 default_metric = 'em'
+'''
+'f1' (F1-score): A common measure that combines precision and recall. 
+It's often used for classification or tasks where you need to check the correctness 
+and completeness of a generated set of items (like concepts, sentences, or counts).
 
+'es' (Exact Set): 要求预测值和真实值在规范化并分词后的词语集合必须完全相同（忽略顺序）
+
+'em' (Exact Match): This metric checks if the model's output exactly matches the correct answer.
+
+'contains': This metric checks if the model's output simply contains the correct answer, 
+often used for tasks where the answer might be one of several acceptable synonyms within a larger generated text.
+'''
 def load_data(type, task):
     base_path = induce_data_path if type == 'induce' else eval_data_path
     path = base_path + task + '.json'
