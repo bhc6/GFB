@@ -36,7 +36,7 @@ from datasets import Dataset
 
 
 def normalize_answer(s):
-    """소문자 변환, 공백 제거, 문장부호 제거 등을 통해 답변을 정규화"""
+    """Normalize an answer by lowercasing, removing extra whitespace and punctuation."""
 
     def white_space_fix(text):
         return ' '.join(text.split())
@@ -168,17 +168,17 @@ def evaluation_full(prompts,
         model.eval()
         subset_indices = random.sample(range(len(imdb["test"])), 100)
 
-        # 서브셋 생성
+        # Create subset
         imdb_subset = Subset(imdb["test"], subset_indices)
 
-        # DataLoader 설정 (서브셋 사용)
+        # Setup DataLoader (using subset)
         dl = DataLoader(imdb["test"], batch_size=1, shuffle=True)
 
         tp = 0  # True Positive
         tn = 0  # True Negative
         fp = 0  # False Positive
         fn = 0  # False Negative
-        # 배치 처리
+        # Batch processing
         correct = 0
         total = 0
 
@@ -193,7 +193,7 @@ def evaluation_full(prompts,
         no_prediction_num = 0
 
         for batch in tqdm(dl):
-            # 텍스트 인코딩
+            # Text encoding
             if side != 'First':
                 input_ids = tokenizer(batch['text'][0] + '\n' + prompt,
                                       return_tensors='pt',
@@ -202,12 +202,12 @@ def evaluation_full(prompts,
                 input_ids = tokenizer(prompt + '\n' + batch['text'][0],
                                       return_tensors='pt',
                                       truncation=True).input_ids.to(device)
-            # 모델 실행
+            # Run model
             with torch.no_grad():
                 outputs = model(input_ids)
             logits = outputs.logits
 
-            # 'Yes'와 'No'의 첫 번째 토큰에 대한 로짓 비교
+            # Compare logits for the first token of 'Yes' and 'No'
             yes_logits = logits[0, -1, yes_token_id]
             no_logits = logits[0, -1, no_token_id]
 
@@ -221,7 +221,7 @@ def evaluation_full(prompts,
                 yes_predictioon_num += 1
             else:
                 no_prediction_num += 1
-            # 정답 레이블과 비교
+            # Compare with true label
             if prediction == 'Yes' and correct_label == 'Yes':
                 tp += 1
             elif prediction == 'No' and correct_label == 'No':
@@ -231,13 +231,13 @@ def evaluation_full(prompts,
             elif prediction == 'No' and correct_label == 'Yes':
                 fn += 1
 
-        # 성능 지표 계산
+        # Compute performance metrics
         accuracy = (tp + tn) / (tp + tn + fp + fn) if (tp + tn + fp +
                                                        fn) != 0 else 0
         sensitivity = tp / (tp + fn) if (tp + fn) != 0 else 0
         specificity = tn / (tn + fp) if (tn + fp) != 0 else 0
         precision = tp / (tp + fp) if (tp + fp) != 0 else 0
-        recall = sensitivity  # 재현율은 민감도와 동일
+        recall = sensitivity  # Recall equals sensitivity
         f1_score = 2 * (precision * recall) / (precision + recall) if (
             precision + recall) != 0 else 0
         accs.append(accuracy)
@@ -271,7 +271,7 @@ def induction_soft(
                     reduction='none')
                 log_probs = log_probs.view(labels.size())
 
-                # 정답의 log probability 합산
+                # Sum log probabilities of the correct answer
                 answer_tokens = tokenizer.encode(answer,
                                                  add_special_tokens=False)
                 answer_log_probs = log_probs[0, -len(answer_tokens) -
@@ -366,15 +366,15 @@ def evaluation_roberta(prompts,
     def _get_mask_token_index(input_ids, tokenizer):
         mask_token_index = []
         for ids in input_ids:
-            # 마스크 토큰 위치 찾기
+            # Find mask token positions
             mask_positions = (ids == tokenizer.mask_token_id).nonzero(
                 as_tuple=True)[0]
 
             if len(mask_positions) == 0:
-                # 마스크 토큰이 없는 경우, 마지막 인덱스 사용
+                # If no mask token, use last index
                 mask_token_index.append(len(ids) - 2)
             else:
-                # 마스크 토큰이 있는 경우, 첫 번째 마스크 토큰 위치 사용
+                # If mask token present, use first mask token position
                 mask_token_index.append(mask_positions[0].item())
 
         return torch.tensor(mask_token_index)
@@ -455,15 +455,15 @@ def evaluation_roberta_soft(
     def _get_mask_token_index(input_ids, tokenizer):
         mask_token_index = []
         for ids in input_ids:
-            # 마스크 토큰 위치 찾기
+            # Find mask token positions
             mask_positions = (ids == tokenizer.mask_token_id).nonzero(
                 as_tuple=True)[0]
 
             if len(mask_positions) == 0:
-                # 마스크 토큰이 없는 경우, 마지막 인덱스 사용
+                # If no mask token, use last index
                 mask_token_index.append(len(ids) - 2)
             else:
-                # 마스크 토큰이 있는 경우, 첫 번째 마스크 토큰 위치 사용
+                # If mask token present, use first mask token position
                 mask_token_index.append(mask_positions[0].item())
 
         return torch.tensor(mask_token_index)
@@ -498,7 +498,7 @@ def evaluation_roberta_soft(
                                      device)
             verbalizer_logits = all_logits[:, verbalizer_ids]
 
-            # 추출된 로그 확률에 소프트맥스를 적용합니다.
+            # Apply softmax to the extracted logits
             log_probs = F.softmax(verbalizer_logits, dim=1)
 
             #get accuracy
@@ -872,7 +872,7 @@ def evaluation_soft_apo(prompts,
         log_probs = F.softmax(verbalizer_logits, dim=1)
         preds = torch.argmax(log_probs, dim=1).cpu()
 
-        # 잘못된 예측을 찾습니다.
+        # Find incorrect predictions.
         incorrect_indices = (preds != targets).nonzero(as_tuple=True)[0]
         for idx in incorrect_indices:
             incorrect_pairs.append(
@@ -881,7 +881,7 @@ def evaluation_soft_apo(prompts,
     if debug:
         return incorrect_pairs
     else:
-        # 기존 함수의 반환 값 유지를 위해 조정이 필요한 경우 이 부분을 수정합니다.
+        # Adjust this section if you need to preserve the original function's return value.
         return None
 
 
@@ -1089,16 +1089,16 @@ def get_z_scaled_reward(rewards):
     return z_scaled_reward
 
 
-#이전 대화 항목을 제거하고 프롬프트로 사용
+# Remove previous conversation entries and use them as prompt
 def extract_text_after_colon(text, key='AI:'):
-    # ':' 문자의 위치를 찾습니다.
+    # Find position of ':' character
     colon_index = text.find(key)
 
-    # ':' 문자가 없으면, 원본 텍스트를 반환합니다.
+    # If ':' not found, return original text
     if colon_index == -1:
         return text
 
-    # ':' 다음의 문자부터 문자열 끝까지 반환합니다.
+    # Return substring from after ':' to end
     return text[colon_index + len(key):]
 
 
@@ -1138,21 +1138,21 @@ def get_reward(
 
 
 def remove_text_after_key(text, key='AI:'):
-    # 키워드의 위치를 찾습니다.
+    # Find position of the keyword
     key_index = text.find(key)
 
-    # 키워드가 없으면, 원본 텍스트를 반환합니다.
+    # If keyword not found, return original text
     if key_index == -1:
         return text
     while key_index == 0:
-        # 다음 키워드 위치 찾기 (현재 위치 + 키 길이 부터 시작)
+        # Find next keyword position (start from current position + key length)
         key_index = text.find(key, key_index + len(key))
 
-        # 다음 키워드가 없으면, 원본 텍스트를 반환합니다.
+        # If next keyword not found, return original text
         if key_index == -1:
             return text
 
-    # 키워드 이전의 문자부터 문자열 시작까지 반환합니다.
+    # Return substring from start up to characters before the keyword
     return text[:key_index]
 
 
@@ -1281,17 +1281,17 @@ def evaluation_generation(prompts,
 
 def simple_bleu(prediction: str, references: List[str]) -> float:
     """
-    단순한 BLEU 점수 계산 함수. 클리핑과 예외 처리를 포함.
+    Simple BLEU score calculation function. Includes clipping and edge-case handling.
     """
-    # 예측 문장을 단어로 분리
+    # Split predicted sentence into words
     prediction_tokens = prediction.split()
     if not prediction_tokens:
-        return 0.0  # 예측 문장이 비어있으면 0 반환
+        return 0.0  # Return 0 if predicted sentence is empty
 
     prediction_count = Counter(prediction_tokens)
     max_counts = {}
 
-    # 모든 참조 문장에 대해 최대 카운트를 계산
+    # Compute maximum counts across all reference sentences
     for reference in references:
         reference_tokens = reference.split()
         reference_count = Counter(reference_tokens)
@@ -1299,19 +1299,19 @@ def simple_bleu(prediction: str, references: List[str]) -> float:
             max_counts[word] = max(max_counts.get(word, 0),
                                    reference_count.get(word, 0))
 
-    # 클립된 정밀도 계산
+    # Compute clipped precision
     clipped_count = sum(
         min(count, max_counts[word])
         for word, count in prediction_count.items())
     total_count = sum(prediction_count.values())
 
-    # 분모가 0이 되는 상황 방지
+    # Prevent division by zero in denominator
     if total_count == 0:
         return 0.0
 
-    # BLEU 점수 계산
+    # Compute BLEU score
     precision = clipped_count / total_count
-    return precision * 100  # 퍼센트로 반환
+    return precision * 100  # Return as percentage
 
 
 def got_example_mmlu(dataset, dataset_dict, shot=5, label_key='label'):
@@ -1330,7 +1330,7 @@ def got_example_mmlu(dataset, dataset_dict, shot=5, label_key='label'):
 
 
 def _get_next_token_index(input_ids):
-    # 입력의 마지막 토큰 다음 위치 반환
+    # Return position after the last input token
     return input_ids.shape[1] - 1
 
 
@@ -1374,11 +1374,11 @@ def evaluate_openai(
 ):
     #TODO
     # Inputs :
-    #     prompts : 텍스트로 된 prompt들의 리스트 (예: ['Is this reveiw positive?', 'Is this reveiw negative?'])
-    #     datasets : TensorDataset 형태로 된 데이터셋 (예: TensorDataset(inputs, labels))
-    #     target_model : OpenAI API에 사용할 모델 이름 (예: 'davinci-002')
+    #     prompts : list of text prompts (e.g., ['Is this review positive?', 'Is this review negative?'])
+    #     datasets : dataset as a TensorDataset (e.g., TensorDataset(inputs, labels))
+    #     target_model : model name to use with OpenAI API (e.g., 'davinci-002')
     # Outputs :
-    #     accuracy : 각 prompt에 대한 정확도 (예: [0.95, 0.92])
+    #     accuracy : accuracy for each prompt (e.g., [0.95, 0.92])
     return 0.00
 
 
@@ -1390,13 +1390,13 @@ def reward_openai(
 ):
     #TODO
     # Inputs :
-    #     prompts : 텍스트로 된 prompt들의 리스트 (예: ['Is this reveiw positive?', 'Is this reveiw negative?'])
-    #     inputs : 이번 배치의 입력 텍스트 (예: ['This movie is great!', 'This movie is bad!'])
-    #     labels : 정답 레이블들의 리스트 (예: [1, 0])
-    #     target_model : OpenAI API에 사용할 모델 이름 (예: 'davinci-002')
+    #     prompts : list of text prompts (e.g., ['Is this review positive?', 'Is this review negative?'])
+    #     inputs : batch input texts (e.g., ['This movie is great!', 'This movie is bad!'])
+    #     labels : list of ground-truth labels (e.g., [1, 0])
+    #     target_model : model name to use with OpenAI API (e.g., 'davinci-002')
     # Outputs :
-    #     rewards : 각 입력에 대한 보상. 아마 log probability가 될 것 같음 (예: [0.95, 0.92])
-    #     accuracy : 각 prompt에 대한 정확도 (예: [0.95, 0.92])
+    #     rewards : rewards for each input (e.g., log probabilities like [0.95, 0.92])
+    #     accuracy : accuracy for each prompt (e.g., [0.95, 0.92])
     return [torch.Tensor(0.00) for i in range(len(prompts))
             ], [torch.Tensor(0.00) for i in range(len(prompts))]
 
@@ -1540,7 +1540,7 @@ def tta_evaluation_(
     test_acc = 0
     test_total = 0
     print('start test')
-    # 랜덤하게 5개의 배치 인덱스를 선택합니다.
+    # Randomly select 5 batch indices.
     random_batches = random.sample(range(len(test_dataloader)), 5)
     batch_count = 0
     for batch in tqdm(test_dataloader):
@@ -1571,7 +1571,7 @@ def tta_evaluation_(
             ]
             prompt = used_prompt[0]
             template = prompt + inputs[0] + "\nOutput : "
-            # 선택된 배치 인덱스일 때만 template을 출력합니다.
+            # Only print the template for selected batch indices.
             if batch_count in random_batches and log:
                 print(template)
             prompt_encoded = target_tokenizer(template,

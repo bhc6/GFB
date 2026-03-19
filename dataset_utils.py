@@ -8,18 +8,18 @@ openbookdict = {'A':0,'B':1,'C':2,'D':3}
 class TextDataset(Dataset):
     def __init__(self, texts, labels):
         """
-        texts: 평가할 텍스트의 리스트
-        labels: 각 텍스트에 해당하는 레이블의 리스트
+        texts: list of texts to evaluate
+        labels: list of labels corresponding to each text
         """
         self.texts = texts
         self.labels = labels
     
     def __len__(self):
-        """데이터셋의 총 크기를 반환합니다."""
+        """Return the total size of the dataset."""
         return len(self.texts)
     
     def __getitem__(self, idx):
-        """주어진 인덱스에 해당하는 텍스트와 레이블을 반환합니다."""
+        """Return the text and label at the given index."""
         text = self.texts[idx]
         label = self.labels[idx]
         return {"text": text, "label": label}

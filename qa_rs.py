@@ -32,7 +32,7 @@ def parser_args():
                         The friend read the instruction and wrote an output for every one of the inputs.
                         Here are the input-output pairs: \n''')
     parser.add_argument('--prompt_per_example',type=int,default=3)
-    parser.add_argument('--seed',type=int,default=42)
+    parser.add_argument('--seed',type=int,default=42) #42 
 
     args = parser.parse_args()
     return args
@@ -178,7 +178,7 @@ def main():
                 instruction = full_response.strip()
             used_prompt.append(instruction)
         
-        #나온 프롬프트 중 너무 길이가 짧은게 많으면 종료
+        # If many of the generated prompts are too short, exit
         if sum([len(p) for p in used_prompt]) < args.prompt_per_example * 10:
             break
         

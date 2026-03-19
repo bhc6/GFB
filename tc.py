@@ -278,7 +278,7 @@ def main():
                 
                 used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
                 
-            #나온 프롬프트 중 너무 길이가 짧은게 많으면 종료
+            # If many of the generated prompts are too short, exit
             if sum([len(p) for p in used_prompt]) < args.prompt_per_example * 10:
                 break
             
