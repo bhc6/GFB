@@ -36,7 +36,11 @@ def parser_args():
     parser.add_argument('--prompt_per_example', type=int, default=3)
     parser.add_argument('--seed', type=int, default=42)  #42
 
-    parser.add_argument('--results_suffix', type=str, default=None, help='Suffix for results file, e.g. a batch run name or timestamp')
+    parser.add_argument(
+        '--results_suffix',
+        type=str,
+        default=None,
+        help='Suffix for results file, e.g. a batch run name or timestamp')
     args = parser.parse_args()
     return args
 
@@ -113,7 +117,7 @@ def main():
         cache_dir=args.cache_dir)
     agent_tokenizer.pad_token = agent_tokenizer.eos_token
 
-    #load target model
+    # load target model
     target_tokenizer = AutoTokenizer.from_pretrained(args.target_model,
                                                      cache_dir=args.cache_dir)
     target_model = AutoModelForCausalLM.from_pretrained(
@@ -141,12 +145,20 @@ def main():
             agent_tokenizer.convert_tokens_to_ids(verbalizer[i]))
 
     queue = utils.TopAccuracyTextsNoDuplicates(max_size=5)
+    # Print one example at the start
+    example_for_show = utils.got_example_mmlu(train_dataset,
+                                              verbalizer,
+                                              shot=args.num_example)
+    query_text_example = [{
+        "role": "user",
+        "content": args.meta_prompt + '\n' + example_for_show
+    }, {
+        "role": "assistant",
+        "content": "The Instruction is : "
+    }]
+    print('[Example query_text] :', query_text_example)
+
     # start sampling
-    query_text = ''
-    examples = utils.got_example_mmlu(train_dataset,
-                                      verbalizer,
-                                      shot=args.num_example)
-    print('Inputs : ', examples)
     for ep in tqdm(range(args.epochs)):
         examples = utils.got_example_mmlu(validation_dataset,
                                           verbalizer,
@@ -177,9 +189,6 @@ def main():
                 instruction = full_response.strip()
             used_prompt.append(instruction)
 
-        if sum([len(p) for p in used_prompt]) < args.prompt_per_example * 10:
-            break
-
         rewards = []
         accuracys, softmax_diff = utils.evaluation_sd(
             used_prompt,
@@ -199,8 +208,8 @@ def main():
         np_acc = np.array(accuracys)
         rewards = [torch.tensor(reward) for reward in rewards]
         for i in range(len(rewards)):
-            print('reward : ', rewards[i].item(), 'acc :', accuracys[i],
-                  ' prompt : ', used_prompt[i], '\n')
+            print('[Reward] : ', rewards[i].item(), '[Accuracy] :',
+                  accuracys[i], '[Prompt] : ', used_prompt[i], '\n')
             queue.add(rewards[i].item(), used_prompt[i], ep)
         bs = len(np_rewards)
         # print([query_encoded.view(-1) for i in range(bs)],response_tensors,[torch.tensor(reward) for reward in rewards])
@@ -236,7 +245,6 @@ def main():
             new_acc[i],  # accuracy
             prompt_queue[i][2]  # epoch
         )
-
 
     max_new_acc = np.max(np.array(new_acc))
     wandb.log({
