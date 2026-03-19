@@ -699,11 +699,11 @@ def evaluation_sd(
                 batch_size = len(targets)
                 correct += acc[0] * batch_size
                 total += batch_size
-                sd += softmax_diff[0]
+                sd += softmax_diff[0] * batch_size
             if debug:
                 print(inputs, targets, acc)
         accuracy = correct / total
-        soft_diff = sd / total #? 加权平均才对
+        soft_diff = sd / total 
         accuracys.append(torch.Tensor([accuracy]))
         sds.append(torch.Tensor([soft_diff]))
 

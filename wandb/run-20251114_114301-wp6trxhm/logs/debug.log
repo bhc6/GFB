@@ -1,5 +1,0 @@
-2025-11-14 11:43:01,346 INFO    MainThread:87749 [wandb_init.py:setup_run_log_directory():706] Logging user logs to /workspace/wandb/run-20251114_114301-wp6trxhm/logs/debug.log
-2025-11-14 11:43:01,346 INFO    MainThread:87749 [wandb_init.py:setup_run_log_directory():707] Logging internal logs to /workspace/wandb/run-20251114_114301-wp6trxhm/logs/debug-internal.log
-2025-11-14 11:43:01,346 INFO    MainThread:87749 [wandb_init.py:init():833] calling init triggers
-2025-11-14 11:43:01,346 INFO    MainThread:87749 [wandb_init.py:init():838] wandb.init called with sweep_config: {}
-config: {'_wandb': {}}
