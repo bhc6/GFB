@@ -62,5 +62,5 @@ datasets=(
 # Loop through each main dataset and run the script
 for dataset in "${datasets[@]}"
 do
-    python qa_rs.py --dataset $dataset --epoch 30
+    python qa_rs.py --dataset $dataset --epoch 30 --results_suffix round1
 done
