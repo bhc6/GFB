@@ -2,7 +2,6 @@ import torch
 from tqdm.auto import tqdm
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer,AutoModelForCausalLM
-from trl import PPOTrainer, PPOConfig,AutoModelForCausalLMWithValueHead
 import argparse
 import numpy as np
 import wandb
@@ -11,7 +10,7 @@ import random
 import heapq
 import utils
 from dataset_utils import load_all_dataset,dataset_dicts,load_qa_dataset,qa_dicts,load_generation_dataset
-from peft import LoraConfig
+# PEFT/TRL removed — using inference-only models
 def parser_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--target_model',type=str,default='google/gemma-3-1b-it')
@@ -88,38 +87,15 @@ def main():
     train_dataloader = DataLoader(train_dataset,batch_size = 4,shuffle = True)
     
     
-        #load agent model
-    config = PPOConfig(
-        model_name = args.agent_model,
-        learning_rate = 1e-5,
-        batch_size = args.prompt_per_example,
-        mini_batch_size= args.prompt_per_example,
-        log_with='wandb',
-    )
-    lora_config = LoraConfig(
-        r= 16,
-        lora_alpha = 32,
-        lora_dropout=0.05,
-        bias="none",
-        task_type="CAUSAL_LM"
-    )
+    # load agent model (inference-only; RL components removed)
     agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,cache_dir = args.cache_dir)
-    agent_model = AutoModelForCausalLMWithValueHead.from_pretrained(
+    agent_model = AutoModelForCausalLM.from_pretrained(
         args.agent_model,
         torch_dtype=torch.bfloat16,
         device_map = 'auto',
-        peft_config = lora_config,
-        cache_dir = args.cache_dir
-    )
-    ref_model = AutoModelForCausalLMWithValueHead.from_pretrained(
-        args.agent_model,
-        torch_dtype=torch.bfloat16,
-        device_map = 'auto',
-        peft_config = lora_config,
         cache_dir = args.cache_dir
     )
     agent_tokenizer.pad_token = agent_tokenizer.eos_token
-    ppo_trainer = PPOTrainer(config,agent_model,ref_model,agent_tokenizer)
     
     #load target model
     target_tokenizer = AutoTokenizer.from_pretrained(args.target_model,cache_dir = args.cache_dir)
@@ -173,14 +149,16 @@ def main():
             enable_thinking=False #for qwen style model
         ).view(-1).to(device)
         
-        response_tensors =ppo_trainer.generate(
-            query_encoded,
+        # Generate candidate prompts using the agent model (inference-only)
+        input_ids = query_encoded.view(1, -1).to(device)
+        response_tensors = agent_model.generate(
+            input_ids,
             **generation_kwargs,
-            return_prompt=False,
             num_return_sequences = args.prompt_per_example
         )
-            
-        used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
+        # generated sequences include the input; strip input tokens to get only generated prompt
+        input_len = input_ids.shape[1]
+        used_prompt = [agent_tokenizer.decode(r[input_len:].squeeze(), skip_special_tokens=True) for r in response_tensors]
         
         # If many of the generated prompts are too short, exit
         if sum([len(p) for p in used_prompt]) < args.prompt_per_example * 10:
@@ -201,73 +179,29 @@ def main():
         rewards = [  0.05 * softmax_diff[i] + 3 * accuracys[i] for i in range(len(used_prompt))]
         np_rewards = np.array(rewards)
         np_acc = np.array(accuracys)
+        # convert rewards to tensors and record them
         rewards = [ torch.tensor(reward) for reward in rewards]
         for i in range(len(rewards)):
-            print('reward : ', rewards[i].item(),'acc :', accuracys[i],' prompt : ', used_prompt[i], '\n')
-            queue.add(rewards[i].item(),used_prompt[i],ep)
-        bs = len(np_rewards)
-        #print([query_encoded.view(-1) for i in range(bs)],response_tensors,[torch.tensor(reward) for reward in rewards])
-        stats = ppo_trainer.step([query_encoded.view(-1) for i in range(bs)],
-                        [response for response in response_tensors],
-                        rewards)
+            print('reward : ', rewards[i].item(), 'acc :', accuracys[i], ' prompt : ', used_prompt[i], '\n')
+            queue.add(rewards[i].item(), used_prompt[i], ep)
+
+        # Aggregate reward stats (no RL update step; inference-only)
         rewards = torch.stack(rewards)
         mean_reward = torch.mean(rewards)
         max_reward = torch.max(rewards)
-        mean_total_loss += mean_reward
-        max_total_loss += max_reward
-        min_total_loss += torch.min(rewards)
-        sum_total_loss += torch.sum(rewards)
+        mean_total_loss += mean_reward.item()
+        max_total_loss += max_reward.item()
+        min_total_loss += torch.min(rewards).item()
+        sum_total_loss += torch.sum(rewards).item()
+
+        # Log serializable metrics to wandb with explicit step
         wandb.log({
-            'rewards' : rewards,
-            'mean_reward' : mean_reward,
-            'max_reward' : max_reward,
-        })
-            
-            
-        #reference model update
-        if ep % args.update_term == 0 and ep !=0:
-            response_tensors,ref_response_tensors = ppo_trainer.generate(query_encoded.view(-1),**generation_kwargs,return_prompt=False, num_return_sequences=bs,generate_ref_response=True)
-            used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
-            ref_used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in ref_response_tensors]
-            acc = utils.evaluation(
-                used_prompt,
-                test_dataset,
-                target_model,
-                target_tokenizer,
-                device,
-                verbalizer.values(),
-                debug=False,
-            )
-            ref_acc = utils.evaluation(
-                ref_used_prompt,
-                test_dataset,
-                target_model,
-                target_tokenizer,
-                device,
-                verbalizer.values(),
-            )
-            print('acc : ', acc)
-            print('ref_acc : ', ref_acc)
-            mean_acc = np.mean(np.array(acc))
-            mean_ref_acc = np.mean(np.array(ref_acc))
-            diff = mean_acc - mean_ref_acc
-            if diff > args.update_threshold:
-                ppo_trainer.ref_model =  ppo_trainer.model
-                print('update ref model')
-                change_num +=1
-            elif diff < -args.update_threshold:
-                ppo_trainer.model = ppo_trainer.ref_model
-                print('rollback model')
-                change_num -=1
-            else:
-                change_num=change_num
-            if change_num < 0 :
-                change_num = 0
-            wandb.log({
-                'change_num' : change_num,
-                'valid_acc' : mean_acc,
-                'ref_valid_acc' : mean_ref_acc,
-            })
+            'rewards': rewards.cpu().tolist(),
+            'mean_reward': mean_reward.item(),
+            'max_reward': max_reward.item(),
+            'valid_acc': float(np.mean(np_acc)),
+            'mean_softmax_diff': float(np.mean(np_rewards)),
+        }, step=ep)
         wandb.log({
             'mean_loss' : mean_total_loss,
             'max_loss' : max_total_loss,

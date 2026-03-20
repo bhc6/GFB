@@ -1,6 +1,5 @@
 transformers==4.57.1
 datasets==4.4.1
-trl==0.10.1
 peft==0.17.1
 wandb==0.22.3
 sentencepiece==0.2.1

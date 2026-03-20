@@ -2,7 +2,6 @@ import torch
 from tqdm.auto import tqdm
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer,AutoModelForCausalLM
-from trl import PPOTrainer, PPOConfig,AutoModelForCausalLMWithValueHead
 import argparse
 import numpy as np
 import wandb
@@ -11,7 +10,7 @@ import random
 import heapq
 import utils
 from dataset_utils import load_all_dataset,dataset_dicts,load_qa_dataset,qa_dicts,load_generation_dataset,load_bigbench
-from peft import LoraConfig
+# PEFT/TRL removed — using inference-only models
 def parser_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--target_model',type=str,default='google/gemma-3-1b-it')
@@ -62,38 +61,15 @@ def main():
     train_dataloader = DataLoader(train_dataset,batch_size = 4,shuffle = True)
     
     
-        #load agent model
-    config = PPOConfig(
-        model_name = args.agent_model,
-        learning_rate = 1e-5,
-        batch_size = args.prompt_per_example,
-        mini_batch_size= args.prompt_per_example,
-        log_with='wandb',
-    )
-    lora_config = LoraConfig(
-        r= 16,
-        lora_alpha = 32,
-        lora_dropout=0.05,
-        bias="none",
-        task_type="CAUSAL_LM"
-    )
-    agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,cache_dir = args.cache_dir)
-    agent_model = AutoModelForCausalLMWithValueHead.from_pretrained(
-        args.agent_model,
-        torch_dtype=torch.bfloat16,
-        device_map = 'auto',
-        peft_config = lora_config,
-        cache_dir = args.cache_dir
-    )
-    ref_model = AutoModelForCausalLMWithValueHead.from_pretrained(
-        args.agent_model,
-        torch_dtype=torch.bfloat16,
-        device_map = 'auto',
-        peft_config = lora_config,
-        cache_dir = args.cache_dir
-    )
-    agent_tokenizer.pad_token = agent_tokenizer.eos_token
-    ppo_trainer = PPOTrainer(config,agent_model,ref_model,agent_tokenizer)
+        # load agent model (inference-only; RL components removed)
+        agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,cache_dir = args.cache_dir)
+        agent_model = AutoModelForCausalLM.from_pretrained(
+            args.agent_model,
+            torch_dtype=torch.bfloat16,
+            device_map = 'auto',
+            cache_dir = args.cache_dir
+        )
+        agent_tokenizer.pad_token = agent_tokenizer.eos_token
     
     #load target model
     target_tokenizer = AutoTokenizer.from_pretrained(args.target_model,cache_dir = args.cache_dir)
@@ -190,10 +166,9 @@ def main():
             return_tensors='pt'
         ).view(-1).to(device)
         
-        response_tensors =ppo_trainer.generate(
+        response_tensors = agent_model.generate(
             query_encoded,
             **generation_kwargs,
-            return_prompt=False,
             num_return_sequences = args.prompt_per_example
         )
             
@@ -236,9 +211,7 @@ def main():
             queue.add(rewards[i].item(),used_prompt[i],ep)
         bs = len(np_rewards)
         #print([query_encoded.view(-1) for i in range(bs)],response_tensors,[torch.tensor(reward) for reward in rewards])
-        stats = ppo_trainer.step([query_encoded.view(-1) for i in range(bs)],
-                        [response for response in response_tensors],
-                        rewards)
+        # RL training step removed (ppo_trainer.step)
         rewards = torch.stack(rewards)
         mean_reward = torch.mean(rewards)
         max_reward = torch.max(rewards)
@@ -253,66 +226,7 @@ def main():
         })
             
             
-        #reference model update
-        if ep % args.update_term == 0 and ep!=0:
-            response_tensors,ref_response_tensors = ppo_trainer.generate(query_encoded.view(-1),**generation_kwargs,return_prompt=False, num_return_sequences=bs,generate_ref_response=True)
-            used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
-            ref_used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in ref_response_tensors]
-            if metrics == 'multiple_choice_grade':
-                acc = utils.evaluation(
-                    used_prompt,
-                    validation_dataset,
-                    target_model,
-                    target_tokenizer,
-                    device,
-                    verbalizer.values(),
-                    debug=False,
-                )
-                ref_acc = utils.evaluation(
-                    ref_used_prompt,
-                    validation_dataset,
-                    target_model,
-                    target_tokenizer,
-                    device,
-                    verbalizer.values(),
-                )
-            else:
-                acc,_ = utils.evaluation_generation(
-                    used_prompt,
-                    validation_dataset,
-                    target_model,
-                    target_tokenizer,
-                    device,
-                )
-                ref_acc,_ = utils.evaluation_generation(
-                    ref_used_prompt,
-                    validation_dataset,
-                    target_model,
-                    target_tokenizer,
-                    device,
-                )
-            print('acc : ', acc)
-            print('ref_acc : ', ref_acc)
-            mean_acc = np.mean(np.array(acc))
-            mean_ref_acc = np.mean(np.array(ref_acc))
-            diff = mean_acc - mean_ref_acc
-            if diff > args.update_threshold:
-                ppo_trainer.ref_model =  ppo_trainer.model
-                print('update ref model')
-                change_num +=1
-            elif diff < -args.update_threshold:
-                ppo_trainer.model = ppo_trainer.ref_model
-                print('rollback model')
-                change_num -=1
-            else:
-                change_num=change_num
-            if change_num < 0 :
-                change_num = 0
-            wandb.log({
-                'change_num' : change_num,
-                'valid_acc' : mean_acc,
-                'ref_valid_acc' : mean_ref_acc,
-            })
+        # reference-model update removed (RL-specific)
         wandb.log({
             'mean_loss' : mean_total_loss,
             'max_loss' : max_total_loss,

@@ -2,7 +2,6 @@ import torch
 from tqdm.auto import tqdm
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from trl import PPOTrainer, PPOConfig, AutoModelForCausalLMWithValueHead
 import argparse
 import numpy as np
 import wandb
@@ -11,8 +10,8 @@ import random
 import heapq
 import utils
 from dataset_utils import load_all_dataset, dataset_dicts, load_qa_dataset, qa_dicts, load_generation_dataset
-from peft import LoraConfig
 from datasets import Dataset
+# PEFT/TRL removed — using inference-only models
 from ii_utils import load_ii_data, evaluation_ii, got_example_ii, TASK_TO_METRIC, load_annotation, evaluation_ii_batch
 from dataset_utils import load_all_dataset, dataset_dicts, load_qa_dataset, qa_dicts, load_generation_dataset, load_bigbench
 from peft import LoraConfig
@@ -88,35 +87,15 @@ def main():
 
     print('Example : ', examples)
 
-    #load agent model
-    config = PPOConfig(
-        model_name=args.agent_model,
-        learning_rate=1e-5,
-        batch_size=args.prompt_per_example,
-        mini_batch_size=args.prompt_per_example,
-        log_with='wandb',
-    )
-    lora_config = LoraConfig(r=16,
-                             lora_alpha=32,
-                             lora_dropout=0.05,
-                             bias="none",
-                             task_type="CAUSAL_LM")
+    # load agent model (inference-only; RL components removed)
     agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,
                                                     cache_dir=args.cache_dir)
-    agent_model = AutoModelForCausalLMWithValueHead.from_pretrained(
+    agent_model = AutoModelForCausalLM.from_pretrained(
         args.agent_model,
         torch_dtype=torch.bfloat16,
         device_map='auto',
-        peft_config=lora_config,
-        cache_dir=args.cache_dir)
-    ref_model = AutoModelForCausalLMWithValueHead.from_pretrained(
-        args.agent_model,
-        torch_dtype=torch.bfloat16,
-        device_map='auto',
-        peft_config=lora_config,
         cache_dir=args.cache_dir)
     agent_tokenizer.pad_token = agent_tokenizer.eos_token
-    ppo_trainer = PPOTrainer(config, agent_model, ref_model, agent_tokenizer)
 
     #load target model
     target_tokenizer = AutoTokenizer.from_pretrained(args.target_model,
@@ -167,10 +146,9 @@ def main():
                 query_encoded = agent_tokenizer.apply_chat_template(
                     query_text, return_tensors='pt').view(-1).to(device)
 
-                response_tensors = ppo_trainer.generate(
+                response_tensors = agent_model.generate(
                     query_encoded,
                     **generation_kwargs,
-                    return_prompt=False,
                     num_return_sequences=args.prompt_per_example)
 
                 used_prompt = [
@@ -211,9 +189,7 @@ def main():
                 queue.add(rewards[i].item(), used_prompt[i], ep)
             bs = len(np_rewards)
             #print([query_encoded.view(-1) for i in range(bs)],response_tensors,[torch.tensor(reward) for reward in rewards])
-            stats = ppo_trainer.step(
-                [query_encoded.view(-1) for i in range(bs)],
-                [response for response in response_tensors], rewards)
+            # RL training step removed (ppo_trainer.step)
             rewards = torch.stack(rewards)
             mean_reward = torch.mean(rewards)
             max_reward = torch.max(rewards)
@@ -223,72 +199,7 @@ def main():
                 'max_reward': max_reward,
             })
 
-        #reference model update
-        if ep % args.update_term == 0 and ep != 0:
-            response_tensors, ref_response_tensors = ppo_trainer.generate(
-                query_encoded.view(-1),
-                **generation_kwargs,
-                return_prompt=False,
-                num_return_sequences=2,
-                generate_ref_response=True)
-            used_prompt = [
-                agent_tokenizer.decode(r.squeeze(), skip_special_tokens=True)
-                for r in response_tensors
-            ]
-            ref_used_prompt = [
-                agent_tokenizer.decode(r.squeeze(), skip_special_tokens=True)
-                for r in ref_response_tensors
-            ]
-            acc = []
-            for prompt in used_prompt:
-                ac = evaluation_ii_batch(
-                    prompt,
-                    new_ds,
-                    target_model,
-                    target_tokenizer,
-                    device,
-                    prompt,
-                    generation_kwargs,
-                    args.dataset,
-                    batch_size=16,
-                )
-                acc.append(ac)
-            ref_acc = []
-            for prompt in ref_used_prompt:
-                ac = evaluation_ii_batch(
-                    prompt,
-                    new_ds,
-                    target_model,
-                    target_tokenizer,
-                    device,
-                    prompt,
-                    generation_kwargs,
-                    args.dataset,
-                    batch_size=16,
-                )
-                ref_acc.append(ac)
-            print('acc : ', acc)
-            print('ref_acc : ', ref_acc)
-            mean_acc = np.mean(np.array(acc))
-            mean_ref_acc = np.mean(np.array(ref_acc))
-            diff = mean_acc - mean_ref_acc
-            if diff > args.update_threshold:
-                ppo_trainer.ref_model = ppo_trainer.model
-                print('update ref model')
-                change_num += 1
-            elif diff < -args.update_threshold and not args.no_rollback:
-                ppo_trainer.model = ppo_trainer.ref_model
-                print('rollback model')
-                change_num -= 1
-            else:
-                change_num = change_num
-            if change_num < 0:
-                change_num = 0
-            wandb.log({
-                'change_num': change_num,
-                'valid_acc': mean_acc,
-                'ref_valid_acc': mean_ref_acc,
-            })
+        # reference-model update removed (RL-specific)
 
     print('Final test Start')
     prompt_queue = queue.get_top_texts()

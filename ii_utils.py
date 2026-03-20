@@ -8,8 +8,6 @@ from tqdm.auto import tqdm
 import pandas as pd
 from transformers import pipeline, AutoTokenizer
 from datasets import load_dataset
-from trl import PPOTrainer, PPOConfig, AutoModelForCausalLMWithValueHead
-from trl.core import LengthSampler
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 from torch.utils.data import DataLoader,TensorDataset
@@ -18,7 +16,7 @@ from tqdm.auto import tqdm
 import argparse
 from PIL import Image
 import os
-from peft import LoraConfig
+# TRL/PPO/PEFT removed from imports (not used by ii_utils core functions)
 import warnings
 import numpy as np
 import wandb

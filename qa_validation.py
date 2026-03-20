@@ -208,7 +208,6 @@ def main():
             print('[Reward] : ', rewards[i].item(), '[Accuracy] :',
                   accuracys[i], '[Prompt] : ', used_prompt[i], '\n')
             queue.add(rewards[i].item(), used_prompt[i], ep)
-        bs = len(np_rewards)
         # print([query_encoded.view(-1) for i in range(bs)],response_tensors,[torch.tensor(reward) for reward in rewards])
         rewards = torch.stack(rewards)
         mean_reward = torch.mean(rewards)
@@ -219,7 +218,7 @@ def main():
             'max_reward': max_reward,
         })
 
-    print('Final test Start')
+    print('[Final test Start]')
     prompt_queue = queue.get_top_texts()
     new_acc = utils.evaluation(
         [prompt[1] for prompt in prompt_queue],
