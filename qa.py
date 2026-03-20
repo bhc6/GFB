@@ -90,7 +90,7 @@ def main():
         dataset = load_qa_dataset(args.dataset)
         train_dataset = dataset[0]
         test_dataset = dataset[2]
-        #test_dataset = utils.create_balanced_subset(test_dataset,100)
+        # test_dataset = utils.create_balanced_subset(test_dataset,100)
         if args.verbalizer is None:
             verbalizer = qa_dicts()
         num_labels = len(verbalizer)
