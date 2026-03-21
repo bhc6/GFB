@@ -201,8 +201,7 @@ def main():
             0.05 * softmax_diff[i] + 3 * accuracys[i]
             for i in range(len(used_prompt))
         ]
-        np_rewards = np.array(rewards)
-        np_acc = np.array(accuracys)
+        
         rewards = [torch.tensor(reward) for reward in rewards]
         for i in range(len(rewards)):
             print('[Reward] : ', rewards[i].item(), '[Accuracy] :',

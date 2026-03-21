@@ -1,38 +1,17 @@
-import torch
-from tqdm.auto import tqdm
-import pandas as pd
-from transformers import pipeline, AutoTokenizer
-from datasets import load_dataset
-from trl import PPOTrainer, PPOConfig, AutoModelForCausalLMWithValueHead
-from trl.core import LengthSampler
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
-from torch.utils.data import DataLoader, TensorDataset
-from datasets import load_dataset
-from tqdm.auto import tqdm
-import argparse
-from PIL import Image
 import os
-from peft import LoraConfig
-import warnings
-import numpy as np
-import wandb
-import copy
-from collections import deque
-from transformers import ViltProcessor, ViltForQuestionAnswering
-from datasets import load_dataset
-from torch.utils.data import DataLoader, Subset
 import random
-import torch
-import heapq
-import torch.nn.functional as F
-from collections import Counter
 import string
-# from datasets import load_metric
-from evaluate import load as load_metric
-from collections import Counter
+import warnings
+from collections import Counter, deque
 from typing import List
+
+import numpy as np
+import torch
+import torch.nn.functional as F
+from torch.utils.data import DataLoader, Subset, TensorDataset
+from tqdm.auto import tqdm
 from datasets import Dataset
+import heapq
 
 
 def normalize_answer(s):
@@ -95,8 +74,8 @@ class TopAccuracyTextsNoDuplicates:
                 heapq.heappush(self.heap, (accuracy, len(text), text, ep))
                 # 在 text_map 中记录该文本对应的堆索引和 ep（这里取当前堆长度 - 1 作为索引）
                 self.text_map[text] = (len(self.heap) - 1, ep)
-                self.only_text.append(text) #?
-                return True #?
+                self.only_text.append(text)  #?
+                return True  #?
             # 如果堆已满且新条目的 accuracy 比堆顶（即当前最小 accuracy）高，则替换堆顶
             elif accuracy > self.heap[0][0]:
                 # 从堆中弹出最小元素，heapq.heappop 返回被移除的元组，取其 text（索引为 2）
@@ -109,7 +88,7 @@ class TopAccuracyTextsNoDuplicates:
                 # 更新映射，记录新文本在堆中的（近似）索引和 ep
                 self.text_map[text] = (len(self.heap) - 1, ep)
                 # 将文本加入 only_text 列表（此处代码原意是标记已被加入过）
-                self.only_text.append(text) #?
+                self.only_text.append(text)  #?
                 # 返回 True 表示发生了替换（可用于外部逻辑判断）
                 return True
         # 默认返回 False，表示没有插入或替换成功（如文本已存在或不满足替换条件）
@@ -685,7 +664,7 @@ def evaluation_sd(
                     inputs = batch['text']
                 else:
                     inputs = batch['sentence']
-                targets = batch['label'] #长度为batch_size=4或last undropped part
+                targets = batch['label']  #长度为batch_size=4或last undropped part
                 softmax_diff, acc = evaluation_soft(
                     [prompt],
                     inputs,
@@ -703,7 +682,7 @@ def evaluation_sd(
             if debug:
                 print(inputs, targets, acc)
         accuracy = correct / total
-        soft_diff = sd / total 
+        soft_diff = sd / total
         accuracys.append(torch.Tensor([accuracy]))
         sds.append(torch.Tensor([soft_diff]))
 
@@ -911,7 +890,13 @@ def evaluation_cot(
 
     def _format_prompts(prompts, inputs, side):
         if side == 'First':
-        return input_ids.shape[1] - 1
+            template = "{prompt} Input : {sentence_1} Output:"
+        else:
+            template = "{sentence_1} {prompt}"
+        return [
+            template.format(sentence_1=s_1, prompt=prompt)
+            for s_1, prompt in zip(inputs, prompts)
+        ]
 
     def _chat_format_prompts(prompts, inputs):
         #print(inputs)
@@ -1042,7 +1027,7 @@ def evaluation_soft(
     rewards = []
     model.eval()
     verbalizer_ids = tokenizer.convert_tokens_to_ids(verbalizer)
-    batch_size = targets.size(0)#长度为batch_size=4
+    batch_size = targets.size(0)  #长度为batch_size=4
     # 为什么没有把targets映射到verbalizer_id上？
     # targets 和 preds 都是在同一个"类别空间"中的索引，可以直接比较，无需额外映射
     # preds 被映射到原始标签上
@@ -1064,7 +1049,7 @@ def evaluation_soft(
         accuracy = correct_predictions.item() / batch_size
         accuracies.append(accuracy)
 
-        #Get reward softmax diff 对于整个词表 
+        #Get reward softmax diff 对于整个词表
         reward = get_reward(all_logits,
                             targets,
                             Fail_coefficient=Fail_coefficient,
@@ -1125,7 +1110,7 @@ def get_reward(
 
         # 将正确标签的logit值设为0，使其不影响最大值的计算
         mask = torch.ones_like(logits)
-        mask.scatter_(1, labels.unsqueeze(1), 0) #? -float('inf')
+        mask.scatter_(1, labels.unsqueeze(1), 0)  #? -float('inf')
         masked_logits = logits * mask
 
         # 找出掩码logits中的最大值
@@ -1156,10 +1141,11 @@ def remove_text_after_key(text, key='AI:'):
     return text[:key_index]
 
 
-def got_example(dataset, dataset_dict, shot=5, label_key='label'):
+def got_example(dataset, dataset_dict, shot=5, label_key='label', seed=None):
     examples = ''
+    rnd = random.Random(seed) if seed is not None else random
     for i in range(shot):
-        idx = random.randint(0, len(dataset) - 1)
+        idx = rnd.randint(0, len(dataset) - 1)
         example = dataset[idx]
         if example[label_key] == -1:
             continue

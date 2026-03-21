@@ -5,7 +5,6 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 import argparse
 import numpy as np
 import wandb
-import atexit
 import random
 import utils
 from dataset_utils import load_all_dataset, dataset_dicts, load_qa_dataset, qa_dicts, load_generation_dataset
@@ -84,20 +83,41 @@ def main():
     # Apply global seed for reproducibility
     seed_everything(args.seed)
 
-    # Enhanced wandb initialization with config tracking
+    # 1. 辅助函数：提取简短的模型名称（去掉 'google/' 等前缀）
+    def get_short_name(model_path):
+        return model_path.split('/')[-1]
+
+    short_agent = get_short_name(args.agent_model)
+    short_target = get_short_name(args.target_model)
+
+    # 2. 构造高区分度的 Run Name（包含关键超参数）
+    # 格式示例: gemma-1.1-2b-it_TO_gemma-1.1-2b-it_bs16_top5_s42
+    run_name = f"{short_agent}_TO_{short_target}_bs{args.batch_size}_top{args.topk}_s{args.seed}"
+
+    # 3. 增强版 WandB 初始化
     wandb.init(
-        project=args.dataset + '_' + args.task + '_GFB',
-        config=vars(args),
-        name=args.dataset + '_' + args.agent_model + '/' + args.target_model,
-    )
+        # Project (最高层级): 建议以 算法名+任务大类 命名
+        # 示例: GFB_TC (文本分类任务的GFB项目)
+        project=f"GFB_{args.task.upper()}",
+
+        # Group (次级分类): 强烈建议按数据集分组！这样在面板上可以一键折叠/展开同一个数据集的所有实验
+        # 示例: sst2
+        group=args.dataset,
+
+        # Name (单次实验): 简短且包含独特变量
+        name=run_name,
+
+        # Tags (标签): 极其方便后续在侧边栏进行多维度交叉筛选
+        tags=[
+            args.dataset, f"agent:{short_agent}", f"target:{short_target}",
+            args.task
+        ],
+        config=vars(args))
     # Define custom x-axis for epoch-level metrics
     wandb.define_metric("epoch_summary/epoch")
-    wandb.define_metric("epoch_summary/*", step_metric="epoch_summary/epoch")
-    # Define running_max metrics so they can be plotted by step or epoch
+    wandb.define_metric("epoch_summary/*", step_metric="epoch")
+    # Define running_max metrics so they are plotted by step
     wandb.define_metric("running_max/*", step_metric="step")
-    wandb.define_metric("running_max/*", step_metric="epoch")
-    # Ensure wandb finishes cleanly on program exit (including exceptions)
-    atexit.register(wandb.finish)
 
     if args.task == 'tc':
         dataset = load_all_dataset(args.dataset)
@@ -150,17 +170,19 @@ def main():
     print('[test_data_size]', len(test_dataset))
 
     # Log dataset info
-    wandb.log({
+    wandb.config.update({
         'train_data_size': len(train_dataset),
         'test_data_size': len(test_dataset),
         'num_labels': len(verbalizer) if verbalizer else 0,
+        'used_verbalizer': list(verbalizer.values()) if verbalizer else "N/A",
     })
 
     # Display a complete example meta-prompt before training starts
     try:
         sample_examples = utils.got_example(validation_dataset,
                                             verbalizer,
-                                            shot=args.num_example)
+                                            shot=args.num_example,
+                                            seed=args.seed)
         full_metaprompt = args.meta_prompt + '\n' + sample_examples + '\nThe Instruction is : '
         print('\n=== Example meta-prompt (used for generation) ===\n')
         print(full_metaprompt)
@@ -202,14 +224,7 @@ def main():
         "min_length": -1,
     }
 
-    # setting verbalizer ids
-    verbalizer_ids = []
-    for i in range(len(verbalizer)):
-        verbalizer_ids.append(
-            agent_tokenizer.convert_tokens_to_ids(verbalizer[i]))
-
     queue = utils.TopAccuracyTextsNoDuplicates(max_size=args.topk)
-    change_num = 0
     global_step = 0
     # running max trackers (over steps)
     running_max_reward = float('-inf')
@@ -227,7 +242,9 @@ def main():
             labels = batch['label']
             examples = utils.got_example(validation_dataset,
                                          verbalizer,
-                                         shot=args.num_example)
+                                         shot=args.num_example,
+                                         seed=args.seed + ep * 100000 +
+                                         batch_count)
             with torch.no_grad():
 
                 query_text = [{
@@ -243,30 +260,31 @@ def main():
 
                 # Apply the specific seed right before generation
                 torch.manual_seed(args.seed + ep * 100000 + batch_count)
-                
+
                 response_tensors = agent_model.generate(
                     query_encoded,
                     **generation_kwargs,
-                    num_return_sequences=args.prompt_per_example
-                )
-
+                    num_return_sequences=args.prompt_per_example)
+                
+                input_length = query_encoded.shape[1]
                 used_prompt = [
-                    agent_tokenizer.decode(r.squeeze(),
-                                           skip_special_tokens=True)
+                    agent_tokenizer.decode(r[input_length:],
+                                           skip_special_tokens=True).strip()
                     for r in response_tensors
                 ]
 
             rewards = []
-            new_dict = {'text': inputs, 'label': labels}
-            new_ds = Dataset.from_dict(new_dict)
             with torch.no_grad():
-                accuracys, softmax_diff = utils.evaluation_sd(
-                    used_prompt,
-                    new_ds,
-                    target_model,
-                    target_tokenizer,
-                    'cuda:0',
-                    verbalizer.values(),
+                softmax_diff, accuracys = utils.evaluation_soft(
+                    prompts=used_prompt,
+                    inputs=inputs,
+                    targets=labels.to(device),
+                    model=target_model,
+                    tokenizer=target_tokenizer,
+                    device=device,
+                    verbalizer=list(verbalizer.values()),
+                    side='First',
+                    return_reward=False,
                 )
             rewards = [
                 args.cs * softmax_diff[i] + args.ca * accuracys[i]
@@ -285,58 +303,41 @@ def main():
                 queue.add(rewards[i].item(), used_prompt[i], ep)
 
             rewards = torch.stack(rewards)
-            mean_reward = torch.mean(rewards)
             max_reward = torch.max(rewards)
-            min_reward = torch.min(rewards)
-            std_reward = torch.std(rewards)
 
-            # Collect epoch stats
+            # Maintain epoch-level history so epoch_summary is valid
             epoch_rewards.extend(rewards.tolist())
             epoch_accuracies.extend(accuracys)
-            batch_count += 1
-            global_step += 1
 
-            # softmax_diff may be a list-like of numbers/tensors
-            try:
-                sd_arr = np.array(softmax_diff, dtype=float)
-            except Exception:
-                sd_arr = np.array([float(x) for x in softmax_diff],
-                                  dtype=float)
-
-            log_dict = {
-                'step': int(global_step),
-                'epoch': int(ep),
-                # Reward metrics (already native via .item())
-                'reward/mean': float(mean_reward.item()),
-                'reward/max': float(max_reward.item()),
-                'reward/min': float(min_reward.item()),
-                'reward/std': float(std_reward.item()),
-                # Accuracy metrics
-                'accuracy/mean': float(np.mean(np_acc)),
-                'accuracy/max': float(np.max(np_acc)),
-                'accuracy/min': float(np.min(np_acc)),
-                'accuracy/std': float(np.std(np_acc)),
-                # Softmax diff metrics
-                'softmax_diff/mean': float(np.mean(sd_arr)),
-                'softmax_diff/max': float(np.max(sd_arr)),
-                # Prompt metrics
-                'prompt/mean_length': float(np.mean(prompt_lengths)),
-                'prompt/max_length': int(np.max(prompt_lengths)),
-                'prompt/min_length': int(np.min(prompt_lengths)),
-            }
-            # Log step-level numeric metrics (no histograms, no sample table)
-            wandb.log(log_dict, step=global_step)
-
-            # Update running_max_reward
+            # Update running max stats
             if max_reward.item() > running_max_reward:
                 running_max_reward = max_reward.item()
+            if np.max(np_acc) > running_max_accuracy:
+                running_max_accuracy = np.max(np_acc)
 
-            # Log running_max metrics
-            wandb.log({
-                "running_max/reward": running_max_reward,
-                "running_max/accuracy": running_max_accuracy,
-                "step": global_step
-            })
+            # Collect all metrics for the current batch + running max in one log call
+            metrics = {
+                'batch/reward_mean': float(torch.mean(rewards)),
+                'batch/reward_max': float(torch.max(rewards)),
+                'batch/reward_min': float(torch.min(rewards)),
+                'batch/reward_std': float(torch.std(rewards)),
+                'batch/accuracy_mean': float(np.mean(epoch_accuracies)),
+                'batch/accuracy_max': float(np.max(epoch_accuracies)),
+                'batch/accuracy_min': float(np.min(epoch_accuracies)),
+                'batch/prompt_length_mean':
+                float(np.mean(epoch_prompt_lengths)),
+                'batch/prompt_length_max': float(np.max(epoch_prompt_lengths)),
+                'batch/prompt_length_min': float(np.min(epoch_prompt_lengths)),
+                'running_max/reward': running_max_reward,
+                'running_max/accuracy': running_max_accuracy,
+                'global_step': global_step,
+                'step': global_step,
+                'epoch': ep,
+            }
+
+            wandb.log(metrics, step=global_step)
+            global_step += 1
+            batch_count += 1
 
         # Epoch-level summary
         if epoch_rewards:
@@ -344,7 +345,7 @@ def main():
             epoch_acc_np = np.array(epoch_accuracies)
 
             wandb.log({
-                'epoch_summary/epoch':
+                'epoch':
                 int(ep),
                 'epoch_summary/mean_reward':
                 float(np.mean(epoch_rewards_np)),
@@ -372,19 +373,19 @@ def main():
         target_model,
         target_tokenizer,
         device,
-        verbalizer.values(),
+        list(verbalizer.values()),
     )
 
     # Create final results table
     final_results_table = wandb.Table(
         columns=["Rank", "Prompt", "Accuracy", "Reward", "Epoch"],
         data=[[
-            i + 1, prompt_queue[i][1], new_acc[i], prompt_queue[i][0],
+            i + 1, prompt_queue[i][1], new_acc[i].item(), prompt_queue[i][0],
             prompt_queue[i][2] if len(prompt_queue[i]) > 2 else "N/A"
         ] for i in range(len(prompt_queue))])
 
     for i in range(len(prompt_queue)):
-        print('[prompt] : ', prompt_queue[i][1], '[accuracy] : ', new_acc[i],
+        print('[prompt] : ', prompt_queue[i][1], '[accuracy] : ', new_acc[i].item(),
               '[reward] : ', prompt_queue[i][0], '[epoch] : ',
               prompt_queue[i][2] if len(prompt_queue[i]) > 2 else "N/A", '\n')
     max_new_acc = np.max(np.array(new_acc))
@@ -401,7 +402,6 @@ def main():
         'final/mean_accuracy': float(np.mean(new_acc_arr)),
         'final/accuracy_std': float(np.std(new_acc_arr)),
         'final/results_table': final_results_table,
-        'final/total_model_updates': int(change_num),
     })
 
     # Log best prompt as summary
