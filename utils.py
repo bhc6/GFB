@@ -996,7 +996,6 @@ def evaluation_soft(
     return_reward=False,
     side='First',
 ):
-
     def _format_prompts(prompts, inputs, side):
         if side == 'First':
             template = "{prompt} Input : {sentence_1} Output:"
@@ -1008,7 +1007,6 @@ def evaluation_soft(
         ]
 
     def _get_next_token_index(input_ids):
-        # 返回最后一个标记的位置
         return input_ids.shape[1] - 1
 
     def _get_logits(texts, tokenizer, model, device):
@@ -1027,36 +1025,37 @@ def evaluation_soft(
     rewards = []
     model.eval()
     verbalizer_ids = tokenizer.convert_tokens_to_ids(verbalizer)
-    batch_size = targets.size(0)  #长度为batch_size=4
-    # 为什么没有把targets映射到verbalizer_id上？
-    # targets 和 preds 都是在同一个"类别空间"中的索引，可以直接比较，无需额外映射
-    # preds 被映射到原始标签上
+    batch_size = targets.size(0)
+
     for prompt in prompts:
-        #Get logits
         current_prompts = [prompt for _ in range(batch_size)]
         formatted_templates = _format_prompts(current_prompts,
                                               inputs,
                                               side=side)
         all_logits = _get_logits(formatted_templates, tokenizer, model, device)
 
-        #Get verbalizer logits
+        # 提取 verbalizer 的 logits
         verbalizer_logits = all_logits[:, verbalizer_ids]
-        log_probs = F.softmax(verbalizer_logits, dim=1)
-        #print(log_probs)
-        #Get accuracy
-        preds = torch.argmax(log_probs, dim=1).cpu()
+        
+        # 【修复1：使用 F.softmax 转成概率】
+        # 如果你要的是 softmax_diff，应该对概率进行相减，而不是原 logits。
+        probs = F.softmax(verbalizer_logits, dim=1)
+        
+        preds = torch.argmax(probs, dim=1).cpu()
         correct_predictions = torch.sum(preds == targets)
         accuracy = correct_predictions.item() / batch_size
         accuracies.append(accuracy)
 
-        #Get reward softmax diff 对于整个词表
-        reward = get_reward(all_logits,
+        # 【修复2：使用 probs/verbalizer_logits 计算 reward，且目标维度对齐】
+        # 将 probs 传入 get_reward，此时 targets (0,1) 完美对应 probs 的第0维和第1维
+        reward = get_reward(probs,
                             targets,
                             Fail_coefficient=Fail_coefficient,
                             Success_coefficient=Success_coefficient)
         mean_reward = reward.mean().cpu()
         rewards.append(mean_reward)
 
+    # 保持原代码逻辑，返回 rewards 列表
     z_scaled_reward = rewards
 
     if return_reward:
@@ -1092,30 +1091,25 @@ from dataset_utils import dataset_dicts
 
 
 def get_reward(
-    logits,
+    probs,
     labels,
     Fail_coefficient=1,
     Success_coefficient=1,
 ):
-    #TODO
-    # Inputs :
-    #     logits : 模型的输出 logits
-    #     targets : 正确标签
-    # Outputs :
-    #     reward : 正确logit值 - 最大logit值 * 成功/失败系数
     with torch.no_grad():
         labels = labels.to('cpu')
-        logits = logits.to('cpu')
-        correct_logits = logits.gather(1, labels.unsqueeze(1)).squeeze(1)
+        probs = probs.to('cpu')
 
-        # 将正确标签的logit值设为0，使其不影响最大值的计算
-        mask = torch.ones_like(logits)
-        mask.scatter_(1, labels.unsqueeze(1), 0)  #? -float('inf')
-        masked_logits = logits * mask
+        # 获取正确标签的 logit 值
+        correct_probs = probs.gather(1, labels.unsqueeze(1)).squeeze(1)
 
-        # 找出掩码logits中的最大值
-        max_other_logits = masked_logits.max(dim=1)[0]
-        differences = correct_logits - max_other_logits
+        # 修复 Bug: 使用 -inf 来掩盖正确标签，防止负数 logits 时 max() 找错
+        masked_probs = probs.clone()
+        masked_probs.scatter_(1, labels.unsqueeze(1), -float('inf'))
+
+        # 找出掩码 logits 中的最大值（即第二大的类别，或除了正确类别外的最大类别）
+        max_other_probs = masked_probs.max(dim=1)[0]
+        differences = correct_probs - max_other_probs
 
     reward = torch.where(differences > 0, differences * Success_coefficient,
                          differences * Fail_coefficient)

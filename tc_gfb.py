@@ -299,7 +299,6 @@ def main():
                 for i in range(len(used_prompt))
             ]
             np_acc = np.array(accuracys)
-            rewards = [torch.tensor(reward) for reward in rewards]
 
             # Track prompt lengths
             prompt_lengths = [len(p) for p in used_prompt]
