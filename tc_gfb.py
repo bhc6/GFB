@@ -242,6 +242,7 @@ def main():
         epoch_rewards = []
         epoch_accuracies = []
         epoch_prompt_lengths = []
+        epoch_softmax_diff = []
         batch_count = 0
 
         for batch in train_dataloader:
@@ -306,7 +307,8 @@ def main():
 
             for i in range(len(rewards)):
                 print('[reward] : ', rewards[i].item(), '[accuracy] :',
-                      accuracys[i], "[softmax_diff] : ", softmax_diff[i], '[prompt] : ', used_prompt[i], '\n')
+                      accuracys[i], "[softmax_diff] : ", softmax_diff[i],
+                      '[prompt] : ', used_prompt[i], '\n')
                 queue.add(rewards[i].item(), used_prompt[i], ep)
 
             rewards = torch.stack(rewards)
@@ -315,6 +317,10 @@ def main():
             # Maintain epoch-level history so epoch_summary is valid
             epoch_rewards.extend(rewards.tolist())
             epoch_accuracies.extend(accuracys)
+            epoch_softmax_diff.extend([
+                x.float().item() if torch.is_tensor(x) else float(x)
+                for x in softmax_diff
+            ])
 
             # Update running max stats
             if max_reward.item() > running_max_reward:
@@ -331,8 +337,8 @@ def main():
                 'batch/accuracy_mean': float(np.mean(epoch_accuracies)),
                 'batch/accuracy_max': float(np.max(epoch_accuracies)),
                 'batch/accuracy_min': float(np.min(epoch_accuracies)),
-                'batch/softmax_diff_mean': float(np.mean(softmax_diff)),
-                'batch/softmax_diff_max': float(np.max(softmax_diff)),
+                'batch/softmax_diff_mean': float(np.mean(epoch_softmax_diff)),
+                'batch/softmax_diff_max': float(np.max(epoch_softmax_diff)),
                 'batch/prompt_length_mean':
                 float(np.mean(epoch_prompt_lengths)),
                 'batch/prompt_length_max': float(np.max(epoch_prompt_lengths)),
@@ -352,7 +358,7 @@ def main():
         if epoch_rewards:
             epoch_rewards_np = np.array(epoch_rewards)
             epoch_acc_np = np.array(epoch_accuracies)
-            epoch_softmax_diff_np = np.array(softmax_diff)
+            epoch_softmax_diff_np = np.array(epoch_softmax_diff)
 
             wandb.log({
                 'epoch':
