@@ -278,7 +278,7 @@ def main():
                 softmax_diff, accuracys = utils.evaluation_soft(
                     prompts=used_prompt,
                     inputs=inputs,
-                    targets=labels.to(device),
+                    targets=labels,
                     model=target_model,
                     tokenizer=target_tokenizer,
                     device=device,
