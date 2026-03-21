@@ -168,13 +168,20 @@ def main():
 
     print('[train_data_size]', len(train_dataset))
     print('[test_data_size]', len(test_dataset))
+    print('[validation_data_size]', len(validation_dataset))
 
     # Log dataset info
     wandb.config.update({
-        'train_data_size': len(train_dataset),
-        'test_data_size': len(test_dataset),
-        'num_labels': len(verbalizer) if verbalizer else 0,
-        'used_verbalizer': list(verbalizer.values()) if verbalizer else "N/A",
+        'train_data_size':
+        len(train_dataset),
+        'test_data_size':
+        len(test_dataset),
+        'validation_data_size':
+        len(validation_dataset),
+        'num_labels':
+        len(verbalizer) if verbalizer else 0,
+        'used_verbalizer':
+        list(verbalizer.values()) if verbalizer else "N/A",
     })
 
     # Display a complete example meta-prompt before training starts
@@ -265,7 +272,7 @@ def main():
                     query_encoded,
                     **generation_kwargs,
                     num_return_sequences=args.prompt_per_example)
-                
+
                 input_length = query_encoded.shape[1]
                 used_prompt = [
                     agent_tokenizer.decode(r[input_length:],
@@ -299,7 +306,7 @@ def main():
 
             for i in range(len(rewards)):
                 print('[reward] : ', rewards[i].item(), '[accuracy] :',
-                      accuracys[i], '[prompt] : ', used_prompt[i], '\n')
+                      accuracys[i], "[softmax_diff] : ", softmax_diff[i], '[prompt] : ', used_prompt[i], '\n')
                 queue.add(rewards[i].item(), used_prompt[i], ep)
 
             rewards = torch.stack(rewards)
@@ -324,6 +331,8 @@ def main():
                 'batch/accuracy_mean': float(np.mean(epoch_accuracies)),
                 'batch/accuracy_max': float(np.max(epoch_accuracies)),
                 'batch/accuracy_min': float(np.min(epoch_accuracies)),
+                'batch/softmax_diff_mean': float(np.mean(softmax_diff)),
+                'batch/softmax_diff_max': float(np.max(softmax_diff)),
                 'batch/prompt_length_mean':
                 float(np.mean(epoch_prompt_lengths)),
                 'batch/prompt_length_max': float(np.max(epoch_prompt_lengths)),
@@ -343,6 +352,7 @@ def main():
         if epoch_rewards:
             epoch_rewards_np = np.array(epoch_rewards)
             epoch_acc_np = np.array(epoch_accuracies)
+            epoch_softmax_diff_np = np.array(softmax_diff)
 
             wandb.log({
                 'epoch':
@@ -359,6 +369,8 @@ def main():
                 float(np.mean(epoch_acc_np)),
                 'epoch_summary/max_accuracy':
                 float(np.max(epoch_acc_np)),
+                'epoch_summary/mean_softmax_diff':
+                float(np.mean(epoch_softmax_diff_np)),
                 'epoch_summary/num_batches':
                 int(batch_count),
                 'epoch_summary/mean_prompt_length':
@@ -385,8 +397,9 @@ def main():
         ] for i in range(len(prompt_queue))])
 
     for i in range(len(prompt_queue)):
-        print('[prompt] : ', prompt_queue[i][1], '[accuracy] : ', new_acc[i].item(),
-              '[reward] : ', prompt_queue[i][0], '[epoch] : ',
+        print('[prompt] : ', prompt_queue[i][1], '[accuracy] : ',
+              new_acc[i].item(), '[reward] : ', prompt_queue[i][0],
+              '[epoch] : ',
               prompt_queue[i][2] if len(prompt_queue[i]) > 2 else "N/A", '\n')
     max_new_acc = np.max(np.array(new_acc))
     mean_new_acc = np.mean(np.array(new_acc))
