@@ -53,49 +53,48 @@ def f1_score(prediction, ground_truths):
     return max(scores) if scores else 0
 
 
+import heapq
+
+
 class TopAccuracyTextsNoDuplicates:
 
     def __init__(self, max_size=5):
         self.heap = []
-        self.text_map = {}  # 以文本为键，（堆中的位置，创建时间）为值的字典。
         self.max_size = max_size
-        self.only_text = []
+        # Replaced only_text list with a dictionary for O(1) lookups
+        # Format: {text: (accuracy, ep)}
+        self.text_map = {}
 
     def add(self, accuracy, text, ep):
-        #print(accuracy,text,ep)
-        if text in self.only_text:
-            # 更新现有文本的准确性和创建时间（提高准确性）
-            print('already exist')
-        else:
-            # 如果堆的大小小于最大大小，则直接添加新文本
-            if len(self.heap) < self.max_size:
-                # 将元组 (accuracy, len(text), text, ep) 推入堆中，
-                # heapq 将此列表当作最小堆来维护，按元组从左到右比较排序。
-                heapq.heappush(self.heap, (accuracy, len(text), text, ep))
-                # 在 text_map 中记录该文本对应的堆索引和 ep（这里取当前堆长度 - 1 作为索引）
-                self.text_map[text] = (len(self.heap) - 1, ep)
-                self.only_text.append(text)  #?
-                return True  #?
-            # 如果堆已满且新条目的 accuracy 比堆顶（即当前最小 accuracy）高，则替换堆顶
-            elif accuracy > self.heap[0][0]:
-                # 从堆中弹出最小元素，heapq.heappop 返回被移除的元组，取其 text（索引为 2）
-                removed_text = heapq.heappop(self.heap)[2]
-                # 若被移除的文本存在于 text_map 映射中，则将其移除（保持映射一致性）
-                if removed_text in self.text_map:
-                    self.text_map.pop(removed_text)  # 从映射中删除已移除的文本
-                # 将新的条目推入堆中（保持堆大小不变）
-                heapq.heappush(self.heap, (accuracy, len(text), text, ep))
-                # 更新映射，记录新文本在堆中的（近似）索引和 ep
-                self.text_map[text] = (len(self.heap) - 1, ep)
-                # 将文本加入 only_text 列表（此处代码原意是标记已被加入过）
-                self.only_text.append(text)  #?
-                # 返回 True 表示发生了替换（可用于外部逻辑判断）
-                return True
-        # 默认返回 False，表示没有插入或替换成功（如文本已存在或不满足替换条件）
+        if text in self.text_map:
+            # If you actually want to update the accuracy of an existing text:
+            # existing_accuracy = self.text_map[text][0]
+            # (To do this properly, you would need to rebuild the heap or remove the old entry first)
+            print('[already exist] : ', text)
+            return False
+
+        # If heap is not full, push directly
+        if len(self.heap) < self.max_size:
+            heapq.heappush(self.heap, (accuracy, len(text), text, ep))
+            self.text_map[text] = (accuracy, ep)
+            return True
+
+        # If heap is full, check if the new accuracy beats the lowest accuracy in the heap
+        elif accuracy > self.heap[0][0]:
+            # Pop the smallest item and remove it from our tracking map
+            removed_text = heapq.heappop(self.heap)[2]
+            if removed_text in self.text_map:
+                del self.text_map[removed_text]
+
+            # Push the new item and add it to the tracking map
+            heapq.heappush(self.heap, (accuracy, len(text), text, ep))
+            self.text_map[text] = (accuracy, ep)
+            return True
+
         return False
 
     def get_top_texts(self):
-        # 按准确性降序返回堆中的文本列表
+        # Returns sorted list descending by accuracy
         return sorted([(accuracy, text, ep)
                        for accuracy, _, text, ep in self.heap],
                       reverse=True)
@@ -996,6 +995,7 @@ def evaluation_soft(
     return_reward=False,
     side='First',
 ):
+
     def _format_prompts(prompts, inputs, side):
         if side == 'First':
             template = "{prompt} Input : {sentence_1} Output:"
@@ -1036,11 +1036,11 @@ def evaluation_soft(
 
         # 提取 verbalizer 的 logits
         verbalizer_logits = all_logits[:, verbalizer_ids]
-        
+
         # 【修复1：使用 F.softmax 转成概率】
         # 如果你要的是 softmax_diff，应该对概率进行相减，而不是原 logits。
         probs = F.softmax(verbalizer_logits, dim=1)
-        
+
         preds = torch.argmax(probs, dim=1).cpu()
         correct_predictions = torch.sum(preds == targets)
         accuracy = correct_predictions.item() / batch_size

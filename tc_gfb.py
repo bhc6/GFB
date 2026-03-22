@@ -15,10 +15,10 @@ def parser_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--target_model',
                         type=str,
-                        default='google/gemma-1.1-2b-it')
+                        default='google/gemma-1.1-7b-it')
     parser.add_argument('--agent_model',
                         type=str,
-                        default='google/gemma-1.1-2b-it')
+                        default='google/gemma-1.1-7b-it')
     parser.add_argument('--task', type=str, default='tc')
     parser.add_argument('--dataset', type=str, default='sst2')
     parser.add_argument('--verbalizer', type=str, nargs='+', default=None)
@@ -50,7 +50,7 @@ def parser_args():
     parser.add_argument(
         '--cs',
         type=float,
-        default=0.1,
+        default=0,
         help='Coefficient for softmax difference in reward calculation')
     parser.add_argument('--seed',
                         type=int,
@@ -306,7 +306,7 @@ def main():
 
             for i in range(len(rewards)):
                 print('[reward] : ', rewards[i].item(), '[accuracy] :',
-                      accuracys[i], "[softmax_diff] : ", softmax_diff[i],
+                      accuracys[i], "[softmax_diff] : ", softmax_diff[i].item(),
                       '[prompt] : ', used_prompt[i], '\n')
                 queue.add(rewards[i].item(), used_prompt[i], ep)
 
