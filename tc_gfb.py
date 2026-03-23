@@ -38,7 +38,6 @@ def parser_args():
                         ''',
     )
     parser.add_argument('--prompt_per_example', type=int, default=4)
-    parser.add_argument('--num_test_example', type=int, default=20)
     parser.add_argument('--topk',
                         type=int,
                         default=5,
@@ -61,6 +60,7 @@ def parser_args():
     return args
 
 
+@torch.inference_mode()
 def main():
 
     args = parser_args()
@@ -236,47 +236,41 @@ def main():
                                          shot=args.num_example,
                                          seed=args.seed + ep * 100000 +
                                          batch_count)
-            with torch.no_grad():
+            query_text = [{
+                "role": "user",
+                "content": args.meta_prompt + '\n' + examples
+            }, {
+                "role": "assistant",
+                "content": "The Instruction is : "
+            }]
+            query_encoded = agent_tokenizer.apply_chat_template(
+                query_text, return_tensors='pt').to(device)
+            # Apply the specific seed right before generation
+            torch.manual_seed(args.seed + ep * 100000 + batch_count)
+            response_tensors = agent_model.generate(
+                query_encoded,
+                **generation_kwargs,
+                num_return_sequences=args.prompt_per_example)
+            input_length = query_encoded.shape[1]
+            used_prompt = [
+                agent_tokenizer.decode(r[input_length:],
+                                       skip_special_tokens=True).strip()
+                for r in response_tensors
+            ]
 
-                query_text = [{
-                    "role": "user",
-                    "content": args.meta_prompt + '\n' + examples
-                }, {
-                    "role": "assistant",
-                    "content": "The Instruction is : "
-                }]
+            torch.cuda.empty_cache()
 
-                query_encoded = agent_tokenizer.apply_chat_template(
-                    query_text, return_tensors='pt').to(device)
-
-                # Apply the specific seed right before generation
-                torch.manual_seed(args.seed + ep * 100000 + batch_count)
-
-                response_tensors = agent_model.generate(
-                    query_encoded,
-                    **generation_kwargs,
-                    num_return_sequences=args.prompt_per_example)
-
-                input_length = query_encoded.shape[1]
-                used_prompt = [
-                    agent_tokenizer.decode(r[input_length:],
-                                           skip_special_tokens=True).strip()
-                    for r in response_tensors
-                ]
-
-            rewards = []
-            with torch.no_grad():
-                softmax_diff, accuracys = utils.evaluation_soft(
-                    prompts=used_prompt,
-                    inputs=inputs,
-                    targets=labels,
-                    model=target_model,
-                    tokenizer=target_tokenizer,
-                    device=device,
-                    verbalizer=list(verbalizer.values()),
-                    side='First',
-                    return_reward=False,
-                )
+            softmax_diff, accuracys = utils.evaluation_soft(
+                prompts=used_prompt,
+                inputs=inputs,
+                targets=labels,
+                model=target_model,
+                tokenizer=target_tokenizer,
+                device=device,
+                verbalizer=list(verbalizer.values()),
+                side='First',
+                return_reward=False,
+            )
             rewards = [
                 args.cs * softmax_diff[i] + args.ca * accuracys[i]
                 for i in range(len(used_prompt))
@@ -289,8 +283,9 @@ def main():
 
             for i in range(len(rewards)):
                 print('[reward] : ', rewards[i].item(), '[accuracy] :',
-                      accuracys[i], "[softmax_diff] : ", softmax_diff[i].item(),
-                      '[prompt] : ', used_prompt[i], '\n')
+                      accuracys[i], "[softmax_diff] : ",
+                      softmax_diff[i].item(), '[prompt] : ', used_prompt[i],
+                      '\n')
                 queue.add(rewards[i].item(), used_prompt[i], ep)
 
             rewards = torch.stack(rewards)

@@ -22,11 +22,10 @@ def parser_args():
     parser.add_argument('--dataset', type=str, default='squad')
     parser.add_argument('--verbalizer', type=str, nargs='+', default=None)
     parser.add_argument('--cache_dir', type=str, default='llm')
-    parser.add_argument('--batch_size', type=int, default=16)
+    parser.add_argument('--batch_size', type=int, default=5)
     parser.add_argument('--max_prompt_length', type=int, default=150)
-    parser.add_argument('--train_data_per_labels', type=int, default=16)
-    parser.add_argument('--num_example', type=int, default=5)
-    parser.add_argument('--epochs', type=int, default=100)
+    parser.add_argument('--num_example', type=int, default=4)
+    parser.add_argument('--epochs', type=int, default=30)
     parser.add_argument(
         '--meta_prompt',
         type=str,
@@ -34,7 +33,6 @@ def parser_args():
                         The friend read the instruction and wrote an output for every one of the inputs.
                         Here are the input-output pairs: \n''')
     parser.add_argument('--prompt_per_example', type=int, default=4)
-    parser.add_argument('--num_test_example', type=int, default=20)
     parser.add_argument('--topk', type=int, default=5)
     parser.add_argument('--ca', type=float, default=10.0)
     parser.add_argument('--cs', type=float, default=0.0)
@@ -44,6 +42,7 @@ def parser_args():
     return args
 
 
+@torch.inference_mode()
 def main():
     args = parser_args()
     device = 'cuda:0'
@@ -167,7 +166,7 @@ def main():
     global_step = 0
     running_max_reward = float('-inf')
     running_max_accuracy = float('-inf')
-    
+
     for ep in tqdm(range(args.epochs)):
         epoch_rewards = []
         epoch_accuracies = []
@@ -182,29 +181,29 @@ def main():
                                          shot=args.num_example,
                                          seed=args.seed + ep * 100000 +
                                          batch_count)
-            with torch.no_grad():
-                query_text = [{
-                    "role": "user",
-                    "content": args.meta_prompt + '\n' + examples
-                }, {
-                    "role": "assistant",
-                    "content": "The Instruction is : "
-                }]
-                query_encoded = agent_tokenizer.apply_chat_template(
-                    query_text, return_tensors='pt').to(device)
+            query_text = [{
+                "role": "user",
+                "content": args.meta_prompt + '\n' + examples
+            }, {
+                "role": "assistant",
+                "content": "The Instruction is : "
+            }]
+            query_encoded = agent_tokenizer.apply_chat_template(
+                query_text, return_tensors='pt').to(device)
+            torch.manual_seed(args.seed + ep * 100000 + batch_count)
+            response_tensors = agent_model.generate(
+                query_encoded,
+                **generation_kwargs,
+                num_return_sequences=args.prompt_per_example)
+            input_length = query_encoded.shape[1]
+            used_prompt = [
+                agent_tokenizer.decode(r[input_length:],
+                                       skip_special_tokens=True).strip()
+                for r in response_tensors
+            ]
 
-                torch.manual_seed(args.seed + ep * 100000 + batch_count)
+            torch.cuda.empty_cache()
 
-                response_tensors = agent_model.generate(
-                    query_encoded,
-                    **generation_kwargs,
-                    num_return_sequences=args.prompt_per_example)
-                input_length = query_encoded.shape[1]
-                used_prompt = [
-                    agent_tokenizer.decode(r[input_length:],
-                                           skip_special_tokens=True).strip()
-                    for r in response_tensors
-                ]
             softmax_diff, accuracys = utils.evaluation_soft(
                 prompts=used_prompt,
                 inputs=inputs,
@@ -215,13 +214,16 @@ def main():
                 verbalizer=list(verbalizer.values()),
                 side='First',
                 return_reward=False)
+
             rewards = [
                 args.cs * softmax_diff[i] + args.ca * accuracys[i]
                 for i in range(len(used_prompt))
             ]
+
             np_acc = np.array(accuracys)
             prompt_lengths = [len(p) for p in used_prompt]
             epoch_prompt_lengths.extend(prompt_lengths)
+
             for i in range(len(rewards)):
                 try:
                     r_val = rewards[i].item() if hasattr(
@@ -249,7 +251,8 @@ def main():
             # Compute topk running average reward from the global queue
             topk_texts = queue.get_top_texts()
             if topk_texts:
-                topk_rewards = np.array([item[0] for item in topk_texts], dtype=float)
+                topk_rewards = np.array([item[0] for item in topk_texts],
+                                        dtype=float)
                 running_topk_avg = float(np.mean(topk_rewards))
                 running_topk_min = float(np.min(topk_rewards))
             else:

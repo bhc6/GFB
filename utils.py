@@ -981,6 +981,7 @@ def evaluation_cot(
         return z_scaled_reward, accuracies
 
 
+@torch.inference_mode()
 def evaluation_soft(
     prompts,
     inputs,
@@ -1089,6 +1090,7 @@ import random
 from dataset_utils import dataset_dicts
 
 
+@torch.inference_mode()
 def get_reward(
     probs,
     labels,
