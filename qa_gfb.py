@@ -89,6 +89,8 @@ def main():
         validation_dataset = dataset[4]
         if args.verbalizer is None:
             verbalizer = qa_dicts()
+    else:
+        raise ValueError(f"Task '{args.task}' is not supported.")
 
     def worker_init_fn(worker_id):
         worker_seed = args.seed + worker_id
@@ -235,7 +237,7 @@ def main():
                       '[prompt] : ', used_prompt[i], '\n')
                 queue.add(r_val, used_prompt[i], ep)
 
-            rewards_tensor = torch.stack([torch.tensor(r) for r in rewards])
+            rewards_tensor = torch.stack([torch.as_tensor(r) for r in rewards])
             max_reward = torch.max(rewards_tensor)
             epoch_rewards.extend(rewards_tensor.tolist())
             epoch_accuracies.extend(accuracys)

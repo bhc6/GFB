@@ -131,6 +131,8 @@ def main():
             train_dataset,
             args.train_data_per_labels * num_labels,
         )
+    else:
+        raise ValueError(f"Task '{args.task}' is not supported.")
 
     # make dataloader
     def worker_init_fn(worker_id):
