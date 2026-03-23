@@ -1047,7 +1047,6 @@ def evaluation_soft(
         accuracies.append(accuracy)
 
         # 【修复2：使用 probs/verbalizer_logits 计算 reward，且目标维度对齐】
-        # 将 probs 传入 get_reward，此时 targets (0,1) 完美对应 probs 的第0维和第1维
         reward = get_reward(probs,
                             targets,
                             Fail_coefficient=Fail_coefficient,

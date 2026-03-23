@@ -131,23 +131,6 @@ def main():
             train_dataset,
             args.train_data_per_labels * num_labels,
         )
-    elif args.task == 'qa':
-        dataset = load_qa_dataset(args.dataset)
-        train_dataset = dataset[0]
-        test_dataset = dataset[2]
-        test_dataset = utils.create_balanced_subset(test_dataset, 100)
-        if args.verbalizer is None:
-            verbalizer = qa_dicts()
-        num_labels = len(verbalizer)
-        validation_dataset = train_dataset
-
-    elif args.task == 'generation':
-        dataset = load_generation_dataset(args.dataset)
-        train_dataset = dataset[0]
-        test_dataset = dataset[2]
-        test_dataset = utils.create_balanced_subset(test_dataset, 100)
-        verbalizer = None
-        validation_dataset = train_dataset
 
     # make dataloader
     def worker_init_fn(worker_id):
