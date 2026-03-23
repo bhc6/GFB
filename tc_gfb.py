@@ -7,8 +7,7 @@ import numpy as np
 import wandb
 import random
 import utils
-from dataset_utils import load_all_dataset, dataset_dicts, load_qa_dataset, qa_dicts, load_generation_dataset
-from datasets import Dataset
+from dataset_utils import load_all_dataset, dataset_dicts
 
 
 def parser_args():
@@ -126,6 +125,8 @@ def main():
         # test_dataset = utils.create_balanced_subset(test_dataset,100)
         if args.verbalizer is None:
             verbalizer = dataset_dicts(args.dataset)
+        else:
+            verbalizer = args.verbalizer
         num_labels = len(verbalizer)
         train_dataset, validation_dataset = utils.create_balanced_subset_and_validation(
             train_dataset,

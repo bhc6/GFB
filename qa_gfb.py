@@ -89,6 +89,8 @@ def main():
         validation_dataset = dataset[4]
         if args.verbalizer is None:
             verbalizer = qa_dicts()
+        else:
+            verbalizer = args.verbalizer
     else:
         raise ValueError(f"Task '{args.task}' is not supported.")
 
