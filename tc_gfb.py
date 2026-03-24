@@ -117,6 +117,8 @@ def main():
     wandb.define_metric("epoch_summary/*", step_metric="epoch")
     # Define running_max metrics so they are plotted by step
     wandb.define_metric("running_max/*", step_metric="step")
+    # Define running_topk metrics so they are plotted by step (mirrors qa_gfb)
+    wandb.define_metric("running_topk/*", step_metric="step")
 
     if args.task == 'tc':
         dataset = load_all_dataset(args.dataset)
@@ -308,6 +310,17 @@ def main():
             if np.max(np_acc) > running_max_accuracy:
                 running_max_accuracy = np.max(np_acc)
 
+            # Compute running topk statistics from the global queue (mirrors qa_gfb)
+            topk_texts = queue.get_top_texts()
+            if topk_texts:
+                topk_rewards = np.array([item[0] for item in topk_texts],
+                                        dtype=float)
+                running_topk_avg = float(np.mean(topk_rewards))
+                running_topk_min = float(np.min(topk_rewards))
+            else:
+                running_topk_avg = 0.0
+                running_topk_min = 0.0
+
             # Collect all metrics for the current batch + running max in one log call
             metrics = {
                 'batch/reward_mean': float(torch.mean(rewards)),
@@ -325,6 +338,8 @@ def main():
                 'batch/prompt_length_min': float(np.min(epoch_prompt_lengths)),
                 'running_max/reward': running_max_reward,
                 'running_max/accuracy': running_max_accuracy,
+                'running_topk/avg_reward': running_topk_avg,
+                'running_topk/min_reward': running_topk_min,
                 'global_step': global_step,
                 'step': global_step,
                 'epoch': ep,

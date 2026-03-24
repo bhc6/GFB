@@ -1,16 +1,11 @@
-import os
 import random
 import string
-import warnings
-from collections import Counter, deque
+from collections import Counter
 from typing import List
-
-import numpy as np
 import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Subset, TensorDataset
 from tqdm.auto import tqdm
-from datasets import Dataset
 import heapq
 
 
@@ -31,8 +26,8 @@ def normalize_answer(s):
 
 
 def f1_score_single(prediction, ground_truth):
-    #print(prediction,ground_truth)
-    #rint('gt : ',ground_truth)
+    # print(prediction,ground_truth)
+    # print('gt : ',ground_truth)
     prediction_tokens = normalize_answer(prediction).split()
     ground_truth_tokens = normalize_answer(ground_truth).split()
     common_tokens = Counter(prediction_tokens) & Counter(ground_truth_tokens)
@@ -51,9 +46,6 @@ def f1_score_single(prediction, ground_truth):
 def f1_score(prediction, ground_truths):
     scores = [f1_score_single(prediction, truth) for truth in ground_truths]
     return max(scores) if scores else 0
-
-
-import heapq
 
 
 class TopAccuracyTextsNoDuplicates:
