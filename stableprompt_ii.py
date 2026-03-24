@@ -1,152 +1,222 @@
-import torch
+﻿import torch
 from tqdm.auto import tqdm
 from torch.utils.data import DataLoader
-from transformers import AutoTokenizer,AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM
 import argparse
 import numpy as np
 import wandb
-import copy
 import random
-import heapq
 import utils
-from dataset_utils import load_all_dataset,dataset_dicts,load_qa_dataset,qa_dicts,load_generation_dataset
-# TRL/PEFT removed — using inference-only models
+from dataset_utils import load_all_dataset, dataset_dicts, load_qa_dataset, qa_dicts, load_generation_dataset
 from datasets import Dataset
-from ii_utils import load_ii_data,evaluation_ii,got_example_ii, TASK_TO_METRIC, load_annotation,evaluation_ii_batch
+from ii_utils import load_ii_data, evaluation_ii, got_example_ii, TASK_TO_METRIC, load_annotation, evaluation_ii_batch
+
+
 def parser_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--target_model',type=str,default='google/gemma-3-1b-it')
-    parser.add_argument('--agent_model',type=str,default='google/gemma-3-1b-it')
-    parser.add_argument('--task',type=str,default='classification')
-    parser.add_argument('--dataset',type=str,default='active_to_passive')
+    parser.add_argument('--target_model',
+                        type=str,
+                        default='google/gemma-3-1b-it')
+    parser.add_argument('--agent_model',
+                        type=str,
+                        default='google/gemma-3-1b-it')
+    parser.add_argument('--task', type=str, default='classification')
+    parser.add_argument('--dataset', type=str, default='active_to_passive')
+    parser.add_argument('--verbalizer', type=str, nargs='+', default=None)
+    parser.add_argument('--cache_dir', type=str, default='llm')
+    parser.add_argument('--batch_size', type=int, default=16)
+    parser.add_argument('--max_prompt_length', type=int, default=50)
+    parser.add_argument('--train_data_per_labels', type=int, default=16)
+    parser.add_argument('--num_example', type=int, default=5)
+    parser.add_argument('--epochs', type=int, default=10)
     parser.add_argument(
-        '--verbalizer',
-        type = str,
-        nargs = '+',
-        default = None
+        '--meta_prompt',
+        type=str,
+        default=
+        '''I gave a friend an instruction and five inputs. \n                        The friend read the instruction and wrote an output for every one of the inputs.\n                        Here are the input-output pairs: \n                        '''
     )
-    parser.add_argument('--cache_dir',type=str,default='/mnt/sdb/llm/')
-    parser.add_argument('--batch_size',type=int,default=16)
-    parser.add_argument('--max_prompt_length',type=int,default=50)
-    parser.add_argument('--train_data_per_labels',type=int,default=16)
-    parser.add_argument('--num_example',type=int,default=5)
-    parser.add_argument('--epochs',type=int,default=10)
-    parser.add_argument('--meta_prompt',type=str,
-                        default = '''I gave a friend an instruction and five inputs. 
-                        The friend read the instruction and wrote an output for every one of the inputs.
-                        Here are the input-output pairs: \n
-                        ''',)
-    parser.add_argument('--prompt_per_example',type=int,default=4)
-    parser.add_argument('--update_term',type=int,default=15)
-    parser.add_argument('--update_threshold',type=float,default=0.05)   
-    parser.add_argument('--num_test_example',type=int,default=20)
+    parser.add_argument('--prompt_per_example', type=int, default=4)
+    parser.add_argument('--update_term', type=int, default=15)
+    parser.add_argument('--update_threshold', type=float, default=0.05)
+    parser.add_argument('--num_test_example', type=int, default=20)
+    parser.add_argument('--topk',
+                        type=int,
+                        default=5,
+                        help='Max size of top prompts to keep')
+    parser.add_argument('--seed',
+                        type=int,
+                        default=42,
+                        help='Random seed for reproducibility')
 
-    args = parser.parse_args()
-    return args
+    return parser.parse_args()
 
+
+def seed_everything(seed: int):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    try:
+        torch.cuda.manual_seed_all(seed)
+    except Exception:
+        pass
+    try:
+        torch.backends.cudnn.deterministic = True
+        torch.backends.cudnn.benchmark = False
+    except Exception:
+        pass
+
+
+@torch.inference_mode()
 def main():
-    
     args = parser_args()
-    device= 'cuda:0'
-    wandb.init(project='II', 
-               config=args,
-               name = args.dataset )
-    
-    
-    #load dataset
-    train_dataset, test_dataset, validation_dataset = load_ii_data(args.dataset)
-    print('task :' , args.dataset)
-    print('metric :', TASK_TO_METRIC.get(args.dataset, 'em'))
-    print('train_data_size' , len(train_dataset))
-    print('test_data_size' , len(test_dataset))
-    #make dataloader
-    test_dataloader = DataLoader(test_dataset,batch_size = args.batch_size,shuffle = True)
-    train_dataloader = DataLoader(train_dataset,batch_size = args.batch_size,shuffle = True)
-    examples = got_example_ii(validation_dataset,shot=args.num_example)
-    print('Example : ', examples)
+    device = 'cuda:0'
 
-        # load agent model (inference-only; RL components removed)
-        agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,cache_dir = args.cache_dir)
-        agent_model = AutoModelForCausalLM.from_pretrained(
-            args.agent_model,
-            torch_dtype=torch.bfloat16,
-            device_map = 'auto',
-            cache_dir = args.cache_dir
-        )
-        agent_tokenizer.pad_token = agent_tokenizer.eos_token
-    
-    #load target model
-    target_tokenizer = AutoTokenizer.from_pretrained(args.target_model,cache_dir = args.cache_dir)
-    target_model = AutoModelForCausalLM.from_pretrained(args.target_model,
-                                                        cache_dir = args.cache_dir,
-                                                        torch_dtype=torch.bfloat16,
-                                                        device_map='auto')
+    seed_everything(args.seed)
+
+    # 1. 高可读性模型名、运行名生成（来自 tc_gfb）
+    def get_short_name(model_path):
+        return model_path.split('/')[-1]
+
+    short_agent = get_short_name(args.agent_model)
+    short_target = get_short_name(args.target_model)
+    run_name = f"{short_agent}_TO_{short_target}_bs{args.batch_size}_top{args.topk}_s{args.seed}"
+
+    # 2. WandB 初始化（tc_gfb 统一规范）
+    wandb.init(
+        project=f"GFB_{args.task.upper()}",
+        group=args.dataset,
+        name=run_name,
+        tags=[
+            args.dataset,
+            f"agent:{short_agent}",
+            f"target:{short_target}",
+            args.task,
+        ],
+        config=vars(args),
+    )
+
+    wandb.define_metric('epoch_summary/epoch')
+    wandb.define_metric('epoch_summary/*', step_metric='epoch')
+    wandb.define_metric('running_max/*', step_metric='step')
+    wandb.define_metric('running_topk/*', step_metric='step')
+
+    # 3. 数据准备
+    train_dataset, test_dataset, validation_dataset = load_ii_data(
+        args.dataset)
+
+    print('task :', args.dataset)
+    print('metric :', TASK_TO_METRIC.get(args.dataset, 'em'))
+    print('train_data_size', len(train_dataset))
+    print('test_data_size', len(test_dataset))
+    print('validation_data_size', len(validation_dataset))
+
+    train_dataloader = DataLoader(train_dataset,
+                                  batch_size=args.batch_size,
+                                  shuffle=True)
+    test_dataloader = DataLoader(test_dataset,
+                                 batch_size=args.batch_size,
+                                 shuffle=False)
+
+    # 4. 记录示例 meta_prompt
+    try:
+        sample_examples = got_example_ii(validation_dataset,
+                                         shot=args.num_example)
+        full_metaprompt = args.meta_prompt + '\n' + sample_examples + '\nThe Instruction is : '
+        print('\n=== Example meta-prompt (used for generation) ===\n')
+        print(full_metaprompt)
+        print('\n=== End meta-prompt ===\n')
+        if wandb.run is not None:
+            wandb.run.summary['example_metaprompt'] = full_metaprompt
+    except Exception as e:
+        print('Warning: could not construct example metaprompt:', e)
+
+    # 5. 模型加载（同 tc_gfb）
+    agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,
+                                                    cache_dir=args.cache_dir)
+    agent_model = AutoModelForCausalLM.from_pretrained(
+        args.agent_model,
+        torch_dtype=torch.bfloat16,
+        device_map='auto',
+        cache_dir=args.cache_dir,
+    )
+    agent_tokenizer.pad_token = agent_tokenizer.eos_token
+
+    target_tokenizer = AutoTokenizer.from_pretrained(args.target_model,
+                                                     cache_dir=args.cache_dir)
+    target_model = AutoModelForCausalLM.from_pretrained(
+        args.target_model,
+        cache_dir=args.cache_dir,
+        torch_dtype=torch.bfloat16,
+        device_map='auto',
+    )
     target_model.config.pad_token_id = target_tokenizer.eos_token_id
     target_tokenizer.pad_token = target_tokenizer.eos_token
-    
-    
-    #generation kwargs setting
+
     generation_kwargs = {
-    "top_k": 0.0,
-    "top_p": 1.0,
-    "do_sample": True,
-    "pad_token_id": agent_tokenizer.eos_token_id,
-    "max_new_tokens":args.max_prompt_length,
-    "min_length": -1,
+        'top_k': 0.0,
+        'top_p': 1.0,
+        'do_sample': True,
+        'pad_token_id': agent_tokenizer.eos_token_id,
+        'max_new_tokens': args.max_prompt_length,
+        'min_length': -1,
     }
-    
-    
-    
-    queue = utils.TopAccuracyTextsNoDuplicates(max_size=5)
-    change_num = 0
-    #start training
+
+    queue = utils.TopAccuracyTextsNoDuplicates(max_size=args.topk)
+    global_step = 0
+    running_max_reward = float('-inf')
+    running_max_accuracy = float('-inf')
+
+    # 6. 生成 + 评估循环
     for ep in tqdm(range(args.epochs)):
-        max_total_loss = 0
-        min_total_loss = 0
-        mean_total_loss = 0
-        sum_total_loss = 0
-        
-        
-        
-        
+        epoch_rewards = []
+        epoch_accuracies = []
+
         for batch in train_dataloader:
             inputs = batch['text']
             labels = batch['label']
-            examples = got_example_ii(validation_dataset,shot=args.num_example)
-            with torch.no_grad():
-                query_text = [
-                    {"role" : "user", "content" : args.meta_prompt + '\n' + examples},
-                    {"role": "assistant","content" : "The Instruction is : "}
-                ]
-                
-                query_encoded = agent_tokenizer.apply_chat_template(
-                    query_text,
-                    return_tensors='pt'
-                ).view(-1).to(device)
-                
-                response_tensors = agent_model.generate(
-                    query_encoded,
-                    **generation_kwargs,
-                    num_return_sequences = args.prompt_per_example
-                )
-                
-                used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
-                
-            # If many of the generated prompts are too short, exit
-            if sum([len(p) for p in used_prompt]) < args.prompt_per_example * 10:
-                break
-            
+
+            examples = got_example_ii(validation_dataset,
+                                      shot=args.num_example)
+            query_text = [
+                {
+                    'role': 'user',
+                    'content': args.meta_prompt + '\n' + examples,
+                },
+                {
+                    'role': 'assistant',
+                    'content': 'The Instruction is : ',
+                },
+            ]
+
+            query_encoded = agent_tokenizer.apply_chat_template(
+                query_text, return_tensors='pt').to(device)
+            input_length = query_encoded.shape[1]
+
+            torch.manual_seed(args.seed + ep * 100000 + global_step)
+            response_tensors = agent_model.generate(
+                query_encoded,
+                **generation_kwargs,
+                num_return_sequences=args.prompt_per_example,
+            )
+
+            used_prompt = [
+                agent_tokenizer.decode(r[input_length:],
+                                       skip_special_tokens=True).strip()
+                for r in response_tensors
+            ]
+
+            torch.cuda.empty_cache()
+
+            # 避免生成无意义超短 prompt
+            if sum(len(p) for p in used_prompt) < args.prompt_per_example * 10:
+                continue
+
             rewards = []
-            losses = []
-            new_dict ={
-                'text' : inputs,
-                'label' : labels
-            }
-            new_ds = Dataset.from_dict(new_dict)
+            accuracies = []
             for prompt in used_prompt:
-                reward = evaluation_ii_batch(
+                score = evaluation_ii_batch(
                     prompt,
-                    new_ds,
+                    validation_dataset,
                     target_model,
                     target_tokenizer,
                     device,
@@ -155,39 +225,102 @@ def main():
                     args.dataset,
                     batch_size=16,
                 )
-                rewards.append(reward)
-            accuracys = rewards
-            #rewards = [  0.01 * softmax_diff[i] + 30 * accuracys[i] for i in range(len(used_prompt))]
-            np_rewards = np.array(rewards)
-            np_acc = np.array(accuracys)
-            rewards = [ torch.tensor(reward) for reward in rewards]
-            for i in range(len(rewards)):
-                print('reward : ', rewards[i].item(),'acc :', accuracys[i],' prompt : ', used_prompt[i], '\n')
-                queue.add(rewards[i].item(),used_prompt[i],ep)
-            bs = len(np_rewards)
-            #print([query_encoded.view(-1) for i in range(bs)],response_tensors,[torch.tensor(reward) for reward in rewards])
-            # RL training step removed (ppo_trainer.step)
-            rewards = torch.stack(rewards)
-            mean_reward = torch.mean(rewards)
-            max_reward = torch.max(rewards)
+                rewards.append(float(score))
+                accuracies.append(float(score))
+
+            rewards_tensor = torch.tensor(rewards)
+            epoch_rewards.extend(rewards)
+            epoch_accuracies.extend(accuracies)
+
+            for i in range(len(used_prompt)):
+                print('[reward] :', rewards[i], '[accuracy] :', accuracies[i],
+                      'prompt :', used_prompt[i])
+                queue.add(rewards[i], used_prompt[i], ep)
+
+            max_reward = float(torch.max(rewards_tensor))
+            running_max_reward = max(running_max_reward, max_reward)
+            if accuracies:
+                running_max_accuracy = max(running_max_accuracy,
+                                           float(np.max(np.array(accuracies))))
+
+            topk_texts = queue.get_top_texts()
+            if topk_texts:
+                topk_rewards = np.array([item[0] for item in topk_texts],
+                                        dtype=float)
+                running_topk_avg = float(np.mean(topk_rewards))
+                running_topk_min = float(np.min(topk_rewards))
+            else:
+                running_topk_avg = 0.0
+                running_topk_min = 0.0
+
+            wandb.log(
+                {
+                    'batch/reward_mean':
+                    float(torch.mean(rewards_tensor)),
+                    'batch/reward_max':
+                    float(torch.max(rewards_tensor)),
+                    'batch/reward_min':
+                    float(torch.min(rewards_tensor)),
+                    'batch/reward_std':
+                    float(torch.std(rewards_tensor)),
+                    'batch/accuracy_mean':
+                    float(np.mean(np.array(accuracies)))
+                    if accuracies else 0.0,
+                    'batch/accuracy_max':
+                    float(np.max(np.array(accuracies))) if accuracies else 0.0,
+                    'batch/accuracy_min':
+                    float(np.min(np.array(accuracies))) if accuracies else 0.0,
+                    'running_max/reward':
+                    running_max_reward,
+                    'running_max/accuracy':
+                    running_max_accuracy,
+                    'running_topk/avg_reward':
+                    running_topk_avg,
+                    'running_topk/min_reward':
+                    running_topk_min,
+                    'global_step':
+                    global_step,
+                    'step':
+                    global_step,
+                    'epoch':
+                    ep,
+                },
+                step=global_step,
+            )
+            global_step += 1
+
+        if epoch_rewards:
+            epoch_rewards_np = np.array(epoch_rewards)
+            epoch_acc_np = np.array(epoch_accuracies)
             wandb.log({
-                'rewards' : rewards,
-                'mean_reward' : mean_reward,
-                'max_reward' : max_reward,
+                'epoch':
+                int(ep),
+                'epoch_summary/mean_reward':
+                float(np.mean(epoch_rewards_np)),
+                'epoch_summary/max_reward':
+                float(np.max(epoch_rewards_np)),
+                'epoch_summary/min_reward':
+                float(np.min(epoch_rewards_np)),
+                'epoch_summary/std_reward':
+                float(np.std(epoch_rewards_np)),
+                'epoch_summary/mean_accuracy':
+                float(np.mean(epoch_acc_np)),
+                'epoch_summary/max_accuracy':
+                float(np.max(epoch_acc_np)),
+                'epoch_summary/num_batches':
+                len(train_dataloader),
             })
-            
-            
-        # reference-model update removed (RL-specific)
-                            
-            
-    print('Final test Start')
+
+    # 7. 最终测试（相当 tc_gfb 的 final evaluation）
+    print('[Final test Start]')
     prompt_queue = queue.get_top_texts()
-    used_prompt = [prompt[1] for prompt in prompt_queue]
-    new_acc= []
-    for prompt in used_prompt : 
-        reward = evaluation_ii_batch(
+    final_prompts = [item[1] for item in prompt_queue]
+
+    new_acc = []
+    for prompt in final_prompts:
+        score = evaluation_ii_batch(
             prompt,
-            new_ds,
+            test_dataset,
             target_model,
             target_tokenizer,
             device,
@@ -196,21 +329,42 @@ def main():
             args.dataset,
             batch_size=16,
         )
-        new_acc.append(reward)
-    print(len(prompt_queue))
-    print(len(new_acc))
-    
-    for i in range(len(prompt_queue)):
-        
-        print('prompt : ',prompt_queue[i][1],'acc : ',new_acc[i])
-    max_new_acc = np.max(np.array(new_acc))
+        new_acc.append(float(score))
+
+    for i, (acc_value, text, ep) in enumerate(prompt_queue):
+        print('[prompt] :', text, '[accuracy] :', new_acc[i], '[reward] :',
+              acc_value, '[epoch] :', ep)
+
+    max_new_acc = float(np.max(np.array(new_acc))) if new_acc else 0.0
+    mean_new_acc = float(np.mean(np.array(new_acc))) if new_acc else 0.0
+
+    final_results_table = wandb.Table(
+        columns=['Rank', 'Prompt', 'Accuracy', 'Reward', 'Epoch'],
+        data=[[
+            i + 1, final_prompts[i], new_acc[i], prompt_queue[i][0],
+            prompt_queue[i][2] if len(prompt_queue[i]) > 2 else 'N/A'
+        ] for i in range(len(final_prompts))],
+    )
+
     wandb.log({
-        'final_acc' : max_new_acc,
-        'final_mean_acc' : np.mean(np.array(new_acc))
+        'final/best_accuracy':
+        max_new_acc,
+        'final/mean_accuracy':
+        mean_new_acc,
+        'final/accuracy_std':
+        float(np.std(np.array(new_acc))) if new_acc else 0.0,
+        'final/results_table':
+        final_results_table,
     })
-    
-            
+
+    if new_acc:
+        best_idx = int(np.argmax(np.array(new_acc)))
+        wandb.run.summary['best_prompt'] = final_prompts[best_idx]
+        wandb.run.summary['best_accuracy'] = max_new_acc
+        wandb.run.summary['mean_accuracy'] = mean_new_acc
+
+    wandb.finish()
+
+
 if __name__ == '__main__':
     main()
-                
-                    
