@@ -7,20 +7,19 @@ import numpy as np
 import wandb
 import random
 import utils
-from dataset_utils import load_all_dataset, dataset_dicts, load_qa_dataset, qa_dicts, load_generation_dataset
 from datasets import Dataset
-from ii_utils import load_ii_data, evaluation_ii, got_example_ii, TASK_TO_METRIC, load_annotation, evaluation_ii_batch
+from ii_utils import load_ii_data, got_example_ii, TASK_TO_METRIC, evaluation_ii_batch
 
 
 def parser_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--target_model',
                         type=str,
-                        default='google/gemma-3-1b-it')
+                        default='google/gemma-1.1-7b-it')
     parser.add_argument('--agent_model',
                         type=str,
-                        default='google/gemma-3-1b-it')
-    parser.add_argument('--task', type=str, default='classification')
+                        default='google/gemma-1.1-7b-it')
+    parser.add_argument('--task', type=str, default='ii')
     parser.add_argument('--dataset', type=str, default='active_to_passive')
     parser.add_argument('--verbalizer', type=str, nargs='+', default=None)
     parser.add_argument('--cache_dir', type=str, default='llm')
@@ -32,13 +31,12 @@ def parser_args():
     parser.add_argument(
         '--meta_prompt',
         type=str,
-        default=
-        '''I gave a friend an instruction and five inputs. \n                        The friend read the instruction and wrote an output for every one of the inputs.\n                        Here are the input-output pairs: \n                        '''
+        default='''I gave a friend an instruction and five inputs. 
+                        The friend read the instruction and wrote an output for every one of the inputs.
+                        Here are the input-output pairs: \n
+                        ''',
     )
     parser.add_argument('--prompt_per_example', type=int, default=4)
-    parser.add_argument('--update_term', type=int, default=15)
-    parser.add_argument('--update_threshold', type=float, default=0.05)
-    parser.add_argument('--num_test_example', type=int, default=20)
     parser.add_argument('--topk',
                         type=int,
                         default=5,
@@ -104,18 +102,15 @@ def main():
     train_dataset, test_dataset, validation_dataset = load_ii_data(
         args.dataset)
 
-    print('task :', args.dataset)
-    print('metric :', TASK_TO_METRIC.get(args.dataset, 'em'))
-    print('train_data_size', len(train_dataset))
-    print('test_data_size', len(test_dataset))
-    print('validation_data_size', len(validation_dataset))
+    print('[task] :', args.dataset)
+    print('[metric] :', TASK_TO_METRIC.get(args.dataset, 'em'))
+    print('[train_data_size] :', len(train_dataset))
+    print('[test_data_size] :', len(test_dataset))
+    print('[validation_data_size] :', len(validation_dataset))
 
     train_dataloader = DataLoader(train_dataset,
                                   batch_size=args.batch_size,
                                   shuffle=True)
-    test_dataloader = DataLoader(test_dataset,
-                                 batch_size=args.batch_size,
-                                 shuffle=False)
 
     # 4. 记录示例 meta_prompt
     try:
@@ -163,12 +158,10 @@ def main():
 
     queue = utils.TopAccuracyTextsNoDuplicates(max_size=args.topk)
     global_step = 0
-    running_max_reward = float('-inf')
     running_max_accuracy = float('-inf')
 
     # 6. 生成 + 评估循环
     for ep in tqdm(range(args.epochs)):
-        epoch_rewards = []
         epoch_accuracies = []
 
         for batch in train_dataloader:
@@ -207,16 +200,13 @@ def main():
 
             torch.cuda.empty_cache()
 
-            # 避免生成无意义超短 prompt
-            if sum(len(p) for p in used_prompt) < args.prompt_per_example * 10:
-                continue
-
-            rewards = []
             accuracies = []
+            new_dict = {'text': inputs, 'label': labels}
+            new_ds = Dataset.from_dict(new_dict)
             for prompt in used_prompt:
                 score = evaluation_ii_batch(
                     prompt,
-                    validation_dataset,
+                    new_ds,
                     target_model,
                     target_tokenizer,
                     device,
@@ -225,88 +215,60 @@ def main():
                     args.dataset,
                     batch_size=16,
                 )
-                rewards.append(float(score))
                 accuracies.append(float(score))
 
-            rewards_tensor = torch.tensor(rewards)
-            epoch_rewards.extend(rewards)
+            accuracies_tensor = torch.tensor(accuracies)
             epoch_accuracies.extend(accuracies)
 
             for i in range(len(used_prompt)):
-                print('[reward] :', rewards[i], '[accuracy] :', accuracies[i],
-                      'prompt :', used_prompt[i])
-                queue.add(rewards[i], used_prompt[i], ep)
+                print('[accuracy] :', accuracies[i], '[prompt] :',
+                      used_prompt[i])
+                queue.add(accuracies[i], used_prompt[i], ep)
 
-            max_reward = float(torch.max(rewards_tensor))
-            running_max_reward = max(running_max_reward, max_reward)
-            if accuracies:
-                running_max_accuracy = max(running_max_accuracy,
-                                           float(np.max(np.array(accuracies))))
+            max_acc = float(torch.max(accuracies_tensor))
+            running_max_accuracy = max(running_max_accuracy, max_acc)
 
             topk_texts = queue.get_top_texts()
             if topk_texts:
-                topk_rewards = np.array([item[0] for item in topk_texts],
-                                        dtype=float)
-                running_topk_avg = float(np.mean(topk_rewards))
-                running_topk_min = float(np.min(topk_rewards))
+                topk_scores = np.array([item[0] for item in topk_texts],
+                                       dtype=float)
+                running_topk_avg = float(np.mean(topk_scores))
+                running_topk_min = float(np.min(topk_scores))
             else:
                 running_topk_avg = 0.0
                 running_topk_min = 0.0
 
             wandb.log(
                 {
-                    'batch/reward_mean':
-                    float(torch.mean(rewards_tensor)),
-                    'batch/reward_max':
-                    float(torch.max(rewards_tensor)),
-                    'batch/reward_min':
-                    float(torch.min(rewards_tensor)),
-                    'batch/reward_std':
-                    float(torch.std(rewards_tensor)),
-                    'batch/accuracy_mean':
-                    float(np.mean(np.array(accuracies)))
-                    if accuracies else 0.0,
-                    'batch/accuracy_max':
-                    float(np.max(np.array(accuracies))) if accuracies else 0.0,
-                    'batch/accuracy_min':
-                    float(np.min(np.array(accuracies))) if accuracies else 0.0,
-                    'running_max/reward':
-                    running_max_reward,
-                    'running_max/accuracy':
-                    running_max_accuracy,
-                    'running_topk/avg_reward':
-                    running_topk_avg,
-                    'running_topk/min_reward':
-                    running_topk_min,
-                    'global_step':
-                    global_step,
-                    'step':
-                    global_step,
-                    'epoch':
-                    ep,
+                    'batch/accuracy_mean': float(
+                        torch.mean(accuracies_tensor)),
+                    'batch/accuracy_max': float(torch.max(accuracies_tensor)),
+                    'batch/accuracy_min': float(torch.min(accuracies_tensor)),
+                    'batch/accuracy_std': float(torch.std(accuracies_tensor)),
+                    'running_max/accuracy': running_max_accuracy,
+                    'running_topk/avg_accuracy': running_topk_avg,
+                    'running_topk/min_accuracy': running_topk_min,
+                    'global_step': global_step,
+                    'step': global_step,
+                    'epoch': ep,
                 },
                 step=global_step,
             )
             global_step += 1
 
-        if epoch_rewards:
-            epoch_rewards_np = np.array(epoch_rewards)
+        if epoch_accuracies:
             epoch_acc_np = np.array(epoch_accuracies)
             wandb.log({
                 'epoch':
                 int(ep),
-                'epoch_summary/mean_reward':
-                float(np.mean(epoch_rewards_np)),
-                'epoch_summary/max_reward':
-                float(np.max(epoch_rewards_np)),
-                'epoch_summary/min_reward':
-                float(np.min(epoch_rewards_np)),
-                'epoch_summary/std_reward':
-                float(np.std(epoch_rewards_np)),
                 'epoch_summary/mean_accuracy':
                 float(np.mean(epoch_acc_np)),
                 'epoch_summary/max_accuracy':
                 float(np.max(epoch_acc_np)),
+                'epoch_summary/min_accuracy':
+                float(np.min(epoch_acc_np)),
+                'epoch_summary/std_accuracy':
+                float(np.std(epoch_acc_np)),
                 'epoch_summary/num_batches':
                 len(train_dataloader),
             })
@@ -332,16 +294,15 @@ def main():
         new_acc.append(float(score))
 
     for i, (acc_value, text, ep) in enumerate(prompt_queue):
-        print('[prompt] :', text, '[accuracy] :', new_acc[i], '[reward] :',
-              acc_value, '[epoch] :', ep)
+        print('[prompt] :', text, '[accuracy] :', new_acc[i], '[epoch] :', ep)
 
     max_new_acc = float(np.max(np.array(new_acc))) if new_acc else 0.0
     mean_new_acc = float(np.mean(np.array(new_acc))) if new_acc else 0.0
 
     final_results_table = wandb.Table(
-        columns=['Rank', 'Prompt', 'Accuracy', 'Reward', 'Epoch'],
+        columns=['Rank', 'Prompt', 'Accuracy', 'Epoch'],
         data=[[
-            i + 1, final_prompts[i], new_acc[i], prompt_queue[i][0],
+            i + 1, final_prompts[i], new_acc[i],
             prompt_queue[i][2] if len(prompt_queue[i]) > 2 else 'N/A'
         ] for i in range(len(final_prompts))],
     )

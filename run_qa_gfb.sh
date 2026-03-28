@@ -62,5 +62,5 @@ datasets=(
 # Loop through each main dataset and run the script
 for dataset in "${datasets[@]}"
 do
-    python qa_gfb.py --dataset $dataset --epoch 30 --results_suffix round1 --seed 42
+    python qa_gfb.py --dataset $dataset --epoch 30
 done
