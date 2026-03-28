@@ -21,7 +21,6 @@ def parser_args():
                         default='google/gemma-1.1-7b-it')
     parser.add_argument('--task', type=str, default='ii')
     parser.add_argument('--dataset', type=str, default='active_to_passive')
-    parser.add_argument('--verbalizer', type=str, nargs='+', default=None)
     parser.add_argument('--cache_dir', type=str, default='llm')
     parser.add_argument('--batch_size', type=int, default=16)
     parser.add_argument('--max_prompt_length', type=int, default=50)
@@ -31,7 +30,7 @@ def parser_args():
     parser.add_argument(
         '--meta_prompt',
         type=str,
-        default='''I gave a friend an instruction and five inputs. 
+        default='''I gave a friend an instruction and five inputs.
                         The friend read the instruction and wrote an output for every one of the inputs.
                         Here are the input-output pairs: \n
                         ''',
@@ -111,6 +110,14 @@ def main():
     train_dataloader = DataLoader(train_dataset,
                                   batch_size=args.batch_size,
                                   shuffle=True)
+
+    # Log dataset info
+    wandb.config.update({
+        'train_data_size': len(train_dataset),
+        'test_data_size': len(test_dataset),
+        'validation_data_size': len(validation_dataset),
+        'metric': TASK_TO_METRIC.get(args.dataset, 'em')
+    })
 
     # 4. 记录示例 meta_prompt
     try:

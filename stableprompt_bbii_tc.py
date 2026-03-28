@@ -2,6 +2,7 @@ import torch
 from tqdm.auto import tqdm
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer,AutoModelForCausalLM
+from trl import PPOTrainer, PPOConfig,AutoModelForCausalLMWithValueHead
 import argparse
 import numpy as np
 import wandb
@@ -10,11 +11,11 @@ import random
 import heapq
 import utils
 from dataset_utils import load_all_dataset,dataset_dicts,load_qa_dataset,qa_dicts,load_generation_dataset,load_bigbench
-# PEFT/TRL removed — using inference-only models
+from peft import LoraConfig
 def parser_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--target_model',type=str,default='google/gemma-3-1b-it')
-    parser.add_argument('--agent_model',type=str,default='google/gemma-3-1b-it')
+    parser.add_argument('--target_model',type=str,default='google/gemma-1.1-7b-it')
+    parser.add_argument('--agent_model',type=str,default='google/gemma-1.1-7b-it')
     parser.add_argument('--task',type=str,default='classification')
     parser.add_argument('--dataset',type=str,default='implicatures')
     parser.add_argument(
@@ -25,7 +26,7 @@ def parser_args():
     )
     parser.add_argument('--cache_dir',type=str,default='/mnt/sdb/llm/')
     parser.add_argument('--batch_size',type=int,default=4)
-    parser.add_argument('--max_prompt_length',type=int,default=50)
+    parser.add_argument('--max_prompt_length',type=int,default=100)
     parser.add_argument('--train_data_per_labels',type=int,default=10)
     parser.add_argument('--num_example',type=int,default=5)
     parser.add_argument('--epochs',type=int,default=10)
@@ -61,15 +62,38 @@ def main():
     train_dataloader = DataLoader(train_dataset,batch_size = 4,shuffle = True)
     
     
-        # load agent model (inference-only; RL components removed)
-        agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,cache_dir = args.cache_dir)
-        agent_model = AutoModelForCausalLM.from_pretrained(
-            args.agent_model,
-            torch_dtype=torch.bfloat16,
-            device_map = 'auto',
-            cache_dir = args.cache_dir
-        )
-        agent_tokenizer.pad_token = agent_tokenizer.eos_token
+        #load agent model
+    config = PPOConfig(
+        model_name = args.agent_model,
+        learning_rate = 1e-5,
+        batch_size = args.prompt_per_example,
+        mini_batch_size= args.prompt_per_example,
+        log_with='wandb',
+    )
+    lora_config = LoraConfig(
+        r= 16,
+        lora_alpha = 32,
+        lora_dropout=0.05,
+        bias="none",
+        task_type="CAUSAL_LM"
+    )
+    agent_tokenizer = AutoTokenizer.from_pretrained(args.agent_model,cache_dir = args.cache_dir)
+    agent_model = AutoModelForCausalLMWithValueHead.from_pretrained(
+        args.agent_model,
+        torch_dtype=torch.bfloat16,
+        device_map = 'auto',
+        peft_config = lora_config,
+        cache_dir = args.cache_dir
+    )
+    ref_model = AutoModelForCausalLMWithValueHead.from_pretrained(
+        args.agent_model,
+        torch_dtype=torch.bfloat16,
+        device_map = 'auto',
+        peft_config = lora_config,
+        cache_dir = args.cache_dir
+    )
+    agent_tokenizer.pad_token = agent_tokenizer.eos_token
+    ppo_trainer = PPOTrainer(config,agent_model,ref_model,agent_tokenizer)
     
     #load target model
     target_tokenizer = AutoTokenizer.from_pretrained(args.target_model,cache_dir = args.cache_dir)
@@ -166,15 +190,16 @@ def main():
             return_tensors='pt'
         ).view(-1).to(device)
         
-        response_tensors = agent_model.generate(
+        response_tensors =ppo_trainer.generate(
             query_encoded,
             **generation_kwargs,
+            return_prompt=False,
             num_return_sequences = args.prompt_per_example
         )
             
         used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
         
-        # If many of the generated prompts are too short, exit
+        #나온 프롬프트 중 너무 길이가 짧은게 많으면 종료
         if sum([len(p) for p in used_prompt]) < args.prompt_per_example * 10:
             break
         
@@ -199,7 +224,7 @@ def main():
                 target_tokenizer,
                 device,
             )
-            rewars = [ rewards[i] + accuracys[i] * 1000 for i in range(len(used_prompt))] #?
+            rewars = [ rewards[i] + accuracys[i] * 1000 for i in range(len(used_prompt))]
             #accuracys = rewards
         #print(accuracys,softmax_diff)
         
@@ -211,11 +236,13 @@ def main():
             queue.add(rewards[i].item(),used_prompt[i],ep)
         bs = len(np_rewards)
         #print([query_encoded.view(-1) for i in range(bs)],response_tensors,[torch.tensor(reward) for reward in rewards])
-        # RL training step removed (ppo_trainer.step)
+        stats = ppo_trainer.step([query_encoded.view(-1) for i in range(bs)],
+                        [response for response in response_tensors],
+                        rewards)
         rewards = torch.stack(rewards)
         mean_reward = torch.mean(rewards)
         max_reward = torch.max(rewards)
-        mean_total_loss += mean_reward #? 平均reward
+        mean_total_loss += mean_reward
         max_total_loss += max_reward
         min_total_loss += torch.min(rewards)
         sum_total_loss += torch.sum(rewards)
@@ -226,7 +253,66 @@ def main():
         })
             
             
-        # reference-model update removed (RL-specific)
+        #reference model update
+        if ep % args.update_term == 0 and ep!=0:
+            response_tensors,ref_response_tensors = ppo_trainer.generate(query_encoded.view(-1),**generation_kwargs,return_prompt=False, num_return_sequences=bs,generate_ref_response=True)
+            used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in response_tensors]
+            ref_used_prompt = [agent_tokenizer.decode(r.squeeze(),skip_special_tokens=True) for r in ref_response_tensors]
+            if metrics == 'multiple_choice_grade':
+                acc = utils.evaluation(
+                    used_prompt,
+                    validation_dataset,
+                    target_model,
+                    target_tokenizer,
+                    device,
+                    verbalizer.values(),
+                    debug=False,
+                )
+                ref_acc = utils.evaluation(
+                    ref_used_prompt,
+                    validation_dataset,
+                    target_model,
+                    target_tokenizer,
+                    device,
+                    verbalizer.values(),
+                )
+            else:
+                acc,_ = utils.evaluation_generation(
+                    used_prompt,
+                    validation_dataset,
+                    target_model,
+                    target_tokenizer,
+                    device,
+                )
+                ref_acc,_ = utils.evaluation_generation(
+                    ref_used_prompt,
+                    validation_dataset,
+                    target_model,
+                    target_tokenizer,
+                    device,
+                )
+            print('acc : ', acc)
+            print('ref_acc : ', ref_acc)
+            mean_acc = np.mean(np.array(acc))
+            mean_ref_acc = np.mean(np.array(ref_acc))
+            diff = mean_acc - mean_ref_acc
+            if diff > args.update_threshold:
+                ppo_trainer.ref_model =  ppo_trainer.model
+                print('update ref model')
+                change_num +=1
+            elif diff < -args.update_threshold:
+                ppo_trainer.model = ppo_trainer.ref_model
+                print('rollback model')
+                change_num -=1
+            else:
+                change_num=change_num
+            if change_num < 0 :
+                change_num = 0
+            wandb.log({
+                'change_num' : change_num,
+                'valid_acc' : mean_acc,
+                'ref_valid_acc' : mean_ref_acc,
+            })
         wandb.log({
             'mean_loss' : mean_total_loss,
             'max_loss' : max_total_loss,

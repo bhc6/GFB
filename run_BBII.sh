@@ -18,7 +18,7 @@ datasets=(
 # Loop through each main dataset and run the script
 for dataset in "${datasets[@]}"
 do
-    python stableprompt_bbii_tc.py --dataset $dataset --epoch 30 --update_term 5
+    python stableprompt_bbii_tc.py --dataset $dataset --epoch 30
 done
 
 datasets=(
@@ -34,5 +34,5 @@ datasets=(
 # Loop through each main dataset and run the script
 for dataset in "${datasets[@]}"
 do
-    python stableprompt_bbii_tg.py --dataset $dataset --epoch 30 --update_term 5
+    python stableprompt_bbii_tg.py --dataset $dataset --epoch 30
 done
