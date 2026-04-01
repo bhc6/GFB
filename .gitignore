@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Caches
+.cache/
+.cache/huggingface/
+.huggingface/
+transformers_cache/
+torch_cache/
+llm/
+
+# Models and checkpoints
+*.pt
+*.pth
+*.bin
+*.ckpt
+model/
+models/
+checkpoints/
+
+# wandb
+wandb/
+.wandb/
+
+# Other
+__MACOSX/
