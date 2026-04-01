@@ -87,8 +87,8 @@ def main():
     )
     wandb.define_metric('epoch_summary/epoch')
     wandb.define_metric('epoch_summary/*', step_metric='epoch')
-    wandb.define_metric('running_max/*', step_metric='step')
-    wandb.define_metric('running_topk/*', step_metric='step')
+    wandb.define_metric('running_max/*', step_metric='global_step')
+    wandb.define_metric('running_topk/*', step_metric='global_step')
 
     metrics, train_dataset, test_dataset, verbalizer, task_prefix = load_bigbench(
         args.dataset)
@@ -253,31 +253,22 @@ def main():
             running_topk_avg = 0.0
             running_topk_min = 0.0
 
+        # epoch summary
+        epoch_acc_np = np.array(epoch_accuracies)
         wandb.log(
             {
+                'epoch': ep,
+                'epoch_summary/mean_accuracy': float(np.mean(epoch_acc_np)),
+                'epoch_summary/max_accuracy': float(np.max(epoch_acc_np)),
+                'epoch_summary/min_accuracy': float(np.min(epoch_acc_np)),
+                'epoch_summary/std_accuracy': float(np.std(epoch_acc_np)),
                 'running_topk/avg_accuracy': running_topk_avg,
                 'running_topk/min_accuracy': running_topk_min,
+                'running_max/accuracy': running_max_reward,
                 'global_step': global_step,
-                'epoch': ep,
             },
             step=global_step)
         global_step += 1
-
-        # epoch summary
-        if epoch_accuracies:
-            epoch_acc_np = np.array(epoch_accuracies)
-            wandb.log({
-                'epoch':
-                int(ep),
-                'epoch_summary/mean_accuracy':
-                float(np.mean(epoch_acc_np)),
-                'epoch_summary/max_accuracy':
-                float(np.max(epoch_acc_np)),
-                'epoch_summary/min_accuracy':
-                float(np.min(epoch_acc_np)),
-                'epoch_summary/std_accuracy':
-                float(np.std(epoch_acc_np)),
-            })
 
     print('[Final test Start]')
     prompt_queue = queue.get_top_texts()
