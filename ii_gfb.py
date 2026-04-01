@@ -42,7 +42,7 @@ def parser_args():
                         help='Max size of top prompts to keep')
     parser.add_argument('--seed',
                         type=int,
-                        default=42,
+                        default=6,
                         help='Random seed for reproducibility')
 
     return parser.parse_args()
