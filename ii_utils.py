@@ -412,7 +412,6 @@ def evaluation_ii_batch(
     target_model,
     target_tokenizer,
     device,
-    meta_prompt,
     generation_kwargs,
     task,
     batch_size=8,
