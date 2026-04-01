@@ -293,7 +293,7 @@ def main():
                                                      show=True)
 
         for i, (score, text, ep) in enumerate(prompt_queue):
-            print('[prompt] :', text, '[final_score] :', new_acc[i],
+            print('[prompt] :', text, '[final_score] :', new_acc[i].item(),
                   '[score] :', score, '[epoch] :', ep)
 
         max_new_acc = float(np.max(np.array(new_acc))) if new_acc else 0.0
