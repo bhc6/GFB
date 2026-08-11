@@ -1,108 +1,135 @@
-# GFB — Generate & Filter baseline for discrete prompt tuning
+# StablePrompt-DCPS — frozen-generator control for RL-based prompt optimization
 
-This repository implements and evaluates a simple, training-free Generate-and-Filter (G&F)
-baseline for discrete prompt tuning of large language models (LLMs). G&F intentionally
-removes Reinforcement Learning (RL) components and instead relies on massive, few-shot
-generation from a base model followed by evaluation and reranking to select the best instruction.
+This directory holds the **StablePrompt audit** from *"Simplicity Goes Far: Auditing
+Prompt Optimizers with Demonstration-Conditioned Prompt Search."* It runs a single-variable
+ablation inside Kwon et al.'s StablePrompt pipeline: keep everything, remove only the PPO
+policy update, and measure what the update was buying.
 
-Summary
--------
-- Problem: RL-based discrete prompt tuning (APPO, RLPrompt, etc.) often shows good final
-  performance but suffers from instability, slow convergence, and high compute cost.
-- Hypothesis: many gains attributed to RL arise from the LLM's in-context generation
-  abilities and the statistical benefits of very large sampling — not from complex policy
-  optimization.
-- Solution: G&F — a minimalist, training-free pipeline that (1) uses few-shot meta-prompts
-  to generate many candidate prompts, (2) evaluates each candidate against a validation reward,
-  and (3) selects the top prompts without any gradient updates.
+* **StablePrompt-PPO** — the original pipeline, agent model trained with PPO.
+* **StablePrompt-DCPS** — identical scaffolding, **frozen** generator. Demonstration-Conditioned
+  Prompt Search: sample `k` demonstrations at random, format them into a meta-prompt, draw
+  candidate prompts from the frozen agent model, score them, retain the Top-`K`. No gradient
+  update, no optimizer state, no reflection or rewrite loop.
 
-Key results (summary)
----------------------
-- The G&F baseline outperforms or matches prior RL-based methods on few-shot text
-  classification benchmarks while removing all RL training complexity.
-- Reported results in the paper: G&F achieves 77.6% average accuracy vs. APPO's 76.4% on
-  the evaluated set, while reducing end-to-end runtime by ~50%.
+> Naming note: this directory and its `*_gfb.py` files are **legacy naming** ("GFB",
+> "Generate & Filter"). The canonical paper name is **StablePrompt-DCPS**, and
+> **DCPS = Demonstration-Conditioned Prompt Search**. File names are kept as-is so
+> they still match the WandB run history; only the documentation is canonicalized.
 
-Design and implementation notes
--------------------------------
-- Generation: candidate prompts are produced by an `agent_model` using a few-shot
-  `meta_prompt` (see stableprompt_bbii_tg.py). Generation parameters (top_p, top_k,
-  `max_new_tokens`, and sampling options) are controlled via `generation_kwargs`.
-- Evaluation: candidates are scored using the `target_model` and task-specific metrics
-  via `ii_utils.evaluation_ii_batch` (F1 / EM / Exact-Set / contains depending on task).
-- Selection: prompts are ranked by validation reward; the top-K prompts are kept in a
-  bounded queue (`TopAccuracyTextsNoDuplicates`) and finally evaluated on the test set.
-- Logging: experiments use Weights & Biases (wandb) for run metadata, running metrics,
-  and final results tables.
+## Setup (as reported in the paper)
 
-Repository structure (high level)
----------------------------------
-- stableprompt_bbii_tg.py — Primary G&F pipeline for big-bench-style generation tasks.
-- tc_gfb.py — Text-classification-focused runner (no RL; detailed wandb metrics and
-  run naming conventions).
-- ii_gfb.py, origin_ii.py — Instruction-induction variants and legacy code.
-- ii_utils.py — Evaluation helpers: `evaluation_ii_batch`, metrics (F1/EM/ES/contains),
-  prompt formatting, and utility functions used across experiments.
-- dataset_utils.py — Dataset loaders for BigBench and other datasets used in experiments.
-- experiments/ — additional experiment wrappers and config examples.
-- requirements.txt — Python dependencies used by the project.
-- .gitignore — repository ignore rules (virtualenvs, caches, model weights, wandb output).
+Target and agent models are both `gemma-1.1-7B-it`, following StablePrompt's full
+configuration. Three task families, original scoring protocols:
 
-Quick start
------------
-1. Create a Python environment and install dependencies:
+1. **Text classification** — 6 GLUE/SuperGLUE subsets.
+2. **Multi-task QA** — MMLU, 57 subjects.
+3. **Instruction induction & generation** — 24 Instruction Induction (II) + 18 Big-Bench
+   Instruction Induction (BBII) subsets, split into BBII-TC and BBII-Gen.
+
+Reported scores are the mean over three seeds of the best test score among the Top-5 prompts
+ranked by training reward. That protocol is optimistic in absolute terms, but it is applied
+identically to PPO and DCPS, so the comparison is unaffected. Two reproduction fixes were
+applied to the original code: a train/test overlap in II, and missing batch weights in
+StablePrompt's Softmax-difference metric.
+
+Dropping gradients and PPO optimizer state lets DCPS run **inference-only on one A40 48 GB**,
+where StablePrompt-PPO needs the original **A100 80 GB**.
+
+## Key results
+
+Macro-averages over subsets; Δ is PPO − DCPS, so positive means PPO is ahead.
+Cost is measured hours/USD per run.
+
+| Task family | PPO | DCPS | Δ | 95% CI | Cohen's *d* | DCPS (h/$) | PPO (h/$) | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| GLUE/SuperGLUE | 76.7 | **77.1** | −0.4 | [−2.30, +1.97] | −0.14 | 4.83 / 1.93 | 3.97 / 5.96 | comparable |
+| BBII-TC | **57.6** | 57.2 | +0.4 | [−0.68, +1.63] | +0.20 | 3.38 / 1.35 | 3.17 / 4.76 | comparable |
+| BBII-Gen | **63.0** | 60.7 | +2.3 | [+0.15, +4.35] | +0.79 | 2.66 / 1.06 | 1.84 / 2.76 | PPO better |
+| II @30 epochs | **48.7** | 44.3 | +4.4 | [+0.15, +8.70] | +0.41 | 2.76 / 1.10 | 6.65 / 9.98 | PPO better |
+| II @100 epochs | — | 48.6 | +0.1 | [−2.67, +2.63] | +0.01 | 14.74 / 5.90 | — | gap closed |
+| MMLU | **55.9** | 54.1 | +1.8 | [+0.99, +2.74] | +0.53 | 6.58 / 2.63 | 6.38 / 9.57 | PPO better |
+
+What this supports, stated narrowly:
+
+* On template-like classification (GLUE/SuperGLUE, BBII-TC) the PPO update has **limited
+  marginal value** — |Δ| ≤ 0.4 pp, CIs straddling zero.
+* Where target behavior is harder to reach by random conditioning, **PPO still leads**:
+  +2.3 pp on BBII-Gen, +1.8 pp on MMLU.
+* On II, extending DCPS to 100 epochs closes the gap against PPO@30 (+0.1 pp). Since PPO was
+  not re-run at matching epochs, this suggests extra search budget can **substitute** for the
+  policy update; it does **not** show DCPS dominates.
+* Where accuracy is matched, the saving is real: $4.76–$5.96 (A100) → $1.35–$1.93 (A40),
+  roughly one-third the cost at our rates.
+
+An earlier draft of this README claimed "77.6% vs APPO's 76.4%" and that the control
+"outperforms or matches prior RL-based methods." Both are superseded — use the table above.
+
+## Repository layout
+
+PPO runners (StablePrompt-PPO) and their DCPS counterparts share dataset loaders and metrics;
+the `_gfb` suffix marks the frozen-generator variant.
+
+| File | Role |
+|---|---|
+| `tc.py` | StablePrompt-**PPO** — text classification (GLUE/SuperGLUE) |
+| `qa.py` | StablePrompt-**PPO** — MMLU (PPO machinery via `utils.py`) |
+| `origin_ii.py` | StablePrompt-**PPO** — instruction induction |
+| `tc_gfb.py` | StablePrompt-**DCPS** — text classification |
+| `qa_gfb.py` | StablePrompt-**DCPS** — MMLU |
+| `ii_gfb.py` | StablePrompt-**DCPS** — instruction induction |
+| `bbii_tc_gfb.py` | StablePrompt-**DCPS** — BBII-TC (classification subsets) |
+| `bbii_tg_gfb.py` | StablePrompt-**DCPS** — BBII-Gen (generation subsets) |
+| `utils.py` | Shared helpers incl. the PPO trainer setup (PPO paths only) |
+| `ii_utils.py` | Evaluation: `evaluation_ii_batch`, F1 / EM / Exact-Set / contains, prompt formatting |
+| `dataset_utils.py` | Dataset loaders (`load_all_dataset`, `load_qa_dataset`, `load_generation_dataset`) |
+| `qa_validation.py` | MMLU validation-split helper |
+| `automatic_prompt_engineer/` | Vendored APE — retains its upstream LICENSE and attribution |
+
+## How the DCPS path works
+
+1. **Sample** `k` demonstrations at random from the training set and format them into a
+   meta-prompt (`FmtMeta`). The demonstration set supplies *only* demonstrations; rewards are
+   computed on training batches.
+2. **Generate** candidate prompts from the frozen agent model. Sampling is controlled in-code
+   via `generation_kwargs` (`top_p`, `top_k`, `max_new_tokens`, `do_sample`).
+3. **Evaluate** each candidate with the target model through `ii_utils.evaluation_ii_batch`,
+   using the task's original metric.
+4. **Select** by validation reward into a bounded Top-`K` queue
+   (`TopAccuracyTextsNoDuplicates`); the retained prompts are scored on the held-out test set.
+
+WandB logs run metadata, running metrics, and the final results table.
+
+## Quick start
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+source .venv/bin/activate  # .venv\Scripts\activate on Windows
 pip install -r requirements.txt
 ```
 
-2. Run a small smoke test (this will download models and may take time):
+Run a DCPS text-classification job, then the PPO counterpart for comparison:
 
 ```bash
-python stableprompt_bbii_tg.py \
-  --agent_model google/gemma-1.1-7b-it \
-  --target_model google/gemma-1.1-7b-it \
-  --dataset gender_inclusive_sentences_german \
-  --epochs 1 --batch_size 2 --prompt_per_example 4 --topk 3 --seed 42
+python tc_gfb.py --agent_model google/gemma-1.1-7b-it \
+                 --target_model google/gemma-1.1-7b-it \
+                 --seed 42
+python tc.py     --agent_model google/gemma-1.1-7b-it \
+                 --target_model google/gemma-1.1-7b-it \
+                 --seed 42
 ```
 
-3. For a full experiment, tune `--epochs`, `--batch_size`, and `--topk` as needed and
-   use `--cache_dir` to point to a local HF cache to speed downloads.
+Each script defines its own flags — check its `argparse` block for the exact names, epoch
+counts, and Top-`K` settings rather than assuming they match across files. Use `--cache_dir`
+to point at a local HuggingFace cache.
 
-Reproducibility and tips
-------------------------
-- Use `--seed` to fix random seeds for generation, data shuffling, and evaluation.
-- Generation behavior is controlled in-code by `generation_kwargs`. Adjust `top_p`,
-  `do_sample`, and `max_new_tokens` to increase candidate diversity or precision.
-- The evaluation function `ii_utils.evaluation_ii_batch` performs template formatting and
-  per-example scoring — see it for metric details and possible task-specific tweaks.
+## Reproducing the table
 
-Recommended experiment flow
----------------------------
-1. Use `stableprompt_bbii_tg.py` to generate a large candidate pool (increase
-   `prompt_per_example` and run more epochs or batches to sample broadly).
-2. Use the validation reward (computed with `target_model`) to rank candidates.
-3. Evaluate top-K candidates on the held-out test set (script does this and logs
-   the final results table to wandb).
+Run every DCPS entrypoint over three seeds and macro-average per task family. II needs both
+budgets (30 and 100 epochs) to reproduce the "gap closed" row. PPO rows come from `tc.py`,
+`qa.py`, and `origin_ii.py` on A100-class hardware; DCPS rows run inference-only on an A40.
 
-Why G&F matters
----------------
-G&F isolates the statistical power of large-sample in-context generation from the
-optimization mechanics of RL. By showing that careful sampling + validation-based
-selection already yields strong performance, G&F acts as a robust, low-cost baseline
-that future prompt-tuning methods should compare against.
+## Citation and attribution
 
-Acknowledgements & citation
----------------------------
-This repository is provided to reproduce and build on the experiments described in
-the accompanying manuscript. If you use this code or the G&F baseline in your work,
-please cite the paper (link in the original repository). See the top of this README
-for a pointer to the arXiv preprint (if present).
+Built on StablePrompt (Kwon et al., 2024) and the vendored APE codebase; both keep their
+upstream licenses and attribution. If you use this audit, cite the DCPS paper.
 
-Contact
--------
-Open an issue or PR for questions, bug reports, or improvements. If you want help
-running experiments on a specific dataset or model, include details about the
-hardware and model variants you plan to use.
